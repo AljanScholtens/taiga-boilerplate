@@ -1,0 +1,26 @@
+/* =========== Tables */
+
+table {
+    width: 100%;
+    border-collapse: separate;
+    *border-collapse: collapse;
+    border-spacing: 0;
+    border: 1px solid #cccccc;
+    margin-bottom: $marginBottom;
+    @include rounded(0.5em);
+    box-sizing: border-box;
+    thead th {
+        padding: 0.75em $grid_col_width;
+        text-align: left;
+        font-weight: bold;
+    }
+    tbody {
+        td {
+            padding: 0.75em $grid_col_width;
+            border-left: 1px solid #cccccc;
+            border-top: 1px solid #cccccc;
+            &:first-child { border-left: 0; }
+            strong { display: block; }
+        }
+    }
+}

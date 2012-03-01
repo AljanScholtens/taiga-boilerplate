@@ -1,0 +1,153 @@
+﻿//  Taiga Boilerplate 0.1 by Studio Wolf
+
+//  Stylesheet:     Standard
+//  Project:        Title
+//  Owner:          Studio Wolf, www.studiowolf.nl
+
+//  Run the following SASS command: 'sass --watch stylesheets:stylesheets --style compressed'
+//  Make sure you set the variables below (find the grid documentation in lib/_grid.scss)
+
+/* ========================= Variables ================================== */
+
+$fontFamily: 'Helvetica Neue', Arial, sans-serif;
+$fontSize: 15px;
+$columns: 48;
+$maxWidth: 960px;
+$marginBottom: 1.25em;
+
+/* ========================= Basic includes ============================= */
+
+@import "lib/_reset";
+@import "lib/_mixins";
+@import "lib/_grid";
+
+/* ========================= General tags =============================== */
+
+html { 
+    font-family: $fontFamily;
+    font-size: $fontSize;
+    color: #333333;
+    overflow-y: scroll; 
+}
+
+body {
+    line-height: 1.5em;
+}
+
+h1, h2, h3, h4, h5, h6 { margin-bottom: 0.25em; font-weight: bold; line-height: 1.5em; }
+h1 { font-size: 2em; margin-bottom: 0.5em; }
+h2 { font-size: 1.6em; }
+h3 { font-size: 1.4em; }
+
+p { 
+    margin-bottom: $marginBottom; 
+    &.lead { font-size: 1.15em; line-height: 1.5em; }
+}
+
+a { 
+    text-decoration: underline; 
+    color: #40582b; 
+    &:hover { color: #222222; }
+}
+
+small { font-size: 0.85em; }
+
+em { font-style: italic; }
+
+strong { font-weight: bold; }
+
+code, pre { font-family: monospace; }
+
+del { text-decoration: line-through; }
+
+hr { 
+    background-color: #ffffff; 
+    border: 1px solid transparent;
+    border-top: 1px solid #cccccc; 
+    clear: both; 
+    margin: 2em $marginBottom; 
+}
+
+blockquote { 
+    padding: 0 1em 0 1em; 
+    margin-bottom: $marginBottom; 
+    border-left: 4px solid #dddddd; 
+    color: #666666; 
+    font-style: italic; 
+}
+
+figure {
+    display: inline-block;
+    max-width: 100%;
+    img { 
+        overflow: hidden; 
+        display: block; 
+        width: 100%;  
+    }
+}
+
+/* ========================= Structure ================================== */
+
+div.container {
+    max-width: $maxWidth;
+    margin: auto;   
+}
+
+.logo {
+    
+    a { }
+}
+
+nav {
+
+    ul { }
+}
+
+header {
+    
+}
+
+/* Example for types.html */
+section {
+    padding: 2.5em; /* TEMP */
+    @include clearfix;
+    article { 
+        @include grid(24, 1);
+        &.one-third { @include grid(16, 1); }
+        &.first { clear: left; }
+        margin-bottom: $marginBottom;
+        
+        ul {
+            list-style: disc;
+            margin: 0 0 $marginBottom 2.5em;
+            li { margin: 0.5em 0; }
+        }
+        
+        dl { } 
+    }
+}
+
+aside {
+    
+}
+
+footer {
+    
+}
+
+/* ========================= Includes =================================== */
+
+/* =========== Types */
+
+@import "lib/_forms";
+@import "lib/_tables";
+@import "lib/_tabs";
+@import "lib/_messages";
+@import "lib/_pagination";
+@import "lib/_popover";
+@import "lib/_icons";
+
+/* =========== Media queries */
+
+@import "lib/_responsive";
+@import "lib/_print";

@@ -1,0 +1,59 @@
+/* =========== Tabs */
+
+ul.tabs {
+    list-style: none;
+    border-bottom: 1px solid #cccccc;
+    margin-bottom: $marginBottom;
+    li {
+        display: inline-block;
+        @include displayfix;
+        position: relative;
+        margin-bottom: -2px;
+        a {
+            padding: 0.75em 1em;
+            display: block;
+            text-decoration: none;
+            color: #555555;
+            border: 1px solid transparent;
+            &:hover { 
+                color: #222222; 
+                @include rounded(0.3em 0.3em 0px 0px);
+                border-left: 1px solid #dddddd;
+                border-top: 1px solid #dddddd;
+                border-right: 1px solid #dddddd;
+                border-bottom: 1px solid transparent;
+            }
+        }
+        &.selected {
+            outline: 0px solid blue;
+            a { 
+                color: #222222; 
+                font-weight: bold;
+                border: 1px solid #cccccc;
+                border-bottom-color: #ffffff;
+                padding: 0.70em 1em 0.75em 1em;
+                background: #ffffff;
+                @include rounded(0.3em 0.3em 0px 0px);
+            }
+        }
+    }
+}
+
+ul.steps {
+    list-style: none;
+    border-bottom: 1px solid #b4b4b4;
+    margin-bottom: $marginBottom;
+    li {
+        display: inline-block;
+        @include displayfix;
+        a { 
+            padding: 0.75em 1em;
+            display: block;
+            text-decoration: none;
+            color: #555555;
+        }
+        &.completed a { color: #222222; }
+        &:hover a { color: #222222; }
+        &.selected a { color: #222222; font-weight: bold; }
+    }
+}

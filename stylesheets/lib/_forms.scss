@@ -1,0 +1,151 @@
+/* =========== Forms */
+
+input[type="checkbox"], input[type="radio"] { box-sizing: border-box; }
+input[type="search"] { -webkit-appearance: textfield; -moz-box-sizing: content-box; -webkit-box-sizing: content-box; box-sizing: content-box; }
+input[type="search"]::-webkit-search-decoration { -webkit-appearance: none; }
+textarea { overflow: auto; vertical-align: top; resize: vertical; }
+
+/* Colors for form validity */
+input:valid, textarea:valid {  }
+input:invalid, textarea:invalid { background-color: #f0dddd; }
+
+input, textarea, select  {
+    border: 1px solid #b4b4b4;
+    @include shadow(inset 0px 1px 3px rgba(0, 0, 0, 0.1));
+    font-family: $fontFamily;
+    color: #555555;
+    padding: 0.6em;
+    line-height: 1.5em;
+    vertical-align: baseline;
+    margin: -1px 0.5em 0px 0px;
+    @include transition(border 0.1s);
+    &:focus {
+        border: 1px solid #777777;
+        outline: 0;
+        color: #222222;
+        @include shadow(0px 0px 6px rgba(0, 0, 0, 0.5));
+    }
+}
+
+form {
+    legend { 
+        display: block; 
+        margin-bottom: 0.25em; 
+        font-weight: bold; 
+        line-height: 1.5em;
+        font-size: 1.6em;
+    }
+    fieldset { }
+    ol {
+        list-style: none;
+        clear: both;
+        margin-bottom: $marginBottom;
+        > li {
+            > label {
+                clear: left;
+                float: left;
+                text-align: right;
+                width: 30%;
+                font-weight: bold;
+                padding: 0.55em 1.25em 0.25em 0px;
+                cursor: pointer;
+                &:hover { color: #222222; }
+            }
+            div {
+                float: left;
+                
+                margin-bottom: 0.5em;
+                p, small {
+                    display: block;
+                    margin: 0.6em 0.6em 0.25em 0px;
+                }
+                small { 
+                    color: rgba(0, 0, 0, 0.5); 
+                    margin-top: 0.25em;
+                }
+                ul.checklist {
+                    margin: 0.6em 0.6em 0.6em 0px;
+                    li { margin: 0.5em 0; }
+                    input { display: inline-block; }
+                    label:hover { color: #222222; cursor: pointer; }
+                }
+            }
+            &.error {
+                label { 
+                    color: #ff6f43; 
+                    &:hover { color: #e43500; }
+                }
+                input {
+                    border: 1px solid #ff6f43;
+                    @include shadow((0px 0px 6px #ff6f43, inset 0 0 0));
+                    &:focus { border: 1px solid #e43500; }
+                }
+                ul.errors {
+                    li { margin: 0.5em 0; }
+                    color: #ff6f43;
+                    margin: 0.6em 0.6em 0.6em 0px;
+                }
+            }
+        } 
+    }
+}
+
+/* =========== Buttons */
+
+div.buttons {
+    width: auto;
+    overflow: hidden;
+    padding: 4em;
+    margin-bottom: $marginBottom;
+}
+
+a.button, input[type="submit"], button {
+    margin: 0;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    padding: 0.35em 1em 0.5em 1em;
+    line-height: 1.5em;
+    vertical-align: baseline;
+    display: inline-block;
+    cursor: pointer;
+    color: #eeeeee;
+    border: 1px solid #333333;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.75);
+    @include transition(border 0.1s);
+    @include rounded(0.2em);
+    @include shadow((0px 1px 1px rgba(0, 0, 0, 0.1), inset 0px 1px 0px rgba(255, 255, 255, 0.1)));
+    @include gradient(top, #555555, #333333);
+    &:hover {
+        border: 1px solid #111111;
+        color: #ffffff;
+        @include gradient(top, #666666, #333333);
+    }
+    &:active {
+        color: #999999;
+        text-shadow: 0 0 0;
+        background: #444444;
+        @include shadow((0 0 0, inset 0px 0px 20px #222222, inset 0px 1px 2px #222222));
+    }
+    
+    &.soft {
+        color: #444444;
+        border: 1px solid #bbbbbb;
+        text-shadow: 1px 1px 0px #ffffff;
+        @include transition(border 0.9s);
+        @include shadow((0px 1px 1px rgba(0, 0, 0, 0.1), inset 0px 1px 0px #ffffff));
+        @include gradient(top, #f8f8f8, #eeeeee);
+        &:hover {
+            border: 1px solid #888888;
+            color: #222222;
+            @include gradient(top, #ffffff, #e2e2e2);
+        }
+        &:active, &:focus {
+            border: 1px solid #444444;
+            background: #bbbbbb;
+            color: #444444;
+            text-shadow: 0 0 0;
+            @include shadow((0 0 0, inset 0px 0px 20px #666666, inset 0px 1px 2px #777777));
+        }
+    }
+}

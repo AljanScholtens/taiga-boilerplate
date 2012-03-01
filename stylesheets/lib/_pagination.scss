@@ -1,0 +1,52 @@
+/* =========== Pagination */
+
+ul.pagination {
+    text-align: center;
+    margin-bottom: $marginBottom;
+    font-size: 0.9em;
+    li {
+        display: inline-block;
+        *float: left;
+        font-weight: bold;
+        border: 1px solid #bbbbbb;
+        text-shadow: 1px 1px 0px #ffffff;
+        margin-bottom: 0.25em;
+        @include transition(border 0.1s);
+        @include rounded(0.2em);
+        @include shadow((0px 1px 1px rgba(0, 0, 0, 0.1), inset 0px 1px 0px #ffffff));
+        @include gradient(top, #f8f8f8, #eeeeee);
+        a {
+            display: block;
+            text-decoration: none;
+            color: #444444;
+            padding: 0.25em 0.6em 0.35em 0.6em;
+        }
+        &:hover {
+            border: 1px solid #888888;
+            @include gradient(top, #ffffff, #e2e2e2);
+            a { color: #222222; }
+        }
+        &:active, &:focus {
+            border: 1px solid #444444;
+            background: #bbbbbb;
+            text-shadow: 0 0 0;
+            @include shadow((0 0 0, inset 0px 0px 20px #666666, inset 0px 1px 2px #777777));
+            a { color: #444444; }
+        }
+        &.selected { 
+            padding: 0.25em 0.6em 0.35em 0.6em;
+            color: #eeeeee;
+            border: 1px solid #333333;
+            text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.75);
+            @include shadow((0px 1px 1px rgba(0, 0, 0, 0.1), inset 0px 1px 0px rgba(255, 255, 255, 0.1)));
+            @include gradient(top, #555555, #333333);
+        }
+        &.gap {
+            padding: 0.25em 0.35em 0.35em 0.35em;
+            @include shadow(0 0 0);
+            background: none;
+            border: 0;
+            font-weight: normal;
+        }
+    }
+}

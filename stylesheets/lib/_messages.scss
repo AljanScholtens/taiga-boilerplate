@@ -1,0 +1,27 @@
+/* =========== Messages */
+
+ul.messages  {
+    list-style: none;
+    margin-bottom: $marginBottom;
+    li {
+        border: 1px solid #6f91a8;
+        @include shadow((0px 1px 1px rgba(0, 0, 0, 0.1), inset 0px 1px 0px rgba(255, 255, 255, 0.4)));
+        @include gradient(top, #e9f2f7, #d4e1eb);
+        @include rounded(0.3em);
+        font-weight: bold;
+        margin: 0.25em 0;
+        padding: 0.5em 0.6em 0.6em 0.6em;
+        color: #234862;
+        text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.4);
+        &.success {
+            @include gradient(top, #e4f2d2, #d5ecbd);
+            border-color: #768a5a;
+            color: #465137;
+        }
+        &.error, &.fail {
+            @include gradient(top, #fbeeee, #f6dbdb);
+            border-color: #d08181;
+            color: #622c2c;
+        }
+    }
+}

@@ -1,0 +1,85 @@
+/* =========== Mixins */
+
+@mixin rounded($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    -o-border-radius: $radius;
+    border-radius: $radius;
+}
+
+@mixin gradient($side, $start, $end) {
+    background-color: $end;
+    background-image: -webkit-linear-gradient($side, $start, $end); 
+    background-image: -moz-linear-gradient($side, $start, $end); 
+    background-image: -ms-linear-gradient($side, $start, $end);
+    background-image: -o-linear-gradient($side, $start, $end);
+    background-image: linear-gradient($side, $start, $end);
+}
+
+@mixin gradient-ie($start, $end) {
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#{$start}', endColorstr='#{$end}');
+    ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#{$start}', endColorstr='#{$end}');
+}
+
+@mixin background-clip($clip) {
+    -webkit-background-clip: $clip;
+    -moz-background-clip: $clip;
+    background-clip: $clip; 
+}
+
+@mixin shadow($shadow) {
+    -webkit-box-shadow: $shadow;
+    -moz-box-shadow: $shadow;
+    box-shadow: $shadow;
+}
+
+@mixin transition($transition) {
+    -webkit-transition: $transition;
+    -moz-transition: $transition;
+    -o-transition: $transition;
+    transition: $transition;
+}
+
+@mixin box-sizing($boxsizing) {
+    -webkit-box-sizing: $boxsizing;
+    -moz-box-sizing: $boxsizing;
+    box-sizing: $boxsizing;
+}
+
+@mixin columns($count, $gap) {
+    -webkit-column-count: $count;
+    -webkit-column-gap : $gap;
+    -moz-column-count: $count;
+    -moz-column-gap: $gap;
+    column-count: $count;
+    column-gap: $gap;
+}
+
+@mixin columns-rule($size, $style, $color) {
+    -webkit-column-rule-width: $size;
+    -webkit-column-rule-style: $style;
+    -webkit-column-rule-color: $color;
+    -moz-column-rule-width: $size;
+    -moz-column-rule-style: $style;
+    -moz-column-rule-color: $color;
+    column-rule-width: $size;
+    column-rule-style: $style;
+    column-rule-color: $color;
+}
+
+@mixin clearfix {
+    *zoom: 1;
+    &:before, &:after { display: block; height: 0 !important; line-height: 0; overflow: hidden; visibility: hidden; content:"."; }
+    &:after { clear: both; }
+}
+
+@mixin displayfix {
+    *zoom: 1;
+    *display: inline;
+}
+
+@font-face {
+    font-family: 'fontName';
+    src: url('fontName.eot?') format('eot'), url('fontName.woff') format('woff'), url('fontName.ttf') format('truetype');
+}
