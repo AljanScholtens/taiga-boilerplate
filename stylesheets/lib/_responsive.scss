@@ -13,7 +13,6 @@
     body { font-size: 14px; }
     div.container {
         max-width: 960px;
-        min-width: 768px;
     }
 }
 
@@ -23,7 +22,6 @@
     body { font-size: 13px; }
     div.container {
         max-width: 768px;
-        min-width: 480px;
     }
     form ol li > label { text-align: left; clear: both; float: none; display: block; }
 }
@@ -40,7 +38,6 @@
     body { font-size: 12px; }
     div.container {
         max-width: 480px;
-        min-width: 0px;
         article { float: none; width: auto; @include append(0); @include prepend(0); }
     }
     form ol li > div { display: block; width: auto; float: none; }
