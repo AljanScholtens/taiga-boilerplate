@@ -89,7 +89,9 @@ figure {
 
 div.container {
     max-width: $maxWidth;
-    margin: auto;   
+    margin: auto;
+    padding: 2.5em; /* TEMP */
+    @include clearfix; 
 }
 
 .logo {
@@ -107,24 +109,25 @@ header {
 }
 
 /* Example for types.html */
-section {
-    padding: 2.5em; /* TEMP */
+article { 
+    margin-bottom: $marginBottom;
     @include clearfix;
-    article { 
+    
+    &.one-third { @include grid(16, 1); }
+    
+    section {
         @include grid(24, 1);
-        &.one-third { @include grid(16, 1); }
-        &.first { clear: left; }
-        margin-bottom: $marginBottom;
-        
-        ul {
-            list-style: disc;
-            margin: 0 0 $marginBottom 2.5em;
-            li { margin: 0.5em 0; }
-        }
-        
-        dl { } 
+        &.half { @include grid(24, 1); }
+    }
+    
+    ul {
+        list-style: disc;
+        margin: 0 0 $marginBottom 2.5em;
+        li { margin: 0.5em 0; }
     }
 }
+
+
 
 aside {
     
