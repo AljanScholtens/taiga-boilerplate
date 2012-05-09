@@ -1,6 +1,12 @@
 /* =========== Mixins */
 
-@mixin rounded($radius) {
+@mixin background-clip($clip) {
+    -webkit-background-clip: $clip;
+    -moz-background-clip: $clip;
+    background-clip: $clip; 
+}
+
+@mixin border-radius($radius) {
     -webkit-border-radius: $radius;
     -moz-border-radius: $radius;
     -ms-border-radius: $radius;
@@ -8,27 +14,7 @@
     border-radius: $radius;
 }
 
-@mixin gradient($side, $start, $end) {
-    background-color: $end;
-    background-image: -webkit-linear-gradient($side, $start, $end); 
-    background-image: -moz-linear-gradient($side, $start, $end); 
-    background-image: -ms-linear-gradient($side, $start, $end);
-    background-image: -o-linear-gradient($side, $start, $end);
-    background-image: linear-gradient($side, $start, $end);
-}
-
-@mixin gradient-ie($start, $end) {
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#{$start}', endColorstr='#{$end}');
-    ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#{$start}', endColorstr='#{$end}');
-}
-
-@mixin background-clip($clip) {
-    -webkit-background-clip: $clip;
-    -moz-background-clip: $clip;
-    background-clip: $clip; 
-}
-
-@mixin shadow($shadow) {
+@mixin box-shadow($shadow) {
     -webkit-box-shadow: $shadow;
     -moz-box-shadow: $shadow;
     box-shadow: $shadow;
@@ -39,12 +25,6 @@
     -moz-transition: $transition;
     -o-transition: $transition;
     transition: $transition;
-}
-
-@mixin box-sizing($boxsizing) {
-    -webkit-box-sizing: $boxsizing;
-    -moz-box-sizing: $boxsizing;
-    box-sizing: $boxsizing;
 }
 
 @mixin columns($count, $gap) {
@@ -77,6 +57,21 @@
 @mixin displayfix {
     *zoom: 1;
     *display: inline;
+}
+
+@mixin gradient($side, $start, $end) {
+    background-color: $end;
+    background-image: -webkit-linear-gradient($side, $start, $end); 
+    background-image: -moz-linear-gradient($side, $start, $end); 
+    background-image: -ms-linear-gradient($side, $start, $end);
+    background-image: -o-linear-gradient($side, $start, $end);
+    background-image: linear-gradient($side, $start, $end);
+}
+
+@mixin gradient-ie($start, $end) {
+    *zoom: 1;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#{$start}', endColorstr='#{$end}');
+    -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#{$start}', endColorstr='#{$end}');
 }
 
 @font-face {

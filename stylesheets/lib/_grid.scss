@@ -13,15 +13,23 @@
     
 */
 
-$maxWidth: ($maxWidth / $fontSize) + em;
-$grid_col_width: 100% / $columns; 
+$max-width: ($max-width / $font-size) + em;
+$grid-column: 100% / $grid-columns; 
 
-@mixin col($n: 1) { float: left; width: ($n * $grid_col_width); } 
-@mixin prepend($n: 1) { margin-left: $grid_col_width * $n } 
-@mixin append($n: 1) { margin-right: $grid_col_width * $n } 
+@mixin col($n: 1) { float: left; width: ($n * $grid-column); } 
+@mixin prepend($n: 1) { margin-left: $grid-column * $n } 
+@mixin append($n: 1) { margin-right: $grid-column * $n } 
 
-@mixin grid($cols: 1, $leftmargin: 0, $rightmargin: $leftmargin) {
-    @include col($cols - ($leftmargin + $rightmargin));
-    @include prepend($leftmargin);
-    @include append($rightmargin);
+@mixin grid($cols: 1, $grid-margin-left: 0, $grid-margin-right: $grid-margin-left) {
+    @include col($cols - ($grid-margin-left + $grid-margin-right));
+    @include prepend($grid-margin-left);
+    @include append($grid-margin-right);
+}
+
+@mixin grid-reset {
+    clear: both;
+    float: none;
+    margin-left: 0;
+    margin-right: 0;
+    width: auto;
 }

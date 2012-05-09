@@ -15,5 +15,7 @@ a img { border: none; display: block; overflow: hidden; }
 input, textarea, select, button { border: 0; margin: 0; padding: 0; font-family: inherit; font-size: inherit; }
 .hidden { display: none !important; }
 .hidden, .invisible { visibility: hidden !important; }
-::-moz-selection { background: #333333; color: #fff; text-shadow: none; }
-::selection { background: #333333; color: #fff; text-shadow: none; }
+::-moz-selection { background: lighten($color-basic, 15%); color: lighten($color-basic, 100%); text-shadow: none; }
+::selection { background: lighten($color-basic, 15%); color: lighten($color-basic, 100%); text-shadow: none; }
+input[type="search"] { -webkit-appearance: textfield; }
+input[type="search"]::-webkit-search-decoration { -webkit-appearance: none; }

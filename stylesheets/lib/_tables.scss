@@ -1,26 +1,23 @@
 /* =========== Tables */
 
 table {
-    width: 100%;
+    border: 1px solid lighten($color-basic, 80%);
     border-collapse: separate;
     *border-collapse: collapse;
+    @include border-radius(0.5em);
     border-spacing: 0;
-    border: 1px solid #cccccc;
-    margin-bottom: $marginBottom;
-    @include rounded(0.5em);
-    box-sizing: border-box;
+    margin-bottom: $margin-bottom;
+    width: 100%;
     thead th {
-        padding: 0.75em $grid_col_width;
-        text-align: left;
         font-weight: bold;
+        padding: 0.75em $grid-column;
+        text-align: left;
     }
-    tbody {
-        td {
-            padding: 0.75em $grid_col_width;
-            border-left: 1px solid #cccccc;
-            border-top: 1px solid #cccccc;
-            &:first-child { border-left: 0; }
-            strong { display: block; }
-        }
+    tbody td {
+        border-left: 1px solid lighten($color-basic, 80%);
+        border-top: 1px solid lighten($color-basic, 80%);
+        padding: 0.75em $grid-column;
+        &:first-child { border-left: 0; }
+        strong { display: block; }
     }
 }

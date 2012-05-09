@@ -1,59 +1,57 @@
 /* =========== Tabs */
 
 ul.tabs {
-    list-style: none;
-    border-bottom: 1px solid #cccccc;
-    margin-bottom: $marginBottom;
+    border-bottom: 1px solid lighten($color-basic, 80%);
+    margin-bottom: $margin-bottom;
     li {
         display: inline-block;
         @include displayfix;
-        position: relative;
         margin-bottom: -2px;
-        a {
-            padding: 0.75em 1em;
-            display: block;
-            text-decoration: none;
-            color: #555555;
-            border: 1px solid transparent;
-            &:hover { 
-                color: #222222; 
-                @include rounded(0.3em 0.3em 0px 0px);
-                border-left: 1px solid #dddddd;
-                border-top: 1px solid #dddddd;
-                border-right: 1px solid #dddddd;
-                border-bottom: 1px solid transparent;
-            }
+        position: relative;
+    }
+    a {
+        border: 1px solid transparent;
+        color: lighten($color-basic, 35%);
+        display: block;
+        padding: 0.75em 1em;
+        text-decoration: none;
+        &:hover { 
+            border-left: 1px solid lighten($color-basic, 85%);
+            border-top: 1px solid lighten($color-basic, 85%);
+            border-right: 1px solid lighten($color-basic, 85%);
+            border-bottom: 1px solid transparent;
+            @include border-radius(0.3em 0.3em 0px 0px);
+            color: lighten($color-basic, 15%); 
         }
-        &.selected {
-            outline: 0px solid blue;
-            a { 
-                color: #222222; 
-                font-weight: bold;
-                border: 1px solid #cccccc;
-                border-bottom-color: #ffffff;
-                padding: 0.70em 1em 0.75em 1em;
-                background: #ffffff;
-                @include rounded(0.3em 0.3em 0px 0px);
-            }
-        }
+    }
+    li.selected a { 
+        background: lighten($color-basic, 100%);
+        border: 1px solid lighten($color-basic, 80%);
+        border-bottom-color: lighten($color-basic, 100%);
+        @include border-radius(0.3em 0.3em 0px 0px);
+        color: lighten($color-basic, 15%); 
+        font-weight: bold;
+        padding: 0.70em 1em 0.75em 1em;
     }
 }
 
 ul.steps {
-    list-style: none;
-    border-bottom: 1px solid #b4b4b4;
-    margin-bottom: $marginBottom;
+    border-bottom: 1px solid lighten($color-basic, 80%);
+    margin-bottom: $margin-bottom;
     li {
         display: inline-block;
         @include displayfix;
-        a { 
-            padding: 0.75em 1em;
-            display: block;
-            text-decoration: none;
-            color: #555555;
-        }
-        &.completed a { color: #222222; }
-        &:hover a { color: #222222; }
-        &.selected a { color: #222222; font-weight: bold; }
+    }
+    a { 
+        color: lighten($color-basic, 35%);
+        display: block;
+        padding: 0.75em 1em;
+        text-decoration: none;
+    }
+    li.completed a { color: lighten($color-basic, 15%); }
+    li:hover a { color: lighten($color-basic, 15%); }
+    li.selected a { 
+        color: lighten($color-basic, 15%); 
+        font-weight: bold; 
     }
 }

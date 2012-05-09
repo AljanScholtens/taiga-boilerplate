@@ -9,11 +9,17 @@
 
 /* ========================= Variables ================================== */
 
-$fontFamily: 'Helvetica Neue', Arial, sans-serif;
-$fontSize: 15px;
-$columns: 48;
-$maxWidth: 960px;
-$marginBottom: 1.25em;
+$font-family: 'Helvetica Neue', Arial, sans-serif;
+$font-size: 15px;
+
+$grid-columns: 48;
+$max-width: 960px;
+$margin-bottom: 1.25em;
+
+$color-brand: #40582b;
+$color-basic: #000000;
+$color-error: #a61a0b;
+$color-success: #40582b;
 
 /* ========================= Basic includes ============================= */
 
@@ -24,29 +30,40 @@ $marginBottom: 1.25em;
 /* ========================= General tags =============================== */
 
 html { 
-    font-family: $fontFamily;
-    font-size: $fontSize;
-    color: #333333;
+    color: lighten($color-basic, 25%);
+    font-family: $font-family;
+    font-size: $font-size;
 }
 
-body {
-    line-height: 1.5em;
+body { line-height: 1.5em; }
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold; 
+    line-height: 1.5em; 
+    margin-bottom: 0.25em; 
 }
 
-h1, h2, h3, h4, h5, h6 { margin-bottom: 0.25em; font-weight: bold; line-height: 1.5em; }
-h1 { font-size: 2em; margin-bottom: 0.5em; }
+h1 { 
+    font-size: 2em; 
+    margin-bottom: 0.5em; 
+}
+
 h2 { font-size: 1.6em; }
+
 h3 { font-size: 1.4em; }
 
 p { 
-    margin-bottom: $marginBottom; 
-    &.lead { font-size: 1.15em; line-height: 1.5em; }
+    margin-bottom: $margin-bottom; 
+    &.lead { 
+        font-size: 1.15em; 
+        line-height: 1.5em; 
+    }
 }
 
 a { 
+    color: $color-brand; 
     text-decoration: underline; 
-    color: #40582b; 
-    &:hover { color: #222222; }
+    &:hover { color: darken($color-brand, 60%); }
 }
 
 small { font-size: 0.85em; }
@@ -60,38 +77,43 @@ code, pre { font-family: monospace; }
 del { text-decoration: line-through; }
 
 hr { 
-    background-color: #ffffff; 
+    background-color: lighten($color-basic, 100%); 
     border: 1px solid transparent;
-    border-top: 1px solid #cccccc; 
+    border-top: 1px solid lighten($color-basic, 80%); 
     clear: both; 
-    margin: 2em $marginBottom; 
+    margin: 2em $margin-bottom; 
 }
 
 blockquote { 
-    padding: 0 1em 0 1em; 
-    margin-bottom: $marginBottom; 
-    border-left: 4px solid #dddddd; 
-    color: #666666; 
+    border-left: 4px solid lighten($color-basic, 80%); 
+    color: lighten($color-basic, 60%); 
     font-style: italic; 
+    margin-bottom: $margin-bottom; 
+    padding: 0 1em 0 1em; 
 }
 
 figure {
     display: inline-block;
     max-width: 100%;
     img { 
-        overflow: hidden; 
-        display: block; 
-        width: 100%;  
+        display: block;
+        width: 100%;
     }
+}
+
+ul.list {
+    list-style: disc;
+    margin: 0 0 $margin-bottom 2.5em;
+    li { margin: 0.5em 0; }
 }
 
 /* ========================= Structure ================================== */
 
 div.container {
-    max-width: $maxWidth;
+    @include clearfix; 
+    max-width: $max-width;
     margin: auto;
     padding: 2.5em; /* TEMP */
-    @include clearfix; 
 }
 
 .logo {
@@ -109,25 +131,18 @@ header {
 }
 
 /* Example for types.html */
+
+section, 
 article { 
-    margin-bottom: $marginBottom;
     @include clearfix;
+    margin-bottom: $margin-bottom;
     
+    &.whole {@include grid(48, 1);  }
+    &.half { @include grid(24, 1); }
     &.one-third { @include grid(16, 1); }
+    &.one-fourth { @include grid(12, 1); }
     
-    section {
-        @include grid(24, 1);
-        &.half { @include grid(24, 1); }
-    }
-    
-    ul {
-        list-style: disc;
-        margin: 0 0 $marginBottom 2.5em;
-        li { margin: 0.5em 0; }
-    }
 }
-
-
 
 aside {
     

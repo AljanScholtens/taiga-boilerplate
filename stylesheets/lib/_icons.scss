@@ -1,12 +1,12 @@
 /* =========== Icons */
 
 .ico {
-    float: left;
     display: inline-block;
-    width: 16px;
+    float: left;
     height: 16px;
     margin: 0.1em 0.4em 0 0;
     overflow: hidden;
     text-indent: -9999px;
+    width: 16px;
     &.icon { background: url('../images/icons.png') 0px 0px no-repeat; }
 }

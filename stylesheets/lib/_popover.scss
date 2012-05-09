@@ -1,32 +1,30 @@
 /* =========== Popover */
 
 div.popover {
-    position: absolute;
-    z-index: 1000;
-    top: 0;
     left: 0;
+    position: absolute;
+    top: 0;
     width: 100%;
+    z-index: 1000;
     > div {
-        max-width: 800px;
-        position: relative;
+        background: lighten($color-basic, 100%);
+        @include border-radius(0.3em);
+        @include box-shadow((0px 0px 20px rgba($color-basic, 0.6)));
         margin: 40px auto;
+        max-width: 800px;
         padding: 1.5em;
+        position: relative;
         top: 0;
-        background: #ffffff;
-        border: 1px solid white;
-        text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.5);
-        @include rounded(6px);
-        @include shadow((0px 0px 20px rgba(0, 0, 0, 0.6)));
     }
     /* Overlay */
     &:after {
+        background: rgba($color-basic, 0.9);
         content: " ";
-        background: rgba(0, 0, 0, 0.9);
-        width: 100%;
+        height: 100%;
         opacity: 0.9;
         position: fixed;
-        height: 100%;
-        z-index: -1;
         top: 0;
+        width: 100%;
+        z-index: -1;
     }
 }

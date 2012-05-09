@@ -7,39 +7,31 @@
 
 /*
 
-/* Netbook and tablet */
+/* Tablets */
 
 @media only screen and (max-width: 960px) {
     body { font-size: 14px; }
-    div.container {
-        max-width: 960px;
+    form ol li > label { 
+        @include grid-reset;
+        text-align: left; 
+        display: block; 
     }
 }
 
-/* Tablets */
+/* Phones */
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 520px) {
     body { font-size: 13px; }
-    div.container {
-        max-width: 768px;
+    div.container article, 
+    div.container section { 
+        @include grid-reset;
     }
-    form ol li > label { text-align: left; clear: both; float: none; display: block; }
+    form ol li > div { @include grid-reset; }
+    input[type=text], textarea { width: 100%; }
 }
 
-/* iPhone 4 */
+/* Retina */
 
 @media only screen and (-webkit-min-device-pixel-ratio : 2), only screen and (min-device-pixel-ratio : 2) {
     
-}
-
-/* Mobile */
-
-@media only screen and (max-width: 480px) {
-    body { font-size: 12px; }
-    div.container {
-        max-width: 480px;
-        article { float: none; width: auto; @include append(0); @include prepend(0); }
-    }
-    form ol li > div { display: block; width: auto; float: none; }
-    input, textarea { width: 100%; }
 }
