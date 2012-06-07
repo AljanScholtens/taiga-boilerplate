@@ -237,7 +237,7 @@ article {
 /* ========================= Includes =================================== */
 /* =========== Types */
 /* =========== Forms */
-input, textarea, select {
+input[type=text], input[type=search], input[type=email], input[type=tel], input[type=url], textarea, select {
   border: 1px solid #999999;
   color: #666666;
   font-family: "Helvetica Neue", Arial, sans-serif;
@@ -252,7 +252,7 @@ input, textarea, select {
   -o-transition: border 0.1s;
   transition: border 0.1s;
   vertical-align: baseline; }
-  input:focus, textarea:focus, select:focus {
+  input[type=text]:focus, input[type=search]:focus, input[type=email]:focus, input[type=tel]:focus, input[type=url]:focus, textarea:focus, select:focus {
     border: 1px solid #666666;
     outline: 0;
     color: black;
@@ -332,6 +332,7 @@ div.buttons {
   padding: 4em; }
 
 a.button, input[type="submit"], button {
+  width: auto;
   border: 1px solid #333333;
   -webkit-border-radius: 0.2em;
   -moz-border-radius: 0.2em;
