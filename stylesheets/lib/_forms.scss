@@ -21,6 +21,7 @@ textarea {
     overflow: auto;
     resize: vertical;
     vertical-align: top;
+    display: block;
 }
 
 form {
@@ -32,7 +33,7 @@ form {
         font-size: 1.6em;
     }
     fieldset { }
-    ol {
+    ul {
         clear: both;
         list-style: none;
         margin-bottom: $margin-bottom;
@@ -59,11 +60,18 @@ form {
                 }
                 ul.checklist {
                     margin: 0.6em 0.6em 0.6em 0px;
-                    li { margin: 0.5em 0; }
-                    input { display: inline-block; }
-                    label:hover { 
-                        color: $color-basic; 
-                        cursor: pointer; 
+                    > li { margin: 0.5em 0; }
+                    input { 
+                        display: inline-block; 
+                        margin-right: 1em;
+                    }
+                    label {
+                        @include grid-reset;
+                        font-weight: normal;
+                        &:hover { 
+                            color: $color-basic; 
+                            cursor: pointer; 
+                        }
                     }
                 }
             }

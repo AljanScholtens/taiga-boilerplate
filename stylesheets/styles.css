@@ -263,7 +263,8 @@ input[type=text], input[type=search], input[type=email], input[type=tel], input[
 textarea {
   overflow: auto;
   resize: vertical;
-  vertical-align: top; }
+  vertical-align: top;
+  display: block; }
 
 form legend {
   display: block;
@@ -271,11 +272,11 @@ form legend {
   font-weight: bold;
   line-height: 1.5em;
   font-size: 1.6em; }
-form ol {
+form ul {
   clear: both;
   list-style: none;
   margin-bottom: 1.25em; }
-  form ol > li > label {
+  form ul > li > label {
     clear: left;
     cursor: pointer;
     font-weight: bold;
@@ -285,44 +286,52 @@ form ol {
     margin-right: 2.083%;
     padding-top: 0.55em;
     text-align: right; }
-    form ol > li > label:hover {
+    form ul > li > label:hover {
       color: black; }
-  form ol > li div {
+  form ul > li div {
     float: left;
     width: 66.667%;
     margin-left: 0%;
     margin-right: 0%;
     margin-bottom: 0.5em; }
-    form ol > li div p, form ol > li div small {
+    form ul > li div p, form ul > li div small {
       display: block;
       margin: 0.6em 0.6em 0.25em 0px; }
-    form ol > li div small {
+    form ul > li div small {
       color: rgba(0, 0, 0, 0.5);
       margin-top: 0.25em; }
-    form ol > li div ul.checklist {
+    form ul > li div ul.checklist {
       margin: 0.6em 0.6em 0.6em 0px; }
-      form ol > li div ul.checklist li {
+      form ul > li div ul.checklist > li {
         margin: 0.5em 0; }
-      form ol > li div ul.checklist input {
-        display: inline-block; }
-      form ol > li div ul.checklist label:hover {
-        color: black;
-        cursor: pointer; }
-  form ol li.error label {
+      form ul > li div ul.checklist input {
+        display: inline-block;
+        margin-right: 1em; }
+      form ul > li div ul.checklist label {
+        clear: both;
+        float: none;
+        margin-left: 0;
+        margin-right: 0;
+        width: auto;
+        font-weight: normal; }
+        form ul > li div ul.checklist label:hover {
+          color: black;
+          cursor: pointer; }
+  form ul li.error label {
     color: #f46556; }
-    form ol li.error label:hover {
+    form ul li.error label:hover {
       color: #a61a0b; }
-  form ol li.error input {
+  form ul li.error input {
     border: 1px solid #f46556;
     -webkit-box-shadow: 0px 0px 6px #f79186, inset 0 0 0;
     -moz-box-shadow: 0px 0px 6px #f79186, inset 0 0 0;
     box-shadow: 0px 0px 6px #f79186, inset 0 0 0; }
-    form ol li.error input:focus {
+    form ul li.error input:focus {
       border: 1px solid #a61a0b; }
-  form ol li.error ul.errors {
+  form ul li.error ul.errors {
     color: #f46556;
     margin: 0.6em 0.6em 0.6em 0px; }
-    form ol li.error ul.errors li {
+    form ul li.error ul.errors li {
       margin: 0.5em 0; }
 
 /* =========== Buttons */
