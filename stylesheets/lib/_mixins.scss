@@ -3,7 +3,8 @@
 @mixin background-clip($clip) {
     -webkit-background-clip: $clip;
     -moz-background-clip: $clip;
-    background-clip: $clip; 
+    -o-background-clip: $clip;
+    background-clip: $clip;
 }
 
 @mixin border-radius($radius) {
@@ -17,7 +18,15 @@
 @mixin box-shadow($shadow) {
     -webkit-box-shadow: $shadow;
     -moz-box-shadow: $shadow;
+    -o-box-shadow: $shadow;
     box-shadow: $shadow;
+}
+
+@mixin filter($filter) {
+    -webkit-filter: $filter;
+    -moz-filter: $filter;
+    -o-filter: $filter;
+    filter: $filter;
 }
 
 @mixin transition($transition) {
@@ -32,6 +41,8 @@
     -webkit-column-gap : $gap;
     -moz-column-count: $count;
     -moz-column-gap: $gap;
+    -o-column-count: $count;
+    -o-column-gap: $gap;
     column-count: $count;
     column-gap: $gap;
 }
@@ -43,6 +54,9 @@
     -moz-column-rule-width: $size;
     -moz-column-rule-style: $style;
     -moz-column-rule-color: $color;
+    -o-column-rule-width: $size;
+    -o-column-rule-style: $style;
+    -o-column-rule-color: $color;
     column-rule-width: $size;
     column-rule-style: $style;
     column-rule-color: $color;
