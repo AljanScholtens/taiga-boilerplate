@@ -35,7 +35,10 @@ html {
     font-size: $font-size;
 }
 
-body { line-height: 1.5em; }
+body { 
+    line-height: 1.5em; 
+    -webkit-transform: translateZ(0);
+}
 
 h1, h2, h3, h4, h5, h6 {
     font-weight: bold; 
