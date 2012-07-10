@@ -26,10 +26,19 @@ $grid-column: 100% / $grid-columns;
     @include append($grid-margin-right);
 }
 
+
+/* Use this mixin to reset your grid by example for your mobile articles */
 @mixin grid-reset {
     clear: both;
     float: none;
     margin-left: 0;
     margin-right: 0;
     width: auto;
+}
+
+/* The clearfix mixin is necessary for the floats */
+@mixin clearfix {
+    *zoom: 1;
+    &:before, &:after { display: block; height: 0 !important; line-height: 0; overflow: hidden; visibility: hidden; content:"."; }
+    &:after { clear: both; }
 }

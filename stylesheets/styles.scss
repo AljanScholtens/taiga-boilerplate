@@ -23,22 +23,19 @@ $color-success: #40582b;
 
 /* ========================= Basic includes ============================= */
 
-@import "lib/_reset";
-@import "lib/_mixins";
-@import "lib/_grid";
+@import "library/_reset";
+@import "library/_mixins";
+@import "library/_grid";
 
 /* ========================= General tags =============================== */
 
 html { 
-    color: lighten($color-basic, 25%);
+    color: lighten(#000, 25%);
     font-family: $font-family;
     font-size: $font-size;
 }
 
-body { 
-    line-height: 1.5em; 
-    -webkit-transform: translateZ(0);
-}
+body { line-height: 1.5em; }
 
 h1, h2, h3, h4, h5, h6 {
     font-weight: bold; 
@@ -80,19 +77,19 @@ code, pre { font-family: monospace; }
 del { text-decoration: line-through; }
 
 hr { 
-    background-color: lighten($color-basic, 100%); 
+    background-color: #fff; 
     border: 1px solid transparent;
-    border-top: 1px solid lighten($color-basic, 80%); 
+    border-top: 1px solid #cccccc; 
     clear: both; 
     margin: 2em $margin-bottom; 
 }
 
 blockquote { 
-    border-left: 4px solid lighten($color-basic, 80%); 
-    color: lighten($color-basic, 60%); 
+    border-left: 4px solid #cccccc; 
+    color: lighten(#000, 60%); 
     font-style: italic; 
     margin-bottom: $margin-bottom; 
-    padding: 0 1em 0 1em; 
+    padding: 0 1em;
 }
 
 figure {
@@ -159,15 +156,16 @@ footer {
 
 /* =========== Types */
 
-@import "lib/_forms";
-@import "lib/_tables";
-@import "lib/_tabs";
-@import "lib/_messages";
-@import "lib/_pagination";
-@import "lib/_popover";
-@import "lib/_icons";
+@import "library/_buttons";
+@import "library/_forms";
+@import "library/_icons";
+@import "library/_messages";
+@import "library/_pagination";
+@import "library/_popover";
+@import "library/_tables";
+@import "library/_tabs";
 
 /* =========== Media queries */
 
-@import "lib/_responsive";
-@import "lib/_print";
+@import "library/_responsive";
+@import "library/_print";

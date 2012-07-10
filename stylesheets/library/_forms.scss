@@ -1,0 +1,96 @@
+/* =========== Forms */
+
+input[type=text], input[type=search], input[type=email], input[type=tel], input[type=url], textarea, select  {
+    border: 1px solid #ccc;
+    color: #333;
+    font-family: $font-family;
+    line-height: 1.5em;
+    margin: -1px 0.5em 0px 0px;
+    padding: 0.6em;
+    @include box-shadow(inset 0px 1px 3px rgba(#000, 0.1));
+    @include transition(border 0.1s);
+    vertical-align: baseline;
+    &:focus {
+        border: 1px solid #999;
+        outline: 0;
+        color: #333;
+        @include box-shadow(0px 0px 4px rgba(#000, 0.3));
+    }
+}
+textarea { 
+    overflow: auto;
+    resize: vertical;
+    vertical-align: top;
+    display: block;
+}
+
+form {
+    legend { 
+        display: block; 
+        margin-bottom: 0.25em; 
+        font-weight: bold; 
+        line-height: 1.5em;
+        font-size: 1.6em;
+    }
+    fieldset { }
+    ul {
+        clear: both;
+        list-style: none;
+        margin-bottom: $margin-bottom;
+        > li {
+            > label {
+                clear: left;
+                cursor: pointer;
+                font-weight: bold;
+                @include grid(16, 0, 1);
+                padding-top: 0.55em;
+                text-align: right;
+                &:hover { color: #000; }
+            }
+            div {
+                @include grid(32);
+                margin-bottom: 0.5em;
+                p, small {
+                    display: block;
+                    margin: 0.6em 0.6em 0.25em 0px;
+                }
+                small { 
+                    color: rgba(#000, 0.5); 
+                    margin-top: 0.25em;
+                }
+                ul.checklist {
+                    margin: 0.6em 0.6em 0.6em 0px;
+                    > li { margin: 0.5em 0; }
+                    input { 
+                        display: inline-block; 
+                        margin-right: 1em;
+                    }
+                    label {
+                        @include grid-reset;
+                        font-weight: normal;
+                        &:hover { 
+                            color: #000; 
+                            cursor: pointer; 
+                        }
+                    }
+                }
+            }
+        }
+        li.error {
+            label { 
+                color: lighten($color-error, 30%); 
+                &:hover { color: $color-error; }
+            }
+            input {
+                border: 1px solid lighten($color-error, 30%); 
+                @include box-shadow((0px 0px 3px lighten($color-error, 40%), inset 0 0 0));
+                &:focus { border: 1px solid $color-error; }
+            }
+            ul.errors {
+                color: lighten($color-error, 30%); 
+                margin: 0.6em 0.6em 0.6em 0px;
+                li { margin: 0.5em 0; }
+            }
+        } 
+    }
+}

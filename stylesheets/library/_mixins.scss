@@ -1,5 +1,14 @@
 /* =========== Mixins */
 
+@mixin animation ($name: true, $duration: true, $timing_function: true, $delay: false, $iteration_count: false, $direction: false) {
+    @if $name { -webkit-animation-name: $name; -moz-animation-name: $name; -ms-animation-name: $name; }
+    @if $duration { -webkit-animation-duration: $duration; -moz-animation-duration: $duration; -ms-animation-duration: $duration; }
+    @if $timing_function { -webkit-animation-timing-function: $timing_function; -moz-animation-timing-function: $timing_function;  -ms-animation-timing-function: $timing_function; }
+    @if $delay { -webkit-animation-delay: $delay; -moz-animation-delay: $delay; -ms-animation-delay: $delay; }
+    @if $iteration_count { -webkit-animation-iteration-count: $iteration_count; -moz-animation-iteration-count: $iteration_count; -ms-animation-iteration-count: $iteration_count; }
+    @if $direction { -webkit-animation-direction: $direction; -moz-animation-direction: $direction; -ms-animation-direction: $direction; }
+}
+
 @mixin background-clip($clip) {
     -webkit-background-clip: $clip;
     -moz-background-clip: $clip;
@@ -60,12 +69,6 @@
     column-rule-width: $size;
     column-rule-style: $style;
     column-rule-color: $color;
-}
-
-@mixin clearfix {
-    *zoom: 1;
-    &:before, &:after { display: block; height: 0 !important; line-height: 0; overflow: hidden; visibility: hidden; content:"."; }
-    &:after { clear: both; }
 }
 
 @mixin displayfix {
