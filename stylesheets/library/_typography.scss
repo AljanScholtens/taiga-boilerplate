@@ -1,0 +1,71 @@
+/* =========== Typography */
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold; 
+    line-height: 1.5em; 
+    margin-bottom: 0.25em; 
+}
+
+h1 { 
+    font-size: 2em; 
+    margin-bottom: 0.5em; 
+}
+
+h2 { font-size: 1.6em; }
+
+h3 { font-size: 1.4em; }
+
+p { 
+    margin-bottom: $margin-bottom; 
+    &.lead { 
+        font-size: 1.15em; 
+        line-height: 1.5em; 
+    }
+}
+
+a { 
+    color: $color-brand; 
+    text-decoration: underline; 
+    &:hover { color: darken($color-brand, 60%); }
+}
+
+small { font-size: 0.85em; }
+
+em { font-style: italic; }
+
+strong { font-weight: bold; }
+
+code, pre { font-family: monospace, 'courier new'; }
+
+del { text-decoration: line-through; }
+
+hr { 
+    background-color: $white; 
+    border: 1px solid transparent;
+    border-top: 1px solid #cccccc; 
+    clear: both; 
+    margin: 2em $margin-bottom; 
+}
+
+blockquote { 
+    border-left: 4px solid #cccccc; 
+    color: lighten($black, 60%); 
+    font-style: italic; 
+    margin-bottom: $margin-bottom; 
+    padding: 0 1em;
+}
+
+figure {
+    display: inline-block;
+    max-width: 100%;
+    img { 
+        display: block;
+        width: 100%;
+    }
+}
+
+ul.list {
+    list-style: disc;
+    margin: 0 0 $margin-bottom 2.5em;
+    li { margin: 0.5em 0; }
+}
