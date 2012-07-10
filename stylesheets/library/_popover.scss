@@ -7,9 +7,9 @@ div.popover {
     width: 100%;
     z-index: 1000;
     > div {
-        background: #fff;
+        background: $white;
         @include border-radius(0.3em);
-        @include box-shadow((0px 0px 20px rgba(#000, 0.6)));
+        @include box-shadow((0px 0px 20px rgba($black, 0.6)));
         margin: 40px auto;
         max-width: 800px;
         padding: 1.5em;
@@ -19,7 +19,7 @@ div.popover {
     
     /* Overlay */
     &:after {
-        background: rgba(#000, 0.9);
+        background: rgba($black, 0.9);
         content: " ";
         height: 100%;
         opacity: 0.9;

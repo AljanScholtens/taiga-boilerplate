@@ -1,10 +1,8 @@
-﻿//  Taiga Boilerplate 0.1 by Studio Wolf
+﻿//  Taiga Boilerplate 1.0
+//  Copyright 2012 by Studio Wolf
+//  Licensed under the MIT license
 
-//  Stylesheet:     Standard
-//  Project:        Title
-//  Owner:          Studio Wolf, www.studiowolf.nl
-
-//  Run the following SASS command: 'sass --watch stylesheets:stylesheets --style compressed'
+//  Run the following SASS command: 'sass --watch stylesheets --style compressed'
 //  Make sure you set the variables below (find the grid documentation in lib/_grid.scss)
 
 /* ========================= Variables ================================== */
@@ -17,9 +15,10 @@ $max-width: 960px;
 $margin-bottom: 1.25em;
 
 $color-brand: #40582b;
-$color-basic: #000000;
 $color-error: #a61a0b;
 $color-success: #40582b;
+$black: #000;
+$white: #fff;
 
 /* ========================= Basic includes ============================= */
 
@@ -30,82 +29,12 @@ $color-success: #40582b;
 /* ========================= General tags =============================== */
 
 html { 
-    color: lighten(#000, 25%);
+    color: lighten($black, 25%);
     font-family: $font-family;
     font-size: $font-size;
 }
 
 body { line-height: 1.5em; }
-
-h1, h2, h3, h4, h5, h6 {
-    font-weight: bold; 
-    line-height: 1.5em; 
-    margin-bottom: 0.25em; 
-}
-
-h1 { 
-    font-size: 2em; 
-    margin-bottom: 0.5em; 
-}
-
-h2 { font-size: 1.6em; }
-
-h3 { font-size: 1.4em; }
-
-p { 
-    margin-bottom: $margin-bottom; 
-    &.lead { 
-        font-size: 1.15em; 
-        line-height: 1.5em; 
-    }
-}
-
-a { 
-    color: $color-brand; 
-    text-decoration: underline; 
-    &:hover { color: darken($color-brand, 60%); }
-}
-
-small { font-size: 0.85em; }
-
-em { font-style: italic; }
-
-strong { font-weight: bold; }
-
-code, pre { font-family: monospace; }
-
-del { text-decoration: line-through; }
-
-hr { 
-    background-color: #fff; 
-    border: 1px solid transparent;
-    border-top: 1px solid #cccccc; 
-    clear: both; 
-    margin: 2em $margin-bottom; 
-}
-
-blockquote { 
-    border-left: 4px solid #cccccc; 
-    color: lighten(#000, 60%); 
-    font-style: italic; 
-    margin-bottom: $margin-bottom; 
-    padding: 0 1em;
-}
-
-figure {
-    display: inline-block;
-    max-width: 100%;
-    img { 
-        display: block;
-        width: 100%;
-    }
-}
-
-ul.list {
-    list-style: disc;
-    margin: 0 0 $margin-bottom 2.5em;
-    li { margin: 0.5em 0; }
-}
 
 /* ========================= Structure ================================== */
 
@@ -116,39 +45,16 @@ div.container {
     padding: 2.5em; /* TEMP */
 }
 
-.logo {
-    
-    a { }
-}
-
-nav {
-
-    ul { }
-}
-
-header {
-    
-}
-
 /* Example for types.html */
 
-section, 
-article { 
+section { 
     @include clearfix;
     margin-bottom: $margin-bottom;
     
-    &.whole {@include grid(48, 1);  }
+    &.whole { @include grid(48, 1);  }
     &.half { @include grid(24, 1); }
     &.one-third { @include grid(16, 1); }
     &.one-fourth { @include grid(12, 1); }
-    
-}
-
-aside {
-    
-}
-
-footer {
     
 }
 
@@ -156,13 +62,18 @@ footer {
 
 /* =========== Types */
 
-@import "library/_buttons";
+@import "library/_typography";
 @import "library/_forms";
+@import "library/_tables";
+
+@import "library/_labels";
+@import "library/_buttons";
+
 @import "library/_icons";
 @import "library/_messages";
 @import "library/_pagination";
 @import "library/_popover";
-@import "library/_tables";
+
 @import "library/_tabs";
 
 /* =========== Media queries */

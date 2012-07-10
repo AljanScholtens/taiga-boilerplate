@@ -7,14 +7,14 @@ input[type=text], input[type=search], input[type=email], input[type=tel], input[
     line-height: 1.5em;
     margin: -1px 0.5em 0px 0px;
     padding: 0.6em;
-    @include box-shadow(inset 0px 1px 3px rgba(#000, 0.1));
+    @include box-shadow(inset 0px 1px 3px rgba($black, 0.1));
     @include transition(border 0.1s);
     vertical-align: baseline;
     &:focus {
         border: 1px solid #999;
         outline: 0;
         color: #333;
-        @include box-shadow(0px 0px 4px rgba(#000, 0.3));
+        @include box-shadow(0px 0px 4px rgba($black, 0.3));
     }
 }
 textarea { 
@@ -45,7 +45,7 @@ form {
                 @include grid(16, 0, 1);
                 padding-top: 0.55em;
                 text-align: right;
-                &:hover { color: #000; }
+                &:hover { color: $black; }
             }
             div {
                 @include grid(32);
@@ -55,7 +55,7 @@ form {
                     margin: 0.6em 0.6em 0.25em 0px;
                 }
                 small { 
-                    color: rgba(#000, 0.5); 
+                    color: rgba($black, 0.5); 
                     margin-top: 0.25em;
                 }
                 ul.checklist {

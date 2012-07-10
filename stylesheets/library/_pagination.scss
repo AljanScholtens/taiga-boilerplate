@@ -7,13 +7,13 @@ ul.pagination {
     li {
         border: 1px solid #aaa;
         @include border-radius(0.2em);
-        @include box-shadow((0px 1px 1px #f1f1f1, inset 0px 1px 0px #fff));
+        @include box-shadow((0px 1px 1px #f1f1f1, inset 0px 1px 0px $white));
         display: inline-block;
         *float: left;
         font-weight: bold;
-        @include gradient(top, #fff, #f1f1f1);
+        @include gradient(top, $white, #f1f1f1);
         margin-bottom: 0.25em;
-        text-shadow: 1px 1px 0px #fff;
+        text-shadow: 1px 1px 0px $white;
         @include transition(all 0.1s);
         a {
             color: #333;
@@ -23,8 +23,8 @@ ul.pagination {
         }
         &:hover {
             border-color: #666;
-            @include gradient(top, #fff, #eee);
-            a { color: #000; }
+            @include gradient(top, $white, #eee);
+            a { color: $black; }
         }
         &:active, &:focus {
             background: #ccc;
@@ -35,8 +35,8 @@ ul.pagination {
         }
         &.selected { 
             border-color: #333;
-            @include box-shadow((0px 1px 1px #f1f1f1, inset 0px 1px 0px rgba(#fff, 0.3)));
-            color: #fff;
+            @include box-shadow((0px 1px 1px #f1f1f1, inset 0px 1px 0px rgba($white, 0.3)));
+            color: $white;
             @include gradient(top, #666, #111);
             padding: 0.25em 0.6em 0.35em 0.6em;
             text-shadow: 1px 1px 0px #000;

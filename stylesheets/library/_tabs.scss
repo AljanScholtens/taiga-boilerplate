@@ -25,9 +25,9 @@ ul.tabs {
         }
     }
     li.selected a { 
-        background: #fff;
+        background: $white;
         border: 1px solid #ccc;
-        border-bottom-color: #fff;
+        border-bottom-color: $white;
         @include border-radius(0.3em 0.3em 0 0);
         color: #333; 
         font-weight: bold;
