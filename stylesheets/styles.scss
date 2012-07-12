@@ -15,8 +15,8 @@ $max-width: 960px;
 $margin-bottom: 1.25em;
 
 $color-brand: #0e8a41;
-$color-error: #a61a0b;
-$color-success: #40582b;
+$color-error: #d24226;
+$color-success: #5DA423;
 $black: #050505;
 $white: #fff;
 
@@ -50,6 +50,7 @@ header { @include grid(48, 1); }
 section { 
     @include clearfix;
     margin-bottom: $margin-bottom;
+    @include grid(48, 1);
     
     &.whole { @include grid(48, 1);  }
     &.half { @include grid(24, 1); }
@@ -75,6 +76,7 @@ section {
 @import "library/_popover";
 
 @import "library/_tabs";
+@import "library/_panels";
 
 /* =========== Media queries */
 

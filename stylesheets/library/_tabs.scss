@@ -1,8 +1,8 @@
 /* =========== Tabs */
 
 ul.tabs {
-    border-bottom: 1px solid #ccc;
-    margin-bottom: $margin-bottom;
+    border-bottom: 1px solid darken($white, 25%);
+    margin: 0 0 $margin-bottom 0;
     li {
         display: inline-block;
         @include displayfix;
@@ -16,9 +16,9 @@ ul.tabs {
         padding: 0.75em 1em;
         text-decoration: none;
         &:hover { 
-            border-left: 1px solid #ccc;
-            border-top: 1px solid #ccc;
-            border-right: 1px solid #ccc;
+            border-left: 1px solid darken($white, 25%);
+            border-top: 1px solid darken($white, 25%);
+            border-right: 1px solid darken($white, 25%);
             border-bottom: 1px solid transparent;
             @include border-radius(0.3em 0.3em 0px 0px);
             color: #333; 
@@ -26,7 +26,7 @@ ul.tabs {
     }
     li.selected a { 
         background: $white;
-        border: 1px solid #ccc;
+        border: 1px solid darken($white, 25%);
         border-bottom-color: $white;
         @include border-radius(0.3em 0.3em 0 0);
         color: #333; 
@@ -36,8 +36,8 @@ ul.tabs {
 }
 
 ul.steps {
-    border-bottom: 1px solid #ccc;
-    margin-bottom: $margin-bottom;
+    border-bottom: 1px solid darken($white, 25%);
+    margin: 0 0 $margin-bottom 0;
     li {
         display: inline-block;
         @include displayfix;

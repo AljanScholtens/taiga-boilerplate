@@ -1,5 +1,11 @@
 /* =========== Typography */
 
+.left { float: left; }
+.right { float: right; }
+.text-left { text-align: left; }
+.text-right { text-align: right; }
+.text-center { text-align: center; }
+
 h1, h2, h3, h4, h5, h6 {
     font-weight: bold; 
     line-height: 1.5em; 
@@ -45,6 +51,8 @@ abbr { border-bottom: 1px dotted lighten($black, 50%); }
 
 del { text-decoration: line-through; }
 
+mark { background-color: lighten(yellow, 35%); }
+
 hr { 
     background-color: transparent; 
     border: solid darken($white, 25%);
@@ -86,8 +94,21 @@ figure {
         display: block;
         width: 100%;
     }
+    figcaption {
+        color: blue;
+    }
 }
 
 ul, ol { margin: 0 0 $margin-bottom 1.5em; }
 ul { list-style: disc; }
 ol { list-style: decimal; }
+
+dl {
+    margin-bottom: $margin-bottom;
+    dt { font-weight: bold; }
+    dd { margin-left: $margin-bottom; }
+    &.advanced {
+        dt { @include grid(16, 0, 1); }
+        dd { @include grid(32); }
+    }
+}

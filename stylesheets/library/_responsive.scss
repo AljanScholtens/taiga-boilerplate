@@ -11,20 +11,18 @@
 
 @media only screen and (max-width: 960px) {
     body { font-size: 14px; }
-    form ul li > label { 
-        @include grid-reset;
-        text-align: left; 
-        display: block; 
-    }
+    
 }
 
 /* Phones */
 
 @media only screen and (max-width: 520px) {
     body { font-size: 13px; }
-    div.container article, 
-    div.container section { 
+    header, div.container section { @include grid-reset; }
+    form ul li > label { 
         @include grid-reset;
+        text-align: left; 
+        display: block; 
     }
     form ul li > div { @include grid-reset; }
     input[type=text], textarea { width: 100%; }
