@@ -14,10 +14,10 @@ $grid-columns: 48;
 $max-width: 960px;
 $margin-bottom: 1.25em;
 
-$color-brand: #40582b;
+$color-brand: #0e8a41;
 $color-error: #a61a0b;
 $color-success: #40582b;
-$black: #000;
+$black: #050505;
 $white: #fff;
 
 /* ========================= Basic includes ============================= */
@@ -46,7 +46,7 @@ div.container {
 }
 
 /* Example for types.html */
-
+header { @include grid(48, 1); }
 section { 
     @include clearfix;
     margin-bottom: $margin-bottom;

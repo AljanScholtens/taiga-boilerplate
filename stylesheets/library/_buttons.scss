@@ -3,12 +3,12 @@
 div.buttons {
     margin-bottom: $margin-bottom;
     overflow: hidden;
-    padding: 4em;
+    /*padding: 4em;*/
 }
         
 a.button, a.btn, input[type="submit"], button {
     width: auto;
-    border: 1px solid #333;
+    border: 1px solid darken($color-brand, 20%);
     @include border-radius(0.2em);
     @include box-shadow((0px 1px 1px #f1f1f1, inset 0px 1px 0px rgba($white, 0.3)));
     color: $white;
@@ -16,13 +16,13 @@ a.button, a.btn, input[type="submit"], button {
     display: inline-block;
     font-size: 1.1em;
     font-weight: bold;
-    @include gradient(top, #666, #111);
+    @include gradient(top, $color-brand, darken($color-brand, 10%));
     line-height: 1.5em;
     margin: 0;
-    padding: 0.35em 1em 0.5em 1em;
+    padding: 0.25em 1em 0.4em 1em;
     text-decoration: none;
     text-shadow: 1px 1px 0px $black;
-    @include transition(all 0.1s);
+    @include transition(all 50ms);
     vertical-align: baseline;
     &:hover {
         border-color: #222;
@@ -34,13 +34,25 @@ a.button, a.btn, input[type="submit"], button {
         color: #ccc;
         text-shadow: 0 0 0;
     }
-    
+    &.contrast {
+        border-color: $black;
+        @include gradient(top, lighten($black, 40%), $black);
+        &:hover {
+            border-color: #222;
+            @include gradient(top, #777, #111);
+        }
+        &:active, &:focus {
+            background: #444;
+            @include box-shadow((0 0 0, inset 0px 0px 20px $black));
+            color: #ccc;
+            text-shadow: 0 0 0;
+        }
+    }
     &.soft {
         border-color: #aaa;
         color: lighten($black, 30%);
         @include gradient(top, $white, #f1f1f1);
         text-shadow: 1px 1px 0px $white;
-        @include transition(border 0.9s);
         &:hover {
             border-color: #666;
             color: #000;
@@ -54,4 +66,7 @@ a.button, a.btn, input[type="submit"], button {
             text-shadow: 0 0 0;
         }
     }
+    &.large { font-size: 1.25em; }
+    &.small { font-size: 1em; }
+    &.tiny { font-size: 0.85em; }
 }
