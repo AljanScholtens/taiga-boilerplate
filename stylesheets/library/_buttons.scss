@@ -1,21 +1,22 @@
 /* =========== Buttons */
 
-/* Choose a div or ul to group up your buttons */
+// Choose a div or ul to group up your buttons
 div.buttons, ul.buttons {
     margin: 0 0 $margin-bottom 0;
     @include clearfix;
     li { 
-        float: left; 
         a.button, a.btn, input[type="submit"], button {
             @include border-radius(0);
+            float: left; 
             border-left-width: 0;
         }
         &:first-child { a.button, a.btn, input[type="submit"], button { @include border-radius(0.2em 0 0 0.2em); border-left-width: 1px; } }
         &:last-child { a.button, a.btn, input[type="submit"], button { @include border-radius(0 0.2em 0.2em 0); } }
     }
 }
+.dropdown-menu { display: none; }
 
-/* The standard button has the $color-brand colors */
+// The standard button has the $color-brand colors
 a.button, a.btn, input[type="submit"], button {
     border: 1px solid darken($color-brand, 20%);
     @include border-radius(0.2em);
@@ -41,7 +42,7 @@ a.button, a.btn, input[type="submit"], button {
         text-shadow: 0 0 0;
     }
     
-    /* The dark button */
+    // The dark button
     &.contrast {
         border-color: $black;
         @include gradient(top, lighten($black, 40%), $black);
@@ -52,7 +53,7 @@ a.button, a.btn, input[type="submit"], button {
         }
     }
     
-    /* The soft grey button */
+    // The soft grey button
     &.soft {
         border-color: darken($white, 35%);
         color: lighten($black, 30%);
@@ -90,7 +91,7 @@ a.button, a.btn, input[type="submit"], button {
         }
     }
     
-    /* Add these classes to adjust the size of the buttons */
+    // Add these classes to adjust the size of the buttons
     &.large { font-size: 1.25em; }
     &.small { font-size: 1em; }
     &.tiny { font-size: 0.85em; }

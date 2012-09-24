@@ -20,65 +20,25 @@ $color-success: #5DA423;
 $black: #050505;
 $white: #fff;
 
-/* ========================= Basic includes ============================= */
 
+/* ========================= Includes ============================= */
+
+/* Base */
 @import "library/_reset";
 @import "library/_mixins";
 @import "library/_grid";
-
-/* ========================= General tags =============================== */
-
-html { 
-    color: lighten($black, 25%);
-    font-family: $font-family;
-    font-size: $font-size;
-}
-
-body { line-height: 1.5em; }
-
-/* ========================= Structure ================================== */
-
-div.container {
-    @include clearfix; 
-    max-width: $max-width;
-    margin: auto;
-    padding: 2.5em; /* TEMP */
-}
-
-/* Example for types.html */
-header { @include grid(48, 1); }
-section { 
-    @include clearfix;
-    margin-bottom: $margin-bottom;
-    @include grid(48, 1);
-    
-    &.whole { @include grid(48, 1);  }
-    &.half { @include grid(24, 1); }
-    &.one-third { @include grid(16, 1); }
-    &.one-fourth { @include grid(12, 1); }
-    
-}
-
-/* ========================= Includes =================================== */
-
-/* =========== Types */
-
 @import "library/_typography";
+@import "library/_layout";
+
+/* Modules */
 @import "library/_forms";
 @import "library/_tables";
-
 @import "library/_labels";
 @import "library/_buttons";
-
 @import "library/_icons";
 @import "library/_messages";
 @import "library/_pagination";
-@import "library/_popover";
-
+@import "library/_modal";
 @import "library/_tabs";
 @import "library/_panels";
-
-/* =========== Media queries */
-
-@import "library/_responsive";
 @import "library/_print";

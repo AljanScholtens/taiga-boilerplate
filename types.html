@@ -13,7 +13,7 @@
     <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
     <link rel="stylesheet" href="stylesheets/styles.css" />
     <link rel="shortcut icon" href="favicon.ico" />
-    <link rel="apple-touch-icon" href="apple-touch-icon-precomposed.png" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
 </head>
 
 <body>
@@ -111,7 +111,7 @@
                 <thead>
                     <tr>
                         <th class="selected">Type</th>
-                        <th>Name</th>
+                        <th>Label</th>
                         <th>Description</th>
                         <th>Price</th>
                         <th>Download</th>
@@ -120,7 +120,7 @@
                 <tbody>
                     <tr>
                         <td><strong>Model</strong> Type</td>
-                        <td><strong>First name</strong> Last name</td>
+                        <td><span class="label">Label</span></td>
                         <td>This is the description of this row.</td>
                         <td>&euro; 2350,15</td>
                         <td><a href="#" title="#TITLE">Download file</a></td>
@@ -129,7 +129,7 @@
                         <td><strong>Model</strong> Type</td>
                         <td><strong>First name</strong> Last name</td>
                         <td>This is the description of this row.</td>
-                        <td>&euro; 2350,15</td>
+                        <td class="nowrap">&euro; 2350,15</td>
                         <td><a href="#" title="#TITLE">Download file</a></td>
                     </tr>
                     <tr>
@@ -158,7 +158,7 @@
                         <li>
                             <label for="#TAG1">Label</label>
                             <div>
-                                <input type="text" id="#TAG1" name="#TAG1" />
+                                <input type="text" id="#TAG1" name="#TAG1" placeholder="Label" />
                                 <small>Helptext</small>
                             </div>
                         </li>
@@ -229,7 +229,7 @@
                     <li><input type="submit" value="Save" class="contrast tiny" /></li>
                     <li><a class="button soft tiny" href="#" title="#TITLE">Cancel</a></li>
                     <li><a class="button success tiny" href="#" title="#TITLE">Success</a></li>
-                    <li><a class="button alert tiny" href="#" title="#TITLE">Alert</a></li>
+                    <li><a data-toggle="modal" class="button alert tiny" href="#myModal" title="#TITLE">Alert</a></li>
                 </ul>
             </form>
             
@@ -264,9 +264,19 @@
                 <li><a href="#" title="#TITLE">Next</a></li>
             </ul>
             
-            <div class="popover hidden">
+            <div class="dropdown" id="#menu1">
+                <a data-toggle="modal" class="button soft tiny" href="#modal" title="#TITLE">Modal window</a>
+                <a class="dropdown-toggle" data-toggle="dropdown" title="#TITLE" href="#menu1" data-target="#">Modal window</a>
+                <ul class="dropdown-menu">
+                    <li>Dit is het</li>
+                    <li>Dit is het</li>
+                    <li>Dit is het</li>
+                </ul>
+            </div>
+            <div class="modal hide" id="modal">
                 <div>
                     <h2>Title</h2>
+                    <button type="button" class="close" data-dismiss="modal">×</button>
                     <p>Text to help the user or a form to fill in.</p>
                 </div>
             </div>
@@ -275,8 +285,8 @@
     
     </div>
     
-    <!-- Javascripts -->
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <!-- Scripts -->
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
 
 </body>
 

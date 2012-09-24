@@ -61,7 +61,7 @@ form {
                     > li { margin: 0.5em 0; }
                     input { 
                         display: inline-block; 
-                        margin-right: 1em;
+                        margin-right: 0.5em;
                     }
                     label {
                         @include grid-reset;
@@ -91,4 +91,28 @@ form {
             }
         } 
     }
+}
+
+
+/* ========================= Responsive ================================== */
+
+/* Tablets */
+@media only screen and (max-width: 960px) {
+
+}
+
+/* Phones */
+@media only screen and (max-width: 520px) {
+    form ul li > label { 
+        @include grid-reset;
+        text-align: left; 
+        display: block; 
+    }
+    form ul li > div { @include grid-reset; }
+    input[type=text], textarea { width: 100%; }
+}
+
+/* Retina */
+@media only screen and (-webkit-min-device-pixel-ratio : 2), only screen and (min-device-pixel-ratio : 2) {
+    
 }
