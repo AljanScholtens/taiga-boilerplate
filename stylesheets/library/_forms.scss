@@ -1,0 +1,118 @@
+/* =========== Forms */
+
+input[type=text], input[type=number], input[type=search], input[type=email], input[type=tel], input[type=url], textarea, select  {
+    border: 1px solid darken($white, 25%);
+    color: #333;
+    font-family: $font-family;
+    line-height: 1.5em;
+    margin: -1px 0.5em 0px 0px;
+    padding: 0.6em;
+    width: 100%;
+    @include border-radius(0.2em);
+    @include box-shadow(inset 0px 1px 3px rgba($black, 0.1));
+    @include transition(border 0.1s);
+    vertical-align: baseline;
+    &:focus {
+        border: 1px solid darken($white, 35%);
+        outline: 0;
+        color: #333;
+        @include box-shadow(0px 0px 4px rgba($black, 0.3));
+    }
+}
+textarea { 
+    overflow: auto;
+    resize: vertical;
+    vertical-align: top;
+    display: block;
+}
+
+form {
+    legend { 
+        display: block; 
+        margin-bottom: 0.25em; 
+        font-weight: bold; 
+        line-height: 1.5em;
+        font-size: 1.6em;
+    }
+    fieldset { }
+    ul {
+        clear: both;
+        list-style: none;
+        margin: 0 0 $margin-bottom 0;
+        > li {
+            > label {
+                clear: left;
+                cursor: pointer;
+                font-weight: bold;
+                @include grid(16, 0, 1);
+                padding-top: 0.55em;
+                text-align: right;
+                &:hover { color: $black; }
+            }
+            div {
+                @include grid(32);
+                margin-bottom: 0.5em;
+                p, small {
+                    display: block;
+                    margin: 0.6em 0.6em 0.25em 0px;
+                }
+                ul.checklist {
+                    margin: 0.6em 0.6em 0.6em 0px;
+                    > li { margin: 0.5em 0; }
+                    input { 
+                        display: inline-block; 
+                        margin-right: 0.5em;
+                    }
+                    label {
+                        @include grid-reset;
+                        font-weight: normal;
+                        &:hover { 
+                            color: #000; 
+                            cursor: pointer; 
+                        }
+                    }
+                }
+            }
+        }
+        li.error {
+            label { 
+                color: $color-error; 
+                &:hover { color: darken($color-error, 25%); }
+            }
+            input {
+                border: 1px solid $color-error; 
+                @include box-shadow((0px 0px 3px lighten($color-error, 10%), inset 0 0 0));
+                &:focus { border: 1px solid $color-error; }
+            }
+            ul.errors {
+                color: $color-error; 
+                margin: 0.6em 0.6em 0.6em 0px;
+                li { margin: 0.5em 0; }
+            }
+        } 
+    }
+}
+
+
+/* ========================= Responsive ================================== */
+
+/* Tablets */
+@media only screen and (max-width: 960px) {
+
+}
+
+/* Phones */
+@media only screen and (max-width: 520px) {
+    form ul li > label { 
+        @include grid-reset;
+        text-align: left; 
+        display: block; 
+    }
+    form ul li > div { @include grid-reset; }
+    input[type=text], textarea { width: 100%; }
+}
+
+/* Retina */
+@media only screen and (-webkit-min-device-pixel-ratio : 2), only screen and (min-device-pixel-ratio : 2) {
+    
+}
