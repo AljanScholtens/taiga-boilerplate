@@ -2,7 +2,8 @@
 
 div.modal {
     left: 0;
-    position: absolute;
+    overflow-y: scroll;
+    position: fixed;
     top: 0;
     width: 100%;
     z-index: 1000;
