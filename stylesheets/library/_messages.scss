@@ -1,0 +1,46 @@
+/* =========== Messages */
+
+ul.messages  {
+    list-style: none;
+    margin: 0 0 $margin-bottom 0;
+    li {
+        border: 1px solid;
+        @include border-radius(0.3em);
+        @include box-shadow((0px 1px 1px rgba($black, 0.1), inset 0px 1px 0px rgba($white, 0.4)));
+        font-weight: bold;
+        margin: 0.25em 0;
+        line-height: 1.5em;
+        font-size: 1.1em;
+        display: block;
+        vertical-align: baseline;
+        padding: 0.25em 1em 0.35em 1em;
+        text-shadow: 1px 1px 0px rgba($white, 0.4);
+        &.success {
+            border-color: $color-success;
+            color: $color-success;
+            @include gradient(top, lighten($color-success, 45%), lighten($color-success, 40%));
+        }
+        &.error, &.fail, &.alert {
+            border-color: $color-error;
+            color: $color-error;
+            @include gradient(top, lighten($color-error, 45%), lighten($color-error, 40%));
+        }
+    }
+    &.success {
+        border-color: darken($color-success, 20%);
+        @include gradient(top, $color-success, darken($color-success, 10%));
+        &:hover { @include gradient(top, lighten($color-success, 10%), darken($color-success, 10%)); }
+        &:active, &:focus {
+            background: darken($color-success, 15%);
+        }
+    }
+    
+    &.alert {
+        border-color: darken($color-error, 20%);
+        @include gradient(top, $color-error, darken($color-error, 10%));
+        &:hover { @include gradient(top, lighten($color-error, 10%), darken($color-error, 10%)); }
+        &:active, &:focus {
+            background: darken($color-error, 15%);
+        }
+    }
+}

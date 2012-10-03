@@ -1,10 +1,8 @@
-﻿//  Taiga Boilerplate 0.1 by Studio Wolf
+﻿//  Taiga Boilerplate 1.0
+//  Copyright 2012 by Studio Wolf
+//  Licensed under the MIT license
 
-//  Stylesheet:     Standard
-//  Project:        Title
-//  Owner:          Studio Wolf, www.studiowolf.nl
-
-//  Run the following SASS command: 'sass --watch stylesheets:stylesheets --style compressed'
+//  Run the following SASS command: 'sass --watch stylesheets --style compressed'
 //  Make sure you set the variables below (find the grid documentation in lib/_grid.scss)
 
 /* ========================= Variables ================================== */
@@ -16,155 +14,31 @@ $grid-columns: 48;
 $max-width: 960px;
 $margin-bottom: 1.25em;
 
-$color-brand: #40582b;
-$color-basic: #000000;
-$color-error: #a61a0b;
-$color-success: #40582b;
+$color-brand: #0e8a41;
+$color-error: #d24226;
+$color-success: #5DA423;
+$black: #050505;
+$white: #fff;
 
-/* ========================= Basic includes ============================= */
 
-@import "lib/_reset";
-@import "lib/_mixins";
-@import "lib/_grid";
+/* ========================= Includes ============================= */
 
-/* ========================= General tags =============================== */
+/* Base */
+@import "library/_reset";
+@import "library/_mixins";
+@import "library/_grid";
+@import "library/_typography";
+@import "library/_layout";
 
-html { 
-    color: lighten($color-basic, 25%);
-    font-family: $font-family;
-    font-size: $font-size;
-}
-
-body { line-height: 1.5em; }
-
-h1, h2, h3, h4, h5, h6 {
-    font-weight: bold; 
-    line-height: 1.5em; 
-    margin-bottom: 0.25em; 
-}
-
-h1 { 
-    font-size: 2em; 
-    margin-bottom: 0.5em; 
-}
-
-h2 { font-size: 1.6em; }
-
-h3 { font-size: 1.4em; }
-
-p { 
-    margin-bottom: $margin-bottom; 
-    &.lead { 
-        font-size: 1.15em; 
-        line-height: 1.5em; 
-    }
-}
-
-a { 
-    color: $color-brand; 
-    text-decoration: underline; 
-    &:hover { color: darken($color-brand, 60%); }
-}
-
-small { font-size: 0.85em; }
-
-em { font-style: italic; }
-
-strong { font-weight: bold; }
-
-code, pre { font-family: monospace; }
-
-del { text-decoration: line-through; }
-
-hr { 
-    background-color: lighten($color-basic, 100%); 
-    border: 1px solid transparent;
-    border-top: 1px solid lighten($color-basic, 80%); 
-    clear: both; 
-    margin: 2em $margin-bottom; 
-}
-
-blockquote { 
-    border-left: 4px solid lighten($color-basic, 80%); 
-    color: lighten($color-basic, 60%); 
-    font-style: italic; 
-    margin-bottom: $margin-bottom; 
-    padding: 0 1em 0 1em; 
-}
-
-figure {
-    display: inline-block;
-    max-width: 100%;
-    img { 
-        display: block;
-        width: 100%;
-    }
-}
-
-ul.list {
-    list-style: disc;
-    margin: 0 0 $margin-bottom 2.5em;
-    li { margin: 0.5em 0; }
-}
-
-/* ========================= Structure ================================== */
-
-div.container {
-    @include clearfix; 
-    max-width: $max-width;
-    margin: auto;
-    padding: 2.5em; /* TEMP */
-}
-
-.logo {
-    
-    a { }
-}
-
-nav {
-
-    ul { }
-}
-
-header {
-    
-}
-
-/* Example for types.html */
-
-section, 
-article { 
-    @include clearfix;
-    margin-bottom: $margin-bottom;
-    
-    &.whole {@include grid(48, 1);  }
-    &.half { @include grid(24, 1); }
-    &.one-third { @include grid(16, 1); }
-    &.one-fourth { @include grid(12, 1); }
-    
-}
-
-aside {
-    
-}
-
-footer {
-    
-}
-
-/* ========================= Includes =================================== */
-
-/* =========== Types */
-
-@import "lib/_forms";
-@import "lib/_tables";
-@import "lib/_tabs";
-@import "lib/_messages";
-@import "lib/_pagination";
-@import "lib/_popover";
-@import "lib/_icons";
-
-/* =========== Media queries */
-
-@import "lib/_responsive";
-@import "lib/_print";
+/* Modules */
+@import "library/_forms";
+@import "library/_tables";
+@import "library/_labels";
+@import "library/_buttons";
+@import "library/_icons";
+@import "library/_messages";
+@import "library/_pagination";
+@import "library/_modal";
+@import "library/_tabs";
+@import "library/_panels";
+@import "library/_print";

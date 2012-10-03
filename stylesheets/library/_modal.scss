@@ -1,24 +1,26 @@
 /* =========== Popover */
 
-div.popover {
+div.modal {
     left: 0;
-    position: absolute;
+    overflow-y: scroll;
+    position: fixed;
     top: 0;
     width: 100%;
     z-index: 1000;
     > div {
-        background: lighten($color-basic, 100%);
+        background: $white;
         @include border-radius(0.3em);
-        @include box-shadow((0px 0px 20px rgba($color-basic, 0.6)));
+        @include box-shadow((0px 0px 20px rgba($black, 0.6)));
         margin: 40px auto;
         max-width: 800px;
         padding: 1.5em;
         position: relative;
         top: 0;
     }
+    
     /* Overlay */
     &:after {
-        background: rgba($color-basic, 0.9);
+        background: rgba($black, 0.9);
         content: " ";
         height: 100%;
         opacity: 0.9;
