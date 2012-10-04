@@ -1,0 +1,145 @@
+// =========== Typography 
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; }
+
+* { @include box-sizing(border-box); }
+
+html { 
+    color: lighten($black, 25%);
+    font-family: $font-family;
+    font-size: $font-size;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+body { 
+    line-height: 1.5em; 
+}
+
+@font-face {
+    font-family: 'fontName';
+    src: url('../fonts/fontName.eot?') format('eot'), url('../fonts/fontName.woff') format('woff'), url('../fonts/fontName.ttf') format('truetype');
+}
+
+
+
+.hidden { display: none !important; }
+.hidden, .invisible { visibility: hidden !important; }
+
+::-moz-selection { background: lighten($black, 10%); color: $white; text-shadow: none; }
+::selection { background: lighten($black, 10%); color: $white; text-shadow: none; }
+
+.left { float: left; }
+.right { float: right; }
+.text-left { text-align: left; }
+.text-right { text-align: right; }
+.text-center { text-align: center; }
+.nowrap { white-space: nowrap; }
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold; 
+    line-height: 1.5em; 
+    margin: 0 0 0.25em 0; 
+    &.soft {
+        font-weight: 300;
+        color: lighten($black, 50%);
+    }
+}
+
+h1 { font-size: 2.25em; }
+h2 { font-size: 1.6em; }
+h3 { font-size: 1.4em; }
+h4 { font-size: 1.2em; }
+h5 { font-size: 1.05em; }
+h6 { font-size: 1em; }
+
+
+
+p { 
+    margin-bottom: $margin-bottom; 
+    &.lead { 
+        font-size: 1.2em; 
+        line-height: 1.5em; 
+    }
+}
+
+a { 
+    color: $color-brand; 
+    text-decoration: none; 
+    &:hover { color: darken($color-brand, 50%); }
+}
+
+small { font-size: 0.85em; color: lighten($black, 50%); }
+
+em { font-style: italic; }
+
+strong { font-weight: bold; }
+
+code, pre { font-family: 'courier new', monospace; }
+
+abbr { border-bottom: 1px dotted lighten($black, 50%); }
+
+del { text-decoration: line-through; }
+
+mark { background-color: lighten(yellow, 35%); }
+
+hr { 
+    background-color: transparent; 
+    border: solid darken($white, 25%);
+    border-width: 1px 0 0; 
+    clear: both; 
+    margin: 2em $margin-bottom; 
+}
+
+blockquote {
+    quotes: none;
+    color: lighten($black, 50%); 
+    font-family: Georgia, serif;
+    font-size: 1.2em; 
+    font-style: italic; 
+    line-height: 1.5em; 
+    margin-bottom: $margin-bottom; 
+    padding: 0 0 0 2em;
+    position: relative;
+    &:before { 
+        color: lighten($black, 75%); 
+        content: "\201C";
+        display: block;
+        font-size: 5em;
+        left: -0.15em;
+        position: absolute;
+        top: 0.25em;
+    }
+    cite {
+        color: lighten($black, 35%);
+        display: block;
+        font-size: 0.85em;
+        &:before {  content: "\2014 \0020"; }
+    }
+}
+
+figure {
+    display: inline-block;
+    max-width: 100%;
+    img { 
+        display: block;
+        width: 100%;
+    }
+    figcaption {
+        color: blue;
+    }
+}
+
+ul, ol { margin: 0 0 $margin-bottom 1.5em; }
+ul { list-style: disc; }
+ol { list-style: decimal; }
+
+dl {
+    margin-bottom: $margin-bottom;
+    dt { font-weight: bold; }
+    dd { margin-left: $margin-bottom; }
+    &.advanced {
+        dt { @include grid(16, 0, 1); }
+        dd { @include grid(32); }
+    }
+}
