@@ -5,10 +5,10 @@
 //  Run the following SASS command: 'sass --watch stylesheets --style compressed'
 //  Make sure you set the variables below (find the grid documentation in lib/_grid.scss)
 
-/* ========================= Variables ================================== */
+// ========================= Variables ================================== 
 
 $font-family: 'Helvetica Neue', Arial, sans-serif;
-$font-size: 15px;
+$font-size: 16px;
 
 $grid-columns: 48;
 $max-width: 960px;
@@ -21,16 +21,15 @@ $black: #050505;
 $white: #fff;
 
 
-/* ========================= Includes ============================= */
+// ========================= Includes ============================= 
 
-/* Base */
-@import "library/_reset";
+// Base 
 @import "library/_mixins";
 @import "library/_grid";
-@import "library/_typography";
+@import "library/_base";
 @import "library/_layout";
 
-/* Modules */
+// Modules 
 @import "library/_forms";
 @import "library/_tables";
 @import "library/_labels";

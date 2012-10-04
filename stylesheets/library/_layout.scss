@@ -1,21 +1,15 @@
-/* =========== Layout */
+// =========== Layout 
 
-html { 
-    color: lighten($black, 25%);
-    font-family: $font-family;
-    font-size: $font-size;
-}
 
-body { line-height: 1.5em; }
 
 div.container {
     @include clearfix; 
     max-width: $max-width;
     margin: auto;
-    padding: 2.5em; /* TEMP */
+    padding: 2.5em; // TEMP 
 }
 
-/* Example for types.html */
+// Example for types.html 
 header { @include grid(48, 1); }
 section { 
     @include clearfix;
@@ -27,19 +21,20 @@ section {
 }
 
 
-/* ========================= Responsive ================================== */
+// ========================= Responsive ================================== 
 
-/* Tablets */
+// Tablets 
 @media only screen and (max-width: 960px) {
-    body { font-size: 14px; }
+    body { font-size: 15px; }
 }
 
-/* Phones */
+// Phones 
 @media only screen and (max-width: 520px) {
+    body { font-size: 14px; }
     header, div.container section { @include grid-reset; }
 }
 
-/* Retina */
+// Retina 
 @media only screen and (-webkit-min-device-pixel-ratio : 2), only screen and (min-device-pixel-ratio : 2) {
     
 }

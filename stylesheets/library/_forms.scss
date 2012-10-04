@@ -1,9 +1,13 @@
-/* =========== Forms */
+// =========== Forms 
+
+input[type="search"] { -webkit-appearance: textfield; }
+input[type="search"]::-webkit-search-decoration { -webkit-appearance: none; }
 
 input[type=text], input[type=number], input[type=search], input[type=email], input[type=tel], input[type=url], textarea, select  {
     border: 1px solid darken($white, 25%);
     color: #333;
     font-family: $font-family;
+    font-size: inherit;
     line-height: 1.5em;
     margin: -1px 0.5em 0px 0px;
     padding: 0.6em;
@@ -19,6 +23,7 @@ input[type=text], input[type=number], input[type=search], input[type=email], inp
         @include box-shadow(0px 0px 4px rgba($black, 0.3));
     }
 }
+
 textarea { 
     overflow: auto;
     resize: vertical;
@@ -27,81 +32,88 @@ textarea {
 }
 
 form {
-    legend { 
-        display: block; 
-        margin-bottom: 0.25em; 
-        font-weight: bold; 
-        line-height: 1.5em;
-        font-size: 1.6em;
+    
+}
+
+fieldset {  }
+
+legend { 
+    border: 0;
+    display: block; 
+    margin-bottom: 0.25em; 
+    font-weight: bold; 
+    line-height: 1.5em;
+    font-size: 1.6em;
+}
+
+ul.form {
+    clear: both;
+    list-style: none;
+    margin: 0 0 $margin-bottom 0;
+    > li > label {
+        clear: left;
+        cursor: pointer;
+        font-weight: bold;
+        @include grid(16, 0, 1);
+        padding-top: 0.55em;
+        text-align: right;
+        &:hover { color: $black; }
     }
-    fieldset { }
-    ul {
-        clear: both;
-        list-style: none;
-        margin: 0 0 $margin-bottom 0;
-        > li {
-            > label {
-                clear: left;
-                cursor: pointer;
-                font-weight: bold;
-                @include grid(16, 0, 1);
-                padding-top: 0.55em;
-                text-align: right;
-                &:hover { color: $black; }
-            }
-            div {
-                @include grid(32);
-                margin-bottom: 0.5em;
-                p, small {
-                    display: block;
-                    margin: 0.6em 0.6em 0.25em 0px;
-                }
-                ul.checklist {
-                    margin: 0.6em 0.6em 0.6em 0px;
-                    > li { margin: 0.5em 0; }
-                    input { 
-                        display: inline-block; 
-                        margin-right: 0.5em;
-                    }
-                    label {
-                        @include grid-reset;
-                        font-weight: normal;
-                        &:hover { 
-                            color: #000; 
-                            cursor: pointer; 
-                        }
-                    }
-                }
-            }
+    > li > div {
+        @include grid(32);
+        margin-bottom: 0.5em;
+        p, small {
+            display: block;
+            margin: 0.6em 0.6em 0.25em 0px;
         }
-        li.error {
-            label { 
-                color: $color-error; 
-                &:hover { color: darken($color-error, 25%); }
-            }
-            input {
-                border: 1px solid $color-error; 
-                @include box-shadow((0px 0px 3px lighten($color-error, 10%), inset 0 0 0));
-                &:focus { border: 1px solid $color-error; }
-            }
-            ul.errors {
-                color: $color-error; 
-                margin: 0.6em 0.6em 0.6em 0px;
-                li { margin: 0.5em 0; }
-            }
-        } 
     }
 }
 
+ul.form-checklist {
+    list-style: none;
+    margin: 0.6em 0;
+    li { margin: 0.5em 0; }
+    input { 
+        display: inline-block; 
+        margin-right: 0.5em;
+    }
+    label {
+        @include grid-reset;
+        font-weight: normal;
+        &:hover { 
+            color: #000; 
+            cursor: pointer; 
+        }
+    }
+}
 
-/* ========================= Responsive ================================== */
+li.form-error {
+    label { 
+        color: $color-error; 
+        &:hover { color: darken($color-error, 25%); }
+    }
+    input {
+        border: 1px solid $color-error; 
+        @include box-shadow((0px 0px 3px lighten($color-error, 10%), inset 0 0 0));
+        &:focus { border: 1px solid $color-error; }
+    }
+    ul.form-errors {
+        color: $color-error;
+        list-style: none;
+        margin: 0.6em 0;
+        li { margin: 0.5em 0; }
+    }
+} 
 
-/* Tablets */
+
+// ========================= Responsive ================================== 
+
+// Tablets 
 @media only screen and (max-width: 960px) {
 
 }
 
-/* Phones */
+// Phones 
 @media only screen and (max-width: 520px) {
     form ul li > label { 
         @include grid-reset;
@@ -112,7 +124,7 @@ form {
     input[type=text], textarea { width: 100%; }
 }
 
-/* Retina */
+// Retina 
 @media only screen and (-webkit-min-device-pixel-ratio : 2), only screen and (min-device-pixel-ratio : 2) {
     
 }

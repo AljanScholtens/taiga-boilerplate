@@ -1,5 +1,5 @@
-/* =========== Buttons */
-
+// =========== Buttons 
+button::-moz-focus-inner { padding: 0; border: 0; }
 // Choose a div or ul to group up your buttons
 div.buttons, ul.buttons {
     margin: 0 0 $margin-bottom 0;
