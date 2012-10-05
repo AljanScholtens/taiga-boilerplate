@@ -9,7 +9,6 @@ Taiga is a small boilerplate that works on SASS with an awesome semantic fluid g
 * Responsive, using em units;
 * Everything is border-box;
 * Basic types like forms, tables etc;
-* Using Eric Meyers' reset;
 * Comes with flexible CSS3 mixins;
 
 Website is http://taigaboilerplate.com or Github https://github.com/AljanScholtens/Taiga

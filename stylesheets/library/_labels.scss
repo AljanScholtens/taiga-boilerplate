@@ -1,11 +1,11 @@
 /* =========== Label */
 
 span.label {
-    color: $white;
-    font-size: 0.85em;
-    padding: 0.1em 0.3em;
-    font-weight: bold;
     border: none;
     @include border-radius(0.4em);
+    color: $white;
+    font-size: 0.85em;
+    font-weight: bold;
     @include gradient(top, lighten($black, 40%), $black);
+    padding: 0.1em 0.3em;
 }

@@ -26,21 +26,4 @@ ul.messages  {
             @include gradient(top, lighten($color-error, 45%), lighten($color-error, 40%));
         }
     }
-    &.success {
-        border-color: darken($color-success, 20%);
-        @include gradient(top, $color-success, darken($color-success, 10%));
-        &:hover { @include gradient(top, lighten($color-success, 10%), darken($color-success, 10%)); }
-        &:active, &:focus {
-            background: darken($color-success, 15%);
-        }
-    }
-    
-    &.alert {
-        border-color: darken($color-error, 20%);
-        @include gradient(top, $color-error, darken($color-error, 10%));
-        &:hover { @include gradient(top, lighten($color-error, 10%), darken($color-error, 10%)); }
-        &:active, &:focus {
-            background: darken($color-error, 15%);
-        }
-    }
 }
