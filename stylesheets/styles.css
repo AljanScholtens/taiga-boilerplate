@@ -411,18 +411,20 @@ table {
   border-spacing: 0;
   margin-bottom: 1.25em;
   width: 100%; }
-  table thead th {
-    font-weight: bold;
-    padding: 0.5em;
-    text-align: left; }
-  table tbody td {
-    border-left: 1px solid #bfbfbf;
-    border-top: 1px solid #bfbfbf;
-    padding: 0.5em; }
-    table tbody td:first-child {
-      border-left: 0; }
-    table tbody td strong {
-      display: block; }
+
+thead th {
+  font-weight: bold;
+  padding: 0.5em;
+  text-align: left; }
+
+tbody td {
+  border-left: 1px solid #bfbfbf;
+  border-top: 1px solid #bfbfbf;
+  padding: 0.5em; }
+  tbody td:first-child {
+    border-left: 0; }
+  tbody td strong {
+    display: block; }
 
 /* =========== Label */
 span.label {
@@ -620,62 +622,71 @@ a.button, a.btn, input[type="submit"], button {
     font-size: 0.85em; }
 
 /* =========== Icons */
-.ico {
+.ico-name {
   display: inline-block;
   float: left;
-  height: 16px;
+  height: 1em;
   margin: 0.1em 0.4em 0 0;
   overflow: hidden;
   text-indent: -9999px;
-  width: 16px; }
-  .ico.icon {
-    background: url("../images/icons.png") 0px 0px no-repeat; }
+  width: 1em; }
+
+.ico-name {
+  background: url("../images/icons.png") 0px 0px no-repeat; }
 
 /* =========== Messages */
 ul.messages {
   list-style: none;
   margin: 0 0 1.25em 0; }
-  ul.messages li {
-    border: 1px solid;
-    -webkit-border-radius: 0.3em;
-    -moz-border-radius: 0.3em;
-    -ms-border-radius: 0.3em;
-    -o-border-radius: 0.3em;
-    border-radius: 0.3em;
-    -webkit-box-shadow: 0px 1px 1px rgba(5, 5, 5, 0.1), inset 0px 1px 0px rgba(255, 255, 255, 0.4);
-    -moz-box-shadow: 0px 1px 1px rgba(5, 5, 5, 0.1), inset 0px 1px 0px rgba(255, 255, 255, 0.4);
-    -o-box-shadow: 0px 1px 1px rgba(5, 5, 5, 0.1), inset 0px 1px 0px rgba(255, 255, 255, 0.4);
-    box-shadow: 0px 1px 1px rgba(5, 5, 5, 0.1), inset 0px 1px 0px rgba(255, 255, 255, 0.4);
-    font-weight: bold;
-    margin: 0.25em 0;
-    line-height: 1.5em;
-    font-size: 1.1em;
-    display: block;
-    vertical-align: baseline;
-    padding: 0.25em 1em 0.35em 1em;
-    text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.4); }
-    ul.messages li.success {
-      border-color: #5da423;
-      color: #5da423;
-      background-color: #c6eca7;
-      background-image: -webkit-linear-gradient(top, #d4f1bc, #c6eca7);
-      background-image: -moz-linear-gradient(top, #d4f1bc, #c6eca7);
-      background-image: -ms-linear-gradient(top, #d4f1bc, #c6eca7);
-      background-image: -o-linear-gradient(top, #d4f1bc, #c6eca7);
-      background-image: linear-gradient(top, #d4f1bc, #c6eca7); }
-    ul.messages li.error, ul.messages li.fail, ul.messages li.alert {
-      border-color: #d24226;
-      color: #d24226;
-      background-color: #f6d4ce;
-      background-image: -webkit-linear-gradient(top, #fae7e3, #f6d4ce);
-      background-image: -moz-linear-gradient(top, #fae7e3, #f6d4ce);
-      background-image: -ms-linear-gradient(top, #fae7e3, #f6d4ce);
-      background-image: -o-linear-gradient(top, #fae7e3, #f6d4ce);
-      background-image: linear-gradient(top, #fae7e3, #f6d4ce); }
+
+li.message-success, li.message-error,
+li.message-fail,
+li.message-alert {
+  border: 1px solid;
+  -webkit-border-radius: 0.3em;
+  -moz-border-radius: 0.3em;
+  -ms-border-radius: 0.3em;
+  -o-border-radius: 0.3em;
+  border-radius: 0.3em;
+  -webkit-box-shadow: 0px 1px 1px rgba(5, 5, 5, 0.1), inset 0px 1px 0px rgba(255, 255, 255, 0.4);
+  -moz-box-shadow: 0px 1px 1px rgba(5, 5, 5, 0.1), inset 0px 1px 0px rgba(255, 255, 255, 0.4);
+  -o-box-shadow: 0px 1px 1px rgba(5, 5, 5, 0.1), inset 0px 1px 0px rgba(255, 255, 255, 0.4);
+  box-shadow: 0px 1px 1px rgba(5, 5, 5, 0.1), inset 0px 1px 0px rgba(255, 255, 255, 0.4);
+  font-weight: bold;
+  margin: 0.25em 0;
+  line-height: 1.5em;
+  font-size: 1.1em;
+  display: block;
+  vertical-align: baseline;
+  padding: 0.25em 1em 0.35em 1em;
+  text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.4); }
+
+li.message-success {
+  border-color: #5da423;
+  color: #5da423;
+  background-color: #c6eca7;
+  background-image: -webkit-linear-gradient(top, #d4f1bc, #c6eca7);
+  background-image: -moz-linear-gradient(top, #d4f1bc, #c6eca7);
+  background-image: -ms-linear-gradient(top, #d4f1bc, #c6eca7);
+  background-image: -o-linear-gradient(top, #d4f1bc, #c6eca7);
+  background-image: linear-gradient(top, #d4f1bc, #c6eca7); }
+
+li.message-error,
+li.message-fail,
+li.message-alert {
+  border-color: #d24226;
+  color: #d24226;
+  background-color: #f6d4ce;
+  background-image: -webkit-linear-gradient(top, #fae7e3, #f6d4ce);
+  background-image: -moz-linear-gradient(top, #fae7e3, #f6d4ce);
+  background-image: -ms-linear-gradient(top, #fae7e3, #f6d4ce);
+  background-image: -o-linear-gradient(top, #fae7e3, #f6d4ce);
+  background-image: linear-gradient(top, #fae7e3, #f6d4ce); }
 
 /* =========== Pagination */
 ul.pagination {
   font-size: 0.9em;
+  list-style: none;
   margin: 0 0 1.25em 0;
   text-align: center; }
   ul.pagination li {
@@ -761,24 +772,7 @@ div.modal {
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 1000;
-  /* Overlay */ }
-  div.modal > div {
-    background: white;
-    -webkit-border-radius: 0.3em;
-    -moz-border-radius: 0.3em;
-    -ms-border-radius: 0.3em;
-    -o-border-radius: 0.3em;
-    border-radius: 0.3em;
-    -webkit-box-shadow: 0px 0px 20px rgba(5, 5, 5, 0.6);
-    -moz-box-shadow: 0px 0px 20px rgba(5, 5, 5, 0.6);
-    -o-box-shadow: 0px 0px 20px rgba(5, 5, 5, 0.6);
-    box-shadow: 0px 0px 20px rgba(5, 5, 5, 0.6);
-    margin: 40px auto;
-    max-width: 800px;
-    padding: 1.5em;
-    position: relative;
-    top: 0; }
+  z-index: 1000; }
   div.modal:after {
     background: rgba(5, 5, 5, 0.9);
     content: " ";
@@ -788,6 +782,23 @@ div.modal {
     top: 0;
     width: 100%;
     z-index: -1; }
+
+div.modal-content {
+  background: white;
+  -webkit-border-radius: 0.3em;
+  -moz-border-radius: 0.3em;
+  -ms-border-radius: 0.3em;
+  -o-border-radius: 0.3em;
+  border-radius: 0.3em;
+  -webkit-box-shadow: 0px 0px 20px rgba(5, 5, 5, 0.6);
+  -moz-box-shadow: 0px 0px 20px rgba(5, 5, 5, 0.6);
+  -o-box-shadow: 0px 0px 20px rgba(5, 5, 5, 0.6);
+  box-shadow: 0px 0px 20px rgba(5, 5, 5, 0.6);
+  margin: 3em auto;
+  max-width: 800px;
+  padding: 1.5em;
+  position: relative;
+  top: 0; }
 
 /* =========== Tabs */
 ul.tabs {
