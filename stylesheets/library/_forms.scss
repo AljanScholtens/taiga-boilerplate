@@ -115,12 +115,12 @@ li.form-error {
 
 // Phones 
 @media only screen and (max-width: 520px) {
-    form ul li > label { 
+    ul.form > li > label { 
         @include grid-reset;
         text-align: left; 
         display: block; 
     }
-    form ul li > div { @include grid-reset; }
+    ul.form > li > div { @include grid-reset; }
     input[type=text], textarea { width: 100%; }
 }
 

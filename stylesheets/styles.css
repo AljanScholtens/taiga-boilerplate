@@ -170,7 +170,7 @@ blockquote {
 
 figure {
   display: inline-block;
-  max-width: 100%; }
+  width: 100%; }
   figure img {
     display: block;
     width: 100%; }
@@ -381,7 +381,7 @@ li.form-error ul.form-errors {
     margin: 0.5em 0; }
 
 @media only screen and (max-width: 520px) {
-  form ul li > label {
+  ul.form > li > label {
     clear: both;
     float: none;
     margin-left: 0;
@@ -390,7 +390,7 @@ li.form-error ul.form-errors {
     text-align: left;
     display: block; }
 
-  form ul li > div {
+  ul.form > li > div {
     clear: both;
     float: none;
     margin-left: 0;
