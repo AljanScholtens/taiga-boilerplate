@@ -207,7 +207,8 @@ div.container {
   *zoom: 1;
   max-width: 60em;
   margin: auto;
-  padding: 2.5em; }
+  padding: 20px 0 2px 5px;
+  padding:  1.25rem 0 0.125rem 0.3125rem; }
   div.container:before, div.container:after {
     display: block;
     height: 0 !important;

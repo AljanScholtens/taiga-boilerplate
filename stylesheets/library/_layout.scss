@@ -6,7 +6,8 @@ div.container {
     @include clearfix; 
     max-width: $max-width;
     margin: auto;
-    padding: 2.5em; // TEMP 
+    //padding: 2.5em; // TEMP 
+    @include rem('padding', 20px 0 2px 5px);
 }
 
 // Example for types.html 
