@@ -4,6 +4,14 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 
 * { @include box-sizing(border-box); }
 
+::-moz-selection { background: lighten($black, 10%); color: $white; text-shadow: none; }
+::selection { background: lighten($black, 10%); color: $white; text-shadow: none; }
+
+@font-face {
+    font-family: 'fontName';
+    src: url('../fonts/fontName.eot?') format('eot'), url('../fonts/fontName.woff') format('woff'), url('../fonts/fontName.ttf') format('truetype');
+}
+
 html { 
     color: lighten($black, 25%);
     font-family: $font-family;
@@ -15,26 +23,6 @@ html {
 body { 
     line-height: 1.5em; 
 }
-
-@font-face {
-    font-family: 'fontName';
-    src: url('../fonts/fontName.eot?') format('eot'), url('../fonts/fontName.woff') format('woff'), url('../fonts/fontName.ttf') format('truetype');
-}
-
-
-
-.hidden { display: none !important; }
-.hidden, .invisible { visibility: hidden !important; }
-
-::-moz-selection { background: lighten($black, 10%); color: $white; text-shadow: none; }
-::selection { background: lighten($black, 10%); color: $white; text-shadow: none; }
-
-.left { float: left; }
-.right { float: right; }
-.text-left { text-align: left; }
-.text-right { text-align: right; }
-.text-center { text-align: center; }
-.nowrap { white-space: nowrap; }
 
 h1, h2, h3, h4, h5, h6 {
     font-weight: bold; 
@@ -52,8 +40,6 @@ h3 { font-size: 1.4em; }
 h4 { font-size: 1.2em; }
 h5 { font-size: 1.05em; }
 h6 { font-size: 1em; }
-
-
 
 p { 
     margin-bottom: $margin-bottom; 
@@ -114,7 +100,7 @@ blockquote {
         color: lighten($black, 35%);
         display: block;
         font-size: 0.85em;
-        &:before {  content: "\2014 \0020"; }
+        &:before { content: "\2014 \0020"; }
     }
 }
 
@@ -138,8 +124,10 @@ dl {
     margin-bottom: $margin-bottom;
     dt { font-weight: bold; }
     dd { margin-left: $margin-bottom; }
-    &.advanced {
-        dt { @include grid(16, 0, 1); }
-        dd { @include grid(32); }
-    }
+}
+
+dl.advanced {
+    @extend dl;
+    dt { @include grid(16, 0, 1); }
+    dd { @include grid(32); }
 }

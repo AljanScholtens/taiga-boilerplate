@@ -87,11 +87,6 @@
     column-rule-color: $color;
 }
 
-@mixin displayfix {
-    *zoom: 1;
-    *display: inline;
-}
-
 @mixin gradient($side, $start, $end) {
     background-color: $end;
     background-image: -webkit-linear-gradient($side, $start, $end); 

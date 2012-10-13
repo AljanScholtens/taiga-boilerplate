@@ -31,9 +31,7 @@ textarea {
     display: block;
 }
 
-form {
-    
-}
+form {  }
 
 fieldset {  }
 
@@ -109,12 +107,12 @@ li.form-error {
 // ========================= Responsive ================================== 
 
 // Tablets 
-@media only screen and (max-width: 960px) {
+@media only screen and (max-width: $media-desktop) {
 
 }
 
 // Phones 
-@media only screen and (max-width: 520px) {
+@media only screen and (max-width: $media-phone) {
     ul.form > li > label { 
         @include grid-reset;
         text-align: left; 

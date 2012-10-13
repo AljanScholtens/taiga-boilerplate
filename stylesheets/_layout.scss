@@ -1,13 +1,11 @@
 // =========== Layout 
 
-
-
 div.container {
     @include clearfix; 
     max-width: $max-width;
     margin: auto;
     //padding: 2.5em; // TEMP 
-    @include rem('padding', 20px 0 2px 5px);
+    @include rem(padding, 20px);
 }
 
 // Example for types.html 
@@ -24,13 +22,18 @@ section {
 
 // ========================= Responsive ================================== 
 
-// Tablets 
-@media only screen and (max-width: 960px) {
+// Small desktop
+@media only screen and (max-width: $media-desktop) {
     body { font-size: 15px; }
 }
 
+// Tablets 
+@media only screen and (max-width: $media-tablet) {
+    
+}
+
 // Phones 
-@media only screen and (max-width: 520px) {
+@media only screen and (max-width: $media-phone) {
     body { font-size: 14px; }
     header, div.container section { @include grid-reset; }
 }

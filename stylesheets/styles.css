@@ -13,50 +13,14 @@
 */
 /* Use this mixin to reset your grid by example for your mobile articles */
 /* The clearfix mixin is necessary for the floats */
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline; }
-
-* {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  -o-box-sizing: border-box;
-  box-sizing: border-box; }
-
-html {
-  color: #454545;
-  font-family: "Helvetica Neue", Arial, sans-serif;
-  font-size: 16px;
-  -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility; }
-
-body {
-  line-height: 1.5em; }
-
-@font-face {
-  font-family: 'fontName';
-  src: url("../fonts/fontName.eot?") format("eot"), url("../fonts/fontName.woff") format("woff"), url("../fonts/fontName.ttf") format("truetype"); }
-
-.hidden {
+.is-hidden {
   display: none !important; }
 
-.hidden, .invisible {
+.is-hidden, .is-invisible {
   visibility: hidden !important; }
 
-::-moz-selection {
-  background: #1f1f1f;
-  color: white;
-  text-shadow: none; }
-
-::selection {
-  background: #1f1f1f;
-  color: white;
-  text-shadow: none; }
+.is-active, .is-visible {
+  display: block; }
 
 .left {
   float: left; }
@@ -75,6 +39,45 @@ body {
 
 .nowrap {
   white-space: nowrap; }
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dl.advanced, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box; }
+
+::-moz-selection {
+  background: #1f1f1f;
+  color: white;
+  text-shadow: none; }
+
+::selection {
+  background: #1f1f1f;
+  color: white;
+  text-shadow: none; }
+
+@font-face {
+  font-family: 'fontName';
+  src: url("../fonts/fontName.eot?") format("eot"), url("../fonts/fontName.woff") format("woff"), url("../fonts/fontName.ttf") format("truetype"); }
+
+html {
+  color: #454545;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility; }
+
+body {
+  line-height: 1.5em; }
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
@@ -186,29 +189,30 @@ ul {
 ol {
   list-style: decimal; }
 
-dl {
+dl, dl.advanced {
   margin-bottom: 1.25em; }
-  dl dt {
+  dl dt, dl.advanced dt {
     font-weight: bold; }
-  dl dd {
+  dl dd, dl.advanced dd {
     margin-left: 1.25em; }
-  dl.advanced dt {
-    float: left;
-    width: 31.25%;
-    margin-left: 0%;
-    margin-right: 2.08333%; }
-  dl.advanced dd {
-    float: left;
-    width: 66.66667%;
-    margin-left: 0%;
-    margin-right: 0%; }
+
+dl.advanced dt {
+  float: left;
+  width: 31.25%;
+  margin-left: 0%;
+  margin-right: 2.08333%; }
+dl.advanced dd {
+  float: left;
+  width: 66.66667%;
+  margin-left: 0%;
+  margin-right: 0%; }
 
 div.container {
   *zoom: 1;
   max-width: 60em;
   margin: auto;
-  padding: 20px 0 2px 5px;
-  padding:  1.25rem 0 0.125rem 0.3125rem; }
+  padding: 20px;
+  padding: 1.25rem; }
   div.container:before, div.container:after {
     display: block;
     height: 0 !important;
@@ -485,8 +489,14 @@ div.buttons, ul.buttons {
     -o-border-radius: 0 0.2em 0.2em 0;
     border-radius: 0 0.2em 0.2em 0; }
 
-.dropdown-menu {
-  display: none; }
+a.button, a.btn, input[type="submit"], button {
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1.1em;
+  font-weight: bold;
+  line-height: 1.5em;
+  margin: 0;
+  padding: 0.25em 1em 0.35em 1em; }
 
 a.button, a.btn, input[type="submit"], button {
   border: 1px solid #052d15;
@@ -500,19 +510,12 @@ a.button, a.btn, input[type="submit"], button {
   -o-box-shadow: 0 1px 1px #e6e6e6, inset 0 1px 0px rgba(255, 255, 255, 0.3);
   box-shadow: 0 1px 1px #e6e6e6, inset 0 1px 0px rgba(255, 255, 255, 0.3);
   color: white;
-  cursor: pointer;
-  display: inline-block;
-  font-size: 1.1em;
-  font-weight: bold;
   background-color: #095c2b;
   background-image: -webkit-linear-gradient(top, #0e8a41, #095c2b);
   background-image: -moz-linear-gradient(top, #0e8a41, #095c2b);
   background-image: -ms-linear-gradient(top, #0e8a41, #095c2b);
   background-image: -o-linear-gradient(top, #0e8a41, #095c2b);
   background-image: linear-gradient(top, #0e8a41, #095c2b);
-  line-height: 1.5em;
-  margin: 0;
-  padding: 0.25em 1em 0.35em 1em;
   text-decoration: none;
   text-shadow: 1px 1px 0 rgba(5, 5, 5, 0.5);
   -webkit-transition: all 50ms;
@@ -716,55 +719,55 @@ ul.pagination {
     -moz-transition: all 0.1s;
     -o-transition: all 0.1s;
     transition: all 0.1s; }
-    ul.pagination li a {
-      color: #333;
-      display: block;
-      padding: 0.25em 0.6em 0.35em 0.6em;
-      text-decoration: none; }
-    ul.pagination li:hover {
-      border-color: #666;
-      background-color: #eeeeee;
-      background-image: -webkit-linear-gradient(top, white, #eeeeee);
-      background-image: -moz-linear-gradient(top, white, #eeeeee);
-      background-image: -ms-linear-gradient(top, white, #eeeeee);
-      background-image: -o-linear-gradient(top, white, #eeeeee);
-      background-image: linear-gradient(top, white, #eeeeee); }
-      ul.pagination li:hover a {
-        color: #050505; }
-    ul.pagination li:active, ul.pagination li:focus {
-      background: #ccc;
-      border-color: #666;
-      -webkit-box-shadow: 0 0 0, inset 0px 1px 16px #666666;
-      -moz-box-shadow: 0 0 0, inset 0px 1px 16px #666666;
-      -o-box-shadow: 0 0 0, inset 0px 1px 16px #666666;
-      box-shadow: 0 0 0, inset 0px 1px 16px #666666;
-      text-shadow: 0 0 0; }
-      ul.pagination li:active a, ul.pagination li:focus a {
-        color: #666; }
-    ul.pagination li.selected {
-      border-color: #333;
-      -webkit-box-shadow: 0px 1px 1px #f1f1f1, inset 0px 1px 0px rgba(255, 255, 255, 0.3);
-      -moz-box-shadow: 0px 1px 1px #f1f1f1, inset 0px 1px 0px rgba(255, 255, 255, 0.3);
-      -o-box-shadow: 0px 1px 1px #f1f1f1, inset 0px 1px 0px rgba(255, 255, 255, 0.3);
-      box-shadow: 0px 1px 1px #f1f1f1, inset 0px 1px 0px rgba(255, 255, 255, 0.3);
-      color: white;
-      background-color: #111111;
-      background-image: -webkit-linear-gradient(top, #666666, #111111);
-      background-image: -moz-linear-gradient(top, #666666, #111111);
-      background-image: -ms-linear-gradient(top, #666666, #111111);
-      background-image: -o-linear-gradient(top, #666666, #111111);
-      background-image: linear-gradient(top, #666666, #111111);
-      padding: 0.25em 0.6em 0.35em 0.6em;
-      text-shadow: 1px 1px 0px #000; }
-    ul.pagination li.gap {
-      background: none;
-      border: 0;
-      -webkit-box-shadow: 0 0 0;
-      -moz-box-shadow: 0 0 0;
-      -o-box-shadow: 0 0 0;
-      box-shadow: 0 0 0;
-      font-weight: normal;
-      padding: 0.25em 0.35em 0.35em 0.35em; }
+  ul.pagination a {
+    color: #333;
+    display: block;
+    padding: 0.25em 0.6em 0.35em 0.6em;
+    text-decoration: none; }
+  ul.pagination li:hover {
+    border-color: #666;
+    background-color: #eeeeee;
+    background-image: -webkit-linear-gradient(top, white, #eeeeee);
+    background-image: -moz-linear-gradient(top, white, #eeeeee);
+    background-image: -ms-linear-gradient(top, white, #eeeeee);
+    background-image: -o-linear-gradient(top, white, #eeeeee);
+    background-image: linear-gradient(top, white, #eeeeee); }
+    ul.pagination li:hover a {
+      color: #050505; }
+  ul.pagination li:active, ul.pagination li:focus {
+    background: #ccc;
+    border-color: #666;
+    -webkit-box-shadow: 0 0 0, inset 0px 1px 16px #666666;
+    -moz-box-shadow: 0 0 0, inset 0px 1px 16px #666666;
+    -o-box-shadow: 0 0 0, inset 0px 1px 16px #666666;
+    box-shadow: 0 0 0, inset 0px 1px 16px #666666;
+    text-shadow: 0 0 0; }
+    ul.pagination li:active a, ul.pagination li:focus a {
+      color: #666; }
+  ul.pagination li.selected {
+    border-color: #333;
+    -webkit-box-shadow: 0px 1px 1px #f1f1f1, inset 0px 1px 0px rgba(255, 255, 255, 0.3);
+    -moz-box-shadow: 0px 1px 1px #f1f1f1, inset 0px 1px 0px rgba(255, 255, 255, 0.3);
+    -o-box-shadow: 0px 1px 1px #f1f1f1, inset 0px 1px 0px rgba(255, 255, 255, 0.3);
+    box-shadow: 0px 1px 1px #f1f1f1, inset 0px 1px 0px rgba(255, 255, 255, 0.3);
+    color: white;
+    background-color: #111111;
+    background-image: -webkit-linear-gradient(top, #666666, #111111);
+    background-image: -moz-linear-gradient(top, #666666, #111111);
+    background-image: -ms-linear-gradient(top, #666666, #111111);
+    background-image: -o-linear-gradient(top, #666666, #111111);
+    background-image: linear-gradient(top, #666666, #111111);
+    padding: 0.25em 0.6em 0.35em 0.6em;
+    text-shadow: 1px 1px 0px #000; }
+  ul.pagination li.gap {
+    background: none;
+    border: 0;
+    -webkit-box-shadow: 0 0 0;
+    -moz-box-shadow: 0 0 0;
+    -o-box-shadow: 0 0 0;
+    box-shadow: 0 0 0;
+    font-weight: normal;
+    padding: 0.25em 0.35em 0.35em 0.35em; }
 
 /* =========== Popover */
 div.modal {
@@ -807,8 +810,6 @@ ul.tabs {
   margin: 0 0 1.25em 0; }
   ul.tabs li {
     display: inline-block;
-    *zoom: 1;
-    *display: inline;
     margin-bottom: -2px;
     position: relative; }
   ul.tabs a {
@@ -845,9 +846,7 @@ ul.steps {
   border-bottom: 1px solid #bfbfbf;
   margin: 0 0 1.25em 0; }
   ul.steps li {
-    display: inline-block;
-    *zoom: 1;
-    *display: inline; }
+    display: inline-block; }
   ul.steps a {
     color: #666;
     display: block;

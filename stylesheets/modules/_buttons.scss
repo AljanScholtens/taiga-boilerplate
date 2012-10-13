@@ -15,22 +15,27 @@ div.buttons, ul.buttons {
         &:last-child { a.button, a.btn, input[type="submit"], button { @include border-radius(0 0.2em 0.2em 0); } }
     }
 }
-.dropdown-menu { display: none; }
 
-// The standard button has the $color-brand colors
-a.button, a.btn, input[type="submit"], button {
-    border: 1px solid darken($color-brand, 20%);
-    @include border-radius(0.2em);
-    @include box-shadow((0 1px 1px darken($white, 10%), inset 0 1px 0px rgba($white, 0.3)));
-    color: $white;
+%button-style {
     cursor: pointer;
     display: inline-block;
     font-size: 1.1em;
     font-weight: bold;
-    @include gradient(top, $color-brand, darken($color-brand, 10%));
     line-height: 1.5em;
     margin: 0;
     padding: 0.25em 1em 0.35em 1em;
+}
+
+// The standard button has the $color-brand colors
+a.button, a.btn, input[type="submit"], button {
+    @extend %button-style;
+    border: 1px solid darken($color-brand, 20%);
+    @include border-radius(0.2em);
+    @include box-shadow((0 1px 1px darken($white, 10%), inset 0 1px 0px rgba($white, 0.3)));
+    color: $white;
+    
+    @include gradient(top, $color-brand, darken($color-brand, 10%));
+    
     text-decoration: none;
     text-shadow: 1px 1px 0 rgba($black, 0.5);
     @include transition(all 50ms);

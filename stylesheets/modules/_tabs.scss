@@ -5,7 +5,6 @@ ul.tabs {
     margin: 0 0 $margin-bottom 0;
     li {
         display: inline-block;
-        @include displayfix;
         margin-bottom: -2px;
         position: relative;
     }
@@ -40,7 +39,6 @@ ul.steps {
     margin: 0 0 $margin-bottom 0;
     li {
         display: inline-block;
-        @include displayfix;
     }
     a { 
         color: #666;
