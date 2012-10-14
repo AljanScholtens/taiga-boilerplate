@@ -107,12 +107,12 @@ li.form-error {
 // ========================= Responsive ================================== 
 
 // Tablets 
-@media only screen and (max-width: $media-desktop) {
+@media only screen and ($media-type: $media-desktop) {
 
 }
 
 // Phones 
-@media only screen and (max-width: $media-phone) {
+@media only screen and ($media-type: $media-phone) {
     ul.form > li > label { 
         @include grid-reset;
         text-align: left; 

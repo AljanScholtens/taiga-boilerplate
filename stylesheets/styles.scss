@@ -5,7 +5,7 @@
 //  Run the following SASS command: 'sass --watch stylesheets --style compressed'
 //  Make sure you set the variables below (find the grid documentation in core/_grid.scss)
 
-// ========================= Variables ================================== 
+// =========== Settings/Variables
 
 $font-family: 'Helvetica Neue', Arial, sans-serif;
 $font-size: 16px;
@@ -14,6 +14,7 @@ $grid-columns: 48;
 $max-width: 960px;
 $margin-bottom: 1.25em;
 
+$media-type: max-width;
 $media-desktop: 960px;
 $media-tablet: 767px;
 $media-phone: 520px;
@@ -25,13 +26,13 @@ $black: #050505;
 $white: #fff;
 
 
-// ========================= Includes ============================= 
+// =========== Includes
 
-// Base 
+// Core
 @import "core/_mixins";
 @import "core/_grid";
-@import "core/_states";
 @import "_base";
+@import "core/_states";
 @import "_layout";
 
 // Modules 

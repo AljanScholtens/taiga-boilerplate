@@ -1,5 +1,15 @@
 // =========== Layout 
 
+.l-full { @include grid(48, 1); }
+.l-two-third { @include grid(32, 1); }
+.l-half { @include grid(24, 1); }
+.l-one-third { @include grid(16, 1); }
+.l-grid {
+    @include clearfix;
+    li { @include grid(16, 1); }
+}
+.l-first { clear: left; }
+
 div.container {
     @include clearfix; 
     max-width: $max-width;
@@ -14,26 +24,22 @@ section {
     @include clearfix;
     margin-bottom: $margin-bottom;
     @include grid(48, 1);
-    
-    &.half { @include grid(24, 1); }
-    &.one-third { @include grid(16, 1); }
 }
-
 
 // ========================= Responsive ================================== 
 
 // Small desktop
-@media only screen and (max-width: $media-desktop) {
+@media only screen and ($media-type: $media-desktop) {
     body { font-size: 15px; }
 }
 
 // Tablets 
-@media only screen and (max-width: $media-tablet) {
+@media only screen and ($media-type: $media-tablet) {
     
 }
 
 // Phones 
-@media only screen and (max-width: $media-phone) {
+@media only screen and ($media-type: $media-phone) {
     body { font-size: 14px; }
     header, div.container section { @include grid-reset; }
 }
