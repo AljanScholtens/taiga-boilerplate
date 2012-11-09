@@ -31,9 +31,9 @@ $white: #fff;
 // Core
 @import "core/_mixins";
 @import "core/_grid";
-@import "_base";
+@import "core/_base";
 @import "core/_states";
-@import "_layout";
+@import "core/_layout";
 
 // Modules 
 @import "modules/_forms";

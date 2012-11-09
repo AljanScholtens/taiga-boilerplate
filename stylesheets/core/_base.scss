@@ -1,4 +1,4 @@
-// =========== Typography 
+// =========== Base 
 
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; }
 
@@ -14,14 +14,15 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 
 html { 
     color: lighten($black, 25%);
-    font-family: $font-family;
-    font-size: $font-size;
+    font: $font-size $font-family;
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
 }
 
 body { 
-    line-height: 1.5em; 
+    line-height: 1.5em;
+    @media only screen and ($media-type: $media-desktop) { font-size: 15px; }
+    @media only screen and ($media-type: $media-phone) { font-size: 14px; }
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -80,9 +81,7 @@ hr {
 blockquote {
     quotes: none;
     color: lighten($black, 50%); 
-    font-family: Georgia, serif;
-    font-size: 1.2em; 
-    font-style: italic; 
+    font: italic 1.2em Georgia, serif;  
     line-height: 1.5em; 
     margin-bottom: $margin-bottom; 
     padding: 0 0 0 2em;

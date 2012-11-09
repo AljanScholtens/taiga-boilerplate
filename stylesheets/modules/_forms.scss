@@ -3,7 +3,15 @@
 input[type="search"] { -webkit-appearance: textfield; }
 input[type="search"]::-webkit-search-decoration { -webkit-appearance: none; }
 
-input[type=text], input[type=number], input[type=search], input[type=email], input[type=tel], input[type=url], textarea, select  {
+input[type=text], 
+input[type=number], 
+input[type=password], 
+input[type=search], 
+input[type=email], 
+input[type=tel], 
+input[type=url], 
+textarea, 
+select  {
     border: 1px solid darken($white, 25%);
     color: #333;
     font-family: $font-family;
@@ -16,6 +24,7 @@ input[type=text], input[type=number], input[type=search], input[type=email], inp
     @include box-shadow(inset 0px 1px 3px rgba($black, 0.1));
     @include transition(border 0.1s);
     vertical-align: baseline;
+    
     &:focus {
         border: 1px solid darken($white, 35%);
         outline: 0;
@@ -55,11 +64,22 @@ ul.form {
         @include grid(16, 0, 1);
         padding-top: 0.55em;
         text-align: right;
+        
+        @media only screen and ($media-type: $media-phone) {
+            @include grid-reset;
+            text-align: left; 
+            display: block; 
+        }
+        
         &:hover { color: $black; }
     }
     > li > div {
         @include grid(32);
         margin-bottom: 0.5em;
+        
+        @media only screen and ($media-type: $media-phone) {
+            @include grid-reset;
+        }
         p, small {
             display: block;
             margin: 0.6em 0.6em 0.25em 0px;
@@ -102,27 +122,3 @@ li.form-error {
         li { margin: 0.5em 0; }
     }
 } 
-
-
-// ========================= Responsive ================================== 
-
-// Tablets 
-@media only screen and ($media-type: $media-desktop) {
-
-}
-
-// Phones 
-@media only screen and ($media-type: $media-phone) {
-    ul.form > li > label { 
-        @include grid-reset;
-        text-align: left; 
-        display: block; 
-    }
-    ul.form > li > div { @include grid-reset; }
-    input[type=text], textarea { width: 100%; }
-}
-
-// Retina 
-@media only screen and (-webkit-min-device-pixel-ratio : 2), only screen and (min-device-pixel-ratio : 2) {
-    
-}
