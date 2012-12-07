@@ -1,9 +1,7 @@
 /* =========== Panels */
 
 .panel {
-    background: darken($white, 5%);
-    border: 1px solid darken($white, 15%);
-    @include border-radius(0.2em);
+    background: lighten($black, 88%);
     margin-bottom: $margin-bottom;
     padding: 1em;
 }

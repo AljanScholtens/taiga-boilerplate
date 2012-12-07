@@ -4,8 +4,8 @@ table {
     border: 1px solid #ccc;
     border-collapse: separate;
     *border-collapse: collapse;
-    @include border-radius(0.2em);
     border-spacing: 0;
+    @include border-radius(0.2em);
     margin-bottom: $margin-bottom;
     width: 100%;
 }

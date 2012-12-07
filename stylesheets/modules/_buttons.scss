@@ -2,19 +2,10 @@
 
 button::-moz-focus-inner { padding: 0; border: 0; }
 // Choose a div or ul to group up your buttons
-div.buttons, ul.buttons {
+div.buttons {
     list-style: none;
     margin: 0 0 $margin-bottom 0;
     @include clearfix;
-    li { 
-        a.button, a.btn, input[type="submit"], button {
-            @include border-radius(0);
-            float: left; 
-            border-left-width: 0;
-        }
-        &:first-child { a.button, a.btn, input[type="submit"], button { @include border-radius(0.2em 0 0 0.2em); border-left-width: 1px; } }
-        &:last-child { a.button, a.btn, input[type="submit"], button { @include border-radius(0 0.2em 0.2em 0); } }
-    }
 }
 
 %button-style {
