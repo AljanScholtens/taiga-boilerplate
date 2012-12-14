@@ -26,10 +26,10 @@ div.container {
     @include clearfix; 
     max-width: $max-width;
     margin: auto;
-    padding: 2.5em; // TEMP 
+    padding: 2.5em;
 }
 
-// Example for types.html 
+// Example for modules.html 
 header { @include grid(48, 1); }
 section { 
     @include clearfix;

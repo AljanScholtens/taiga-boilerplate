@@ -48,5 +48,5 @@ Just change your padding on your block element and you don't have to change the 
 
 Thanks
 ---------------------
-Taiga was inspired by these awesome people: Miller Medeiros, Paul Irish, Olav Bjorkoy and Emil Loer.
+Taiga was inspired by these awesome people: Miller Medeiros, Paul Irish, Olav Bjorkoy and Jonathan Snook.
 If you have any questions or suggestions, e-mail me at aljan@studiowolf.nl or ask it on github.

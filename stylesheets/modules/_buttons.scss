@@ -1,6 +1,11 @@
 // =========== Buttons 
 
-button::-moz-focus-inner { padding: 0; border: 0; }
+button::-moz-focus-inner, 
+input::-moz-focus-inner { 
+    padding: 0; 
+    border: 0; 
+}
+
 // Choose a div or ul to group up your buttons
 div.buttons {
     list-style: none;
@@ -8,89 +13,100 @@ div.buttons {
     @include clearfix;
 }
 
-%button-style {
+// The standard button has the $color-brand colors
+%button {
     cursor: pointer;
     display: inline-block;
-    font-size: 1.1em;
+    font-size: inherit;
     font-weight: bold;
-    line-height: 1.5em;
+    font-family: $font-family;
+    line-height: 1.25;
     margin: 0;
-    padding: 0.25em 1em 0.35em 1em;
+    padding: 0.35em 0.75em 0.45em 0.75em;
+    border: 0;
+    vertical-align: baseline;
+    text-decoration: none;
+    @include border-radius(0.2em);
 }
 
-// The standard button has the $color-brand colors
-a.button, a.btn, input[type="submit"], button {
-    @extend %button-style;
-    border: 1px solid darken($color-brand, 20%);
-    @include border-radius(0.2em);
-    @include box-shadow((0 1px 1px darken($white, 10%), inset 0 1px 0px rgba($white, 0.3)));
+.button, 
+input[type="submit"], 
+button {
+    @extend %button;
     color: $white;
-    
-    @include gradient(top, $color-brand, darken($color-brand, 10%));
-    
-    text-decoration: none;
-    text-shadow: 1px 1px 0 rgba($black, 0.5);
-    @include transition(all 50ms);
-    vertical-align: baseline;
-    &:hover { @include gradient(top, lighten($color-brand, 10%), darken($color-brand, 10%)); }
+    background: $color-brand;
+    &:hover { background: darken($color-brand, 5%); }
     &:active, &:focus {
-        background: darken($color-brand, 15%);
-        @include box-shadow((0 1px 0 $white, inset 0 0 20px $black));
-        color: darken($white, 25%);
-        text-shadow: 0 0 0;
+        @include box-shadow(inset 0 1px 4px rgba($black, 0.7));
+        background: darken($color-brand, 10%);
+        color: lighten($black, 75%);
     }
-    
-    // The dark button
-    &.contrast {
-        border-color: $black;
-        @include gradient(top, lighten($black, 40%), $black);
-        &:hover { @include gradient(top, lighten($black, 50%), $black); }
-        &:active, &:focus {
-            background: lighten($black, 20%);
-            color: darken($white, 25%);
-        }
+}
+
+// The dark button
+.button-contrast, 
+input[type="submit"].button-contrast, 
+button.button-contrast {
+    @extend %button;
+    color: $white;
+    background-color: lighten($black, 15%);
+    &:hover { background-color: $black; }
+    &:active, 
+    &:focus { 
+        @include box-shadow(inset 0 1px 4px rgba($black, 0.7));
+        background-color: $black; 
+        color: lighten($black, 75%);
     }
-    
-    // The soft grey button
-    &.soft {
-        border-color: darken($white, 35%);
-        color: lighten($black, 30%);
-        @include gradient(top, $white, darken($white, 10%));
-        text-shadow: 1px 1px 0px $white;
-        &:hover {
-            border-color: darken($white, 45%);
-            color: $black;
-            @include gradient(top, $white, #eee);
-        }
-        &:active, &:focus {
-            background: darken($white, 25%);
-            border-color: lighten($black, 40%);
-            @include box-shadow((0 0 0, inset 0 1px 16px lighten($black, 35%)));
-            color: lighten($black, 35%);
-            text-shadow: 0 0 0;
-        }
+}
+
+// The soft grey button
+.button-soft, 
+input[type="submit"].button-soft, 
+button.button-soft {
+    @extend %button;
+    color: lighten($black, 20%);
+    background: lighten($black, 80%);
+    &:hover {
+        color: $black;
+        background: lighten($black, 75%);
     }
-    
-    &.success {
-        border-color: darken($color-success, 20%);
-        @include gradient(top, $color-success, darken($color-success, 10%));
-        &:hover { @include gradient(top, lighten($color-success, 10%), darken($color-success, 10%)); }
-        &:active, &:focus {
-            background: darken($color-success, 15%);
-        }
+    &:active, &:focus {
+        background: lighten($black, 65%);
+        @include box-shadow(inset 0 1px 4px rgba($black, 0.1));
+        color: lighten($black, 20%);
     }
-    
-    &.alert {
-        border-color: darken($color-error, 20%);
-        @include gradient(top, $color-error, darken($color-error, 10%));
-        &:hover { @include gradient(top, lighten($color-error, 10%), darken($color-error, 10%)); }
-        &:active, &:focus {
-            background: darken($color-error, 15%);
-        }
+}
+
+.button-success, 
+input[type="submit"].button-success, 
+button.button-success {
+    @extend %button;
+    color: $white;
+    background-color: $color-success;
+    &:hover { 
+        background-color: darken($color-success, 5%); 
+        color: $white;
     }
-    
-    // Add these classes to adjust the size of the buttons
-    &.large { font-size: 1.25em; }
-    &.small { font-size: 1em; }
-    &.tiny { font-size: 0.85em; }
+    &:active, &:focus { 
+        background-color: darken($color-success, 10%);
+        @include box-shadow(inset 0 1px 4px rgba($black, 0.3));
+        color: lighten($black, 75%); 
+    }
+}
+
+.button-alert, 
+input[type="submit"].button-alert, 
+button.button-alert {
+    @extend %button;
+    color: $white;
+    background-color: $color-alert;
+    &:hover { 
+        background-color: darken($color-alert, 5%); 
+        color: $white;
+    }
+    &:active, &:focus { 
+        background-color: darken($color-alert, 10%);
+        @include box-shadow(inset 0 1px 4px rgba($black, 0.3));
+        color: lighten($black, 75%); 
+    }
 }

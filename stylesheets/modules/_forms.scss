@@ -12,12 +12,12 @@ input[type=tel],
 input[type=url], 
 textarea, 
 select {
-    border: 1px solid darken($white, 25%);
+    border: 1px solid lighten($black, 65%);
     color: #333;
     font-family: $font-family;
     font-size: inherit;
     line-height: 1.5em;
-    margin: -1px 0.5em 0 0;
+    margin: 0;
     padding: 0.6em;
     width: 100%;
     @include border-radius(0.2em);
@@ -26,7 +26,7 @@ select {
     vertical-align: baseline;
     
     &:focus {
-        border: 1px solid darken($white, 35%);
+        border: 1px solid lighten($black, 55%);
         outline: 0;
         color: #333;
         @include box-shadow(0px 0px 4px rgba($black, 0.3));
@@ -50,19 +50,21 @@ legend {
     margin-bottom: 0.25em; 
     font-weight: bold; 
     line-height: 1.5em;
-    font-size: 1.6em;
+    font-size: 1.4em;
 }
 
 ul.form {
     clear: both;
     list-style: none;
     margin: 0 0 $margin-bottom 0;
+    @include clearfix;
+    
     > li > label {
         clear: left;
         cursor: pointer;
         font-weight: bold;
         @include grid(16, 0, 1);
-        padding-top: 0.55em;
+        padding-top: 0.6em;
         text-align: right;
         
         @media only screen and ($media-type: $media-phone) {
@@ -73,7 +75,8 @@ ul.form {
         
         &:hover { color: $black; }
     }
-    > li > div {
+    
+    div.form-fields {
         @include grid(32);
         margin-bottom: 0.5em;
         
@@ -82,8 +85,9 @@ ul.form {
         }
         p, small {
             display: block;
-            margin: 0.6em 0.6em 0.25em 0px;
+            margin: 0.25em 0;
         }
+        p.form-description { margin: 0.6em 0; }
     }
 }
 
@@ -92,8 +96,8 @@ ul.form-checklist {
     margin: 0.6em 0;
     li { margin: 0.5em 0; }
     input { 
-        display: inline-block; 
-        margin-right: 0.5em;
+        display: inline; 
+        margin-right: 0.8em;
     }
     label {
         @include grid-reset;
@@ -107,18 +111,17 @@ ul.form-checklist {
 
 li.form-error {
     label { 
-        color: $color-error; 
-        &:hover { color: darken($color-error, 25%); }
+        color: $color-alert; 
+        &:hover { color: darken($color-alert, 25%); }
     }
     input {
-        border: 1px solid $color-error; 
-        @include box-shadow((0px 0px 3px lighten($color-error, 10%), inset 0 0 0));
-        &:focus { border: 1px solid $color-error; }
+        border: 1px solid $color-alert; 
+        @include box-shadow((0px 0px 3px lighten($color-alert, 10%), inset 0 0 0));
+        &:focus { border: 1px solid $color-alert; }
     }
     ul.form-errors {
-        color: $color-error;
+        color: $color-alert;
         list-style: none;
-        margin: 0.6em 0;
-        li { margin: 0.5em 0; }
+        margin: 0.35em 0;
     }
 } 
