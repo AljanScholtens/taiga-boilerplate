@@ -15,6 +15,9 @@ div.buttons {
 
 // The standard button has the $color-brand colors
 %button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
     cursor: pointer;
     display: inline-block;
     font-size: inherit;
