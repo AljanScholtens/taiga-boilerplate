@@ -9,7 +9,6 @@ Taiga is a small boilerplate that works on SASS with an awesome semantic fluid g
 * Responsive, using em units;
 * Everything is border-box;
 * Basic types like forms, tables etc;
-* Using Eric Meyers' reset;
 * Comes with flexible CSS3 mixins;
 
 Website is http://taigaboilerplate.com or Github https://github.com/AljanScholtens/Taiga
@@ -49,5 +48,5 @@ Just change your padding on your block element and you don't have to change the 
 
 Thanks
 ---------------------
-Taiga was inspired by these awesome people: Miller Medeiros, Paul Irish, Olav Bjorkoy and Emil Loer.
+Taiga was inspired by these awesome people: Miller Medeiros, Paul Irish, Olav Bjorkoy and Jonathan Snook.
 If you have any questions or suggestions, e-mail me at aljan@studiowolf.nl or ask it on github.

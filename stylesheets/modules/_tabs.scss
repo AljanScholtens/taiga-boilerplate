@@ -1,0 +1,24 @@
+/* =========== Tabs */
+
+ul.tabs {
+    background: lighten($black, 80%);
+    @include border-radius(0.2em);
+    margin: 0 0 $margin-bottom 0;
+    padding: 0.35em 0.35em 0 0.35em;
+    li {
+        display: inline-block;
+        position: relative;
+    }
+    a {
+        color: lighten($black, 25%);
+        display: block;
+        padding: 0.75em;
+        &:hover { color: $black; }
+    }
+    li.is-selected a { 
+        background: $white;
+        @include border-radius(0.2em 0.2em 0 0);
+        color: $black; 
+        font-weight: bold;
+    }
+}

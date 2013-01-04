@@ -3,42 +3,48 @@
 //  Licensed under the MIT license
 
 //  Run the following SASS command: 'sass --watch stylesheets --style compressed'
-//  Make sure you set the variables below (find the grid documentation in lib/_grid.scss)
+//  Make sure you set the variables below (find the grid documentation in core/_grid.scss)
 
-/* ========================= Variables ================================== */
+// =========== Settings/Variables
 
 $font-family: 'Helvetica Neue', Arial, sans-serif;
-$font-size: 15px;
+$font-size: 16px;
 
 $grid-columns: 48;
 $max-width: 960px;
 $margin-bottom: 1.25em;
 
+$media-type: max-width;
+$media-desktop: 960px;
+$media-tablet: 769px;
+$media-phone: 520px;
+
 $color-brand: #0e8a41;
-$color-error: #d24226;
-$color-success: #5DA423;
-$black: #050505;
+$color-success: #679b23;
+$color-alert: #d65223;
+$black: #121313;
 $white: #fff;
 
+// =========== Includes
 
-/* ========================= Includes ============================= */
+// Core
+@import "core/_mixins";
+@import "core/_grid";
+@import "core/_base";
+@import "core/_states";
+@import "core/_layout";
 
-/* Base */
-@import "library/_reset";
-@import "library/_mixins";
-@import "library/_grid";
-@import "library/_typography";
-@import "library/_layout";
+// Modules 
+@import "modules/_forms";
+@import "modules/_tables";
+@import "modules/_labels";
+@import "modules/_buttons";
+@import "modules/_icons";
+@import "modules/_messages";
+@import "modules/_pagination";
+@import "modules/_modal";
+@import "modules/_tabs";
+@import "modules/_panels";
 
-/* Modules */
-@import "library/_forms";
-@import "library/_tables";
-@import "library/_labels";
-@import "library/_buttons";
-@import "library/_icons";
-@import "library/_messages";
-@import "library/_pagination";
-@import "library/_modal";
-@import "library/_tabs";
-@import "library/_panels";
-@import "library/_print";
+// Print
+@import "core/_print";

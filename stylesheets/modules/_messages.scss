@@ -1,0 +1,33 @@
+/* =========== Messages */
+
+ul.messages  {
+    list-style: none;
+    margin: 0 0 $margin-bottom 0;
+}
+
+li%message {
+    @include border-radius(0.2em);
+    font-weight: bold;
+    margin-bottom: 0.25em;
+    display: block;
+    vertical-align: baseline;
+    padding: 0.35em 0.75em 0.45em 0.75em;
+}
+
+li.message {
+    @extend li%message;
+    color: lighten($black, 20%);
+    background: lighten($black, 80%);
+}
+
+li.message-success {
+    @extend li%message;
+    color: $white;
+    background: $color-success;
+}
+
+li.message-alert {
+    @extend li%message;
+    color: $white;
+    background: $color-alert;
+}

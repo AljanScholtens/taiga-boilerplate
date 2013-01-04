@@ -1,16 +1,35 @@
-/* =========== Typography */
+// =========== Base
 
-.left { float: left; }
-.right { float: right; }
-.text-left { text-align: left; }
-.text-right { text-align: right; }
-.text-center { text-align: center; }
-.nowrap { white-space: nowrap; }
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; }
+
+* { @include box-sizing(border-box); }
+
+::-moz-selection { background: lighten($black, 10%); color: $white; text-shadow: none; }
+::selection { background: lighten($black, 10%); color: $white; text-shadow: none; }
+
+@font-face {
+    font-family: 'fontName';
+    src: url('../fonts/fontName.eot?') format('eot'), url('../fonts/fontName.woff') format('woff'), url('../fonts/fontName.ttf') format('truetype');
+}
+
+html { 
+    color: lighten($black, 25%);
+    font: $font-size $font-family;
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+body { 
+    line-height: 1.5em;
+    @media only screen and ($media-type: $media-desktop) { font-size: 15px; }
+    @media only screen and ($media-type: $media-phone) { font-size: 14px; }
+}
 
 h1, h2, h3, h4, h5, h6 {
     font-weight: bold; 
     line-height: 1.5em; 
-    margin-bottom: 0.25em; 
+    margin: 0 0 0.25em 0; 
     &.soft {
         font-weight: 300;
         color: lighten($black, 50%);
@@ -23,8 +42,6 @@ h3 { font-size: 1.4em; }
 h4 { font-size: 1.2em; }
 h5 { font-size: 1.05em; }
 h6 { font-size: 1em; }
-
-
 
 p { 
     margin-bottom: $margin-bottom; 
@@ -56,17 +73,16 @@ mark { background-color: lighten(yellow, 35%); }
 
 hr { 
     background-color: transparent; 
-    border: solid darken($white, 25%);
+    border: solid lighten($black, 80%);
     border-width: 1px 0 0; 
     clear: both; 
     margin: 2em $margin-bottom; 
 }
 
-blockquote { 
+blockquote {
+    quotes: none;
     color: lighten($black, 50%); 
-    font-family: Georgia, serif;
-    font-size: 1.2em; 
-    font-style: italic; 
+    font: italic 1.2em Georgia, serif;  
     line-height: 1.5em; 
     margin-bottom: $margin-bottom; 
     padding: 0 0 0 2em;
@@ -84,13 +100,13 @@ blockquote {
         color: lighten($black, 35%);
         display: block;
         font-size: 0.85em;
-        &:before {  content: "\2014 \0020"; }
+        &:before { content: "\2014 \0020"; }
     }
 }
 
 figure {
     display: inline-block;
-    max-width: 100%;
+    width: 100%;
     img { 
         display: block;
         width: 100%;
@@ -108,8 +124,10 @@ dl {
     margin-bottom: $margin-bottom;
     dt { font-weight: bold; }
     dd { margin-left: $margin-bottom; }
-    &.advanced {
-        dt { @include grid(16, 0, 1); }
-        dd { @include grid(32); }
-    }
+}
+
+dl.advanced {
+    @extend dl;
+    dt { @include grid(16, 0, 1); }
+    dd { @include grid(32); }
 }

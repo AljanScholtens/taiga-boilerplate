@@ -1,0 +1,39 @@
+/* =========== Label */
+
+
+%label {
+    @include border-radius(0.2em);
+    font-size: 0.75em;
+    font-weight: bold;
+    padding: 0.1em 0.3em;
+}
+
+.label {
+    @extend %label !optional;
+    color: $white;
+    background: $color-brand;
+}
+
+.label-contrast {
+    @extend %label !optional;
+    color: $white;
+    background-color: lighten($black, 15%);
+}
+
+.label-soft {
+    @extend %label !optional;
+    color: lighten($black, 20%);
+    background: lighten($black, 80%);
+}
+
+.label-success {
+    @extend %label !optional;
+    color: $white;
+    background-color: $color-success;
+}
+
+.label-alert {
+    @extend %label !optional;
+    color: $white;
+    background-color: $color-alert;
+}

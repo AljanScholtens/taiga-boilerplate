@@ -1,0 +1,265 @@
+﻿<!DOCTYPE HTML>
+<html lang="nl"> 
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="apple-mobile-web-app-title" content="Taiga">
+    <meta name="msapplication-TileImage" content="windows-icon.png">
+    <meta name="msapplication-TileColor" content="#0f7a3b">
+    
+    <title>Modules - Project</title>
+    <meta name="description" content="" />
+    <meta name="author" content="Studio Wolf, www.studiowolf.nl" />
+    
+    <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <link rel="stylesheet" href="stylesheets/styles.css" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="apple-touch-icon-precomposed" href="apple-icon.png" />
+</head>
+
+<body>
+
+    <div class="container">
+        
+        <!-- Text 
+        ===================================================-->
+        <header>
+            <h1>H1 Taiga Boilerplate</h1>
+            <h2 class="soft">H2 Taiga Boilerplate</h2>
+            <h3>H3 Taiga Boilerplate</h3>
+            <h4>H4 Taiga Boilerplate</h4>
+            <h5>H5 Taiga Boilerplate</h5>
+            <h6>H6 Taiga Boilerplate</h6>
+            <p class="lead">As an <strong>interface designer</strong> and engineer I wanted to create an HTML5/CSS3 environment that easily sets up the basics of a <a href="#" title="#TITLE">responsive</a> web application or website. It needed a grid that is flexible and fluid. Also some basic types like forms en tables would really speed up my workflow in combination with simple mixins. That's why I created Taiga, an environment to love.</p>
+        </header>
+        <section class="l-half panel">
+            <h2>The amazing grid</h2>
+            
+            <p>Taiga has a semantic fluid <abbr title="#TITLE">grid</abbr> based on columns. Standard you have <strong>48 columns </strong> (adjustable). It works with <em>percentages</em> and em units to make it fluid and more <a href="#" title="#TITLE">responsive</a>. Remember, Taiga works with box-sizing: <mark>border-box</mark>, this means you don't have to nest several block elements to get your padding right and border right. Just change your padding on your block element and you don't have to change the width.</p>
+            
+            <p>Taiga was inspired by these awesome people: Miller Medeiros, Paul Irish, Olav Bjorkoy and Jonathan Snook. If you have any questions or suggestions, e-mail me at <a href="mailto:aljan@studiowolf.nl" title="#TITLE">aljan@studiowolf.nl</a> or ask it on github.</p>
+        </section>
+        
+        <section class="l-half">
+            <h3><a href="#" title="#TITLE">What do you need?</a></h3>
+            <p>You don't need a lot, just install SASS and you're almost ready to go. Watch the stylesheet in the root of Taiga with the following command: sass --watch stylesheets:stylesheets --style compressed. Check components.html in the root to see a simple demo. You can find a few variables in styles.scss that sets the basics of your web application or website. Mixins can be found in the _mixins.scss and are very simple to keep them flexible.</p>
+            <p><small>Install SASS, read the instructions on http://sass-lang.com/</small></p>
+            <p><code>ul.list li { background: grey; }</code></p>
+            
+            <blockquote>
+                Voor een soepel verloop maken we daarna afspraken met betrekking tot je huisstijl, vervolgstappen en deadlines. Van deze sessie maken we een korte samenvatting die we beide gebruiken voor de volgende stappen.
+                <cite>By Pieter</cite>
+            </blockquote>
+        </section>
+        
+        <hr />
+        
+        <section class="l-one-third l-first">
+            <h3>Lists</h3>
+            <ul class="list">
+                <li>Nice warm brown bread from the big oven</li>
+                <li>Some candy
+                    <ol>
+                        <li>I need chocolate</li>
+                        <li>Chewing gum</li>
+                        <li>Analyse de eerste</li>
+                    </ol>
+                </li>
+                <li>Dinner with salmon and spinach</li>
+                <li>And I love ice cream</li>
+            </ul>
+        </section>
+        
+        <section class="l-one-third">
+            <h3>Ordered list</h3>
+            <ol>
+                <li>Nice warm brown bread from the big oven</li>
+                <li>Some candy
+                    <ol>
+                        <li>I need chocolate</li>
+                        <li>Chewing gum</li>
+                        <li>Analyse de eerste</li>
+                    </ol>
+                </li>
+                <li>Dinner with salmon and spinach</li>
+                <li>And I love ice cream</li>
+            </ol>
+        </section>
+        
+        <section class="l-one-third">
+            <h3>Definition list</h3>
+            <dl>
+                <dt>Name:</dt>
+                <dd>Mister Bean</dd>
+                
+                <dt>Street:</dt>
+                <dd>Oosterstraat 29a</dd>
+                
+                <dt>Message:</dt>
+                <dd>Oh no, my message could be a bit too long</dd>
+            </dl>
+            <dl class="advanced">
+                <dt>Name:</dt>
+                <dd>Mister Bean</dd>
+                
+                <dt>Street:</dt>
+                <dd>Oosterstraat 29a</dd>
+                
+                <dt>Message:</dt>
+                <dd>Oh no, my message could be a bit too long</dd>
+            </dl>
+        </section>
+        
+        <section>
+        
+            <!-- Tables
+            ===================================================-->
+            <table>
+                <thead>
+                    <tr>
+                        <th>Type</th>
+                        <th>Name</th>
+                        <th>Download</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>60GDA</strong></td>
+                        <td>Flying over the world</td>
+                        <td><a href="#" title="#TITLE">Download sheet</a></td>
+                    </tr>
+                    <tr>
+                        <td><strong>NL050</strong></td>
+                        <td>Groningen</td>
+                        <td><a href="#" title="#TITLE">Download sheet</a></td>
+                    </tr>
+                    <tr>
+                        <td><strong>ODL-55</strong></td>
+                        <td>55 and stronger</td>
+                        <td><a href="#" title="#TITLE">Download sheet</a></td>
+                    </tr>
+                    <tr>
+                        <td><strong>MOO1</strong></td>
+                        <td>Mool robot</td>
+                        <td><a href="#" title="#TITLE">Download sheet</a></td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <!-- Forms 
+            ===================================================-->
+            <form action="/" method="post">
+                <fieldset>
+                    <legend>Personal details</legend>
+                    <ul class="form">
+                        <li>
+                            <label for="#TAG1">Name</label>
+                            <div class="form-fields">
+                                <input type="text" id="#TAG1" name="#TAG1" placeholder="Name" />
+                                <small>Please add your first and last name</small>
+                            </div>
+                        </li>
+                        <li class="form-error is-hidden">
+                            <label for="#TAG3">E-mail</label>
+                            <div class="form-fields">
+                                <input type="text" id="#TAG3" name="#TAG3" />
+                                <ul class="form-errors">
+                                    <li>Oh no, that can't be your e-mail address</li>
+                                </ul>
+                            </div>                  
+                        </li>
+                    </ul>
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Your message</legend>
+                    <ul class="form">
+                        <li>
+                            <label for="#TAG4">Suggestions</label>
+                            <div class="form-fields">
+                                <textarea cols="50" rows="6" id="#TAG4" name="#TAG4"></textarea>
+                                <small>Your suggestions and feedback would be really helpful to us</small>
+                            </div>
+                        </li>
+                        <li>
+                            <label>Subscription</label>
+                            <div class="form-fields">
+                                <p class="form-description">Premium</p>
+                            </div>
+                        </li>
+                        <li>
+                            <label for="#TAG6">Extra options</label>
+                            <div class="form-fields">
+                                <ul class="form-checklist">
+                                    <li><label for="#TAG6"><input type="checkbox" id="#TAG6" name="#TAG6" />I want to receive awesome newsletters</label></li>
+                                    <li><label for="#TAG7"><input type="checkbox" id="#TAG7" name="#TAG7" />Send me a wolf doll</label></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </fieldset>
+                
+                <div class="buttons">
+                    <button type="submit">Buy</button>
+                    <input class="button-contrast" type="submit" value="Learn more" />
+                    <a class="button-soft" href="#" title="#TITLE">Cancel</a>
+                    <a class="button-success" href="#" title="#TITLE">Save</a>
+                    <a class="button-alert" href="#" title="#TITLE">Delete</a>
+                </div>
+            </form>
+            
+            <!-- Other
+            ===================================================-->
+            <p>
+                <span class="label">Label</span>
+                <span class="label-contrast">Label</span>
+                <span class="label-soft">Label</span>
+                <span class="label-success">Label</span>
+                <span class="label-alert">Label</span>
+            </p>
+            
+            <ul class="messages">
+                <li class="message">Don't forget to check your tasks</li>
+                <li class="message-success">Wow, that's great, you finished your tasks</li>
+                <li class="message-alert">Hmm, it's not possible to delete your task</li>
+            </ul>
+            
+            <ul class="tabs">
+                <li><a href="#" title="#TITLE">Overview</a></li>
+                <li class="is-selected"><a href="#" title="#TITLE">Specifications</a></li>
+                <li><a href="#" title="#TITLE">Photos</a></li>
+                <li><a href="#" title="#TITLE">Prices</a></li>
+            </ul>
+            
+            <ul class="pagination">
+                <li><a href="#" title="#TITLE">Previous</a></li>
+                <li class="is-selected"><a href="#" title="#TITLE">3</a></li>
+                <li><a href="#" title="#TITLE">4</a></li>
+                <li class="gap">...</li>
+                <li><a href="#" title="#TITLE">11</a></li>
+                <li><a href="#" title="#TITLE">12</a></li>
+                <li><a href="#" title="#TITLE">Next</a></li>
+            </ul>
+            
+            <div class="modal is-hidden">
+                <div class="modal-content">
+                    <h2>Please confirm :-)</h2>
+                    <p>Just choose if you want to confirm or not.</p>
+                </div>
+            </div>
+        
+        </section>
+        
+       
+    
+    </div>
+    
+    <!-- Scripts -->
+    <script src="scripts/jquery-1.8.2.min.js"></script>
+    <script src="scripts/events.js"></script>
+    
+</body>
+
+</html>
