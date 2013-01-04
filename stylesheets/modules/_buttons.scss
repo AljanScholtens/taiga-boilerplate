@@ -33,7 +33,7 @@ div.buttons {
 }
 
 .button, 
-input[type="submit"], 
+input[type=submit], 
 button {
     @extend %button;
     color: $white;
@@ -48,7 +48,7 @@ button {
 
 // The dark button
 .button-contrast, 
-input[type="submit"].button-contrast, 
+input[type=submit].button-contrast, 
 button.button-contrast {
     @extend %button;
     color: $white;
@@ -64,7 +64,7 @@ button.button-contrast {
 
 // The soft grey button
 .button-soft, 
-input[type="submit"].button-soft, 
+input[type=submit].button-soft, 
 button.button-soft {
     @extend %button;
     color: lighten($black, 20%);
@@ -81,7 +81,7 @@ button.button-soft {
 }
 
 .button-success, 
-input[type="submit"].button-success, 
+input[type=submit].button-success, 
 button.button-success {
     @extend %button;
     color: $white;
@@ -98,7 +98,7 @@ button.button-success {
 }
 
 .button-alert, 
-input[type="submit"].button-alert, 
+input[type=submit].button-alert, 
 button.button-alert {
     @extend %button;
     color: $white;
