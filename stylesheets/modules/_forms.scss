@@ -12,6 +12,7 @@ input[type=tel],
 input[type=url], 
 textarea, 
 select {
+    -webkit-appearance: none;
     border: 1px solid lighten($black, 65%);
     color: #333;
     display: block;
@@ -20,7 +21,7 @@ select {
     line-height: 1.5em;
     margin: 0;
     padding: 0.6em;
-    width: 100%;
+    width: 100% !important;
     @include border-radius(0.2em);
     @include box-shadow(inset 0px 1px 3px rgba($black, 0.1));
     @include transition(border 0.1s);
