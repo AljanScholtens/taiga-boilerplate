@@ -14,10 +14,10 @@ $grid-columns: 48;
 $max-width: 960px;
 $margin-bottom: 1.25em;
 
-$media-type: max-width;
+$media-type: min-width;
+$media-tablet-portrait: 590px;
+$media-tablet: 767px;
 $media-desktop: 960px;
-$media-tablet: 769px;
-$media-phone: 520px;
 
 $color-brand: #0e8a41;
 $color-success: #679b23;
@@ -35,7 +35,7 @@ $white: #fff;
 @import "core/_states";
 @import "core/_layout";
 
-// Modules 
+// Modules
 @import "modules/_forms";
 @import "modules/_tables";
 @import "modules/_labels";

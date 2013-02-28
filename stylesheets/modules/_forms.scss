@@ -1,16 +1,16 @@
-// =========== Forms 
+// =========== Forms
 
 input[type=search] { -webkit-appearance: textfield; }
 input[type=search]::-webkit-search-decoration { -webkit-appearance: none; }
 
-input[type=text], 
-input[type=number], 
-input[type=password], 
-input[type=search], 
-input[type=email], 
-input[type=tel], 
-input[type=url], 
-textarea, 
+input[type=text],
+input[type=number],
+input[type=password],
+input[type=search],
+input[type=email],
+input[type=tel],
+input[type=url],
+textarea,
 select {
     -webkit-appearance: none;
     border: 1px solid lighten($black, 65%);
@@ -26,7 +26,7 @@ select {
     @include box-shadow(inset 0px 1px 3px rgba($black, 0.1));
     @include transition(border 0.1s);
     vertical-align: baseline;
-    
+
     &:focus {
         border: 1px solid lighten($black, 55%);
         outline: 0;
@@ -35,7 +35,7 @@ select {
     }
 }
 
-textarea { 
+textarea {
     overflow: auto;
     resize: vertical;
     vertical-align: top;
@@ -46,11 +46,11 @@ form {  }
 
 fieldset {  }
 
-legend { 
+legend {
     border: 0;
-    display: block; 
-    margin-bottom: 0.25em; 
-    font-weight: bold; 
+    display: block;
+    margin-bottom: 0.25em;
+    font-weight: bold;
     line-height: 1.5em;
     font-size: 1.4em;
 }
@@ -59,33 +59,32 @@ ul.form {
     clear: both;
     list-style: none;
     margin: 0 0 $margin-bottom 0;
-    
+
     > li { @include clearfix; }
-    
+
     > li > label {
         clear: left;
         cursor: pointer;
+        display: block;
         font-weight: bold;
-        @include grid(16, 0, 1);
         padding-top: 0.6em;
-        text-align: right;
-        
-        @media only screen and ($media-type: $media-phone) {
-            @include grid-reset;
-            text-align: left; 
-            display: block; 
+        text-align: left;
+
+        @media only screen and ($media-type: $media-tablet-portrait) {
+            @include grid(16, 0, 1);
+            text-align: right;
         }
-        
+
         &:hover { color: $black; }
     }
-    
+
     div.form-fields {
-        @include grid(32);
         margin-bottom: 0.5em;
-        
-        @media only screen and ($media-type: $media-phone) {
-            @include grid-reset;
+
+        @media only screen and ($media-type: $media-tablet-portrait) {
+            @include grid(32);
         }
+
         p, small {
             display: block;
             margin: 0.25em 0;
@@ -98,27 +97,27 @@ ul.form-checklist {
     list-style: none;
     margin: 0.6em 0;
     li { margin: 0.5em 0; }
-    input { 
-        display: inline; 
+    input {
+        display: inline;
         margin-right: 0.8em;
     }
     label {
         @include grid-reset;
         font-weight: normal;
-        &:hover { 
-            color: #000; 
-            cursor: pointer; 
+        &:hover {
+            color: #000;
+            cursor: pointer;
         }
     }
 }
 
 li.form-error {
-    label { 
-        color: $color-alert; 
+    label {
+        color: $color-alert;
         &:hover { color: darken($color-alert, 25%); }
     }
     input {
-        border: 1px solid $color-alert; 
+        border: 1px solid $color-alert;
         @include box-shadow((0px 0px 3px lighten($color-alert, 10%), inset 0 0 0));
         &:focus { border: 1px solid $color-alert; }
     }
@@ -127,4 +126,4 @@ li.form-error {
         list-style: none;
         margin: 0.35em 0;
     }
-} 
+}
