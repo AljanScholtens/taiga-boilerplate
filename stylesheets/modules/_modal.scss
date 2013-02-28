@@ -1,4 +1,4 @@
-/* =========== Popover */
+// =========== Modal
 
 div.modal {
     left: 0;
@@ -7,7 +7,7 @@ div.modal {
     top: 0;
     width: 100%;
     z-index: 1000;
-    
+
     // Overlay
     &:after {
         background: rgba($black, 0.9);

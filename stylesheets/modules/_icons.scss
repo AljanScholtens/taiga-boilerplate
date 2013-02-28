@@ -1,4 +1,4 @@
-/* =========== Icons */
+// =========== Icons
 
 %ico {
     display: inline-block;
@@ -12,5 +12,5 @@
 
 .ico-name {
     @extend %ico;
-    background: url('../images/icons.png') 0px 0px no-repeat; 
+    background: url('../images/icons.png') 0px 0px no-repeat;
 }
