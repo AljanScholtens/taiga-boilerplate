@@ -29,6 +29,6 @@ div.container {
 header { @include grid(48, 1); }
 section {
     @include clearfix;
-    margin-bottom: $margin-bottom;
+    margin-bottom: $vertical-spacing;
     @include grid(48, 1);
 }

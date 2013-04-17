@@ -44,7 +44,7 @@ h5 { font-size: 1.05em; }
 h6 { font-size: 1em; }
 
 p {
-    margin-bottom: $margin-bottom;
+    margin-bottom: $vertical-spacing;
     &.lead {
         font-size: 1.2em;
         line-height: 1.5em;
@@ -76,7 +76,7 @@ hr {
     border: solid lighten($black, 80%);
     border-width: 1px 0 0;
     clear: both;
-    margin: 2em $margin-bottom;
+    margin: 2em $vertical-spacing;
 }
 
 blockquote {
@@ -84,7 +84,7 @@ blockquote {
     color: lighten($black, 50%);
     font: italic 1.2em Georgia, serif;
     line-height: 1.5em;
-    margin-bottom: $margin-bottom;
+    margin-bottom: $vertical-spacing;
     padding: 0 0 0 2em;
     position: relative;
     &:before {
@@ -116,14 +116,14 @@ figure {
     }
 }
 
-ul, ol { margin: 0 0 $margin-bottom 1.5em; }
+ul, ol { margin: 0 0 $vertical-spacing 1.5em; }
 ul { list-style: disc; }
 ol { list-style: decimal; }
 
 dl {
-    margin-bottom: $margin-bottom;
+    margin-bottom: $vertical-spacing;
     dt { font-weight: bold; }
-    dd { margin-left: $margin-bottom; }
+    dd { margin-left: $vertical-spacing; }
 }
 
 dl.advanced {
