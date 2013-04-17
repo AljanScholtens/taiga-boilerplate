@@ -70,7 +70,7 @@ ul.form {
         padding-top: 0.6em;
         text-align: left;
 
-        @media only screen and ($media-type: $media-tablet-portrait) {
+        @include media-tablet-portrait {
             @include grid(16, 0, 1);
             text-align: right;
         }
@@ -81,7 +81,7 @@ ul.form {
     div.form-fields {
         margin-bottom: 0.5em;
 
-        @media only screen and ($media-type: $media-tablet-portrait) {
+        @include media-tablet-portrait {
             @include grid(32);
         }
 

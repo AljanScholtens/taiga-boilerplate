@@ -21,8 +21,8 @@ html {
 
 body {
     line-height: 1.5em;
-    @media only screen and ($media-type: $media-tablet-portrait) { font-size: 17px; }
-    @media only screen and ($media-type: $media-tablet) { font-size: 18px; }
+    @include media-tablet-portrait { font-size: 17px; }
+    @include media-tablet { font-size: 18px; }
 }
 
 h1, h2, h3, h4, h5, h6 {

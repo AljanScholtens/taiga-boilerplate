@@ -1,16 +1,16 @@
 // =========== Layout
 
 .l-full {
-    @media only screen and ($media-type: $media-tablet-portrait) { @include grid(48, 1); }
+    @include media-tablet-portrait { @include grid(48, 1); }
 }
 .l-two-third {
-    @media only screen and ($media-type: $media-tablet-portrait) { @include grid(32, 1); }
+    @include media-tablet-portrait { @include grid(32, 1); }
 }
 .l-half {
-    @media only screen and ($media-type: $media-tablet-portrait) { @include grid(24, 1); }
+    @include media-tablet-portrait { @include grid(24, 1); }
 }
 .l-one-third {
-    @media only screen and ($media-type: $media-tablet-portrait) { @include grid(16, 1);  }
+    @include media-tablet-portrait { @include grid(16, 1);  }
 }
 .l-grid {
     @include clearfix;
