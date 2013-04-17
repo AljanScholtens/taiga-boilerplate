@@ -16,7 +16,6 @@ html {
     color: lighten($black, 25%);
     font: $font-size $font-family;
     -webkit-text-size-adjust: 100%;
-    -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
 }
 
