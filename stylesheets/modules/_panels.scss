@@ -1,8 +1,8 @@
-/* =========== Panels */
+// =========== Panels
 
 .panel {
     background: lighten($black, 85%);
-    margin-bottom: $margin-bottom;
+    margin-bottom: $vertical-spacing;
     @include border-radius(0.2em);
     padding: 1em;
 }

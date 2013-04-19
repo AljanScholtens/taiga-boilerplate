@@ -1,4 +1,16 @@
-// =========== Mixins 
+// =========== Mixins
+
+@mixin media-tablet-portrait {
+    @media only screen and ($media-type: $media-tablet-portrait) { @content; }
+}
+
+@mixin media-tablet {
+    @media only screen and ($media-type: $media-tablet) { @content; }
+}
+
+@mixin media-desktop {
+    @media only screen and ($media-type: $media-desktop) { @content; }
+}
 
 @mixin animation ($name: true, $duration: true, $timing_function: true, $delay: false, $iteration_count: false, $direction: false) {
     @if $name { -webkit-animation-name: $name; -moz-animation-name: $name; -ms-animation-name: $name; }
@@ -89,8 +101,8 @@
 
 @mixin gradient($side, $start, $end) {
     background-color: $end;
-    background-image: -webkit-linear-gradient($side, $start, $end); 
-    background-image: -moz-linear-gradient($side, $start, $end); 
+    background-image: -webkit-linear-gradient($side, $start, $end);
+    background-image: -moz-linear-gradient($side, $start, $end);
     background-image: -ms-linear-gradient($side, $start, $end);
     background-image: -o-linear-gradient($side, $start, $end);
     background-image: linear-gradient($side, $start, $end);

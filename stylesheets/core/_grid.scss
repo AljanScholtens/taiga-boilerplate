@@ -1,24 +1,24 @@
-/* =========== Semantic fluid grid */
+// =========== Grid
 
 /*
 
-    Use '@include grid(12, 2)' to make a column. 
+    Use '@include grid(12, 2)' to make a column.
     The first unit (12) is the column width.
     The second unit (2) is the margin on both sides.
     The margin will be auto substracted from the column width.
     So don't recalculate the column width if you change your margin.
-    
+
     To set different margins on both sides use '@include grid(12, 2, 3)'.
     You can also use negative margins.
-    
+
 */
 
 $max-width: ($max-width / $font-size) + em;
-$grid-column: 100% / $grid-columns; 
+$grid-column: 100% / $grid-columns;
 
-@mixin col($n: 1) { float: left; width: ($n * $grid-column); } 
-@mixin prepend($n: 1) { margin-left: $grid-column * $n } 
-@mixin append($n: 1) { margin-right: $grid-column * $n } 
+@mixin col($n: 1) { float: left; width: ($n * $grid-column); }
+@mixin prepend($n: 1) { margin-left: $grid-column * $n }
+@mixin append($n: 1) { margin-right: $grid-column * $n }
 
 @mixin grid($cols: 1, $grid-margin-left: 0, $grid-margin-right: $grid-margin-left) {
     @include col($cols - ($grid-margin-left + $grid-margin-right));

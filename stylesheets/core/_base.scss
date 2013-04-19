@@ -12,24 +12,23 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     src: url('../fonts/fontName.eot?') format('eot'), url('../fonts/fontName.woff') format('woff'), url('../fonts/fontName.ttf') format('truetype');
 }
 
-html { 
+html {
     color: lighten($black, 25%);
     font: $font-size $font-family;
     -webkit-text-size-adjust: 100%;
-    -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
 }
 
-body { 
+body {
     line-height: 1.5em;
-    @media only screen and ($media-type: $media-desktop) { font-size: 15px; }
-    @media only screen and ($media-type: $media-phone) { font-size: 14px; }
+    @include media-tablet-portrait { font-size: 17px; }
+    @include media-tablet { font-size: 18px; }
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-weight: bold; 
-    line-height: 1.5em; 
-    margin: 0 0 0.25em 0; 
+    font-weight: bold;
+    line-height: 1.5em;
+    margin: 0 0 0.25em 0;
     &.soft {
         font-weight: 300;
         color: lighten($black, 50%);
@@ -43,17 +42,17 @@ h4 { font-size: 1.2em; }
 h5 { font-size: 1.05em; }
 h6 { font-size: 1em; }
 
-p { 
-    margin-bottom: $margin-bottom; 
-    &.lead { 
-        font-size: 1.2em; 
-        line-height: 1.5em; 
+p {
+    margin-bottom: $vertical-spacing;
+    &.lead {
+        font-size: 1.2em;
+        line-height: 1.5em;
     }
 }
 
-a { 
-    color: $color-brand; 
-    text-decoration: none; 
+a {
+    color: $color-brand;
+    text-decoration: none;
     &:hover { color: darken($color-brand, 50%); }
 }
 
@@ -71,24 +70,24 @@ del { text-decoration: line-through; }
 
 mark { background-color: lighten(yellow, 35%); }
 
-hr { 
-    background-color: transparent; 
+hr {
+    background-color: transparent;
     border: solid lighten($black, 80%);
-    border-width: 1px 0 0; 
-    clear: both; 
-    margin: 2em $margin-bottom; 
+    border-width: 1px 0 0;
+    clear: both;
+    margin: 2em $vertical-spacing;
 }
 
 blockquote {
     quotes: none;
-    color: lighten($black, 50%); 
-    font: italic 1.2em Georgia, serif;  
-    line-height: 1.5em; 
-    margin-bottom: $margin-bottom; 
+    color: lighten($black, 50%);
+    font: italic 1.2em Georgia, serif;
+    line-height: 1.5em;
+    margin-bottom: $vertical-spacing;
     padding: 0 0 0 2em;
     position: relative;
-    &:before { 
-        color: lighten($black, 75%); 
+    &:before {
+        color: lighten($black, 75%);
         content: "\201C";
         display: block;
         font-size: 5em;
@@ -107,7 +106,7 @@ blockquote {
 figure {
     display: inline-block;
     width: 100%;
-    img { 
+    img {
         display: block;
         width: 100%;
     }
@@ -116,14 +115,14 @@ figure {
     }
 }
 
-ul, ol { margin: 0 0 $margin-bottom 1.5em; }
+ul, ol { margin: 0 0 $vertical-spacing 1.5em; }
 ul { list-style: disc; }
 ol { list-style: decimal; }
 
 dl {
-    margin-bottom: $margin-bottom;
+    margin-bottom: $vertical-spacing;
     dt { font-weight: bold; }
-    dd { margin-left: $margin-bottom; }
+    dd { margin-left: $vertical-spacing; }
 }
 
 dl.advanced {
