@@ -7,10 +7,10 @@ $grid-columns: 48;
 $max-width: 960px;
 $vertical-spacing: 1.25em;
 
-$media-type: min-width;
-$media-tablet-portrait: 590px;
-$media-tablet: 767px;
-$media-desktop: 960px;
+$breakpoint-property: min-width;
+$breakpoint-one: 590px;
+$breakpoint-two: 767px;
+$breakpoint-three: 960px;
 
 $color-brand: #0e8a41;
 $color-success: #679b23;

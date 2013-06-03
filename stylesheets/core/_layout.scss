@@ -1,16 +1,16 @@
 // =========== Layout
 
 .l-full {
-    @include media-tablet-portrait { @include grid(48, 1); }
+    @include breakpoint(one) { @include grid(48, 1); }
 }
 .l-two-third {
-    @include media-tablet-portrait { @include grid(32, 1); }
+    @include breakpoint(one) { @include grid(32, 1); }
 }
 .l-half {
-    @include media-tablet-portrait { @include grid(24, 1); }
+    @include breakpoint(one) { @include grid(24, 1); }
 }
 .l-one-third {
-    @include media-tablet-portrait { @include grid(16, 1);  }
+    @include breakpoint(one) { @include grid(16, 1);  }
 }
 .l-grid {
     @include clearfix;

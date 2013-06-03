@@ -21,8 +21,8 @@ html {
 
 body {
     line-height: 1.5em;
-    @include media-tablet-portrait { font-size: 17px; }
-    @include media-tablet { font-size: 18px; }
+    @include breakpoint(one) { font-size: $font-size + 1; }
+    @include breakpoint(two) { font-size: $font-size + 2; }
 }
 
 h1, h2, h3, h4, h5, h6 {

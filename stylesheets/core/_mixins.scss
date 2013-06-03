@@ -1,17 +1,5 @@
 // =========== Mixins
 
-@mixin media-tablet-portrait {
-    @media only screen and ($media-type: $media-tablet-portrait) { @content; }
-}
-
-@mixin media-tablet {
-    @media only screen and ($media-type: $media-tablet) { @content; }
-}
-
-@mixin media-desktop {
-    @media only screen and ($media-type: $media-desktop) { @content; }
-}
-
 @mixin animation ($name: true, $duration: true, $timing_function: true, $delay: false, $iteration_count: false, $direction: false) {
     @if $name { -webkit-animation-name: $name; -moz-animation-name: $name; -ms-animation-name: $name; }
     @if $duration { -webkit-animation-duration: $duration; -moz-animation-duration: $duration; -ms-animation-duration: $duration; }
@@ -49,6 +37,24 @@
     -ms-box-sizing: $box;
     -o-box-sizing: $box;
     box-sizing: $box;
+}
+
+@mixin breakpoint($point) {
+    @if $point == one {
+        @media ($breakpoint-property: $breakpoint-one) { @content; }
+    }
+    @else if $point == two {
+        @media ($breakpoint-property: $breakpoint-two) { @content; }
+    }
+    @else if $point == three {
+        @media ($breakpoint-property: $breakpoint-three)  { @content; }
+    }
+    @else if $point == four {
+        @media ($breakpoint-property: $breakpoint-three)  { @content; }
+    }
+    @else if $point == five {
+        @media ($breakpoint-property: $breakpoint-three)  { @content; }
+    }
 }
 
 @mixin filter($filter) {
