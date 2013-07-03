@@ -9,6 +9,13 @@
     @if $direction { -webkit-animation-direction: $direction; -moz-animation-direction: $direction; -ms-animation-direction: $direction; }
 }
 
+@mixin backface-visibility($backface) {
+    -webkit-backface-visibility: $backface;
+    -moz-backface-visibility: $backface;
+    -ms-backface-visibility: $backface;
+    backface-visibility: $backface;
+}
+
 @mixin background-clip($clip) {
     -webkit-background-clip: $clip;
     -moz-background-clip: $clip;
@@ -62,6 +69,12 @@
     -moz-filter: $filter;
     -o-filter: $filter;
     filter: $filter;
+}
+
+@mixin perspective($perspective) {
+    -webkit-perspective: $perspective;
+    -moz-perspective: $perspective;
+    perspective: $perspective;
 }
 
 @mixin transform($transform) {
