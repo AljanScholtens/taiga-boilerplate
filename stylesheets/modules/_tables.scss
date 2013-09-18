@@ -4,7 +4,7 @@ table {
     border: 1px solid lighten($black, 70%);
     border-collapse: separate;
     border-spacing: 0;
-    @include border-radius(0.2em);
+    border-radius: 0.2em;
     margin-bottom: $vertical-spacing;
     width: 100%;
 }

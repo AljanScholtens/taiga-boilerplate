@@ -16,33 +16,9 @@
     backface-visibility: $backface;
 }
 
-@mixin background-clip($clip) {
-    -webkit-background-clip: $clip;
-    -moz-background-clip: $clip;
-    -o-background-clip: $clip;
-    background-clip: $clip;
-}
-
-@mixin border-radius($radius) {
-    -webkit-border-radius: $radius;
-    -moz-border-radius: $radius;
-    -ms-border-radius: $radius;
-    -o-border-radius: $radius;
-    border-radius: $radius;
-}
-
-@mixin box-shadow($shadow) {
-    -webkit-box-shadow: $shadow;
-    -moz-box-shadow: $shadow;
-    -o-box-shadow: $shadow;
-    box-shadow: $shadow;
-}
-
 @mixin box-sizing($box) {
     -webkit-box-sizing: $box;
     -moz-box-sizing: $box;
-    -ms-box-sizing: $box;
-    -o-box-sizing: $box;
     box-sizing: $box;
 }
 
@@ -79,16 +55,11 @@
 
 @mixin transform($transform) {
     -webkit-transform: $transform;
-    -moz-transform: $transform;
-    -ms-transform: $transform;
-    -o-transform: $transform;
     transform: $transform;
 }
 
 @mixin transition($transition) {
     -webkit-transition: $transition;
-    -moz-transition: $transition;
-    -o-transition: $transition;
     transition: $transition;
 }
 
@@ -121,14 +92,5 @@
 @mixin gradient($side, $start, $end) {
     background-color: $end;
     background-image: -webkit-linear-gradient($side, $start, $end);
-    background-image: -moz-linear-gradient($side, $start, $end);
-    background-image: -ms-linear-gradient($side, $start, $end);
-    background-image: -o-linear-gradient($side, $start, $end);
     background-image: linear-gradient($side, $start, $end);
-}
-
-@mixin gradient-ie($start, $end) {
-    *zoom: 1;
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#{$start}', endColorstr='#{$end}');
-    -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#{$start}', endColorstr='#{$end}');
 }
