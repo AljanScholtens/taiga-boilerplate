@@ -105,7 +105,21 @@ blockquote {
 
 figure {
     display: inline-block;
+    margin-bottom: $vertical-spacing;
     width: 100%;
+
+    &.figure-left {
+        clear: left;
+        float: left;
+        padding-right: $vertical-spacing;
+        width: 50%;
+    }
+    &.figure-right {
+        clear: right;
+        float: right;
+        padding-left: $vertical-spacing;
+        width: 50%;
+    }
     img {
         display: block;
         width: 100%;
