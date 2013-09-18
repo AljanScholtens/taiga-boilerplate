@@ -2,8 +2,8 @@
 
 .panel {
     background: lighten($black, 85%);
+    border-radius: $border-radius;
     margin-bottom: $vertical-spacing;
-    border-radius: 0.2em;
     padding: 1em;
 }
 

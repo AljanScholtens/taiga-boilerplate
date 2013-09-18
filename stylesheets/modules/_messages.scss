@@ -6,28 +6,29 @@ ul.messages  {
 }
 
 li%message {
-    border-radius: 0.2em;
+    border-radius: $border-radius;
+    display: block;
     font-weight: bold;
     margin-bottom: 0.25em;
-    display: block;
-    vertical-align: baseline;
     padding: 0.35em 0.75em 0.45em 0.75em;
+    vertical-align: baseline;
 }
 
 li.message {
     @extend li%message;
-    color: lighten($black, 20%);
     background: lighten($black, 80%);
+    color: lighten($black, 20%);
+    
 }
 
 li.message-success {
     @extend li%message;
-    color: $white;
     background: $color-success;
+    color: $white;
 }
 
 li.message-alert {
     @extend li%message;
-    color: $white;
     background: $color-alert;
+    color: $white;
 }

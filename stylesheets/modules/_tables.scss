@@ -3,8 +3,8 @@
 table {
     border: 1px solid lighten($black, 70%);
     border-collapse: separate;
+    border-radius: $border-radius;
     border-spacing: 0;
-    border-radius: 0.2em;
     margin-bottom: $vertical-spacing;
     width: 100%;
 }
