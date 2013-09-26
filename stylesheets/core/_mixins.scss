@@ -92,5 +92,6 @@
 @mixin gradient($side, $start, $end) {
     background-color: $end;
     background-image: -webkit-linear-gradient($side, $start, $end);
+    background-image: -moz-linear-gradient($side, $start, $end);
     background-image: linear-gradient($side, $start, $end);
 }
