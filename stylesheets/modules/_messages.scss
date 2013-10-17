@@ -1,6 +1,7 @@
 // =========== Messages
 
-ul.messages  {
+ul.messages,
+div.message {
     list-style: none;
     margin: 0 0 $vertical-spacing 0;
 }
@@ -15,20 +16,23 @@ li%message {
     vertical-align: baseline;
 }
 
-li.message {
+li.message,
+div.message {
     @extend li%message;
     background: lighten($black, 80%);
     color: lighten($black, 20%);
 }
 
-li.message-success {
+li.message-success,
+div.message-success {
     @extend li%message;
     background: $color-success;
     color: $white;
     -webkit-font-smoothing: antialiased;
 }
 
-li.message-alert {
+li.message-alert,
+div.message-alert {
     @extend li%message;
     background: $color-alert;
     color: $white;
