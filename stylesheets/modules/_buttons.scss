@@ -70,7 +70,7 @@ input[type=submit].button-soft,
 button.button-soft {
     @extend %button;
     color: lighten($black, 20%);
-    background: lighten($black, 80%);
+    background: $gray;
     &:hover {
         color: $black;
         background: lighten($black, 75%);

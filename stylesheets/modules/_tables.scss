@@ -1,7 +1,7 @@
 // =========== Tables
 
 table {
-    border: 1px solid lighten($black, 70%);
+    border: 1px solid $gray;
     border-collapse: separate;
     border-radius: $border-radius;
     border-spacing: 0;
@@ -10,18 +10,18 @@ table {
 }
 
 thead th {
-    background: lighten($black, 90%);
+    background: lighten($gray, 15%);
     color: $black;
     font-weight: bold;
     padding: 0.5em;
     text-align: left;
 }
 
-tbody tr:nth-child(2n+2) { background: lighten($black, 90%); }
+tbody tr:nth-child(2n+2) { background: lighten($gray, 15%); }
 
 tbody td {
-    border-left: 1px solid lighten($black, 80%);
-    border-top: 1px solid lighten($black, 80%);
+    border-left: 1px solid $gray;
+    border-top: 1px solid $gray;
     padding: 0.5em;
     &:first-child { border-left: 0; }
 }

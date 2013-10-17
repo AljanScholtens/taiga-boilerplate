@@ -1,7 +1,7 @@
 // =========== Tabs
 
 ul.tabs {
-    background: lighten($black, 80%);
+    background: $gray;
     border-radius: $border-radius;
     margin: 0 0 $vertical-spacing 0;
     padding: 0.35em 0.35em 0 0.35em;

@@ -19,7 +19,7 @@ li%message {
 li.message,
 div.message {
     @extend li%message;
-    background: lighten($black, 80%);
+    background: $gray;
     color: lighten($black, 20%);
 }
 
