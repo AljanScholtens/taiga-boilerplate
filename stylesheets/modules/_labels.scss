@@ -1,6 +1,5 @@
 // =========== Label
 
-
 %label {
     border-radius: $border-radius;
     font-size: 0.75em;
@@ -12,12 +11,14 @@
     @extend %label !optional;
     color: $white;
     background: $color-brand;
+    -webkit-font-smoothing: antialiased;
 }
 
 .label-contrast {
     @extend %label !optional;
     color: $white;
     background-color: lighten($black, 15%);
+    -webkit-font-smoothing: antialiased;
 }
 
 .label-soft {
@@ -30,10 +31,12 @@
     @extend %label !optional;
     color: $white;
     background-color: $color-success;
+    -webkit-font-smoothing: antialiased;
 }
 
 .label-alert {
     @extend %label !optional;
     color: $white;
     background-color: $color-alert;
+    -webkit-font-smoothing: antialiased;
 }

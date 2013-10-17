@@ -7,12 +7,6 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 ::-moz-selection { background: lighten($black, 10%); color: $white; text-shadow: none; }
 ::selection { background: lighten($black, 10%); color: $white; text-shadow: none; }
 
-// Add your own font face
-// @font-face {
-//     font-family: 'fontName';
-//     src: url('../fonts/fontName.eot?') format('eot'), url('../fonts/fontName.woff') format('woff'), url('../fonts/fontName.ttf') format('truetype');
-// }
-
 html {
     color: lighten($black, 25%);
     font: 300 $font-size $font-family;
@@ -27,7 +21,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-weight: bold;
+    font-weight: 600;
     line-height: 1.5em;
     margin: 0 0 0.25em 0;
     &.soft {
