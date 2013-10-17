@@ -18,7 +18,7 @@
 }
 .l-first { clear: left; }
 
-div.container {
+div.l-container {
     @include clearfix;
     max-width: $max-width;
     margin: auto;
