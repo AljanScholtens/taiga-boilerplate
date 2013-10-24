@@ -20,6 +20,13 @@
     backface-visibility: $backface;
 }
 
+// Border-radius
+// Example: .element { @include border-radius($border-radius); }
+@mixin border-radius($radius) {
+    border-radius: $radius;
+    background-clip: padding-box;
+}
+
 // Box-sizing
 // Example: .element { @include box-sizing(border-box); }
 @mixin box-sizing($box) {
