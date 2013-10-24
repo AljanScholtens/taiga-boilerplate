@@ -71,7 +71,7 @@ ul.form {
         padding-top: 0.6em;
         text-align: left;
 
-        @include breakpoint(one) {
+        @include breakpoint($breakpoint-one) {
             @include grid(16, 0, 1);
             text-align: right;
         }
@@ -82,7 +82,7 @@ ul.form {
     div.form-fields {
         margin-bottom: 0.5em;
 
-        @include breakpoint(one) {
+        @include breakpoint($breakpoint-one) {
             @include grid(32);
         }
 

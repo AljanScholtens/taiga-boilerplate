@@ -1,5 +1,7 @@
 // =========== Mixins
 
+// Animations
+// Example: .element { @include animation(keyframe-name, 500ms, default); }
 @mixin animation ($name: true, $duration: true, $timing_function: true, $delay: false, $iteration_count: false, $direction: false) {
     @if $name { -webkit-animation-name: $name; -moz-animation-name: $name; -ms-animation-name: $name; }
     @if $duration { -webkit-animation-duration: $duration; -moz-animation-duration: $duration; -ms-animation-duration: $duration; }
@@ -9,6 +11,8 @@
     @if $direction { -webkit-animation-direction: $direction; -moz-animation-direction: $direction; -ms-animation-direction: $direction; }
 }
 
+// Backface-visibility
+// Example: .element { @include backface-visibility(hidden); }
 @mixin backface-visibility($backface) {
     -webkit-backface-visibility: $backface;
     -moz-backface-visibility: $backface;
@@ -16,71 +20,74 @@
     backface-visibility: $backface;
 }
 
+// Box-sizing
+// Example: .element { @include box-sizing(border-box); }
 @mixin box-sizing($box) {
     -webkit-box-sizing: $box;
     -moz-box-sizing: $box;
     box-sizing: $box;
 }
 
-@mixin breakpoint($point) {
-    @if $point == one {
-        @media ($breakpoint-property: $breakpoint-one) { @content; }
-    }
-    @else if $point == two {
-        @media ($breakpoint-property: $breakpoint-two) { @content; }
-    }
-    @else if $point == three {
-        @media ($breakpoint-property: $breakpoint-three)  { @content; }
-    }
-    @else if $point == four {
-        @media ($breakpoint-property: $breakpoint-three)  { @content; }
-    }
-    @else if $point == five {
-        @media ($breakpoint-property: $breakpoint-three)  { @content; }
+// Media queries
+// Example: @include breakpoint($breakpoint-two) { your properties }
+@mixin breakpoint($breakpoint) {
+    @media ($breakpoint-property: $breakpoint / $font-size +em) {
+        @content;
     }
 }
 
+// Filters
+// Example: .element { @include filter(grayscale(50%)); }
 @mixin filter($filter) {
     -webkit-filter: $filter;
     -moz-filter: $filter;
-    -o-filter: $filter;
     filter: $filter;
 }
 
-@mixin image-2x($image, $width, $height) {
+// Retina image
+// Example: .element { @include image-2x("logo2x.png", 2em, 1em); }
+@mixin retina($image, $width, $height) {
     @media (min--moz-device-pixel-ratio: 1.3), (-o-min-device-pixel-ratio: 2.6/2), (-webkit-min-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
         background-image: url($image);
         background-size: $width $height;
     }
 }
 
+// Perspective
+// Example: .element { @include perspective(1000); }
 @mixin perspective($perspective) {
     -webkit-perspective: $perspective;
     -moz-perspective: $perspective;
     perspective: $perspective;
 }
 
+// Transform
+// Example: .element { @include transform(translateX(1em)); }
 @mixin transform($transform) {
     -webkit-transform: $transform;
     transform: $transform;
 }
 
+// Transition
+// Example: .element { @include transition(background 500ms ease-in); }
 @mixin transition($transition) {
     -webkit-transition: $transition;
     transition: $transition;
 }
 
+// Columns
+// Example: .element { @include columns(2, 1em)); }
 @mixin columns($count, $gap) {
     -webkit-column-count: $count;
     -webkit-column-gap : $gap;
     -moz-column-count: $count;
     -moz-column-gap: $gap;
-    -o-column-count: $count;
-    -o-column-gap: $gap;
     column-count: $count;
     column-gap: $gap;
 }
 
+// Column rule
+// Example: .element { @include column-rule(1px, solid, #000); }
 @mixin columns-rule($size, $style, $color) {
     -webkit-column-rule-width: $size;
     -webkit-column-rule-style: $style;
@@ -88,14 +95,13 @@
     -moz-column-rule-width: $size;
     -moz-column-rule-style: $style;
     -moz-column-rule-color: $color;
-    -o-column-rule-width: $size;
-    -o-column-rule-style: $style;
-    -o-column-rule-color: $color;
     column-rule-width: $size;
     column-rule-style: $style;
     column-rule-color: $color;
 }
 
+// Gradient
+// Example: .element { @include gradient(top, #000, #fff); }
 @mixin gradient($side, $start, $end) {
     background-color: $end;
     background-image: -webkit-linear-gradient($side, $start, $end);
