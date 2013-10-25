@@ -12,21 +12,27 @@
 @import "core/_mixins";
 @import "core/_grid";
 @import "core/_base";
-@import "core/_general";
 @import "core/_states";
 @import "core/_layout";
 
 // Modules
-@import "modules/_forms";
-@import "modules/_tables";
-@import "modules/_labels";
-@import "modules/_buttons";
-@import "modules/_icons";
-@import "modules/_messages";
-@import "modules/_pagination";
-@import "modules/_modal";
-@import "modules/_tabs";
-@import "modules/_panels";
+// Modules are connected to a specific piece of content and can't be used without it. Example: the module 'product' can't be used for a 'blog-article'.
+@import "modules/_product";
+
+// Shared components
+// Components can be used generic through the application and are not connected to content. Example: the component 'buttons' can be used in module 'product', 'blog-article' etc.
+@import "shared-components/_figure";
+@import "shared-components/_quote";
+@import "shared-components/_forms";
+@import "shared-components/_tables";
+@import "shared-components/_labels";
+@import "shared-components/_buttons";
+@import "shared-components/_icons";
+@import "shared-components/_messages";
+@import "shared-components/_pagination";
+@import "shared-components/_modal";
+@import "shared-components/_tabs";
+@import "shared-components/_panels";
 
 // Print
 @import "core/_print";

@@ -1,0 +1,26 @@
+// =========== Quote
+
+blockquote {
+    quotes: none;
+    color: lighten($black, 50%);
+    font: italic 1.2em Georgia, serif;
+    line-height: 1.5em;
+    margin-bottom: $vertical-spacing;
+    padding: 0 0 0 2em;
+    position: relative;
+    &:before {
+        color: lighten($black, 75%);
+        content: "\201C";
+        display: block;
+        font-size: 5em;
+        left: -0.15em;
+        position: absolute;
+        top: 0.25em;
+    }
+    cite {
+        color: lighten($black, 35%);
+        display: block;
+        font-size: 0.85em;
+        &:before { content: "\2014 \0020"; }
+    }
+}

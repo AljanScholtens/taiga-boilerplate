@@ -77,57 +77,6 @@ hr {
     margin: 2em $vertical-spacing;
 }
 
-blockquote {
-    quotes: none;
-    color: lighten($black, 50%);
-    font: italic 1.2em Georgia, serif;
-    line-height: 1.5em;
-    margin-bottom: $vertical-spacing;
-    padding: 0 0 0 2em;
-    position: relative;
-    &:before {
-        color: lighten($black, 75%);
-        content: "\201C";
-        display: block;
-        font-size: 5em;
-        left: -0.15em;
-        position: absolute;
-        top: 0.25em;
-    }
-    cite {
-        color: lighten($black, 35%);
-        display: block;
-        font-size: 0.85em;
-        &:before { content: "\2014 \0020"; }
-    }
-}
-
-figure {
-    display: inline-block;
-    margin-bottom: $vertical-spacing;
-    width: 100%;
-
-    &.figure-left {
-        clear: left;
-        float: left;
-        padding-right: $vertical-spacing;
-        width: 50%;
-    }
-    &.figure-right {
-        clear: right;
-        float: right;
-        padding-left: $vertical-spacing;
-        width: 50%;
-    }
-    img {
-        display: block;
-        width: 100%;
-    }
-    figcaption {
-        color: blue;
-    }
-}
-
 ul, ol { margin: 0 0 $vertical-spacing 1.5em; }
 ul { list-style: disc; }
 ol { list-style: decimal; }
@@ -136,10 +85,10 @@ dl {
     margin-bottom: $vertical-spacing;
     dt { font-weight: bold; }
     dd { margin-left: $vertical-spacing; }
-}
 
-dl.advanced {
-    @extend dl;
-    dt { @include grid(16, 0, 1); }
-    dd { @include grid(32); }
+    &.advanced {
+        @extend dl;
+        dt { @include grid(16, 0, 1); }
+        dd { @include grid(32); }
+    }
 }

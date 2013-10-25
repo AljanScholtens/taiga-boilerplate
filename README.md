@@ -8,8 +8,12 @@ Taiga Boilerplate is the extended version of Taiga Grid for starting a new web p
 * Set of simple mixins
 * Modular with Smacss
 * Touch and mobile ready
-* Basic types like forms, tables etc
+* Basic components like forms, tables, buttons etc.
 
+Changes
+---------------------
+
+* 25 october: buttons, forms etc can be found in the folder 'shared-components'. Modules like 'product', 'blog-article', 'shopping-cart' can be created in the folder 'modules'.
 
 Why Taiga Boilerplate?
 ---------------------
@@ -25,7 +29,10 @@ Set up Taiga Boilerplate
 
 Thanks
 ---------------------
+
 Taiga was inspired by these awesome people: Miller Medeiros, Paul Irish, Olav Bjørkøy and Jonathan Snook.
 If you have any questions or suggestions, e-mail me at aljan@studiowolf.nl or ask it on github.
+
+And please let me know if you're using Taiga! :-)
 
 For more information: http://taigaboilerplate.com/taiga-boilerplate
