@@ -13,15 +13,15 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 
 html {
     color: lighten($black, 25%);
-    font: 300 $font-size $font-family;
+    font: 300 $font-size $font-base;
     text-rendering: optimizeLegibility;
     -webkit-text-size-adjust: 100%;
 }
 
 body {
     line-height: 1.5em;
-    @include breakpoint(one) { font-size: $font-size + 1; }
-    @include breakpoint(two) { font-size: $font-size + 2; }
+    @include breakpoint($breakpoint-one) { font-size: $font-size + 1; }
+    @include breakpoint($breakpoint-two) { font-size: $font-size + 2; }
 }
 
 h1, h2, h3, h4, h5, h6 {
