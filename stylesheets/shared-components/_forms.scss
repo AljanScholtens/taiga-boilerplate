@@ -43,6 +43,11 @@ textarea {
     vertical-align: top;
 }
 
+select {
+    -webkit-appearance: menulist;
+    height: 2.85em;
+}
+
 form {  }
 
 fieldset {  }
