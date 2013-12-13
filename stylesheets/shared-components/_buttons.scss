@@ -9,7 +9,7 @@ input::-moz-focus-inner {
 // Choose a div or ul to group up your buttons
 div.buttons {
     list-style: none;
-    margin: 0 0 $vertical-spacing 0;
+    margin: 0 0 $spacing 0;
     @include clearfix;
 }
 

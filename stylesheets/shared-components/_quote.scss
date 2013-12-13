@@ -5,7 +5,7 @@ blockquote {
     color: lighten($black, 50%);
     font: italic 1.2em Georgia, serif;
     line-height: 1.5em;
-    margin-bottom: $vertical-spacing;
+    margin-bottom: $spacing;
     padding: 0 0 0 2em;
     position: relative;
     &:before {

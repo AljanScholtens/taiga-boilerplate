@@ -2,19 +2,19 @@
 
 figure {
     display: inline-block;
-    margin-bottom: $vertical-spacing;
+    margin-bottom: $spacing;
     width: 100%;
 
     &.figure-left {
         clear: left;
         float: left;
-        padding-right: $vertical-spacing;
+        padding-right: $spacing;
         width: 50%;
     }
     &.figure-right {
         clear: right;
         float: right;
-        padding-left: $vertical-spacing;
+        padding-left: $spacing;
         width: 50%;
     }
     img {

@@ -64,7 +64,7 @@ legend {
 ul.form {
     clear: both;
     list-style: none;
-    margin: 0 0 $vertical-spacing 0;
+    margin: 0 0 $spacing 0;
 
     > li { @include clearfix; }
 

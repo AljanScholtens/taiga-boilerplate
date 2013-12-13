@@ -42,7 +42,7 @@ h5 { font-size: 1.05em; }
 h6 { font-size: 1em; }
 
 p {
-    margin-bottom: $vertical-spacing;
+    margin-bottom: $spacing;
     &.lead {
         font-size: 1.2em;
         line-height: 1.5em;
@@ -74,17 +74,17 @@ hr {
     border: solid lighten($black, 80%);
     border-width: 1px 0 0;
     clear: both;
-    margin: 2em $vertical-spacing;
+    margin: 2em $spacing;
 }
 
-ul, ol { margin: 0 0 $vertical-spacing 1.5em; }
+ul, ol { margin: 0 0 $spacing 1.5em; }
 ul { list-style: disc; }
 ol { list-style: decimal; }
 
 dl {
-    margin-bottom: $vertical-spacing;
+    margin-bottom: $spacing;
     dt { font-weight: bold; }
-    dd { margin-left: $vertical-spacing; }
+    dd { margin-left: $spacing; }
 
     &.advanced {
         @extend dl;
