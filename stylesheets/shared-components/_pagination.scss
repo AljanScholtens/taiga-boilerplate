@@ -9,9 +9,9 @@ ul.pagination {
         display: inline-block;
         margin-bottom: 0.25em;
     }
-    a { @extend .button-soft !optional; }
-    li.is-selected a { @extend .button-contrast !optional; }
-    li.gap {
+    a { @extend .button--soft !optional; }
+    li.is-selected a { @extend .button--contrast !optional; }
+    li.pagination--gap {
         background: none;
         padding: 0.35em;
     }

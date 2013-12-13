@@ -7,7 +7,7 @@
     padding: 1em;
 }
 
-.panel-callout {
+.panel--callout {
     @extend .panel;
     background: $color-brand;
     color: $white;

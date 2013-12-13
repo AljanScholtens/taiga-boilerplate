@@ -14,27 +14,27 @@
     -webkit-font-smoothing: antialiased;
 }
 
-.label-contrast {
+.label--contrast {
     @extend %label !optional;
     color: $white;
     background-color: lighten($black, 15%);
     -webkit-font-smoothing: antialiased;
 }
 
-.label-soft {
+.label--soft {
     @extend %label !optional;
     color: lighten($black, 20%);
     background: lighten($black, 80%);
 }
 
-.label-success {
+.label--success {
     @extend %label !optional;
     color: $white;
     background-color: $color-success;
     -webkit-font-smoothing: antialiased;
 }
 
-.label-alert {
+.label--alert {
     @extend %label !optional;
     color: $white;
     background-color: $color-alert;

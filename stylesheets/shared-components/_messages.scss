@@ -23,16 +23,16 @@ div.message {
     color: lighten($black, 20%);
 }
 
-li.message-success,
-div.message-success {
+li.message--success,
+div.message--success {
     @extend li%message;
     background: $color-success;
     color: $white;
     -webkit-font-smoothing: antialiased;
 }
 
-li.message-alert,
-div.message-alert {
+li.message--alert,
+div.message--alert {
     @extend li%message;
     background: $color-alert;
     color: $white;
