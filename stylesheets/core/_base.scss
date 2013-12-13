@@ -28,17 +28,13 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 600;
     line-height: 1.5em;
     margin: 0 0 0.25em 0;
-    &.soft {
-        font-weight: 300;
-        color: lighten($black, 50%);
-    }
 }
 
-h1 { font-size: 2.25em; }
-h2 { font-size: 1.6em; }
-h3 { font-size: 1.4em; }
+h1 { font-size: 2em; }
+h2 { font-size: 1.4em; }
+h3 { font-size: 1.3em; }
 h4 { font-size: 1.2em; }
-h5 { font-size: 1.05em; }
+h5 { font-size: 1.1em; }
 h6 { font-size: 1em; }
 
 p {
@@ -55,7 +51,10 @@ a {
     &:hover { color: darken($color-brand, 50%); }
 }
 
-small { font-size: 0.85em; color: lighten($black, 50%); }
+small {
+    font-size: 0.85em;
+    color: lighten($black, 50%);
+}
 
 em { font-style: italic; }
 
@@ -87,7 +86,6 @@ dl {
     dd { margin-left: $spacing; }
 
     &.advanced {
-        @extend dl;
         dt { @include grid(16, 0, 1); }
         dd { @include grid(32); }
     }
