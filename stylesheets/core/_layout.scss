@@ -22,13 +22,6 @@ div.l-container {
     @include clearfix;
     max-width: $max-width;
     margin: auto;
-    padding: 1.5em;
-}
-
-// Example for modules.html
-header { @include grid(48, 1); }
-section {
-    @include clearfix;
-    margin-bottom: $spacing;
-    @include grid(48, 1);
+    padding: 0.75em;
+    @include breakpoint($breakpoint-two) { padding: 1.5em; }
 }

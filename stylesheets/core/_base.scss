@@ -47,6 +47,7 @@ p {
 
 a {
     color: $color-brand;
+    cursor: pointer;
     text-decoration: none;
     &:hover { color: darken($color-brand, 50%); }
 }
@@ -61,6 +62,7 @@ em { font-style: italic; }
 strong { font-weight: bold; }
 
 code, pre { font-family: 'courier new', monospace; }
+pre { overflow-x: auto; }
 
 abbr { border-bottom: 1px dotted lighten($black, 50%); }
 
@@ -86,6 +88,7 @@ dl {
     dd { margin-left: $spacing; }
 
     &.advanced {
+        @include clearfix;
         dt { @include grid(16, 0, 1); }
         dd { @include grid(32); }
     }
