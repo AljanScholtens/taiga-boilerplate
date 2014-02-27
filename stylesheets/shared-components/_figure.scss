@@ -3,7 +3,7 @@
 figure {
     display: inline-block;
     margin-bottom: $spacing;
-    width: 100%;
+    max-width: 100%;
 
     &.figure--left {
         clear: left;
