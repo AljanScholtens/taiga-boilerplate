@@ -72,6 +72,8 @@
 // Example: .element { @include transform(translateX(1em)); }
 @mixin transform($transform) {
     -webkit-transform: $transform;
+    -moz-transform: $transform;
+    -ms-transform: $transform;
     transform: $transform;
 }
 
@@ -79,6 +81,7 @@
 // Example: .element { @include transition(background 500ms ease-in); }
 @mixin transition($transition) {
     -webkit-transition: $transition;
+    -moz-transition: $transition;
     transition: $transition;
 }
 
@@ -113,5 +116,6 @@
     background-color: $end;
     background-image: -webkit-linear-gradient($side, $start, $end);
     background-image: -moz-linear-gradient($side, $start, $end);
+    background-image: -ms-linear-gradient($side, $start, $end);
     background-image: linear-gradient($side, $start, $end);
 }
