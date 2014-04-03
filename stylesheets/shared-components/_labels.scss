@@ -2,7 +2,7 @@
 
 %label {
     border-radius: $border-radius-10;
-    font-size: 0.75rem;
+    font-size: $font-size-10;
     font-weight: bold;
     padding: 0.1rem 0.3rem;
 }
@@ -10,33 +10,23 @@
 .label {
     @extend %label !optional;
     color: $white;
-    background: $color-brand;
-    -webkit-font-smoothing: antialiased;
+    background: $color-brand-50;
 }
 
-.label--contrast {
+.label--neutral {
     @extend %label !optional;
-    color: $white;
-    background-color: lighten($black, 15%);
-    -webkit-font-smoothing: antialiased;
-}
-
-.label--soft {
-    @extend %label !optional;
-    color: lighten($black, 20%);
-    background: lighten($black, 80%);
+    color: $color-neutral-80;
+    background: $color-neutral-20;
 }
 
 .label--success {
     @extend %label !optional;
     color: $white;
-    background-color: $color-success;
-    -webkit-font-smoothing: antialiased;
+    background-color: $color-success-50;
 }
 
 .label--alert {
     @extend %label !optional;
     color: $white;
-    background-color: $color-alert;
-    -webkit-font-smoothing: antialiased;
+    background-color: $color-alert-50;
 }

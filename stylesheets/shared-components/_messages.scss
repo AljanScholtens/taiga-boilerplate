@@ -10,31 +10,28 @@ li%message {
     border-radius: $border-radius-10;
     display: block;
     font-weight: bold;
-    line-height: 1.5em;
     margin-bottom: 0.25rem;
-    padding: 0.4rem 0.75rem;
+    padding: 0.35rem 0.75rem;
     vertical-align: baseline;
 }
 
 li.message,
 div.message {
     @extend li%message;
-    background: $gray;
-    color: lighten($black, 20%);
+    background: $color-neutral-20;
+    color: $color-neutral-80;
 }
 
 li.message--success,
 div.message--success {
     @extend li%message;
-    background: $color-success;
+    background: $color-success-50;
     color: $white;
-    -webkit-font-smoothing: antialiased;
 }
 
 li.message--alert,
 div.message--alert {
     @extend li%message;
-    background: $color-alert;
+    background: $color-alert-50;
     color: $white;
-    -webkit-font-smoothing: antialiased;
 }

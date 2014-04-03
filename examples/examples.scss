@@ -6,10 +6,3 @@ div.l-examples {
     @extend .l-container;
     max-width: 800px;
 }
-
-.l-example-container {
-    padding: 0.75rem;
-    background: lighten($gray, 10%);
-    border-radius: $border-radius-10;
-    @include clearfix;
-}

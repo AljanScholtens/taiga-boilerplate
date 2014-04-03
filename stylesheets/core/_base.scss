@@ -8,32 +8,31 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   @include box-sizing(border-box);
 }
 
-::-moz-selection { background: lighten($black, 10%); color: $white; text-shadow: none; }
-::selection { background: lighten($black, 10%); color: $white; text-shadow: none; }
+::-moz-selection { background: $color-neutral-100; color: $white; text-shadow: none; }
+::selection { background: $color-neutral-100; color: $white; text-shadow: none; }
 
 html {
-    color: lighten($black, 25%);
-    font: 400 $font-size $font-base;
+    color: $color-neutral-80;
+    font: 400 $font-size-base $font-family-body;
     text-rendering: optimizeLegibility;
     -webkit-text-size-adjust: 100%;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    // @include breakpoint($breakpoint-10) { font-size: $font-size + 1px; }
-    // @include breakpoint($breakpoint-20) { font-size: $font-size + 2px; }
 }
 
 body {
     line-height: 1.5em;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-weight: 600;
+h1, h2, legend, h3, h4, h5, h6 {
+    font-weight: 400;
     line-height: 1.5em;
+    font-family: $font-family-headings;
     margin: 0 0 0.25em 0;
 }
 
 h1 { font-size: 2rem; }
-h2 { font-size: 1.4rem; }
+h2, legend { font-size: 1.4rem; }
 h3 { font-size: 1.3rem; }
 h4 { font-size: 1.2rem; }
 h5 { font-size: 1.1rem; }
@@ -41,21 +40,19 @@ h6 { font-size: 1em; }
 
 p {
     margin-bottom: $spacing;
-    &.lead {
-        font-size: 1.2rem;
-    }
+    &.lead { font-size: $font-size-40; }
 }
 
 a {
-    color: $color-brand;
+    color: $color-brand-50;
     cursor: pointer;
     text-decoration: none;
-    &:hover { color: darken($color-brand, 50%); }
+    &:hover { color: $color-brand-60; }
 }
 
 small {
-    font-size: 0.85rem;
-    color: lighten($black, 50%);
+    font-size: $font-size-20;
+    color: $color-neutral-60;
 }
 
 em { font-style: italic; }
@@ -65,7 +62,7 @@ strong { font-weight: bold; }
 code, pre { font-family: 'courier new', monospace; }
 pre { overflow-x: auto; }
 
-abbr { border-bottom: 1px dotted lighten($black, 50%); }
+abbr { border-bottom: 1px dotted $color-neutral-40; }
 
 del { text-decoration: line-through; }
 
@@ -73,7 +70,7 @@ mark { background-color: lighten(yellow, 35%); }
 
 hr {
     background-color: transparent;
-    border: solid lighten($black, 80%);
+    border: solid $color-neutral-20;
     border-width: 1px 0 0;
     clear: both;
     margin: 2rem $spacing;

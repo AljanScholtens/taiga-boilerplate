@@ -2,14 +2,13 @@
 
 blockquote {
     quotes: none;
-    color: lighten($black, 50%);
+    color: $color-neutral-60;
     font: italic 1.2rem Georgia, serif;
     line-height: 1.5rem;
     margin-bottom: $spacing;
     padding: 0 0 0 2rem;
     position: relative;
     &:before {
-        color: lighten($black, 75%);
         content: "\201C";
         display: block;
         font-size: 5rem;
@@ -18,9 +17,8 @@ blockquote {
         top: 1rem;
     }
     cite {
-        color: lighten($black, 35%);
         display: block;
-        font-size: 0.85rem;
+        font-size: $font-size-20;
         &:before { content: "\2014 \0020"; }
     }
 }

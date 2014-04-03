@@ -13,24 +13,21 @@ input[type=url],
 textarea,
 select {
     -webkit-appearance: none;
-    border: 1px solid lighten($black, 65%);
-    border-radius: $border-radius-10;
-    box-shadow: inset 0px 1px 3px rgba($black, 0.1);
-    color: $black;
+    border: 1px solid $color-neutral-40;
+    color: inherit;
     display: block;
-    font-family: $font-base;
-    font-size: 1rem;
+    font-family: inherit;
+    font-size: $font-size-30;
     line-height: 1.5em;
     margin: 0;
     padding: 0.6rem;
     vertical-align: baseline;
-    width: 100% !important;
+    width: 100%;
     @include transition(border 100ms);
 
     &:focus {
-        border: 1px solid lighten($black, 55%);
-        box-shadow: 0px 0px 4px rgba($black, 0.3);
-        color: $black;
+        border: 1px solid $color-neutral-60;
+        box-shadow: 0px 0px 4px rgba($black, 0.2);
         outline: 0;
     }
 }
@@ -54,10 +51,6 @@ fieldset {  }
 legend {
     border: 0;
     display: block;
-    margin-bottom: 0.25rem;
-    font-weight: bold;
-    line-height: 1.5em;
-    font-size: 1.4rem;
 }
 
 ul.form {
@@ -80,7 +73,7 @@ ul.form {
             text-align: right;
         }
 
-        &:hover { color: $black; }
+        &:hover { color: $color-neutral-100; }
     }
 
     div.form--fields {
@@ -118,18 +111,18 @@ ul.form--checklist {
 
 li.form--error {
     label {
-        color: $color-alert;
-        &:hover { color: darken($color-alert, 25%); }
+        color: $color-alert-50;
+        &:hover { color: $color-alert-60; }
     }
     input {
-        border: 1px solid $color-alert;
-        box-shadow: 0px 0px 3px lighten($color-alert, 10%), inset 0 0 0;
-        &:focus { border: 1px solid $color-alert; }
+        border: 1px solid $color-alert-50;
+        box-shadow: 0px 0px 3px lighten($color-alert-50, 10%), inset 0 0 0;
+        &:focus { border: 1px solid $color-alert-50; }
     }
     ul.form--errors {
-        color: $color-alert;
+        color: $color-alert-50;
         list-style: none;
         margin: 0.35rem 0;
-        li { font-size: 0.85rem; }
+        li { font-size: $font-size-20; }
     }
 }
