@@ -21,7 +21,7 @@
 }
 
 // Border-radius
-// Example: .element { @include border-radius($border-radius); }
+// Example: .element { @include border-radius($border-radius-10); }
 @mixin border-radius($radius) {
     border-radius: $radius;
     background-clip: padding-box;
@@ -36,7 +36,7 @@
 }
 
 // Media queries
-// Example: @include breakpoint($breakpoint-two) { your properties }
+// Example: @include breakpoint($breakpoint-20) { your properties }
 @mixin breakpoint($breakpoint) {
     @media ($breakpoint-property: $breakpoint / $font-size +rem) {
         @content;

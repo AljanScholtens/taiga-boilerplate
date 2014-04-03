@@ -18,8 +18,8 @@ html {
     -webkit-text-size-adjust: 100%;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    @include breakpoint($breakpoint-one) { font-size: $font-size + 1px; }
-    @include breakpoint($breakpoint-two) { font-size: $font-size + 2px; }
+    // @include breakpoint($breakpoint-10) { font-size: $font-size + 1px; }
+    // @include breakpoint($breakpoint-20) { font-size: $font-size + 2px; }
 }
 
 body {
@@ -32,11 +32,11 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0 0 0.25em 0;
 }
 
-h1 { font-size: 2em; }
-h2 { font-size: 1.4em; }
-h3 { font-size: 1.3em; }
-h4 { font-size: 1.2em; }
-h5 { font-size: 1.1em; }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.4rem; }
+h3 { font-size: 1.3rem; }
+h4 { font-size: 1.2rem; }
+h5 { font-size: 1.1rem; }
 h6 { font-size: 1em; }
 
 p {

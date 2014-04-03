@@ -4,7 +4,7 @@
 $font-base: sans-serif;
 
 // The base font-size, all other elements will adjust to this value
-$font-size: 15px;
+$font-size: 16px;
 
 // The grid columns will be used in the grid mixin, 48 is standard
 $grid-columns: 48;
@@ -16,14 +16,14 @@ $max-width: (1140px / $font-size) +rem;
 $spacing: 1.5rem;
 
 // Adjust the border-radius
-$border-radius: 0.125rem;
+$border-radius-10: 0.125rem;
 
 // Media queries
 // Adjust them to you needs or add more
 $breakpoint-property: min-width;
-$breakpoint-one: 590px;
-$breakpoint-two: 769px;
-$breakpoint-three: 960px;
+$breakpoint-10: 590px;
+$breakpoint-20: 769px;
+$breakpoint-30: 960px;
 
 // Colors
 // Add your own color variables
