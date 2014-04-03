@@ -32,10 +32,12 @@ $grid-column: 100% / $grid-columns;
 
 // The clearfix mixin is necessary for the floats
 @mixin clearfix() {
+
     &:before,
     &:after {
         content: "";
         display: table;
     }
+
     &:after { clear: both; }
 }

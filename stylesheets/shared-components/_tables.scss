@@ -22,5 +22,6 @@ tbody td {
     border-left: 1px solid $color-neutral-20;
     border-top: 1px solid $color-neutral-20;
     padding: 0.5rem;
+    
     &:first-child { border-left: 0; }
 }

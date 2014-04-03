@@ -19,10 +19,10 @@ $font-size-50: 1.313rem;
 // The grid columns will be used in the grid mixin, 48 is standard
 $grid-columns: 48;
 
-// Adjust the website's maximum width. Will be converted to em's in the grid mixin.
+// Adjust the website's maximum width.
 $max-width: (1140px / $font-size-base) +rem;
 
-// Use the vertical-spacing on margins and paddings
+// Use the spacing variable on margins and paddings
 $spacing: 1.5rem;
 
 // Adjust the border-radius
@@ -61,6 +61,6 @@ $color-neutral-60: #8d9994;
 $color-neutral-80: #3f4542;
 $color-neutral-100: #232725;
 
-// Basics
+// Color basics
 $black: #000;
 $white: #fff;

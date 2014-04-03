@@ -8,6 +8,7 @@ blockquote {
     margin-bottom: $spacing;
     padding: 0 0 0 2.5rem;
     position: relative;
+
     &:before {
         content: "\201C";
         display: block;
@@ -16,9 +17,11 @@ blockquote {
         position: absolute;
         top: 1.5rem;
     }
+
     cite {
         display: block;
         font-size: $font-size-20;
+        
         &:before { content: "\2014 \0020"; }
     }
 }

@@ -32,14 +32,23 @@ h1, h2, legend, h3, h4, h5, h6 {
 }
 
 h1 { font-size: 2rem; }
-h2, legend { font-size: 1.4rem; }
+
+h2,
+legend {
+    font-size: 1.4rem;
+}
+
 h3 { font-size: 1.3rem; }
+
 h4 { font-size: 1.2rem; }
+
 h5 { font-size: 1.1rem; }
+
 h6 { font-size: 1rem; }
 
 p {
     margin-bottom: $spacing;
+
     &.lead { font-size: $font-size-40; }
 }
 
@@ -47,6 +56,7 @@ a {
     color: $color-brand-50;
     cursor: pointer;
     text-decoration: none;
+
     &:hover { color: $color-brand-60; }
 }
 
@@ -60,6 +70,7 @@ em { font-style: italic; }
 strong { font-weight: bold; }
 
 code, pre { font-family: 'courier new', monospace; }
+
 pre { overflow-x: auto; }
 
 abbr { border-bottom: 1px dotted $color-neutral-40; }
@@ -77,17 +88,23 @@ hr {
 }
 
 ul, ol { margin: 0 0 $spacing 1.5rem; }
+
 ul { list-style: disc; }
+
 ol { list-style: decimal; }
 
 dl {
     margin-bottom: $spacing;
+
     dt { font-weight: bold; }
     dd { margin-left: $spacing; }
 
     &.advanced {
+
         @include clearfix;
+
         dt { @include grid(16, 0, 1); }
+
         dd { @include grid(32); }
     }
 }

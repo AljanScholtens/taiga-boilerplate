@@ -11,16 +11,19 @@ figure {
         padding-right: $spacing;
         width: 50%;
     }
+
     &.figure--right {
         clear: right;
         float: right;
         padding-left: $spacing;
         width: 50%;
     }
+
     img {
         display: block;
         width: 100%;
     }
+    
     figcaption {
         color: blue;
     }
