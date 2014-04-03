@@ -6,15 +6,10 @@ input::-moz-focus-inner {
     padding: 0;
 }
 
-// Choose a div or ul to group up your buttons
-div.buttons {
-    list-style: none;
-    margin: 0 0 $spacing 0;
-    @include clearfix;
-}
-
 // The standard button has the $color-brand colors
 %button {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -24,9 +19,9 @@ div.buttons {
     font-size: $font-size-30;
     font-weight: bold;
     font-family: inherit;
-    line-height: 1.5em !important;
+    line-height: 1.5em;
     margin: 0 0 0.25rem 0;
-    padding: 0.35rem 0.75rem;
+    padding: 0.5rem 0.75rem;
     border: 0;
     vertical-align: bottom;
     text-decoration: none;
@@ -37,9 +32,8 @@ div.buttons {
 input[type=submit],
 button {
     @extend %button;
-    color: $white;
     background: $color-brand-50;
-    -webkit-font-smoothing: antialiased;
+    color: $white;
     &:hover {
         background: $color-brand-60;
         color: $white;
@@ -53,11 +47,11 @@ button {
 input[type=submit].button--neutral,
 button.button--neutral {
     @extend %button;
-    color: $color-neutral-80;
     background: $color-neutral-20;
+    color: $color-neutral-80;
     &:hover {
-        color: $color-neutral-80;
         background: $color-neutral-40;
+        color: $color-neutral-80;
     }
     &:active, &:focus {
         box-shadow: inset 0 1px 3px rgba($black, 0.2);
@@ -68,9 +62,8 @@ button.button--neutral {
 input[type=submit].button--success,
 button.button--success {
     @extend %button;
-    color: $white;
     background-color: $color-success-50;
-    -webkit-font-smoothing: antialiased;
+    color: $white;
     &:hover {
         background-color: $color-success-60;
         color: $white;
@@ -84,9 +77,8 @@ button.button--success {
 input[type=submit].button--alert,
 button.button--alert {
     @extend %button;
-    color: $white;
     background-color: $color-alert-50;
-    -webkit-font-smoothing: antialiased;
+    color: $white;
     &:hover {
         background-color: $color-alert-60;
         color: $white;

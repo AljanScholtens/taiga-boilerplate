@@ -36,7 +36,7 @@ h2, legend { font-size: 1.4rem; }
 h3 { font-size: 1.3rem; }
 h4 { font-size: 1.2rem; }
 h5 { font-size: 1.1rem; }
-h6 { font-size: 1em; }
+h6 { font-size: 1rem; }
 
 p {
     margin-bottom: $spacing;
@@ -73,7 +73,7 @@ hr {
     border: solid $color-neutral-20;
     border-width: 1px 0 0;
     clear: both;
-    margin: 2rem $spacing;
+    margin: 2.5rem $spacing;
 }
 
 ul, ol { margin: 0 0 $spacing 1.5rem; }

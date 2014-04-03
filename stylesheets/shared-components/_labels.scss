@@ -4,29 +4,29 @@
     border-radius: $border-radius-10;
     font-size: $font-size-10;
     font-weight: bold;
-    padding: 0.1rem 0.3rem;
+    padding: 0.1rem 0.25rem;
 }
 
 .label {
-    @extend %label !optional;
-    color: $white;
+    @extend %label;
     background: $color-brand-50;
+    color: $white;
 }
 
 .label--neutral {
-    @extend %label !optional;
-    color: $color-neutral-80;
+    @extend %label;
     background: $color-neutral-20;
+    color: $color-neutral-80;
 }
 
 .label--success {
-    @extend %label !optional;
-    color: $white;
+    @extend %label;
     background-color: $color-success-50;
+    color: $white;
 }
 
 .label--alert {
-    @extend %label !optional;
-    color: $white;
+    @extend %label;
     background-color: $color-alert-50;
+    color: $white;
 }

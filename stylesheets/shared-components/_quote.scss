@@ -3,10 +3,10 @@
 blockquote {
     quotes: none;
     color: $color-neutral-60;
-    font: italic 1.2rem Georgia, serif;
-    line-height: 1.5rem;
+    font: italic $font-size-40 Georgia, serif;
+    line-height: 1.5em;
     margin-bottom: $spacing;
-    padding: 0 0 0 2rem;
+    padding: 0 0 0 2.5rem;
     position: relative;
     &:before {
         content: "\201C";
@@ -14,7 +14,7 @@ blockquote {
         font-size: 5rem;
         left: -0.5rem;
         position: absolute;
-        top: 1rem;
+        top: 1.5rem;
     }
     cite {
         display: block;
