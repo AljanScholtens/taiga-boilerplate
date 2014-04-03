@@ -21,15 +21,16 @@ div.buttons {
     border-radius: $border-radius;
     cursor: pointer;
     display: inline-block;
-    font-size: 1em;
+    font-size: 1rem;
     font-weight: bold;
     font-family: $font-base;
     line-height: 1.5em !important;
-    margin: 0 0 0.25em 0;
-    padding: 0.4em 0.75em;
+    margin: 0 0 0.25rem 0;
+    padding: 0.4rem 0.75rem;
     border: 0;
     vertical-align: bottom;
     text-decoration: none;
+    &:focus { outline: 0; }
 }
 
 .button,
@@ -57,7 +58,6 @@ button.button--contrast {
     @extend %button;
     color: $white;
     background-color: lighten($black, 15%);
-    -webkit-font-smoothing: antialiased;
     &:hover {
         background-color: $black;
         color: $white;

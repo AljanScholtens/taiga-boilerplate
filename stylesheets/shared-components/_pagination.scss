@@ -1,18 +1,18 @@
 // =========== Pagination
 
 ul.pagination {
-    font-size: 0.95em;
+    font-size: 0.95rem;
     list-style: none;
     margin: 0 0 $spacing 0;
     text-align: center;
     li {
         display: inline-block;
-        margin-bottom: 0.25em;
+        margin-bottom: 0.25rem;
     }
     a { @extend .button--soft !optional; }
     li.is-selected a { @extend .button--contrast !optional; }
     li.pagination--gap {
         background: none;
-        padding: 0.35em;
+        padding: 0.35rem;
     }
 }

@@ -8,7 +8,7 @@ div.l-examples {
 }
 
 .l-example-container {
-    padding: 0.75em;
+    padding: 0.75rem;
     background: lighten($gray, 10%);
     border-radius: $border-radius;
     @include clearfix;

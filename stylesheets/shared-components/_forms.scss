@@ -19,10 +19,10 @@ select {
     color: $black;
     display: block;
     font-family: $font-base;
-    font-size: 1em;
+    font-size: 1rem;
     line-height: 1.5em;
     margin: 0;
-    padding: 0.6em;
+    padding: 0.6rem;
     vertical-align: baseline;
     width: 100% !important;
     @include transition(border 100ms);
@@ -44,7 +44,7 @@ textarea {
 
 select {
     -webkit-appearance: menulist;
-    height: 2.85em;
+    height: 2.85rem;
 }
 
 form {  }
@@ -54,10 +54,10 @@ fieldset {  }
 legend {
     border: 0;
     display: block;
-    margin-bottom: 0.25em;
+    margin-bottom: 0.25rem;
     font-weight: bold;
     line-height: 1.5em;
-    font-size: 1.4em;
+    font-size: 1.4rem;
 }
 
 ul.form {
@@ -72,7 +72,7 @@ ul.form {
         cursor: pointer;
         display: block;
         font-weight: bold;
-        padding-top: 0.6em;
+        padding-top: 0.6rem;
         text-align: left;
 
         @include breakpoint($breakpoint-one) {
@@ -84,7 +84,7 @@ ul.form {
     }
 
     div.form--fields {
-        margin-bottom: 0.5em;
+        margin-bottom: 0.5rem;
 
         @include breakpoint($breakpoint-one) {
             @include grid(32);
@@ -92,19 +92,19 @@ ul.form {
 
         p, small {
             display: block;
-            margin: 0.25em 0;
+            margin: 0.25rem 0;
         }
-        p.form--description { margin: 0.6em 0; }
+        p.form--description { margin: 0.6rem 0; }
     }
 }
 
 ul.form--checklist {
     list-style: none;
-    margin: 0.6em 0;
-    li { margin: 0.5em 0; }
+    margin: 0.6rem 0;
+    li { margin: 0.5rem 0; }
     input {
         display: inline;
-        margin-right: 0.8em;
+        margin-right: 0.8rem;
     }
     label {
         @include grid-reset;
@@ -129,7 +129,7 @@ li.form--error {
     ul.form--errors {
         color: $color-alert;
         list-style: none;
-        margin: 0.35em 0;
-        li { font-size: 0.85em; }
+        margin: 0.35rem 0;
+        li { font-size: 0.85rem; }
     }
 }

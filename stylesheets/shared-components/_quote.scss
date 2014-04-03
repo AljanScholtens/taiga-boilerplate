@@ -3,24 +3,24 @@
 blockquote {
     quotes: none;
     color: lighten($black, 50%);
-    font: italic 1.2em Georgia, serif;
-    line-height: 1.5em;
+    font: italic 1.2rem Georgia, serif;
+    line-height: 1.5rem;
     margin-bottom: $spacing;
-    padding: 0 0 0 2em;
+    padding: 0 0 0 2rem;
     position: relative;
     &:before {
         color: lighten($black, 75%);
         content: "\201C";
         display: block;
-        font-size: 5em;
-        left: -0.15em;
+        font-size: 5rem;
+        left: -0.5rem;
         position: absolute;
-        top: 0.25em;
+        top: 1rem;
     }
     cite {
         color: lighten($black, 35%);
         display: block;
-        font-size: 0.85em;
+        font-size: 0.85rem;
         &:before { content: "\2014 \0020"; }
     }
 }

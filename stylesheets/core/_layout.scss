@@ -21,7 +21,7 @@
 div.l-container {
     max-width: $max-width;
     margin: auto;
-    padding: 0.75em;
+    padding: 0.75rem;
     @include clearfix;
-    @include breakpoint($breakpoint-two) { padding: 1.5em; }
+    @include breakpoint($breakpoint-two) { padding: 1.5rem; }
 }

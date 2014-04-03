@@ -4,7 +4,7 @@ ul.tabs {
     background: $gray;
     border-radius: $border-radius;
     margin: 0 0 $spacing 0;
-    padding: 0.35em 0.35em 0 0.35em;
+    padding: 0.35rem 0.35rem 0 0.35rem;
     li {
         display: inline-block;
         position: relative;
@@ -12,12 +12,12 @@ ul.tabs {
     a {
         color: lighten($black, 25%);
         display: block;
-        padding: 0.75em;
+        padding: 0.75rem;
         &:hover { color: $black; }
     }
     li.is-selected a {
         background: $white;
-        border-radius: 0.2em 0.2em 0 0;
+        border-radius: 0.2rem 0.2rem 0 0;
         color: $black;
         font-weight: bold;
     }

@@ -9,7 +9,6 @@
 // To set different margins on both sides use '@include grid(12, 2, 3)'.
 // You can also use negative margins.
 
-$max-width: ($max-width / $font-size) +em;
 $grid-column: 100% / $grid-columns;
 
 @mixin col($n: 1) { float: left; width: ($n * $grid-column); }

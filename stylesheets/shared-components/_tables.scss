@@ -13,7 +13,7 @@ thead th {
     background: lighten($gray, 15%);
     color: $black;
     font-weight: bold;
-    padding: 0.5em;
+    padding: 0.5rem;
     text-align: left;
 }
 
@@ -22,6 +22,6 @@ tbody tr:nth-child(2n+2) { background: lighten($gray, 15%); }
 tbody td {
     border-left: 1px solid $gray;
     border-top: 1px solid $gray;
-    padding: 0.5em;
+    padding: 0.5rem;
     &:first-child { border-left: 0; }
 }

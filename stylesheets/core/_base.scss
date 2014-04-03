@@ -13,15 +13,17 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 
 html {
     color: lighten($black, 25%);
-    font: 300 $font-size $font-base;
+    font: 400 $font-size $font-base;
     text-rendering: optimizeLegibility;
     -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    @include breakpoint($breakpoint-one) { font-size: $font-size + 1px; }
+    @include breakpoint($breakpoint-two) { font-size: $font-size + 2px; }
 }
 
 body {
     line-height: 1.5em;
-    @include breakpoint($breakpoint-one) { font-size: $font-size + 1; }
-    @include breakpoint($breakpoint-two) { font-size: $font-size + 2; }
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -40,8 +42,7 @@ h6 { font-size: 1em; }
 p {
     margin-bottom: $spacing;
     &.lead {
-        font-size: 1.2em;
-        line-height: 1.5em;
+        font-size: 1.2rem;
     }
 }
 
@@ -53,7 +54,7 @@ a {
 }
 
 small {
-    font-size: 0.85em;
+    font-size: 0.85rem;
     color: lighten($black, 50%);
 }
 
@@ -75,10 +76,10 @@ hr {
     border: solid lighten($black, 80%);
     border-width: 1px 0 0;
     clear: both;
-    margin: 2em $spacing;
+    margin: 2rem $spacing;
 }
 
-ul, ol { margin: 0 0 $spacing 1.5em; }
+ul, ol { margin: 0 0 $spacing 1.5rem; }
 ul { list-style: disc; }
 ol { list-style: decimal; }
 

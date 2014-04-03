@@ -10,13 +10,13 @@ $font-size: 15px;
 $grid-columns: 48;
 
 // Adjust the website's maximum width. Will be converted to em's in the grid mixin.
-$max-width: 1140px;
+$max-width: (1140px / $font-size) +rem;
 
 // Use the vertical-spacing on margins and paddings
-$spacing: 1.5em;
+$spacing: 1.5rem;
 
 // Adjust the border-radius
-$border-radius: 0.15em;
+$border-radius: 0.125rem;
 
 // Media queries
 // Adjust them to you needs or add more
