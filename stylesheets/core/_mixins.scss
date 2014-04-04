@@ -23,8 +23,8 @@
 // Border-radius
 // Example: .element { @include border-radius($border-radius-10); }
 @mixin border-radius($radius) {
-    border-radius: $radius;
     background-clip: padding-box;
+    border-radius: $radius;
 }
 
 // Box-sizing

@@ -1,13 +1,13 @@
 // =========== Quote
 
 blockquote {
-    quotes: none;
     color: $color-neutral-60;
     font: italic $font-size-40 Georgia, serif;
     line-height: 1.5em;
     margin-bottom: $spacing;
     padding: 0 0 0 2.5rem;
     position: relative;
+    quotes: none;
 
     &:before {
         content: "\201C";
@@ -21,7 +21,7 @@ blockquote {
     cite {
         display: block;
         font-size: $font-size-20;
-        
+
         &:before { content: "\2014 \0020"; }
     }
 }

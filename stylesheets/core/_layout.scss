@@ -30,8 +30,8 @@
 
 
 div.l-container {
-    max-width: $max-width;
     margin: auto;
+    max-width: $max-width;
     padding: $spacing;
     @include grid-container;
 
