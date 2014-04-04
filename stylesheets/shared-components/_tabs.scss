@@ -1,14 +1,24 @@
 // =========== Tabs
 
-ul.tabs {
-    background: $color-neutral-20;
-    border-radius: $border-radius-10;
-    margin: 0 0 $spacing 0;
-    padding: 0.25rem 0.25rem 0 0.25rem;
+div.tabs {
+    text-align: center;
+
+    ul {
+        background: $color-neutral-20;
+        border-radius: $border-radius-10;
+        display: inline-block;
+        list-style: none;
+        margin: 0;
+        text-align: center;
+        @include grid-container;
+    }
 
     li {
-        display: inline-block;
-        position: relative;
+        float: left;
+
+        &:first-child a { border-radius: $border-radius-10 0 0 $border-radius-10; }
+
+        &:last-child a { border-radius: 0 $border-radius-10 $border-radius-10 0; }
     }
 
     a {
@@ -16,13 +26,30 @@ ul.tabs {
         display: block;
         padding: 0.5rem 0.75rem;
 
-        &:hover { color: $color-neutral-100; }
+        &:hover {
+            background: $color-neutral-40;
+            color: $color-neutral-80;
+        }
+
+        &:active,
+        &:focus {
+            box-shadow: inset 0 1px 3px rgba($black, 0.2);
+        }
     }
-    
+
     li.is-selected a {
-        background: $white;
-        border-radius: $border-radius-10 $border-radius-10 0 0;
-        color: $color-neutral-100;
+        background: $color-brand-50;
+        color: $white;
         font-weight: bold;
+
+        &:hover {
+            background: $color-brand-60;
+            color: $white;
+        }
+
+        &:active,
+        &:focus {
+            box-shadow: inset 0 1px 3px rgba($black, 0.2);
+        }
     }
 }

@@ -6,7 +6,6 @@ input::-moz-focus-inner {
     padding: 0;
 }
 
-// The standard button has the $color-brand colors
 %button {
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -29,6 +28,7 @@ input::-moz-focus-inner {
     &:focus { outline: 0; }
 }
 
+// The standard button has the $color-brand colors
 .button,
 input[type=submit],
 button {

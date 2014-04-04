@@ -24,10 +24,12 @@ body {
     line-height: 1.5em;
 }
 
+
+// Headings
 h1, h2, legend, h3, h4, h5, h6 {
     font-weight: 400;
     line-height: 1.5em;
-    font-family: $font-family-headings;
+    font-family: $font-family-heading;
     margin: 0 0 0.25em 0;
 }
 
@@ -46,12 +48,16 @@ h5 { font-size: 1.1rem; }
 
 h6 { font-size: 1rem; }
 
+
+// Paragraphs
 p {
     margin-bottom: $spacing;
 
     &.lead { font-size: $font-size-40; }
 }
 
+
+// Links
 a {
     color: $color-brand-50;
     cursor: pointer;
@@ -60,6 +66,8 @@ a {
     &:hover { color: $color-brand-60; }
 }
 
+
+// Other
 small {
     font-size: $font-size-20;
     color: $color-neutral-60;
@@ -87,6 +95,8 @@ hr {
     margin: 2.5rem $spacing;
 }
 
+
+// Lists
 ul, ol { margin: 0 0 $spacing 1.5rem; }
 
 ul { list-style: disc; }
@@ -100,8 +110,7 @@ dl {
     dd { margin-left: $spacing; }
 
     &.advanced {
-
-        @include clearfix;
+        @include grid-container;
 
         dt { @include grid(16, 0, 1); }
 

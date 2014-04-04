@@ -60,7 +60,7 @@ ul.form {
     list-style: none;
     margin: 0 0 $spacing 0;
 
-    > li { @include clearfix; }
+    > li { @include grid-container; }
 
     > li > label {
         clear: left;

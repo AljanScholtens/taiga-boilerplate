@@ -30,8 +30,8 @@ $grid-column: 100% / $grid-columns;
     width: auto;
 }
 
-// The clearfix mixin is necessary for the floats
-@mixin clearfix() {
+// The grid-container mixin is necessary for the floats
+@mixin grid-container() {
 
     &:before,
     &:after {

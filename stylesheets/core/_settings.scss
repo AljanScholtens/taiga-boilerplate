@@ -3,12 +3,14 @@
 // Most of the variables are based on some kind of percentages to maintain stability.
 // So $variable-10 is small or light and $variable-100 is big or dark.
 
+
 // Set your own font
 $font-family-body: sans-serif;
-$font-family-headings: georgia;
+$font-family-heading: georgia;
+
 
 // The base font-size, all other elements will adjust to this value
-$font-size-base: 16px;
+$font-size-base: 17px;
 
 $font-size-10: 0.75em;
 $font-size-20: 0.875em;
@@ -16,18 +18,23 @@ $font-size-30: 1rem;
 $font-size-40: 1.125rem;
 $font-size-50: 1.313rem;
 
+
 // The grid columns will be used in the grid mixin, 48 is standard
 $grid-columns: 48;
+
 
 // Adjust the website's maximum width.
 $max-width: (1140px / $font-size-base) +rem;
 
+
 // Use the spacing variable on margins and paddings
-$spacing: 1.5rem;
+$spacing: 1rem;
+
 
 // Adjust the border-radius
 $border-radius-10: 0.125rem;
 $border-radius-20: 0.313rem;
+
 
 // Media queries
 // Adjust them to you needs or add more
@@ -36,9 +43,9 @@ $breakpoint-10: 590px;
 $breakpoint-20: 769px;
 $breakpoint-30: 960px;
 
+
 // Colors
 // Add your own color variables
-// use color: lighten($color-brand, 20%), color: darken($color-brand, 20%) or color: rgba($color-brand, 0.5) to adjust colors
 
 // Color brand
 $color-brand-40: #29c882;

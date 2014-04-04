@@ -21,7 +21,7 @@
 }
 
 .l-grid {
-    @include clearfix;
+    @include grid-container;
 
     li { @include grid(16, 1); }
 }
@@ -32,8 +32,8 @@
 div.l-container {
     max-width: $max-width;
     margin: auto;
-    padding: 0.75rem;
-    @include clearfix;
-    
-    @include breakpoint($breakpoint-20) { padding: 1.5rem; }
+    padding: $spacing;
+    @include grid-container;
+
+    @include breakpoint($breakpoint-20) { padding: $spacing * 2; }
 }

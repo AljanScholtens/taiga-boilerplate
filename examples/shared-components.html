@@ -1,4 +1,4 @@
-﻿<!DOCTYPE HTML>
+﻿<!doctype html>
 <html lang="nl">
 
 <head>
@@ -12,13 +12,8 @@
     <meta name="description" content="" />
     <meta name="author" content="" />
 
-    <!--[if lt IE 9]>
-        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-        <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
-    <![endif]-->
-
     <link rel="stylesheet" href="../stylesheets/styles.css" />
-    <link rel="shortcut icon" href="../favicon.ico?20131213" />
+    <link rel="shortcut icon" href="../favicon.ico" />
     <link rel="apple-touch-icon-precomposed" href="../apple-icon.png" />
 </head>
 
@@ -168,7 +163,7 @@
         </div>
 
         <p><pre>&lt;button type="submit"&gt;Buy&lt;/button&gt;
-&lt;a class="button--soft" href=""&gt;Cancel&lt;/a&gt;
+&lt;a class="button--neutral" href=""&gt;Cancel&lt;/a&gt;
 &lt;a class="button--success" href=""&gt;Save&lt;/a&gt;
 &lt;a class="button--alert" href=""&gt;Delete&lt;/a&gt;</pre></p>
 
@@ -183,7 +178,7 @@
         </div>
 
         <p><pre>&lt;span class="label"&gt;Label&lt;/span&gt;
-&lt;span class="label--soft"&gt;Label&lt;/span&gt;
+&lt;span class="label--neutral"&gt;Label&lt;/span&gt;
 &lt;span class="label--success"&gt;Label&lt;/span&gt;
 &lt;span class="label--alert"&gt;Label&lt;/span&gt;</pre></p>
 
@@ -193,6 +188,7 @@
         <div class="panel">
             <ul class="messages">
                 <li class="message">Don't forget to check your tasks</li>
+                <li class="message--neutral">Did you know about our recent changes?</li>
                 <li class="message--success">Wow, that's great, you finished your tasks</li>
                 <li class="message--alert">Hmm, it's not possible to delete your task</li>
             </ul>
@@ -200,6 +196,7 @@
 
         <p><pre>&lt;ul class="messages"&gt;
     &lt;li class="message"&gt;Don't forget to check your tasks&lt;/li&gt;
+    &lt;li class="message--neutral"&gt;Did you know about our recent changes?&lt;/li&gt;
     &lt;li class="message--success"&gt;Wow, that's great, you finished your tasks&lt;/li&gt;
     &lt;li class="message--alert"&gt;Hmm, it's not possible to delete your task&lt;/li&gt;
 &lt;/ul&gt;</pre></p>
@@ -208,12 +205,14 @@
 
         <h2>Tabs</h2>
         <div class="panel">
-            <ul class="tabs">
-                <li><a href="">Overview</a></li>
-                <li class="is-selected"><a href="">Specifications</a></li>
-                <li><a href="">Photos</a></li>
-                <li><a href="">Prices</a></li>
-            </ul>
+            <div class="tabs">
+                <ul>
+                    <li><a href="">Overview</a></li>
+                    <li class="is-selected"><a href="">Specifications</a></li>
+                    <li><a href="">Photos</a></li>
+                    <li><a href="">Prices</a></li>
+                </ul>
+            </div>
         </div>
 
         <p><pre>&lt;ul class="tabs"&gt;
@@ -402,10 +401,6 @@
         </div>
 
     </div>
-
-    <!-- Scripts -->
-    <script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
-    <script src="scripts/interface.js"></script>
 
 </body>
 
