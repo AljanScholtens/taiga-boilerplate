@@ -1,38 +1,144 @@
-Taiga Boilerplate
-====================
+# Taiga Boilerplate
 
-Taiga Boilerplate is the extended version of Taiga Grid for starting a new web project. With a clean folder structure and basic modules it's a head start for UI designers who code.
+Taiga Boilerplate is a small HTML/Sass framework for starting a new web project.
+It's mobile-first with a semantic Sass grid and is based on the principles of SMACSS and BEM.
 
-* Includes Taiga Grid (https://github.com/StudioWolf/taiga-grid)
-* Mobile first
-* Set of simple mixins
-* Modular with Smacss
-* Touch and mobile ready
-* Basic components like forms, tables, buttons etc.
+## Download
 
-Changes
----------------------
+Use these options to quickly install Taiga Boilerplate.
 
-* 25 october: buttons, forms etc can be found in the folder 'shared-components'. Modules like 'product', 'blog-article', 'shopping-cart' can be created in the folder 'modules'.
+- [Download the latest release](https://github.com/studiowolf/taiga-boilerplate/archive/stable.zip)
+- Clone the repository `git clone https://github.com/studiowolf/taiga-boilerplate.git`
 
-Why Taiga Boilerplate?
----------------------
+## Dependencies
 
-As an interface designer I had the problem with most other boilerplates that they are created for developers. You'll get everything you need to build a prototype rapidly, but adjusting and adding components and design can be difficult. That's why we build our own boilerplate and shaped Taiga while looking at HTML5Boilerplate, Twitter Bootstrap, Zurb Foundation and others.
+- [Ruby](https://www.ruby-lang.org/en/installation/)
+- [Sass](http://sass-lang.com/install)
 
-Set up Taiga Boilerplate
----------------------
+## How to start
 
-* Taiga Grid: The core of Taiga Boilerplate is Taiga Grid, so please read how to work with the grid first.
-* Sass: Download Sass and runn `sass --watch stylesheets:stylesheets --style compressed`.
-* Modular CSS: Taiga Boilerplate works with modular CSS. To fully understand this principle you should read the Smacss book by Jonathan Snook.
+1. Make sure you've installed the [dependencies](#dependencies).
+2. Get the [latest version](#quick-start) of Taiga Boilerplate.
+3. Go to the folder via terminal or your application of choice.
+4. **Run Sass via `sass --watch stylesheets`.**
+5. Edit the `/stylesheets/core/settings.scss` to your wishes.
+6. Start building and use the `/examples/shared-components.html`.
 
-Thanks
----------------------
+Tip: when deploying to a live environment make sure your CSS is compressed by running `sass --watch stylesheets --style compressed`.
 
-Taiga was inspired by these awesome people: Miller Medeiros, Paul Irish, Olav Bjørkøy and Jonathan Snook.
-If you have any questions or suggestions, e-mail me at aljan@studiowolf.nl or ask it on github.
+## Documentation
 
-And please let me know if you're using Taiga! :-)
+### Mobile-first
 
-For more information: http://taigaboilerplate.com/taiga-boilerplate
+By default Taiga Boilerplate is mobile-first, it means media query breakpoints go from small to big. Adjust the breakpoints or change to desktop-first in `/stylesheets/core/settings.scss`.
+
+```
+// Media queries
+$breakpoint-property: min-width;
+$breakpoint-10: 590px;
+$breakpoint-20: 769px;
+$breakpoint-30: 960px;
+```
+
+### Modules and shared components
+
+Besides the basic stuff which you can find in `/stylesheets/core` we have two different folder for the stylesheets, `/stylesheets/modules` and `/stylesheets/shared-components`.
+
+**Shared components** don't have anything to do with content. They are components like buttons, labels, tabs and panels which can be used inside multiple modules through a website. The HTML of these shared components can be found in `/examples/shared-components.html`.
+
+**Modules** are completely different. They are based on content and could contain shared components. Let's say we have a web shop with a product list. The product list will be the module `/modules/product-list.scss` and gets its own file. If you want to use the same module for a reseller list you'll have to copy the entire module to `/stylesheets/modules/reseller-list.scss` or create one shared component for both `/stylesheets/shared-components/list.scss`.
+
+### Grid
+
+The grid is based on 48 columns (adjustable in `/stylesheets/core/settings.scss`). That seems like a lot, but the difference is that margins are also expressed in columns. The example below will clear things up.
+
+Let's say we want a module to be half the width of our page. In the variables we set 48 columns for the whole grid, so this container needs to have 24 columns. The '1' at the end is the gutter in columns on both sides. Note that this gutter is subtracted from the width, so your content within the container will be 22 effective columns. If you want to have different gutters on the left and right side, just separate it with a comma. That's it!
+
+```
+.module {
+
+    // 24 columns with on both sides 1 column as gutter
+    @include grid(24, 1);
+
+    // 24 columns with on the left side 1 column as gutter and on the right side 5 columns as gutter
+    @include grid(24, 1, 5);
+
+    // When changing breakpoint, you might want to remove the grid, use the mixin below to reset the grid
+    @include grid-reset;
+}
+
+.module--container {
+
+    // The grid uses floats so we need a clearfix on the container, use the mixin below to enable this
+    @include grid-container;
+}
+```
+
+### SMACSS and BEM
+
+Taiga Boilerplate works with a combination of [SMACSS](http://smacss.com/) and [BEM](http://bem.info/), which are guide lines to create a modular architecture for your CSS.
+
+A module file like `product.scss` contains out of the module `.product`, one or more submodules `.product--submodule` and states `.is-open`.
+The order of these elements in combination with states is very important, see an example below.
+
+Tip: Nesting more than 3 levels deep is never good.
+
+```
+// Module
+.module {
+
+    // 1: Add the direct properties of the element
+    property: value;
+
+    // 2: Add media queries or print styles
+    @include breakpoint($breakpoint-10) { property: value; }
+
+    // 3: Add selectors of the parent element
+    &:hover { property: value; }
+
+    // 4: Add states of the parent element
+    &.is-open { property: value; }
+
+    // 5: Add nested elements
+    strong { property: value; }
+}
+
+// Submodule
+.module--submodule { property: value; }
+```
+
+### Variables
+
+Variables are setup in `/stylesheets/core/settings.scss` and are threated a bit differently.
+In the example below you'll notice Taiga works with steps of 10, 20, 30 and so on. The trick is simple, 10 is small or light and 100 is large or dark. So we work from nothing to something.
+
+The steps are created this way because you can add more in between. This way we will have more consistency in a website, but maintain the creativity.
+
+```
+// Border-radius
+$border-radius-10: 0.125rem; // Small
+$border-radius-20: 0.313rem; // Larger
+
+// Color brand
+$color-brand-40: #29c882; // Lighter
+$color-brand-50: #09a25f; // Default
+$color-brand-60: #038049; // Darker
+
+```
+
+## Bugs, requests and questions
+
+- Found a bug or need a feature? Post an [issue](https://github.com/studiowolf/taiga-boilerplate/issues/new) or do a [pull request](https://github.com/studiowolf/taiga-boilerplate/pulls).
+- Questions? Mail me at [aljan@studiowolf.nl](mailto:aljan@studiowolf.nl) or tweet to [twitter.com/aljanscholtens](http://twitter.com/aljanscholtens).
+
+## Background
+
+As an interface designer I had the problem with most other boilerplates that they are created for developers.
+You'll get everything you need to build a prototype rapidly, but adjusting and adding components and design can be difficult.
+That's why we build our own boilerplate, Taiga Boilerplate.
+
+Taiga is inspired by these awesome people: Miller Medeiros, Paul Irish, Olav Bjørkøy and Jonathan Snook.
+
+## Copyright and license
+
+Copyright 2012-2014 by [Studio Wolf](http://studiowolf.nl) under the [MIT License](LICENSE).
