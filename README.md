@@ -22,7 +22,7 @@ Use these options to quickly install Taiga Boilerplate.
 3. Go to the folder via terminal or your application of choice.
 4. **Run Sass via `sass --watch stylesheets`.**
 5. Edit the `/stylesheets/core/settings.scss` to your wishes.
-6. Start building and use the `/examples/shared-components.html`.
+6. Start building and use `/examples/shared-components.html` as inspiration.
 
 Tip: when deploying to a live environment make sure your CSS is compressed by running `sass --watch stylesheets --style compressed`.
 
