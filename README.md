@@ -1,7 +1,7 @@
 # Taiga Boilerplate
 
 Taiga Boilerplate is a small HTML/Sass framework for starting a new web project.
-It's mobile-first with a semantic Sass grid and is based on the principles of SMACSS and BEM.
+It is mobile-first with a semantic Sass grid and based on the principles of [SMACSS](http://smacss.com/) and [BEM](http://bem.info).
 
 ## Download
 
@@ -22,7 +22,7 @@ Use these options to quickly install Taiga Boilerplate.
 3. Go to the folder via terminal or your application of choice.
 4. **Run Sass via `sass --watch stylesheets`.**
 5. Edit the `/stylesheets/core/settings.scss` to your wishes.
-6. Start building and use `/examples/shared-components.html` as inspiration.
+6. Start building and use `/examples/shared-components.html` as example and inspiration.
 
 Tip: when deploying to a live environment make sure your CSS is compressed by running `sass --watch stylesheets --style compressed`.
 
@@ -30,7 +30,7 @@ Tip: when deploying to a live environment make sure your CSS is compressed by ru
 
 ### Mobile-first
 
-By default Taiga Boilerplate is mobile-first, it means media query breakpoints go from small to big. Adjust the breakpoints or change to desktop-first in `/stylesheets/core/settings.scss`.
+By default Taiga Boilerplate is mobile-first, meaning media query breakpoints from small to big. Adjust the breakpoints or change to desktop-first in `/stylesheets/core/settings.scss`.
 
 ```
 // Media queries
@@ -42,17 +42,17 @@ $breakpoint-30: 960px;
 
 ### Modules and shared components
 
-Besides the basic stuff which you can find in `/stylesheets/core` we have two different folder for the stylesheets, `/stylesheets/modules` and `/stylesheets/shared-components`.
+Besides the basic stuff which you can find in `/stylesheets/core` there are two different folders for the stylesheets; `/stylesheets/modules` and `/stylesheets/shared-components`.
 
-**Shared components** don't have anything to do with content. They are components like buttons, labels, tabs and panels which can be used inside multiple modules through a website. The HTML of these shared components can be found in `/examples/shared-components.html`.
+**Shared components** don't have anything to do with content. They are components like buttons, labels, tabs and panels which can be used inside multiple modules throughout a website. The HTML of these shared components can be found in `/examples/shared-components.html`.
 
-**Modules** are completely different. They are based on content and could contain shared components. Let's say we have a web shop with a product list. The product list will be the module `/modules/product-list.scss` and gets its own file. If you want to use the same module for a reseller list you'll have to copy the entire module to `/stylesheets/modules/reseller-list.scss` or create one shared component for both `/stylesheets/shared-components/list.scss`.
+**Modules** are a different story, they are based on content. A module could contain elements of shared components. As an example: let's say we have a web shop with a product list. The product list will be represented by a module called 'product-lists' with the file `/modules/product-list.scss`. If you want to use the same module for a reseller list you'll have to copy the entire module to `/stylesheets/modules/reseller-list.scss`. Are you a DRY person? Then you can create one shared component for both called `/stylesheets/shared-components/list.scss`.
 
 ### Grid
 
 The grid is based on 48 columns (adjustable in `/stylesheets/core/settings.scss`). That seems like a lot, but the difference is that margins are also expressed in columns. The example below will clear things up.
 
-Let's say we want a module to be half the width of our page. In the variables we set 48 columns for the whole grid, so this container needs to have 24 columns. The '1' at the end is the gutter in columns on both sides. Note that this gutter is subtracted from the width, so your content within the container will be 22 effective columns. If you want to have different gutters on the left and right side, just separate it with a comma. That's it!
+Let's say we want a module to be half the width of our page. In the variables we set 48 columns for the whole grid, so this container will be 24 columns. The '1' at the end is the gutter in columns on both sides. Note that this gutter is subtracted from the width, so your content within the container will be 22 effective columns. If you want to have different gutters on the left and right side, just separate it with a comma. That's it!
 
 ```
 .module {
@@ -60,8 +60,8 @@ Let's say we want a module to be half the width of our page. In the variables we
     // 24 columns with on both sides 1 column as gutter
     @include grid(24, 1);
 
-    // 24 columns with on the left side 1 column as gutter and on the right side 5 columns as gutter
-    @include grid(24, 1, 5);
+    // 24 columns with on the left side 1 column as gutter and on the right side 5 and a half columns as gutter
+    @include grid(24, 1, 5.5);
 
     // When changing breakpoint, you might want to remove the grid, use the mixin below to reset the grid
     @include grid-reset;
@@ -78,7 +78,7 @@ Let's say we want a module to be half the width of our page. In the variables we
 
 Taiga Boilerplate works with a combination of [SMACSS](http://smacss.com/) and [BEM](http://bem.info/), which are guide lines to create a modular architecture for your CSS.
 
-A module file like `product.scss` contains out of the module `.product`, one or more submodules `.product--submodule` and states `.is-open`.
+A module file like `product.scss` exists out of the module `.product`, one or more submodules `.product--submodule` and states `.is-state` (for example `.is-open`).
 The order of these elements in combination with states is very important, see an example below.
 
 Tip: Nesting more than 3 levels deep is never good.
@@ -109,10 +109,10 @@ Tip: Nesting more than 3 levels deep is never good.
 
 ### Variables
 
-Variables are setup in `/stylesheets/core/settings.scss` and are threated a bit differently.
+Variables are defined in `/stylesheets/core/settings.scss` and are treated a bit differently.
 In the example below you'll notice Taiga works with steps of 10, 20, 30 and so on. The trick is simple, 10 is small or light and 100 is large or dark. So we work from nothing to something.
 
-The steps are created this way because you can add more in between. This way we will have more consistency in a website, but maintain the creativity.
+The steps are created this way so you can easily add more in between. This way we will have more consistency in a website, but maintain the creativity and freedom.
 
 ```
 // Border-radius
