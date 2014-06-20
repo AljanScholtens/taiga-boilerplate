@@ -5,7 +5,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 *,
 *:after,
 *:before {
-  @include box-sizing(border-box);
+    @include box-sizing(border-box);
 }
 
 ::-moz-selection { background: $color-neutral-100; color: $white; text-shadow: none; }
