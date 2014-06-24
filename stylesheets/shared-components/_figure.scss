@@ -3,25 +3,34 @@
 figure {
     display: inline-block;
     margin-bottom: $spacing;
-    max-width: 100%;
+    width: 100%;
 
-    &.figure--left {
-        clear: left;
-        float: left;
-        padding-right: $spacing;
-        width: 50%;
+    &.is-left {
+
+        @include breakpoint($breakpoint-10) {
+            clear: left;
+            float: left;
+            padding-right: $spacing;
+            max-width: 50%;
+            width: auto;
+        }
     }
 
-    &.figure--right {
-        clear: right;
-        float: right;
-        padding-left: $spacing;
-        width: 50%;
+    &.is-right {
+
+        @include breakpoint($breakpoint-10) {
+            clear: right;
+            float: right;
+            padding-left: $spacing;
+            max-width: 50%;
+            width: auto;
+        }
     }
 
     img {
         display: block;
-        width: 100%;
+        max-width: 100%;
+        margin: auto;
     }
 
     figcaption {
