@@ -1,0 +1,85 @@
+@import "../stylesheets/styles.scss";
+
+
+// Colors
+div.colors {
+    @include grid-container;
+
+    ul {
+        width: 50%;
+        float: left;
+        list-style: none;
+        margin-left: 0;
+    }
+
+    li {
+        padding: 0.5rem 1rem;
+    }
+}
+
+ul.colors--element {
+    color: $white;
+}
+
+
+// Colors brand
+div.colors.is-color-brand .colors--element li {
+
+    &:nth-child(1) { background: $color-brand-40; }
+    &:nth-child(2) { background: $color-brand-50; }
+    &:nth-child(3) { background: $color-brand-60; }
+}
+
+div.colors.is-color-brand .colors--text li {
+
+    &:nth-child(1) { color: $color-brand-40; }
+    &:nth-child(2) { color: $color-brand-50; }
+    &:nth-child(3) { color: $color-brand-60; }
+}
+
+// Colors neutral
+div.colors.is-color-neutral .colors--element li {
+
+    &:nth-child(1) { background: $color-neutral-10; }
+    &:nth-child(2) { background: $color-neutral-20; }
+    &:nth-child(3) { background: $color-neutral-40; }
+    &:nth-child(4) { background: $color-neutral-60; }
+    &:nth-child(5) { background: $color-neutral-80; }
+    &:nth-child(6) { background: $color-neutral-100; }
+}
+
+div.colors.is-color-neutral .colors--text li {
+
+    &:nth-child(1) { color: $color-neutral-10; }
+    &:nth-child(2) { color: $color-neutral-20; }
+    &:nth-child(3) { color: $color-neutral-40; }
+    &:nth-child(4) { color: $color-neutral-60; }
+    &:nth-child(5) { color: $color-neutral-80; }
+    &:nth-child(6) { color: $color-neutral-100; }
+}
+
+// Colors success
+div.colors.is-color-success .colors--element li {
+
+    &:nth-child(1) { background: $color-success-50; }
+    &:nth-child(2) { background: $color-success-60; }
+}
+
+div.colors.is-color-success .colors--text li {
+
+    &:nth-child(1) { color: $color-success-50; }
+    &:nth-child(2) { color: $color-success-60; }
+}
+
+// Colors alert
+div.colors.is-color-alert .colors--element li {
+
+    &:nth-child(1) { background: $color-alert-50; }
+    &:nth-child(2) { background: $color-alert-60; }
+}
+
+div.colors.is-color-alert .colors--text li {
+
+    &:nth-child(1) { color: $color-alert-50; }
+    &:nth-child(2) { color: $color-alert-60; }
+}
