@@ -26,7 +26,6 @@ select {
     padding: 0.5rem;
     vertical-align: baseline;
     width: 100%;
-    @include transition(border 100ms);
 
     &:focus {
         border: 1px solid $color-neutral-60;
