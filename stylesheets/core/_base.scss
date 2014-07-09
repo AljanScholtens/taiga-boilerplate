@@ -8,11 +8,11 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     @include box-sizing(border-box);
 }
 
-::-moz-selection { background: $color-neutral-100; color: $white; text-shadow: none; }
-::selection { background: $color-neutral-100; color: $white; text-shadow: none; }
+::-moz-selection { background: $color-neutral-90; color: $white; text-shadow: none; }
+::selection { background: $color-neutral-90; color: $white; text-shadow: none; }
 
 html {
-    color: $color-neutral-80;
+    color: $color-neutral-70;
     font: 400 $font-size-base $font-family-body;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -69,7 +69,7 @@ a {
 
 // Other
 small {
-    color: $color-neutral-60;
+    color: $color-neutral-50;
     font-size: $font-size-20;
 }
 
@@ -81,7 +81,7 @@ code, pre { font-family: 'courier new', monospace; }
 
 pre { overflow-x: auto; }
 
-abbr { border-bottom: 1px dotted $color-neutral-40; }
+abbr { border-bottom: 1px dotted $color-neutral-50; }
 
 del { text-decoration: line-through; }
 
@@ -89,7 +89,7 @@ mark { background-color: lighten(yellow, 35%); }
 
 hr {
     background-color: transparent;
-    border: solid $color-neutral-20;
+    border: solid $color-neutral-30;
     border-width: 1px 0 0;
     clear: both;
     margin: 2.5rem $spacing;

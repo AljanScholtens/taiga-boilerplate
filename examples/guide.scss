@@ -21,7 +21,6 @@ ul.colors--element {
     color: $white;
 }
 
-
 // Colors brand
 div.colors.is-color-brand .colors--element li {
 
@@ -41,21 +40,19 @@ div.colors.is-color-brand .colors--text li {
 div.colors.is-color-neutral .colors--element li {
 
     &:nth-child(1) { background: $color-neutral-10; }
-    &:nth-child(2) { background: $color-neutral-20; }
-    &:nth-child(3) { background: $color-neutral-40; }
-    &:nth-child(4) { background: $color-neutral-60; }
-    &:nth-child(5) { background: $color-neutral-80; }
-    &:nth-child(6) { background: $color-neutral-100; }
+    &:nth-child(2) { background: $color-neutral-30; }
+    &:nth-child(3) { background: $color-neutral-50; }
+    &:nth-child(4) { background: $color-neutral-70; }
+    &:nth-child(5) { background: $color-neutral-90; }
 }
 
 div.colors.is-color-neutral .colors--text li {
 
     &:nth-child(1) { color: $color-neutral-10; }
-    &:nth-child(2) { color: $color-neutral-20; }
-    &:nth-child(3) { color: $color-neutral-40; }
-    &:nth-child(4) { color: $color-neutral-60; }
-    &:nth-child(5) { color: $color-neutral-80; }
-    &:nth-child(6) { color: $color-neutral-100; }
+    &:nth-child(2) { color: $color-neutral-30; }
+    &:nth-child(3) { color: $color-neutral-50; }
+    &:nth-child(4) { color: $color-neutral-70; }
+    &:nth-child(5) { color: $color-neutral-90; }
 }
 
 // Colors success

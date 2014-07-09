@@ -51,12 +51,12 @@ button {
 input[type=submit].button--neutral,
 button.button--neutral {
     @extend %button;
-    background: $color-neutral-20;
-    color: $color-neutral-80;
+    background: $color-neutral-30;
+    color: $color-neutral-70;
 
     &:hover {
-        background: $color-neutral-40;
-        color: $color-neutral-80;
+        background: $color-neutral-50;
+        color: $color-neutral-70;
     }
 
     &:active,

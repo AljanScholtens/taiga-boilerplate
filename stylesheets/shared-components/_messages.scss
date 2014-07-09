@@ -24,8 +24,8 @@ div.message {
 li.message--neutral,
 div.message--neutral {
     @extend li%message;
-    background: $color-neutral-20;
-    color: $color-neutral-80;
+    background: $color-neutral-30;
+    color: $color-neutral-70;
 }
 
 li.message--success,

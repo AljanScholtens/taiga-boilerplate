@@ -4,7 +4,7 @@ div.tabs {
     text-align: center;
 
     ul {
-        background: $color-neutral-20;
+        background: $color-neutral-30;
         border-radius: $border-radius-10;
         display: inline-block;
         list-style: none;
@@ -22,13 +22,13 @@ div.tabs {
     }
 
     a {
-        color: $color-neutral-80;
+        color: $color-neutral-70;
         display: block;
         padding: 0.5rem 0.75rem;
 
         &:hover {
-            background: $color-neutral-40;
-            color: $color-neutral-80;
+            background: $color-neutral-50;
+            color: $color-neutral-70;
         }
 
         &:active,

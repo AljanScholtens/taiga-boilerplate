@@ -32,15 +32,15 @@ ul.pagination {
     }
 
     a {
-        background: $color-neutral-20;
+        background: $color-neutral-30;
         border-radius: $border-radius-10;
-        color: $color-neutral-80;
+        color: $color-neutral-70;
         display: block;
         padding: 0.25rem 0.5rem;
 
         &:hover {
-            background: $color-neutral-40;
-            color: $color-neutral-80;
+            background: $color-neutral-50;
+            color: $color-neutral-70;
         }
 
         &:active,
