@@ -7,7 +7,7 @@ It is mobile-first with a semantic Sass grid and based on the principles of [SMA
 
 Use these options to quickly install Taiga Boilerplate.
 
-- [Download the latest release](https://github.com/studiowolf/taiga-boilerplate/archive/stable.zip)
+- [Download the latest release](https://github.com/studiowolf/taiga-boilerplate/archive/master.zip)
 - Clone the repository `git clone https://github.com/studiowolf/taiga-boilerplate.git`
 
 ## Dependencies
