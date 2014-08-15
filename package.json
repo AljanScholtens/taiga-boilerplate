@@ -1,0 +1,9 @@
+{
+  "name": "generator-taiga",
+  "version": "0.1.0",
+  "description": "HTML5 & SASS boilerplate with a semantic & fluid grid.",
+  "keywords": ["yeoman-generator"],
+  "dependencies": {
+    "yeoman-generator": "^0.16.0"
+  }
+}
