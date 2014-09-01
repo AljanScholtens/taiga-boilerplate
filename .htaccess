@@ -1,0 +1,5 @@
+RewriteEngine on
+RewriteCond %{HTTP_HOST} !^(.*)\.taigaboilerplate\.com$ [NC]
+RewriteRule ^(.*)$ http://www.taigaboilerplate.com/ [R=301,L]
+RewriteCond %{REQUEST_URI} !"^/$"
+RewriteRule (.+) http://%{HTTP_HOST}/ [R=301,L]
