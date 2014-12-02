@@ -38,7 +38,7 @@
 // Media queries
 // Example: @include breakpoint($breakpoint-20) { your properties }
 @mixin breakpoint($breakpoint) {
-    @media ($breakpoint-property: $breakpoint / $font-size-base +rem) {
+    @media ($breakpoint-property: $breakpoint) {
         @content;
     }
 }
