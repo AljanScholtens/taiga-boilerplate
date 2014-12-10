@@ -14,6 +14,7 @@ Use these options to quickly install Taiga Boilerplate.
 
 - [Ruby](https://www.ruby-lang.org/en/installation/)
 - [Sass](http://sass-lang.com/install)
+- [Autoprefixer](https://github.com/postcss/autoprefixer)
 
 ## How to start
 

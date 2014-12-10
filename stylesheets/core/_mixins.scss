@@ -1,54 +1,11 @@
 // =========== Mixins
 
-// Animations
-// Example: .element { @include animation(keyframe-name, 500ms, default); }
-@mixin animation ($name: true, $duration: true, $timing_function: true, $delay: false, $iteration_count: false, $direction: false) {
-    @if $name { -webkit-animation-name: $name; -moz-animation-name: $name; -ms-animation-name: $name; }
-    @if $duration { -webkit-animation-duration: $duration; -moz-animation-duration: $duration; -ms-animation-duration: $duration; }
-    @if $timing_function { -webkit-animation-timing-function: $timing_function; -moz-animation-timing-function: $timing_function;  -ms-animation-timing-function: $timing_function; }
-    @if $delay { -webkit-animation-delay: $delay; -moz-animation-delay: $delay; -ms-animation-delay: $delay; }
-    @if $iteration_count { -webkit-animation-iteration-count: $iteration_count; -moz-animation-iteration-count: $iteration_count; -ms-animation-iteration-count: $iteration_count; }
-    @if $direction { -webkit-animation-direction: $direction; -moz-animation-direction: $direction; -ms-animation-direction: $direction; }
-}
-
-// Backface-visibility
-// Example: .element { @include backface-visibility(hidden); }
-@mixin backface-visibility($backface) {
-    -webkit-backface-visibility: $backface;
-    -moz-backface-visibility: $backface;
-    -ms-backface-visibility: $backface;
-    backface-visibility: $backface;
-}
-
-// Border-radius
-// Example: .element { @include border-radius($border-radius-10); }
-@mixin border-radius($radius) {
-    background-clip: padding-box;
-    border-radius: $radius;
-}
-
-// Box-sizing
-// Example: .element { @include box-sizing(border-box); }
-@mixin box-sizing($box) {
-    -webkit-box-sizing: $box;
-    -moz-box-sizing: $box;
-    box-sizing: $box;
-}
-
 // Media queries
 // Example: @include breakpoint($breakpoint-20) { your properties }
 @mixin breakpoint($breakpoint) {
     @media ($breakpoint-property: $breakpoint) {
         @content;
     }
-}
-
-// Filters
-// Example: .element { @include filter(grayscale(50%)); }
-@mixin filter($filter) {
-    -webkit-filter: $filter;
-    -moz-filter: $filter;
-    filter: $filter;
 }
 
 // Retina image
@@ -58,64 +15,4 @@
         background-image: url($image);
         background-size: $width $height;
     }
-}
-
-// Perspective
-// Example: .element { @include perspective(1000); }
-@mixin perspective($perspective) {
-    -webkit-perspective: $perspective;
-    -moz-perspective: $perspective;
-    perspective: $perspective;
-}
-
-// Transform
-// Example: .element { @include transform(translateX(1em)); }
-@mixin transform($transform) {
-    -webkit-transform: $transform;
-    -moz-transform: $transform;
-    -ms-transform: $transform;
-    transform: $transform;
-}
-
-// Transition
-// Example: .element { @include transition(background 500ms ease-in); }
-@mixin transition($transition) {
-    -webkit-transition: $transition;
-    -moz-transition: $transition;
-    transition: $transition;
-}
-
-// Columns
-// Example: .element { @include columns(2, 1em)); }
-@mixin columns($count, $gap) {
-    -webkit-column-count: $count;
-    -webkit-column-gap : $gap;
-    -moz-column-count: $count;
-    -moz-column-gap: $gap;
-    column-count: $count;
-    column-gap: $gap;
-}
-
-// Column rule
-// Example: .element { @include column-rule(1px, solid, #000); }
-@mixin columns-rule($size, $style, $color) {
-    -webkit-column-rule-width: $size;
-    -webkit-column-rule-style: $style;
-    -webkit-column-rule-color: $color;
-    -moz-column-rule-width: $size;
-    -moz-column-rule-style: $style;
-    -moz-column-rule-color: $color;
-    column-rule-width: $size;
-    column-rule-style: $style;
-    column-rule-color: $color;
-}
-
-// Gradient
-// Example: .element { @include gradient(top, #000, #fff); }
-@mixin gradient($side, $start, $end) {
-    background-color: $end;
-    background-image: -webkit-linear-gradient($side, $start, $end);
-    background-image: -moz-linear-gradient($side, $start, $end);
-    background-image: -ms-linear-gradient($side, $start, $end);
-    background-image: linear-gradient($side, $start, $end);
 }

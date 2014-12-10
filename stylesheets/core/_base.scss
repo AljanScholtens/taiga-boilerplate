@@ -5,11 +5,13 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 *,
 *:after,
 *:before {
-    @include box-sizing(border-box);
+    box-sizing: border-box;
 }
 
-::-moz-selection { background: $color-neutral-90; color: $white; text-shadow: none; }
-::selection { background: $color-neutral-90; color: $white; text-shadow: none; }
+::selection {
+    background: $color-neutral-90;
+    color: $white;
+}
 
 html {
     color: $color-neutral-70;
@@ -109,7 +111,7 @@ dl {
     dt { font-weight: bold; }
     dd { margin-left: $spacing; }
 
-    &.advanced {
+    &.is-advanced {
         @include grid-container;
 
         dt { @include grid(16, 0, 1); }
