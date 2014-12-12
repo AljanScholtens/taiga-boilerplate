@@ -127,6 +127,14 @@ $color-brand-60: #038049; // Darker
 
 ```
 
+## IE8 Support
+
+If you still want to support IE8 you can use these polyfills.
+
+- HTML5 elements: https://github.com/aFarkas/html5shiv
+- Media queries: https://github.com/scottjehl/Respond
+- REM units: https://github.com/chuckcarpenter/REM-unit-polyfill
+
 ## Bugs, requests and questions
 
 - Found a bug or need a feature? Post an [issue](https://github.com/studiowolf/taiga-boilerplate/issues/new) or do a [pull request](https://github.com/studiowolf/taiga-boilerplate/pulls).
