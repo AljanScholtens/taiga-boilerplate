@@ -7,7 +7,7 @@ figure {
 
     &.is-left {
 
-        @include breakpoint($breakpoint-10) {
+        @media (min-width: $breakpoint-10) {
             clear: left;
             float: left;
             padding-right: $spacing;
@@ -18,7 +18,7 @@ figure {
 
     &.is-right {
 
-        @include breakpoint($breakpoint-10) {
+        @media (min-width: $breakpoint-10) {
             clear: right;
             float: right;
             padding-left: $spacing;

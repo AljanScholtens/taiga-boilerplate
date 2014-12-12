@@ -69,7 +69,7 @@ ul.form {
         padding-top: 0.5rem;
         text-align: left;
 
-        @include breakpoint($breakpoint-10) {
+        @media (min-width: $breakpoint-10) {
             @include grid(16, 0, 1);
             text-align: right;
         }
@@ -80,7 +80,7 @@ ul.form {
     div.form--fields {
         margin-bottom: 0.5rem;
 
-        @include breakpoint($breakpoint-10) {
+        @media (min-width: $breakpoint-10) {
             @include grid(32);
         }
 

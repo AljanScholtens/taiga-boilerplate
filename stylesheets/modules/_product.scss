@@ -11,7 +11,7 @@
     property: value;
 
     // 2: Add media queries or print styles
-    @include breakpoint($breakpoint-10) { property: value; }
+    @media (min-width: $breakpoint-10) { property: value; }
 
     // 3: Add selectors of the parent element
     &:hover { property: value; }

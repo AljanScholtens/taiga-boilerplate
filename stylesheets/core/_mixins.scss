@@ -1,13 +1,5 @@
 // =========== Mixins
 
-// Media queries
-// Example: @include breakpoint($breakpoint-20) { your properties }
-@mixin breakpoint($breakpoint) {
-    @media ($breakpoint-property: $breakpoint) {
-        @content;
-    }
-}
-
 // Retina image
 // Example: .element { @include image-2x("logo2x.png", 2em, 1em); }
 @mixin retina($image, $width, $height) {
