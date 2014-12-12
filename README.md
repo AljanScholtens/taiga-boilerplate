@@ -136,7 +136,7 @@ $color-brand-60: #038049; // Darker
 
 As an interface designer I had the problem with most other boilerplates that they are created for developers.
 You'll get everything you need to build a prototype rapidly, but adjusting and adding components and design can be difficult.
-That's why we build our own boilerplate, Taiga Boilerplate.
+That's why we built our own boilerplate, Taiga Boilerplate.
 
 Taiga is inspired by these awesome people: Miller Medeiros, Paul Irish, Olav Bjørkøy and Jonathan Snook.
 
