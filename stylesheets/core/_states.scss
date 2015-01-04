@@ -6,9 +6,9 @@
 
 .is-active, .is-visible { display: block; }
 
-.left { float: left; }
+.left { @include breakpoint($breakpoint-10) { float: left; } }
 
-.right { float: right; }
+.right { @include breakpoint($breakpoint-10) { float: right; } }
 
 .text-left { text-align: left; }
 
