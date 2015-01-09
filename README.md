@@ -19,7 +19,7 @@ Use these options to quickly install Taiga Boilerplate.
 ## How to start
 
 1. Make sure you've installed the [dependencies](#dependencies).
-2. Get the [latest version](#quick-start) of Taiga Boilerplate.
+2. Get the [latest version](#download) of Taiga Boilerplate.
 3. Go to the folder via terminal or your application of choice.
 4. **Run Sass via `sass --watch stylesheets`.**
 5. Edit the `/stylesheets/core/settings.scss` to your wishes.
@@ -27,21 +27,7 @@ Use these options to quickly install Taiga Boilerplate.
 
 Tip: when deploying to a live environment make sure your CSS is compressed by running `sass --watch stylesheets --style compressed`.
 
-## Documentation
-
-### Mobile-first
-
-By default Taiga Boilerplate is mobile-first, meaning media query breakpoints from small to big. Adjust the breakpoints or change to desktop-first in `/stylesheets/core/settings.scss`.
-
-```
-// Media queries
-$breakpoint-property: min-width;
-$breakpoint-10: 590px;
-$breakpoint-20: 769px;
-$breakpoint-30: 960px;
-```
-
-### Modules and shared components
+## Modules and shared components
 
 Besides the basic stuff which you can find in `/stylesheets/core` there are two different folders for the stylesheets; `/stylesheets/modules` and `/stylesheets/shared-components`.
 
@@ -49,33 +35,7 @@ Besides the basic stuff which you can find in `/stylesheets/core` there are two 
 
 **Modules** are a different story, they are based on content. A module could contain elements of shared components. As an example: let's say we have a web shop with a product list. The product list will be represented by a module called 'product-lists' with the file `/modules/product-list.scss`. If you want to use the same module for a reseller list you'll have to copy the entire module to `/stylesheets/modules/reseller-list.scss`. Are you a DRY person? Then you can create one shared component for both called `/stylesheets/shared-components/list.scss`.
 
-### Grid
-
-The grid is based on 48 columns (adjustable in `/stylesheets/core/settings.scss`). That seems like a lot, but the difference is that margins are also expressed in columns. The example below will clear things up.
-
-Let's say we want a module to be half the width of our page. In the variables we set 48 columns for the whole grid, so this container will be 24 columns. The '1' at the end is the gutter in columns on both sides. Note that this gutter is subtracted from the width, so your content within the container will be 22 effective columns. If you want to have different gutters on the left and right side, just separate it with a comma. That's it!
-
-```
-.module {
-
-    // 24 columns with on both sides 1 column as gutter
-    @include grid(24, 1);
-
-    // 24 columns with on the left side 1 column as gutter and on the right side 5 and a half columns as gutter
-    @include grid(24, 1, 5.5);
-
-    // When changing breakpoint, you might want to remove the grid, use the mixin below to reset the grid
-    @include grid-reset;
-}
-
-.module--container {
-
-    // The grid uses floats so we need a clearfix on the container, use the mixin below to enable this
-    @include grid-container;
-}
-```
-
-### SMACSS and BEM
+## SMACSS and BEM
 
 Taiga Boilerplate works with a combination of [SMACSS](http://smacss.com/) and [BEM](http://bem.info/), which are guide lines to create a modular architecture for your CSS.
 
@@ -108,7 +68,123 @@ Tip: Nesting more than 3 levels deep is never good.
 .module--submodule { property: value; }
 ```
 
-### Variables
+### Examples
+
+**Submodules**
+
+Wrong:
+```
+.module {
+
+    .module--submodule { }
+}
+```
+
+Right:
+```
+.module { }
+
+.module--submodule { }
+```
+
+**States**
+
+Wrong:
+```
+.module { }
+
+.is-open { }
+```
+
+Right:
+```
+.module {
+
+    .is-open { }
+}
+```
+
+## Grid
+
+The grid is based on 48 columns (adjustable in `/stylesheets/core/settings.scss`). That seems like a lot, but the difference is that margins are also expressed in columns. The example below will clear things up.
+
+Let's say we want a module to be half the width of our page. In the variables we set 48 columns for the whole grid, so this container will be 24 columns. The '1' at the end is the gutter in columns on both sides. Note that this gutter is subtracted from the width, so your content within the container will be 22 effective columns. If you want to have different gutters on the left and right side, just separate it with a comma. That's it!
+
+```
+.module {
+
+    // 24 columns with on both sides 1 column as gutter
+    @include grid(24, 1);
+
+    // 24 columns with on the left side 1 column as gutter and on the right side 5 and a half columns as gutter
+    @include grid(24, 1, 5.5);
+
+    // When changing breakpoint, you might want to remove the grid, use the mixin below to reset the grid
+    @include grid-reset;
+}
+
+.module--container {
+
+    // The grid uses floats so we need a clearfix on the container, use the mixin below to enable this
+    @include grid-container;
+}
+```
+
+When you're starting a web project the example below is a good starting point.
+
+```
+// Start with an optional wrapper for full width design
+<div class="wrapper">
+
+    // Use the container to center the website
+    <div class="l-container">
+
+        // Use layout rules to set up your grid. Adjust and create your own.
+        <div class="l-one-third">
+
+            // Set up the modules or shared components here
+            <div class="filter">
+
+            </div>
+
+        </div>
+
+        <div class="l-two-third">
+
+            <ul class="products">
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</div>
+```
+
+## Mobile-first & breakpoints
+
+By default Taiga Boilerplate is mobile-first, meaning media query breakpoints from small to big. Adjust the breakpoints or change to desktop-first in `/stylesheets/core/settings.scss`.
+
+```
+// Media queries
+$breakpoint-10: 590px;
+$breakpoint-20: 767px;
+$breakpoint-30: 960px;
+```
+
+Use and combine breakpoints like this:
+```
+.module {
+    padding: 1rem;
+
+    @media (min-width: $breakpoint-10) and (min-height: $breakpoint-20) {
+        padding: 2rem;
+    }
+}
+```
+
+## Variables
 
 Variables are defined in `/stylesheets/core/settings.scss` and are treated a bit differently.
 In the example below you'll notice Taiga works with steps of 10, 20, 30 and so on. The trick is simple, 10 is small or light and 100 is large or dark. So we work from nothing to something.
@@ -124,7 +200,24 @@ $border-radius-20: 0.313rem; // Larger
 $color-brand-40: #29c882; // Lighter
 $color-brand-50: #09a25f; // Default
 $color-brand-60: #038049; // Darker
+```
 
+### Examples
+
+Wrong:
+```
+.module {
+    background: #09a25f;
+    font-size: 1.25rem;
+}
+```
+
+Right:
+```
+.module {
+    background: $color-brand-50;
+    font-size: $font-size-40;
+}
 ```
 
 ## IE8 Support
