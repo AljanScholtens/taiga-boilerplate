@@ -70,7 +70,7 @@ Tip: Nesting more than 3 levels deep is never good.
 
 ### Examples
 
-**Submodules**
+**Submodules, never nest them in a module**
 
 Wrong:
 ```
@@ -87,7 +87,7 @@ Right:
 .module--submodule { }
 ```
 
-**States**
+**States, always nest them in a module or submodule**
 
 Wrong:
 ```
