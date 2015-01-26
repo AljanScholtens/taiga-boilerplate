@@ -40,6 +40,20 @@
     clear: left;
 }
 
+.l-left {
+
+    @media (min-width: $breakpoint-10) {
+        float: left;
+    }
+}
+
+.l-right {
+
+    @media (min-width: $breakpoint-10) {
+        float: right;
+    }
+}
+
 div.l-container {
     margin: auto;
     max-width: $max-width;
