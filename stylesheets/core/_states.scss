@@ -2,14 +2,16 @@
 
 .is-hidden { display: none !important; }
 
-.is-hidden, .is-invisible { visibility: hidden !important; }
+.is-invisible { visibility: hidden !important; }
 
-.is-active, .is-visible { display: block; }
+.is-text-left { text-align: left; }
 
-.text-left { text-align: left; }
+.is-text-right { text-align: right; }
 
-.text-right { text-align: right; }
+.is-text-center { text-align: center; }
 
-.text-center { text-align: center; }
+.has-nowrap { white-space: nowrap; }
 
-.nowrap { white-space: nowrap; }
+.is-left { float: left; }
+
+.is-right { float: right; }
