@@ -1,0 +1,47 @@
+// =========== List
+
+ul.list,
+ol.list {
+    list-style: none;
+    margin: -0.3rem 0 $spacing - 0.3rem 0;
+
+    li {
+        padding: .3rem 0 .3rem 2rem;
+        position: relative;
+
+        @media (min-width: $breakpoint-20) {
+            padding-left: 3rem;
+        }
+
+        &:before {
+            position: absolute;
+            left: 0.5rem;
+            content: " ";
+
+            @media (min-width: $breakpoint-20) {
+                left: 1.5rem;
+            }
+        }
+    }
+}
+
+ul.list {
+
+    li:before {
+        top: 0.95rem;
+        height: 2px;
+        width: 8px;
+        background-color: $color-brand-50;
+    }
+}
+
+ol.list {
+
+    li {
+        counter-increment: list--counter;
+
+        &:before {
+            content: counter(list--counter)".";
+        }
+    }
+}
