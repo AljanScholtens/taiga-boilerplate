@@ -1,6 +1,49 @@
 @import "../stylesheets/styles.scss";
 
 
+.pattern-library--navigation {
+    list-style: none;
+    margin-left: 0;
+    background: $color-neutral-10;
+
+    li:last-child a { border: 0; }
+
+    a {
+        display: block;
+        padding: 0.25rem 0.5rem 0.2rem 0.5rem;
+        color: $color-neutral-50;
+        font-size: $font-size-20;
+        border-bottom: 1px solid $white;
+
+        &:hover {
+            color: $color-brand-50;
+            text-decoration: underline;
+        }
+    }
+}
+
+.pattern-library--h2 {
+    padding-top: $spacing;
+    margin-top: $spacing * 2;
+
+    &:first-of-type {
+        padding-top: 0;
+        margin-top: 0;
+    }
+}
+
+.pattern-library--h3 {
+    font-size: $font-size-10;
+    color: $color-neutral-50;
+    font-family: $font-family-body;
+    border-bottom: 1px solid $color-neutral-30;
+    margin: $spacing 0 $spacing 0;
+    font-weight: 600;
+    text-transform: uppercase;
+
+    a { float: right; }
+}
+
 // Colors
 div.colors {
     @include grid-container;
