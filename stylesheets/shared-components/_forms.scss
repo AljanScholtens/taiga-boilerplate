@@ -17,6 +17,7 @@ select {
     -moz-appearance: none;
     appearance: none;
     border: 1px solid $color-neutral-50;
+    border-radius: $border-radius-10;
     color: inherit;
     display: block;
     font-family: $font-family-body;
@@ -71,7 +72,6 @@ ul.form {
 
         @media (min-width: $breakpoint-10) {
             @include grid(16, 0, 1);
-            text-align: right;
         }
 
         &:hover { color: $color-neutral-90; }
