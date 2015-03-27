@@ -20,6 +20,11 @@
         padding: $spacing * 2;
         padding-bottom: $spacing;
     }
+
+    &.is-full-width {
+        max-width: none;
+        margin: 0;
+    }
 }
 
 // Other layout rules are almost always nested in the HTML of the l-container.
