@@ -19,6 +19,8 @@ div.tabs {
         &:first-child a { border-radius: $border-radius-10 0 0 $border-radius-10; }
 
         &:last-child a { border-radius: 0 $border-radius-10 $border-radius-10 0; }
+
+        &:only-child a { border-radius: $border-radius-10; }
     }
 
     a {
