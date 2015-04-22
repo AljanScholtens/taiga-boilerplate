@@ -43,6 +43,17 @@
     a { float: right; }
 }
 
+.pattern-library--grid {
+    @include grid-container;
+
+    div {
+        background: $color-neutral-30;
+        margin-bottom: 2.08333%;
+        padding: 0.5rem;
+        text-align: center;
+    }
+}
+
 // Colors
 div.colors {
     @include grid-container;

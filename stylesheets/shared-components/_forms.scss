@@ -45,7 +45,14 @@ textarea {
 select {
     -webkit-appearance: menulist;
     height: 2.85rem;
+
+    &[multiple] {
+        -webkit-appearance: none;
+        height: auto;
+    }
 }
+
+select
 
 form {  }
 
