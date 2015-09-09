@@ -100,7 +100,7 @@ Right:
 ```
 .module {
 
-    .is-open { }
+    &.is-open { }
 }
 ```
 
