@@ -1,27 +1,27 @@
 // =========== Quote
 
 blockquote {
-    color: $color-neutral-50;
-    font: italic $font-size-40 Georgia, serif;
-    line-height: 1.5em;
-    margin-bottom: $spacing;
-    padding: 0 0 0 2.5rem;
-    position: relative;
-    quotes: none;
+  color: $color-neutral-50;
+  font: italic $font-size-40 Georgia, serif;
+  line-height: 1.5em;
+  margin-bottom: $spacing;
+  padding: 0 0 0 2.5rem;
+  position: relative;
+  quotes: none;
 
-    &:before {
-        content: "\201C";
-        display: block;
-        font-size: 5rem;
-        left: -0.5rem;
-        position: absolute;
-        top: 1.5rem;
-    }
+  &:before {
+    content: "\201C";
+    display: block;
+    font-size: 5rem;
+    left: -0.5rem;
+    position: absolute;
+    top: 1.5rem;
+  }
 
-    cite {
-        display: block;
-        font-size: $font-size-20;
+  cite {
+    display: block;
+    font-size: $font-size-20;
 
-        &:before { content: "\2014 \0020"; }
-    }
+    &:before { content: "\2014 \0020"; }
+  }
 }

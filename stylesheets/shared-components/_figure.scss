@@ -1,39 +1,39 @@
 // =========== Figure
 
 figure {
-    display: inline-block;
-    margin-bottom: $spacing;
-    width: 100%;
+  display: inline-block;
+  margin-bottom: $spacing;
+  width: 100%;
 
-    &.is-left {
+  &.is-left {
 
-        @media (min-width: $breakpoint-10) {
-            clear: left;
-            float: left;
-            padding-right: $spacing;
-            max-width: 50%;
-            width: auto;
-        }
+    @media (min-width: $breakpoint-10) {
+      clear: left;
+      float: left;
+      padding-right: $spacing;
+      max-width: 50%;
+      width: auto;
     }
+  }
 
-    &.is-right {
+  &.is-right {
 
-        @media (min-width: $breakpoint-10) {
-            clear: right;
-            float: right;
-            padding-left: $spacing;
-            max-width: 50%;
-            width: auto;
-        }
+    @media (min-width: $breakpoint-10) {
+      clear: right;
+      float: right;
+      padding-left: $spacing;
+      max-width: 50%;
+      width: auto;
     }
+  }
 
-    img {
-        display: block;
-        max-width: 100%;
-        margin: auto;
-    }
+  img {
+    display: block;
+    max-width: 100%;
+    margin: auto;
+  }
 
-    figcaption {
-        color: $color-neutral-50;
-    }
+  figcaption {
+    color: $color-neutral-50;
+  }
 }

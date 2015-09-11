@@ -1,14 +1,14 @@
 // =========== Panels
 
 .panel {
-    background: $color-neutral-10;
-    border-radius: $border-radius-10;
-    margin-bottom: $spacing;
-    padding: $spacing;
+  background: $color-neutral-10;
+  border-radius: $border-radius-10;
+  margin-bottom: $spacing;
+  padding: $spacing;
 }
 
 .panel--callout {
-    @extend .panel;
-    background: $color-brand-50;
-    color: $white;
+  @extend .panel;
+  background: $color-brand-50;
+  color: $white;
 }

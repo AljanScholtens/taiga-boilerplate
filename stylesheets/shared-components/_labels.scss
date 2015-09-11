@@ -1,32 +1,32 @@
 // =========== Label
 
 %label {
-    border-radius: $border-radius-10;
-    font-size: $font-size-10;
-    font-weight: bold;
-    padding: 0.1rem 0.25rem;
+  border-radius: $border-radius-10;
+  font-size: $font-size-10;
+  font-weight: bold;
+  padding: 0.1rem 0.25rem;
 }
 
 .label {
-    @extend %label;
-    background: $color-brand-50;
-    color: $white;
+  @extend %label;
+  background: $color-brand-50;
+  color: $white;
 }
 
 .label--neutral {
-    @extend %label;
-    background: $color-neutral-30;
-    color: $color-neutral-70;
+  @extend %label;
+  background: $color-neutral-30;
+  color: $color-neutral-70;
 }
 
 .label--success {
-    @extend %label;
-    background-color: $color-success-50;
-    color: $white;
+  @extend %label;
+  background-color: $color-success-50;
+  color: $white;
 }
 
 .label--alert {
-    @extend %label;
-    background-color: $color-alert-50;
-    color: $white;
+  @extend %label;
+  background-color: $color-alert-50;
+  color: $white;
 }

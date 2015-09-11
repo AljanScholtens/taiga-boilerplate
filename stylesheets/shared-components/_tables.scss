@@ -1,27 +1,27 @@
 // =========== Tables
 
 table {
-    border: 1px solid $color-neutral-50;
-    border-collapse: separate;
-    border-radius: $border-radius-10;
-    border-spacing: 0;
-    margin-bottom: $spacing;
-    width: 100%;
+  border: 1px solid $color-neutral-50;
+  border-collapse: separate;
+  border-radius: $border-radius-10;
+  border-spacing: 0;
+  margin-bottom: $spacing;
+  width: 100%;
 }
 
 thead th {
-    background: $white;
-    font-weight: bold;
-    padding: 0.5rem;
-    text-align: left;
+  background: $white;
+  font-weight: bold;
+  padding: 0.5rem;
+  text-align: left;
 }
 
 tbody tr:nth-child(2n+2) { background: $white; }
 
 tbody td {
-    border-left: 1px solid $color-neutral-30;
-    border-top: 1px solid $color-neutral-30;
-    padding: 0.5rem;
-    
-    &:first-child { border-left: 0; }
+  border-left: 1px solid $color-neutral-30;
+  border-top: 1px solid $color-neutral-30;
+  padding: 0.5rem;
+
+  &:first-child { border-left: 0; }
 }

@@ -13,43 +13,43 @@ input[type=tel],
 input[type=url],
 textarea,
 select {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    border: 1px solid $color-neutral-50;
-    border-radius: $border-radius-10;
-    color: inherit;
-    display: block;
-    font-family: $font-family-body;
-    font-size: $font-size-30;
-    line-height: 1.5em;
-    margin: 0;
-    padding: 0.5rem;
-    vertical-align: baseline;
-    width: 100%;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: 1px solid $color-neutral-50;
+  border-radius: $border-radius-10;
+  color: inherit;
+  display: block;
+  font-family: $font-family-body;
+  font-size: $font-size-30;
+  line-height: 1.5em;
+  margin: 0;
+  padding: 0.5rem;
+  vertical-align: baseline;
+  width: 100%;
 
-    &:focus {
-        border: 1px solid $color-neutral-50;
-        box-shadow: 0px 0px 3px rgba($black, 0.2);
-        outline: 0;
-    }
+  &:focus {
+    border: 1px solid $color-neutral-50;
+    box-shadow: 0px 0px 3px rgba($black, 0.2);
+    outline: 0;
+  }
 }
 
 textarea {
-    display: block;
-    overflow: auto;
-    resize: vertical;
-    vertical-align: top;
+  display: block;
+  overflow: auto;
+  resize: vertical;
+  vertical-align: top;
 }
 
 select {
-    -webkit-appearance: menulist;
-    height: 2.85rem;
+  -webkit-appearance: menulist;
+  height: 2.85rem;
 
-    &[multiple] {
-        -webkit-appearance: none;
-        height: auto;
-    }
+  &[multiple] {
+    -webkit-appearance: none;
+    height: auto;
+  }
 }
 
 select
@@ -59,81 +59,81 @@ form {  }
 fieldset {  }
 
 legend {
-    border: 0;
-    display: block;
+  border: 0;
+  display: block;
 }
 
 ul.form {
-    list-style: none;
-    margin: 0 0 $spacing 0;
+  list-style: none;
+  margin: 0 0 $spacing 0;
 
-    > li { @include grid-container; }
+  > li { @include grid-container; }
 
-    > li > label {
-        clear: left;
-        cursor: pointer;
-        display: inline-block;
-        font-weight: bold;
-        padding-top: 0.5rem;
-        text-align: left;
+  > li > label {
+    clear: left;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: bold;
+    padding-top: 0.5rem;
+    text-align: left;
 
-        @media (min-width: $breakpoint-10) {
-            @include grid(16, 0, 1);
-        }
-
-        &:hover { color: $color-neutral-90; }
+    @media (min-width: $breakpoint-10) {
+      @include grid(16, 0, 1);
     }
 
-    div.form--fields {
-        margin-bottom: 0.5rem;
+    &:hover { color: $color-neutral-90; }
+  }
 
-        @media (min-width: $breakpoint-10) {
-            @include grid(32);
-        }
+  div.form--fields {
+    margin-bottom: 0.5rem;
 
-        p, small {
-            display: block;
-            margin: 0.25rem 0;
-        }
-
-        p.form--description { margin: 0.5rem 0; }
+    @media (min-width: $breakpoint-10) {
+      @include grid(32);
     }
+
+    p, small {
+      display: block;
+      margin: 0.25rem 0;
+    }
+
+    p.form--description { margin: 0.5rem 0; }
+  }
 }
 
 ul.form--checklist {
-    list-style: none;
-    margin: 0.5rem 0;
+  list-style: none;
+  margin: 0.5rem 0;
 
-    li { margin: 0.5rem 0; }
+  li { margin: 0.5rem 0; }
 
-    input { margin-right: 0.5rem; }
+  input { margin-right: 0.5rem; }
 
-    label {
-        cursor: pointer;
+  label {
+    cursor: pointer;
 
-        &:hover { color: $color-neutral-90; }
-    }
+    &:hover { color: $color-neutral-90; }
+  }
 }
 
 li.form--error {
 
-    label {
-        color: $color-alert-50;
+  label {
+    color: $color-alert-50;
 
-        &:hover { color: $color-alert-60; }
-    }
+    &:hover { color: $color-alert-60; }
+  }
 
-    input,
-    input:focus {
-        border: 1px solid $color-alert-50;
-        box-shadow: 0px 0px 3px $color-alert-50;
-    }
+  input,
+  input:focus {
+    border: 1px solid $color-alert-50;
+    box-shadow: 0px 0px 3px $color-alert-50;
+  }
 
-    ul.form--errors {
-        color: $color-alert-50;
-        list-style: none;
-        margin: 0.25rem 0;
+  ul.form--errors {
+    color: $color-alert-50;
+    list-style: none;
+    margin: 0.25rem 0;
 
-        li { font-size: $font-size-20; }
-    }
+    li { font-size: $font-size-20; }
+  }
 }

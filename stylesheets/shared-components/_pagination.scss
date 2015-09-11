@@ -1,52 +1,52 @@
 // =========== Pagination
 
 ul.pagination {
-    font-size: $font-size-20;
-    list-style: none;
-    margin: 0 0 $spacing 0;
-    text-align: center;
+  font-size: $font-size-20;
+  list-style: none;
+  margin: 0 0 $spacing 0;
+  text-align: center;
 
-    li {
-        display: inline-block;
-        margin-bottom: 0.25rem;
+  li {
+    display: inline-block;
+    margin-bottom: 0.25rem;
+  }
+
+  li.pagination--gap {
+    background: none;
+    padding: 0.25rem 0.5rem;
+  }
+
+  li.is-selected a {
+    background: $color-brand-50;
+    color: $white;
+
+    &:hover {
+      background: $color-brand-60;
+      color: $white;
     }
 
-    li.pagination--gap {
-        background: none;
-        padding: 0.25rem 0.5rem;
+    &:active,
+    &:focus {
+      box-shadow: inset 0 1px 3px rgba($black, 0.2);
+    }
+  }
+
+  a {
+    background: $color-neutral-30;
+    border-radius: $border-radius-10;
+    color: $color-neutral-70;
+    line-height: 1.5em;
+    display: block;
+    padding: 0.25rem 0.5rem;
+
+    &:hover {
+      background: $color-neutral-50;
+      color: $color-neutral-70;
     }
 
-    li.is-selected a {
-        background: $color-brand-50;
-        color: $white;
-
-        &:hover {
-            background: $color-brand-60;
-            color: $white;
-        }
-
-        &:active,
-        &:focus {
-            box-shadow: inset 0 1px 3px rgba($black, 0.2);
-        }
+    &:active,
+    &:focus {
+      box-shadow: inset 0 1px 3px rgba($black, 0.2);
     }
-
-    a {
-        background: $color-neutral-30;
-        border-radius: $border-radius-10;
-        color: $color-neutral-70;
-        line-height: 1.5em;
-        display: block;
-        padding: 0.25rem 0.5rem;
-
-        &:hover {
-            background: $color-neutral-50;
-            color: $color-neutral-70;
-        }
-
-        &:active,
-        &:focus {
-            box-shadow: inset 0 1px 3px rgba($black, 0.2);
-        }
-    }
+  }
 }

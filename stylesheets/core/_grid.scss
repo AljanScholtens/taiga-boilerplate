@@ -16,88 +16,88 @@ $grid-column: 100% / $grid-columns;
 @mixin append($n: 1) { margin-right: $grid-column * $n }
 
 @mixin grid($cols: 1, $grid-margin-left: 0, $grid-margin-right: $grid-margin-left) {
-    @include col($cols - ($grid-margin-left + $grid-margin-right));
-    @include prepend($grid-margin-left);
-    @include append($grid-margin-right);
+  @include col($cols - ($grid-margin-left + $grid-margin-right));
+  @include prepend($grid-margin-left);
+  @include append($grid-margin-right);
 }
 
 // Use this mixin to reset your grid by example for your mobile articles
 @mixin grid-reset() {
-    clear: both;
-    float: none;
-    margin-left: 0;
-    margin-right: 0;
-    width: auto;
+  clear: both;
+  float: none;
+  margin-left: 0;
+  margin-right: 0;
+  width: auto;
 }
 
 // The grid-container mixin is necessary for the floats
 @mixin grid-container() {
 
-    &:before,
-    &:after {
-        content: "";
-        display: table;
-    }
+  &:before,
+  &:after {
+    content: "";
+    display: table;
+  }
 
-    &:after { clear: both; }
+  &:after { clear: both; }
 }
 
 @media (min-width: $breakpoint-10) {
 
-    .l-1 { @include grid(1, 1); }
-    .l-2 { @include grid(2, 1); }
-    .l-3 { @include grid(3, 1); }
-    .l-4 { @include grid(4, 1); }
-    .l-5 { @include grid(5, 1); }
-    .l-6 { @include grid(6, 1); }
-    .l-7 { @include grid(7, 1); }
-    .l-8 { @include grid(8, 1); }
-    .l-9 { @include grid(9, 1); }
-    .l-10 { @include grid(10, 1); }
+  .l-1 { @include grid(1, 1); }
+  .l-2 { @include grid(2, 1); }
+  .l-3 { @include grid(3, 1); }
+  .l-4 { @include grid(4, 1); }
+  .l-5 { @include grid(5, 1); }
+  .l-6 { @include grid(6, 1); }
+  .l-7 { @include grid(7, 1); }
+  .l-8 { @include grid(8, 1); }
+  .l-9 { @include grid(9, 1); }
+  .l-10 { @include grid(10, 1); }
 
-    .l-11 { @include grid(11, 1); }
-    .l-12 { @include grid(12, 1); }
-    .l-13 { @include grid(13, 1); }
-    .l-14 { @include grid(14, 1); }
-    .l-15 { @include grid(15, 1); }
-    .l-one-third,
-    .l-16 { @include grid(16, 1); }
-    .l-17 { @include grid(17, 1); }
-    .l-18 { @include grid(18, 1); }
-    .l-19 { @include grid(19, 1); }
-    .l-20 { @include grid(20, 1); }
+  .l-11 { @include grid(11, 1); }
+  .l-12 { @include grid(12, 1); }
+  .l-13 { @include grid(13, 1); }
+  .l-14 { @include grid(14, 1); }
+  .l-15 { @include grid(15, 1); }
+  .l-one-third,
+  .l-16 { @include grid(16, 1); }
+  .l-17 { @include grid(17, 1); }
+  .l-18 { @include grid(18, 1); }
+  .l-19 { @include grid(19, 1); }
+  .l-20 { @include grid(20, 1); }
 
-    .l-21 { @include grid(21, 1); }
-    .l-22 { @include grid(22, 1); }
-    .l-23 { @include grid(23, 1); }
-    .l-half,
-    .l-24 { @include grid(24, 1); }
-    .l-25 { @include grid(25, 1); }
-    .l-26 { @include grid(26, 1); }
-    .l-27 { @include grid(27, 1); }
-    .l-28 { @include grid(28, 1); }
-    .l-29 { @include grid(29, 1); }
-    .l-30 { @include grid(30, 1); }
+  .l-21 { @include grid(21, 1); }
+  .l-22 { @include grid(22, 1); }
+  .l-23 { @include grid(23, 1); }
+  .l-half,
+  .l-24 { @include grid(24, 1); }
+  .l-25 { @include grid(25, 1); }
+  .l-26 { @include grid(26, 1); }
+  .l-27 { @include grid(27, 1); }
+  .l-28 { @include grid(28, 1); }
+  .l-29 { @include grid(29, 1); }
+  .l-30 { @include grid(30, 1); }
 
-    .l-31 { @include grid(31, 1); }
-    .l-two-third,
-    .l-32 { @include grid(32, 1); }
-    .l-33 { @include grid(33, 1); }
-    .l-34 { @include grid(34, 1); }
-    .l-35 { @include grid(35, 1); }
-    .l-36 { @include grid(36, 1); }
-    .l-37 { @include grid(37, 1); }
-    .l-38 { @include grid(38, 1); }
-    .l-39 { @include grid(39, 1); }
-    .l-40 { @include grid(40, 1); }
+  .l-31 { @include grid(31, 1); }
+  .l-two-third,
+  .l-32 { @include grid(32, 1); }
+  .l-33 { @include grid(33, 1); }
+  .l-34 { @include grid(34, 1); }
+  .l-35 { @include grid(35, 1); }
+  .l-36 { @include grid(36, 1); }
+  .l-37 { @include grid(37, 1); }
+  .l-38 { @include grid(38, 1); }
+  .l-39 { @include grid(39, 1); }
+  .l-40 { @include grid(40, 1); }
 
-    .l-41 { @include grid(41, 1); }
-    .l-42 { @include grid(42, 1); }
-    .l-43 { @include grid(43, 1); }
-    .l-44 { @include grid(44, 1); }
-    .l-45 { @include grid(45, 1); }
-    .l-46 { @include grid(46, 1); }
-    .l-47 { @include grid(47, 1); }
-    .l-full,
-    .l-48 { @include grid(48, 1); }
+  .l-41 { @include grid(41, 1); }
+  .l-42 { @include grid(42, 1); }
+  .l-43 { @include grid(43, 1); }
+  .l-44 { @include grid(44, 1); }
+  .l-45 { @include grid(45, 1); }
+  .l-46 { @include grid(46, 1); }
+  .l-47 { @include grid(47, 1); }
+  .l-full,
+  .l-48 { @include grid(48, 1); }
 }
