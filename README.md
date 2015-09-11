@@ -23,7 +23,7 @@ Use these options to quickly install Taiga Boilerplate.
 3. Go to the folder via terminal or your application of choice.
 4. **Run Sass via `sass --watch stylesheets`.**
 5. Edit the `/stylesheets/core/settings.scss` to your wishes.
-6. Start building and use `/examples/shared-components.html` as example and inspiration.
+6. Start building and use `/pattern-library/pattern-library.html` as example and inspiration.
 
 Tip: when deploying to a live environment make sure your CSS is compressed by running `sass --watch stylesheets --style compressed`.
 
@@ -168,9 +168,10 @@ By default Taiga Boilerplate is mobile-first, meaning media query breakpoints fr
 
 ```
 // Media queries
-$breakpoint-10: 590px;
-$breakpoint-20: 767px;
-$breakpoint-30: 960px;
+$breakpoint-10: 600px;
+$breakpoint-20: 750px;
+$breakpoint-30: 1000px;
+$breakpoint-30: 1200px;
 ```
 
 Use and combine breakpoints like this:
@@ -231,16 +232,15 @@ If you still want to support IE8 you can use these polyfills.
 ## Bugs, requests and questions
 
 - Found a bug or need a feature? Post an [issue](https://github.com/studiowolf/taiga-boilerplate/issues/new) or do a [pull request](https://github.com/studiowolf/taiga-boilerplate/pulls).
-- Questions? Mail me at [aljan@studiowolf.nl](mailto:aljan@studiowolf.nl) or tweet to [twitter.com/aljanscholtens](http://twitter.com/aljanscholtens).
+- Questions? Mail me at [aljan@studiowolf.com](mailto:aljan@studiowolf.com) or tweet to [twitter.com/aljanscholtens](http://twitter.com/aljanscholtens).
 
 ## Background
 
 As an interface designer I had the problem with most other boilerplates that they are created for developers.
-You'll get everything you need to build a prototype rapidly, but adjusting and adding components and design can be difficult.
-That's why we built our own boilerplate, Taiga Boilerplate.
+You'll get everything you need to build a prototype rapidly, but adjusting and adding components and design can be difficult. That's why we built our own boilerplate, Taiga Boilerplate.
 
 Taiga is inspired by these awesome people: Miller Medeiros, Paul Irish, Olav Bjørkøy and Jonathan Snook.
 
 ## Copyright and license
 
-Copyright 2012-2014 by [Studio Wolf](http://studiowolf.nl) under the [MIT License](LICENSE).
+Copyright 2012-2015 by [Studio Wolf](http://studiowolf.com) under the [MIT License](LICENSE).
