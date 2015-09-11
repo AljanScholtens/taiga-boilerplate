@@ -37,3 +37,19 @@ figure {
     color: $color-neutral-50;
   }
 }
+
+figure.figure--video {
+  height: 0;
+  padding-bottom: 56%;
+  position: relative;
+  width: 100%;
+
+  iframe,
+  object {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+}
