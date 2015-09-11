@@ -74,19 +74,30 @@ ul.colors--element {
   color: $white;
 }
 
-// Colors brand
-div.colors.is-color-brand .colors--element li {
+// Colors primary
+div.colors.is-color-primary .colors--element li {
 
   &:nth-child(1) { background: $color-primary-30; }
   &:nth-child(2) { background: $color-primary-50; }
   &:nth-child(3) { background: $color-primary-70; }
 }
 
-div.colors.is-color-brand .colors--text li {
+div.colors.is-color-primary .colors--text li {
 
   &:nth-child(1) { color: $color-primary-30; }
   &:nth-child(2) { color: $color-primary-50; }
   &:nth-child(3) { color: $color-primary-70; }
+}
+
+// Colors secondary
+div.colors.is-color-secondary .colors--element li {
+
+  &:nth-child(1) { background: $color-secondary-50; }
+}
+
+div.colors.is-color-secondary .colors--text li {
+
+  &:nth-child(1) { color: $color-secondary-50; }
 }
 
 // Colors neutral
