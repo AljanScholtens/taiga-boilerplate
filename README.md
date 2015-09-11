@@ -197,9 +197,9 @@ $border-radius-10: 0.125rem; // Small
 $border-radius-20: 0.313rem; // Larger
 
 // Color brand
-$color-brand-40: #29c882; // Lighter
-$color-brand-50: #09a25f; // Default
-$color-brand-60: #038049; // Darker
+$color-primary-30: #29c882; // Lighter
+$color-primary-50: #09a25f; // Default
+$color-primary-70: #038049; // Darker
 ```
 
 ### Examples
@@ -215,7 +215,7 @@ Wrong:
 Right:
 ```
 .module {
-    background: $color-brand-50;
+    background: $color-primary-50;
     font-size: $font-size-40;
 }
 ```

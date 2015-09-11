@@ -33,11 +33,11 @@ input::-moz-focus-inner {
 input[type=submit],
 button {
   @extend %button;
-  background: $color-brand-50;
+  background: $color-primary-50;
   color: $white;
 
   &:hover {
-    background: $color-brand-60;
+    background: $color-primary-70;
     color: $white;
   }
 
@@ -73,7 +73,7 @@ button.button--success {
   color: $white;
 
   &:hover {
-    background-color: $color-success-60;
+    background-color: $color-success-70;
     color: $white;
   }
 
@@ -91,7 +91,7 @@ button.button--alert {
   color: $white;
 
   &:hover {
-    background-color: $color-alert-60;
+    background-color: $color-alert-70;
     color: $white;
   }
 

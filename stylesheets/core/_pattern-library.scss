@@ -15,7 +15,7 @@
     border-bottom: 1px solid $white;
 
     &:hover {
-      color: $color-brand-50;
+      color: $color-primary-50;
       text-decoration: underline;
     }
   }
@@ -77,16 +77,16 @@ ul.colors--element {
 // Colors brand
 div.colors.is-color-brand .colors--element li {
 
-  &:nth-child(1) { background: $color-brand-40; }
-  &:nth-child(2) { background: $color-brand-50; }
-  &:nth-child(3) { background: $color-brand-60; }
+  &:nth-child(1) { background: $color-primary-30; }
+  &:nth-child(2) { background: $color-primary-50; }
+  &:nth-child(3) { background: $color-primary-70; }
 }
 
 div.colors.is-color-brand .colors--text li {
 
-  &:nth-child(1) { color: $color-brand-40; }
-  &:nth-child(2) { color: $color-brand-50; }
-  &:nth-child(3) { color: $color-brand-60; }
+  &:nth-child(1) { color: $color-primary-30; }
+  &:nth-child(2) { color: $color-primary-50; }
+  &:nth-child(3) { color: $color-primary-70; }
 }
 
 // Colors neutral
@@ -112,24 +112,24 @@ div.colors.is-color-neutral .colors--text li {
 div.colors.is-color-success .colors--element li {
 
   &:nth-child(1) { background: $color-success-50; }
-  &:nth-child(2) { background: $color-success-60; }
+  &:nth-child(2) { background: $color-success-70; }
 }
 
 div.colors.is-color-success .colors--text li {
 
   &:nth-child(1) { color: $color-success-50; }
-  &:nth-child(2) { color: $color-success-60; }
+  &:nth-child(2) { color: $color-success-70; }
 }
 
 // Colors alert
 div.colors.is-color-alert .colors--element li {
 
   &:nth-child(1) { background: $color-alert-50; }
-  &:nth-child(2) { background: $color-alert-60; }
+  &:nth-child(2) { background: $color-alert-70; }
 }
 
 div.colors.is-color-alert .colors--text li {
 
   &:nth-child(1) { color: $color-alert-50; }
-  &:nth-child(2) { color: $color-alert-60; }
+  &:nth-child(2) { color: $color-alert-70; }
 }

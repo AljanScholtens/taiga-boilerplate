@@ -17,7 +17,7 @@ li%message {
 li.message,
 div.message {
   @extend li%message;
-  background: $color-brand-50;
+  background: $color-primary-50;
   color: $white;
 }
 

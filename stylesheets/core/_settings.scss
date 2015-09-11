@@ -50,20 +50,23 @@ $z-index-30: 30;
 
 
 // Colors
-// Add your own color variables
+// Add your own color variables from light to dark.
 
-// Color brand
-$color-brand-40: #29c882;
-$color-brand-50: #09a25f; // Default
-$color-brand-60: #038049;
+// Color primary
+$color-primary-30: #29c882;
+$color-primary-50: #09a25f; // Default
+$color-primary-70: #038049;
+
+// Color secondary
+$color-secondary-50: #ce1e73; // Default
 
 // Color success
 $color-success-50: #39b924; // Default
-$color-success-60: #249c11;
+$color-success-70: #249c11;
 
 // Color alert
 $color-alert-50: #f3490d; // Default
-$color-alert-60: #d33e09;
+$color-alert-70: #d33e09;
 
 // Color neutral
 $color-neutral-10: #eef2f0;

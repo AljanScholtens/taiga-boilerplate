@@ -63,12 +63,12 @@ p {
 
 // Links
 a {
-  color: $color-brand-50;
+  color: $color-primary-50;
   cursor: pointer;
   text-decoration: none;
   transition: color 60ms ease-out;
 
-  &:hover { color: $color-brand-60; }
+  &:hover { color: $color-primary-70; }
 }
 
 
