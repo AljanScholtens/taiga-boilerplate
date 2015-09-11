@@ -1,14 +1,14 @@
-// =========== Panels
+// =========== Cards
 
-.panel {
+.card {
   background: $color-neutral-10;
   border-radius: $border-radius-10;
   margin-bottom: $spacing;
   padding: $spacing;
 }
 
-.panel--callout {
-  @extend .panel;
+.card--callout {
+  @extend .card;
   background: $color-brand-50;
   color: $white;
 }
