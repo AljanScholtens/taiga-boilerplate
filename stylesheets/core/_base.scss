@@ -13,13 +13,13 @@ html {
   font: 400 $font-size-base $font-family-body;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-rendering: auto;
+  text-rendering: optimizeLegibility;
   -webkit-text-size-adjust: 100%;
   height: 100%;
+  line-height: 1.5em;
 }
 
 body {
-  line-height: 1.5em;
   height: 100%;
 }
 
@@ -27,23 +27,22 @@ body {
 // Headings
 h1, h2, legend, h3, h4, h5, h6 {
   font-family: $font-family-heading;
-  font-weight: 400;
   line-height: 1.5em;
   margin: 0 0 0.25em 0;
 }
 
-h1 { font-size: 2rem; }
+h1 { font-size: 2.25rem; }
 
 h2,
 legend {
-  font-size: 1.4rem;
+  font-size: 1.5rem;
 }
 
-h3 { font-size: 1.3rem; }
+h3 { font-size: 1.25rem; }
 
 h4 { font-size: 1.2rem; }
 
-h5 { font-size: 1.1rem; }
+h5 { font-size: 1.125rem; }
 
 h6 { font-size: 1rem; }
 
