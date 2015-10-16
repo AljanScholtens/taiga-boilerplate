@@ -38,10 +38,10 @@ ul.list {
 ol.list {
 
   li {
-    counter-increment: list--counter;
+    counter-increment: list__counter;
 
     &:before {
-      content: counter(list--counter)".";
+      content: counter(list__counter)".";
     }
   }
 }

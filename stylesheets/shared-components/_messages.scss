@@ -21,22 +21,22 @@ div.message {
   color: $white;
 }
 
-li.message--neutral,
-div.message--neutral {
+li.message__neutral,
+div.message__neutral {
   @extend li%message;
   background: $color-neutral-30;
   color: $color-neutral-70;
 }
 
-li.message--success,
-div.message--success {
+li.message__success,
+div.message__success {
   @extend li%message;
   background: $color-success-50;
   color: $white;
 }
 
-li.message--alert,
-div.message--alert {
+li.message__alert,
+div.message__alert {
   @extend li%message;
   background: $color-alert-50;
   color: $white;

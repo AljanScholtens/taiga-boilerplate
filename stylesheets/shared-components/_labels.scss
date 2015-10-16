@@ -13,19 +13,19 @@
   color: $white;
 }
 
-.label--neutral {
+.label__neutral {
   @extend %label;
   background: $color-neutral-30;
   color: $color-neutral-70;
 }
 
-.label--success {
+.label__success {
   @extend %label;
   background-color: $color-success-50;
   color: $white;
 }
 
-.label--alert {
+.label__alert {
   @extend %label;
   background-color: $color-alert-50;
   color: $white;

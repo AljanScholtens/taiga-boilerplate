@@ -47,9 +47,9 @@ button {
   }
 }
 
-.button--neutral,
-input[type=submit].button--neutral,
-button.button--neutral {
+.button__neutral,
+input[type=submit].button__neutral,
+button.button__neutral {
   @extend %button;
   background: $color-neutral-30;
   color: $color-neutral-70;
@@ -65,9 +65,9 @@ button.button--neutral {
   }
 }
 
-.button--success,
-input[type=submit].button--success,
-button.button--success {
+.button__success,
+input[type=submit].button__success,
+button.button__success {
   @extend %button;
   background-color: $color-success-50;
   color: $white;
@@ -83,9 +83,9 @@ button.button--success {
   }
 }
 
-.button--alert,
-input[type=submit].button--alert,
-button.button--alert {
+.button__alert,
+input[type=submit].button__alert,
+button.button__alert {
   @extend %button;
   background-color: $color-alert-50;
   color: $white;

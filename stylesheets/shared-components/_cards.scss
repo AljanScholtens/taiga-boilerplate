@@ -7,7 +7,7 @@
   padding: $spacing;
 }
 
-.card--callout {
+.card__callout {
   @extend .card;
   background: $color-primary-50;
   color: $white;

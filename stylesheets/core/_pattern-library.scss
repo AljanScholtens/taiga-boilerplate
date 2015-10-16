@@ -1,6 +1,6 @@
 // =========== Pattern library
 
-.pattern-library--navigation {
+.pattern-library__navigation {
   list-style: none;
   margin-left: 0;
   background: $color-neutral-10;
@@ -21,7 +21,7 @@
   }
 }
 
-.pattern-library--h2 {
+.pattern-library__h2 {
   padding-top: $spacing;
   margin-top: $spacing * 2;
 
@@ -31,7 +31,7 @@
   }
 }
 
-.pattern-library--h3 {
+.pattern-library__h3 {
   font-size: $font-size-10;
   color: $color-neutral-50;
   font-family: $font-family-body;
@@ -43,7 +43,7 @@
   a { float: right; }
 }
 
-.pattern-library--grid {
+.pattern-library__grid {
   @include grid-container;
 
   div {
@@ -70,19 +70,19 @@ div.colors {
   }
 }
 
-ul.colors--element {
+ul.colors__element {
   color: $white;
 }
 
 // Colors primary
-div.colors.is-color-primary .colors--element li {
+div.colors.is-color-primary .colors__element li {
 
   &:nth-child(1) { background: $color-primary-30; }
   &:nth-child(2) { background: $color-primary-50; }
   &:nth-child(3) { background: $color-primary-70; }
 }
 
-div.colors.is-color-primary .colors--text li {
+div.colors.is-color-primary .colors__text li {
 
   &:nth-child(1) { color: $color-primary-30; }
   &:nth-child(2) { color: $color-primary-50; }
@@ -90,18 +90,18 @@ div.colors.is-color-primary .colors--text li {
 }
 
 // Colors secondary
-div.colors.is-color-secondary .colors--element li {
+div.colors.is-color-secondary .colors__element li {
 
   &:nth-child(1) { background: $color-secondary-50; }
 }
 
-div.colors.is-color-secondary .colors--text li {
+div.colors.is-color-secondary .colors__text li {
 
   &:nth-child(1) { color: $color-secondary-50; }
 }
 
 // Colors neutral
-div.colors.is-color-neutral .colors--element li {
+div.colors.is-color-neutral .colors__element li {
 
   &:nth-child(1) { background: $color-neutral-10; }
   &:nth-child(2) { background: $color-neutral-30; }
@@ -110,7 +110,7 @@ div.colors.is-color-neutral .colors--element li {
   &:nth-child(5) { background: $color-neutral-90; }
 }
 
-div.colors.is-color-neutral .colors--text li {
+div.colors.is-color-neutral .colors__text li {
 
   &:nth-child(1) { color: $color-neutral-10; }
   &:nth-child(2) { color: $color-neutral-30; }
@@ -120,26 +120,26 @@ div.colors.is-color-neutral .colors--text li {
 }
 
 // Colors success
-div.colors.is-color-success .colors--element li {
+div.colors.is-color-success .colors__element li {
 
   &:nth-child(1) { background: $color-success-50; }
   &:nth-child(2) { background: $color-success-70; }
 }
 
-div.colors.is-color-success .colors--text li {
+div.colors.is-color-success .colors__text li {
 
   &:nth-child(1) { color: $color-success-50; }
   &:nth-child(2) { color: $color-success-70; }
 }
 
 // Colors alert
-div.colors.is-color-alert .colors--element li {
+div.colors.is-color-alert .colors__element li {
 
   &:nth-child(1) { background: $color-alert-50; }
   &:nth-child(2) { background: $color-alert-70; }
 }
 
-div.colors.is-color-alert .colors--text li {
+div.colors.is-color-alert .colors__text li {
 
   &:nth-child(1) { color: $color-alert-50; }
   &:nth-child(2) { color: $color-alert-70; }

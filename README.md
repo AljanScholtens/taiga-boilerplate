@@ -39,7 +39,7 @@ Besides the basic stuff which you can find in `/stylesheets/core` there are two 
 
 Taiga Boilerplate works with a combination of [SMACSS](http://smacss.com/) and [BEM](http://bem.info/), which are guide lines to create a modular architecture for your CSS.
 
-A module file like `product.scss` exists out of the module `.product`, one or more submodules `.product--submodule` and states `.is-state` (for example `.is-open`).
+A module file like `product.scss` exists out of the module `.product`, one or more submodules `.product__submodule` and states `.is-state` (for example `.is-open`).
 The order of these elements in combination with states is very important, see an example below.
 
 Tip: Nesting more than 3 levels deep is never good.
@@ -65,7 +65,7 @@ Tip: Nesting more than 3 levels deep is never good.
 }
 
 // Submodule
-.module--submodule { property: value; }
+.module__submodule { property: value; }
 ```
 
 ### Examples
@@ -76,7 +76,7 @@ Wrong:
 ```
 .module {
 
-    .module--submodule { }
+    .module__submodule { }
 }
 ```
 
@@ -84,7 +84,7 @@ Right:
 ```
 .module { }
 
-.module--submodule { }
+.module__submodule { }
 ```
 
 **States, always nest them in a module or submodule**
@@ -123,7 +123,7 @@ Let's say we want a module to be half the width of our page. In the variables we
     @include grid-reset;
 }
 
-.module--container {
+.module__container {
 
     // The grid uses floats so we need a clearfix on the container, use the mixin below to enable this
     @include grid-container;
