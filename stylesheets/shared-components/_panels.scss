@@ -8,7 +8,7 @@
 }
 
 .panel__callout {
-  @extend .card;
+  @extend .panel;
   background: $color-primary-50;
   color: $white;
 }
