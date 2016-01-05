@@ -1,0 +1,105 @@
+// =========== Cards
+
+// Globals
+ul.cards {
+  list-style: none;
+  margin-left: 0;
+  display: flex;
+  flex-flow: row wrap;
+
+  li {
+    border-radius: $border-radius-10;
+    overflow: hidden;
+    margin-bottom: $spacing;
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-content: stretch;
+  }
+}
+
+
+// Cards design
+ul.cards.is-white li {
+  background: $white;
+  box-shadow: 0px 3px 10px rgba($black, 0.15);
+}
+
+ul.cards.is-neutral-10 li {
+  background: $color-neutral-10;
+}
+
+
+// Cards grid
+ul.cards.has-two,
+ul.cards.has-three,
+ul.cards.has-four {
+
+  @media (min-width: $breakpoint-20) {
+    margin-left: -2.08333%;
+    margin-right: -2.08333%;
+  }
+
+  li {
+
+    @media (min-width: $breakpoint-20) {
+      margin-bottom: 2.08333% * 2;
+    }
+  }
+}
+
+ul.cards.has-two li {
+
+  @media (min-width: $breakpoint-20) {
+    @include grid(24, 1);
+  }
+}
+
+ul.cards.has-three li {
+
+  @media (min-width: $breakpoint-20) {
+    @include grid(24, 1);
+  }
+
+  @media (min-width: $breakpoint-30) {
+    @include grid(16, 1);
+  }
+}
+
+ul.cards.has-four li {
+
+  @media (min-width: $breakpoint-20) {
+    @include grid(24, 1);
+  }
+
+  @media (min-width: $breakpoint-30) {
+    @include grid(16, 1);
+  }
+
+  @media (min-width: $breakpoint-40) {
+    @include grid(12, 1);
+  }
+}
+
+
+// Cards components
+div.card__content {
+  padding: $spacing $spacing 0 $spacing;
+}
+
+div.card__image {
+
+  img {
+    display: block;
+    width: 100%;
+  }
+}
+
+div.card__image-background {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  flex: auto;
+  height: 0;
+  padding-bottom: 56.25%;
+}

@@ -13,6 +13,7 @@
   margin: auto;
   max-width: $max-width;
   padding: $spacing $spacing 0 $spacing;
+  position: relative;
   @include grid-container;
 
   @media (min-width: $breakpoint-20) {
