@@ -11,7 +11,7 @@ input::-moz-focus-inner {
   -moz-appearance: none;
   appearance: none;
   border: 0;
-  border-radius: $border-radius-10;
+  border-radius: $border-radius-20;
   cursor: pointer;
   display: inline-block;
   font-family: $font-family-body;
@@ -20,8 +20,8 @@ input::-moz-focus-inner {
   -moz-osx-font-smoothing: grayscale;
   font-weight: bold;
   line-height: 1.5em;
-  margin: 0 0 0.25rem 0;
-  padding: 0.5rem 1rem;
+  margin: 0;
+  padding: 0.5rem 1.25rem;
   text-decoration: none;
   vertical-align: bottom;
 
