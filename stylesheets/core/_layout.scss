@@ -12,7 +12,6 @@
 .l-container {
   margin: auto;
   max-width: $max-width;
-  padding: 0;
   padding: $spacing $spacing 0 $spacing;
   @include grid-container;
 
