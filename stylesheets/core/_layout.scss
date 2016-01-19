@@ -3,8 +3,23 @@
 // Get full width backgrounds around your content
 .l-wrapper {
 
+  // Options to change the layout of the wrapper
+  &.is-full-height {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    min-height: 80vmin;
+  }
+
+  // Set up different backgrounds.
+  &.has-background {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
   &.is-neutral-10 {
-    background-color: $color-neutral-10;
+    background: $color-neutral-10;
   }
 }
 
