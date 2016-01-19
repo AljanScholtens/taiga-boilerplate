@@ -19,26 +19,26 @@
 // Components can be used generic through the application and are not connected to content.
 // Example: the component 'buttons' can be used in module 'product', 'blog-article' etc.
 
-"shared-components/_buttons",
-"shared-components/_cards",
-"shared-components/_panels",
-"shared-components/_figure",
-"shared-components/_forms",
-"shared-components/_icons",
-"shared-components/_labels",
-"shared-components/_list",
-"shared-components/_messages",
-"shared-components/_pagination",
-"shared-components/_quote",
-"shared-components/_tables",
-"shared-components/_tabs",
+"objects/_buttons",
+"objects/_cards",
+"objects/_panels",
+"objects/_figure",
+"objects/_forms",
+"objects/_icons",
+"objects/_labels",
+"objects/_list",
+"objects/_messages",
+"objects/_pagination",
+"objects/_quote",
+"objects/_tables",
+"objects/_tabs",
 
 
 // Modules
 // Modules are connected to a specific piece of content and can't be used without that piece of content.
 // Example: the module 'product' can't be used for a 'blog-article'.
 
-"modules/_product",
+"components/_product",
 
 
 // Pattern library
