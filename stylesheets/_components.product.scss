@@ -1,11 +1,9 @@
-// =========== Product
+// =========== Component Product
 
-// This is an example of a module.
-// A module is directly connected to the content like a product, blog-article or shopping-cart.
+// This is an example of a component.
 
-
-// Module
-.product {
+// Block
+.c-product {
 
   // 1: Add the direct properties of the element
   property: value;
@@ -16,12 +14,19 @@
   // 3: Add selectors of the parent element
   &:hover { property: value; }
 
-  // 4: Add states of the parent element
+  // 4: Add temporary states of the parent element
   &.is-open { property: value; }
 
   // 5: Add nested elements
   strong { property: value; }
 }
 
-// Submodule
-.product__details { property: value; }
+// Modifier
+.c-product--poster {
+  property: value;
+}
+
+// Element
+.c-product__details {
+  property: value;
+}

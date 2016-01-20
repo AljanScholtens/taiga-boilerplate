@@ -1,12 +1,6 @@
 // =========== Buttons
 
-button::-moz-focus-inner,
-input::-moz-focus-inner {
-  border: 0;
-  padding: 0;
-}
-
-%button {
+%o-button {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -28,11 +22,8 @@ input::-moz-focus-inner {
   &:focus { outline: 0; }
 }
 
-// The standard button has the $color-brand colors
-.button,
-input[type=submit],
-button {
-  @extend %button;
+.o-button {
+  @extend %o-button;
   background: $color-primary-50;
   color: $white;
 
@@ -47,10 +38,8 @@ button {
   }
 }
 
-.button__neutral,
-input[type=submit].button__neutral,
-button.button__neutral {
-  @extend %button;
+.o-button__neutral {
+  @extend %o-button;
   background: $color-neutral-30;
   color: $color-neutral-70;
 
@@ -65,10 +54,8 @@ button.button__neutral {
   }
 }
 
-.button__success,
-input[type=submit].button__success,
-button.button__success {
-  @extend %button;
+.o-button__success {
+  @extend %o-button;
   background-color: $color-success-50;
   color: $white;
 
@@ -83,10 +70,8 @@ button.button__success {
   }
 }
 
-.button__alert,
-input[type=submit].button__alert,
-button.button__alert {
-  @extend %button;
+.o-button__alert {
+  @extend %o-button;
   background-color: $color-alert-50;
   color: $white;
 

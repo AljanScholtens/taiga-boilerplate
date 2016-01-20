@@ -6,45 +6,46 @@
 
 @import
 
-// Core
+// Settings
+"_settings.global",
+"_settings.colors",
 
-"core/_settings", // Set up your settings and variables first
-"core/_grid",
-"core/_base",
-"core/_utilities",
-"core/_layout",
+// Tools
+"_tools.grid",
 
+// Base
+"_base.page",
+"_base.forms",
+"_base.tables",
+"_base.type",
 
-// Shared components
-// Components can be used generic through the application and are not connected to content.
-// Example: the component 'buttons' can be used in module 'product', 'blog-article' etc.
+// Layout
+"_layout.wrappers",
+"_layout.containers",
+"_layout.grid",
 
-"objects/_buttons",
-"objects/_cards",
-"objects/_panels",
-"objects/_figure",
-"objects/_forms",
-"objects/_icons",
-"objects/_labels",
-"objects/_list",
-"objects/_messages",
-"objects/_pagination",
-"objects/_quote",
-"objects/_tables",
-"objects/_tabs",
+// Objects
+"_objects.buttons",
+"_objects.forms",
+"_objects.media",
 
+// Components
+"_components.product",
+"_components.pattern-library",
 
-// Modules
-// Modules are connected to a specific piece of content and can't be used without that piece of content.
-// Example: the module 'product' can't be used for a 'blog-article'.
-
-"components/_product",
+// Utilities
+"_utilities.global";
 
 
-// Pattern library
-"core/_pattern-library",
 
-
-// Print
-
-"core/_print";
+// Old objects, needs work
+// "objects/_cards",
+// "objects/_panels",
+// "objects/_icons",
+// "objects/_labels",
+// "objects/_list",
+// "objects/_messages",
+// "objects/_pagination",
+// "objects/_quote",
+// "objects/_tables",
+// "objects/_tabs",

@@ -1,0 +1,67 @@
+// =========== Base Type
+
+input[type=search] { -webkit-appearance: textfield; }
+
+input[type=search]::-webkit-search-decoration { -webkit-appearance: none; }
+
+input[type=text],
+input[type=number],
+input[type=password],
+input[type=search],
+input[type=email],
+input[type=tel],
+input[type=url],
+textarea,
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: 1px solid $color-neutral-30;
+  border-radius: $border-radius-10;
+  color: inherit;
+  display: block;
+  font-family: $font-family-body;
+  font-size: $font-size-30;
+  line-height: 1.5em;
+  margin: 0;
+  padding: 0.5rem;
+  vertical-align: baseline;
+  width: 100%;
+
+  &:focus {
+    border: 1px solid $color-neutral-50;
+    box-shadow: 0px 0px 3px rgba($black, 0.1);
+    outline: 0;
+  }
+}
+
+textarea {
+  display: block;
+  overflow: auto;
+  resize: vertical;
+  vertical-align: top;
+}
+
+select {
+  -webkit-appearance: menulist;
+  height: 2.85rem;
+
+  &[multiple] {
+    -webkit-appearance: none;
+    height: auto;
+  }
+}
+
+select
+
+form {  }
+
+fieldset {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+legend {
+  padding: 0;
+}

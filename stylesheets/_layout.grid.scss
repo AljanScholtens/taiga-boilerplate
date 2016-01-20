@@ -1,47 +1,60 @@
 // =========== Grid
 
-// Use '@include grid(12, 2)' to make a column.
-// The first unit (12) is the column width.
-// The second unit (2) is the margin on both sides.
-// The margin will be auto substracted from the column width.
-// So don't recalculate the column width if you change your margin.
+// Other layout rules are almost always nested in the HTML of the l-container.
+// You can also use .l-1 to .l-48 for full control.
+.l-full {
 
-// To set different margins on both sides use '@include grid(12, 2, 3)'.
-// You can also use negative margins.
-
-$grid-column: 100% / $grid-columns;
-
-@mixin col($n: 1) { float: left; width: ($n * $grid-column); }
-@mixin prepend($n: 1) { margin-left: $grid-column * $n }
-@mixin append($n: 1) { margin-right: $grid-column * $n }
-
-@mixin grid($cols: 1, $grid-margin-left: 0, $grid-margin-right: $grid-margin-left) {
-  @include col($cols - ($grid-margin-left + $grid-margin-right));
-  @include prepend($grid-margin-left);
-  @include append($grid-margin-right);
-}
-
-// Use this mixin to reset your grid by example for your mobile articles
-@mixin grid-reset() {
-  clear: both;
-  float: none;
-  margin-left: 0;
-  margin-right: 0;
-  width: auto;
-}
-
-// The grid-container mixin is necessary for the floats
-@mixin grid-container() {
-
-  &:before,
-  &:after {
-    content: "";
-    display: table;
+  @media (min-width: $breakpoint-10) {
+    @include grid(48, 1);
   }
-
-  &:after { clear: both; }
 }
 
+.l-two-third {
+
+  @media (min-width: $breakpoint-10) {
+    @include grid(32, 1);
+  }
+}
+
+.l-single {
+  max-width: 36rem;
+  margin: auto;
+  clear: both;
+}
+
+.l-half {
+
+  @media (min-width: $breakpoint-10) {
+    @include grid(24, 1);
+  }
+}
+
+.l-one-third {
+
+  @media (min-width: $breakpoint-10) {
+    @include grid(16, 1);
+  }
+}
+
+.l-first {
+  clear: left;
+}
+
+.l-left {
+
+  @media (min-width: $breakpoint-10) {
+    float: left;
+  }
+}
+
+.l-right {
+
+  @media (min-width: $breakpoint-10) {
+    float: right;
+  }
+}
+
+// TODO: This needs to be a function
 @media (min-width: $breakpoint-10) {
 
   .l-1 { @include grid(1, 1); }

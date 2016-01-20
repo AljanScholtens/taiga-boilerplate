@@ -1,6 +1,6 @@
 // =========== Pattern library
 
-.pattern-library__navigation {
+.c-pattern-library__navigation {
   list-style: none;
   margin-left: 0;
   background: $color-neutral-10;
@@ -21,7 +21,7 @@
   }
 }
 
-.pattern-library__h2 {
+.c-pattern-library__h2 {
   padding-top: $spacing;
   margin-top: $spacing * 2;
 
@@ -31,7 +31,7 @@
   }
 }
 
-.pattern-library__h3 {
+.c-pattern-library__h3 {
   font-size: $font-size-10;
   color: $color-neutral-50;
   font-family: $font-family-body;
@@ -43,7 +43,7 @@
   a { float: right; }
 }
 
-.pattern-library__grid {
+.c-pattern-library__grid {
   @include grid-container;
 
   div {

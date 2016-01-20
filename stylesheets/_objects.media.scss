@@ -1,31 +1,9 @@
 // =========== Figure
 
-figure {
+figure.o-media__image {
   display: inline-block;
   margin-bottom: $spacing;
   width: 100%;
-
-  &.is-left {
-
-    @media (min-width: $breakpoint-10) {
-      clear: left;
-      float: left;
-      padding-right: $spacing;
-      max-width: 50%;
-      width: auto;
-    }
-  }
-
-  &.is-right {
-
-    @media (min-width: $breakpoint-10) {
-      clear: right;
-      float: right;
-      padding-left: $spacing;
-      max-width: 50%;
-      width: auto;
-    }
-  }
 
   img {
     display: block;
@@ -38,7 +16,7 @@ figure {
   }
 }
 
-figure.figure__video {
+figure.o-media__video {
   height: 0;
   padding-bottom: 56%;
   position: relative;
