@@ -3,7 +3,7 @@
 // This is an example of a component.
 
 // Block
-.c-product {
+.c-example {
 
   // 1: Add the direct properties of the element
   property: value;
@@ -22,11 +22,11 @@
 }
 
 // Modifier
-.c-product--poster {
+.c-example--modifier {
   property: value;
 }
 
 // Element
-.c-product__details {
+.c-example__subcomponent {
   property: value;
 }

@@ -1,9 +1,6 @@
 // =========== Buttons
 
 %o-button {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
   border: 0;
   border-radius: $border-radius-20;
   cursor: pointer;
@@ -38,7 +35,7 @@
   }
 }
 
-.o-button__neutral {
+.o-button--neutral {
   @extend %o-button;
   background: $color-neutral-30;
   color: $color-neutral-70;
@@ -54,7 +51,7 @@
   }
 }
 
-.o-button__success {
+.o-button--success {
   @extend %o-button;
   background-color: $color-success-50;
   color: $white;
@@ -70,7 +67,7 @@
   }
 }
 
-.o-button__alert {
+.o-button--alert {
   @extend %o-button;
   background-color: $color-alert-50;
   color: $white;

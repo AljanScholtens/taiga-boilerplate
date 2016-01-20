@@ -1,0 +1,18 @@
+// =========== Object Panels
+
+%o-panel {
+  border-radius: $border-radius-10;
+  margin-bottom: $spacing;
+  padding: $spacing;
+}
+
+.o-panel {
+  @extend %o-panel;
+  background: $color-neutral-10;
+}
+
+.o-panel--callout {
+  @extend %o-panel;
+  background: $color-primary-50;
+  color: $white;
+}

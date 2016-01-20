@@ -1,8 +1,16 @@
 // =========== Base Type
 
-input[type=search] { -webkit-appearance: textfield; }
+form {  }
 
-input[type=search]::-webkit-search-decoration { -webkit-appearance: none; }
+fieldset {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+legend {
+  padding: 0;
+}
 
 input[type=text],
 input[type=number],
@@ -13,9 +21,6 @@ input[type=tel],
 input[type=url],
 textarea,
 select {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
   border: 1px solid $color-neutral-30;
   border-radius: $border-radius-10;
   color: inherit;
@@ -43,25 +48,9 @@ textarea {
 }
 
 select {
-  -webkit-appearance: menulist;
   height: 2.85rem;
 
   &[multiple] {
-    -webkit-appearance: none;
     height: auto;
   }
-}
-
-select
-
-form {  }
-
-fieldset {
-  padding: 0;
-  margin: 0;
-  border: 0;
-}
-
-legend {
-  padding: 0;
 }
