@@ -1,6 +1,8 @@
-// =========== Messages
+/*------------------------------------*\
+  #OBJECTS-MESSAGES
+\*------------------------------------*/
 
-ul.o-messages {
+/*ul*/.o-messages {
   list-style: none;
   margin-bottom: $spacing;
 }
@@ -13,25 +15,25 @@ ul.o-messages {
   vertical-align: baseline;
 }
 
-li.o-messages__item {
+/*li*/.o-messages__item {
   @extend %o-messages__item;
   background: $color-primary-50;
   color: $white;
 }
 
-li.o-messages__item--neutral {
+/*li*/.o-messages__item--neutral {
   @extend %o-messages__item;
   background: $color-neutral-30;
   color: $color-neutral-70;
 }
 
-li.o-messages__item--success {
+/*li*/.o-messages__item--success {
   @extend %o-messages__item;
   background: $color-success-50;
   color: $white;
 }
 
-li.o-messages__item--alert {
+/*li*/.o-messages__item--alert {
   @extend %o-messages__item;
   background: $color-alert-50;
   color: $white;

@@ -1,6 +1,10 @@
-// =========== Base Type
+/*------------------------------------*\
+  #BASE-TYPE
+\*------------------------------------*/
 
-// Headings
+/*
+ * Headings
+ */
 h1, h2, legend, h3, h4, h5, h6 {
   font-family: $font-family-heading;
   font-weight: 400;
@@ -30,7 +34,9 @@ h6,
 .is-h6 { font-size: 1rem; }
 
 
-// Paragraphs
+/*
+ * Paragraphs
+ */
 p {
   margin-bottom: $spacing;
 
@@ -38,7 +44,9 @@ p {
 }
 
 
-// Links
+/*
+ * Links
+ */
 a {
   color: $color-primary-50;
   cursor: pointer;
@@ -48,7 +56,9 @@ a {
 }
 
 
-// Other
+/*
+ * Other
+ */
 small {
   color: $color-neutral-50;
   font-size: $font-size-20;

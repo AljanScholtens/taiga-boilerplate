@@ -1,15 +1,23 @@
-// =========== Settings Global
+/*------------------------------------*\
+  #SETTINGS-GLOBAL
+\*------------------------------------*/
 
-// Most of the variables are based on some kind of percentages to maintain stability and consistency.
-// So $variable-10 is small or light and $variable-100 is big or dark.
+/*
+ * Most of the variables are based on some kind of percentages to maintain stability and consistency.
+ * So $variable-10 is small or light and $variable-100 is big or dark.
+ */
 
 
-// Set your own font
+/*
+ * Set your font
+ */
 $font-family-body: sans-serif;
 $font-family-heading: georgia;
 
 
-// The base font-size, all other elements will adjust to this value
+/*
+ * Set your font size
+ */
 $font-size-base: 100%;
 
 $font-size-10: 0.75rem;
@@ -19,37 +27,50 @@ $font-size-40: 1.125rem;
 $font-size-50: 1.25rem;
 
 
-// The grid columns will be used in the grid mixin, 48 is standard
+/*
+ * Grid columns and grid gutter used in tools.grid, 48 columns is standard
+ */
 $grid-columns: 48;
 $grid-gutter: 1;
 
 
-// Adjust the website's maximum width.
+/*
+ * Maximum width of the website
+ */
 $max-width: 1140px;
 
 
-// Use the spacing variable on margins and paddings
+/*
+ * Default spacing for margin-bottom and other paddings
+ */
 $spacing: 1rem;
 
 
-// Adjust the border-radius
+/*
+ * Adjust the border-radius
+ */
 $border-radius-10: 0.125rem;
 $border-radius-20: 0.313rem;
 
 
-// Media queries
-// Adjust them to you needs or add more
+/*
+ * Media queries
+ */
 $breakpoint-10: 600px;
 $breakpoint-20: 750px;
 $breakpoint-30: 1000px;
 $breakpoint-40: 1200px;
 
 
-// Z-index plan
+/*
+ * Z-index plan
+ */
 $z-index-10: 10;
 $z-index-20: 20;
 $z-index-30: 30;
 
 
-// Animation beziers
+/*
+ * Animation beziers
+ */
 $bezier-a: cubic-bezier(0.075, 0.82, 0.165, 1);

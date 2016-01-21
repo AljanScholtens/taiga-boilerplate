@@ -1,12 +1,14 @@
-// =========== Pagination
+/*------------------------------------*\
+  #OBJECTS-PAGINATION
+\*------------------------------------*/
 
-ul.o-pagination {
+/*ul*/.o-pagination {
   font-size: $font-size-20;
   list-style: none;
   margin-bottom: $spacing;
 }
 
-li.o-pagination__item {
+/*li*/.o-pagination__item {
   display: inline-block;
   margin-bottom: 0.25rem;
 
@@ -30,7 +32,7 @@ li.o-pagination__item {
   }
 }
 
-li.o-pagination__item--selected a {
+/*li*/.o-pagination__item--selected a {
   background: $color-primary-50;
   color: $white;
 
@@ -45,7 +47,7 @@ li.o-pagination__item--selected a {
   }
 }
 
-li.pagination__item--gap {
+/*li*/.pagination__item--gap {
   background: none;
   padding: 0.25rem 0.5rem;
 }

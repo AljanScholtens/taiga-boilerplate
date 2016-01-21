@@ -1,4 +1,6 @@
-// =========== Pattern library
+/*------------------------------------*\
+  #COMPONENT-PATTERN-LIBRARY
+\*------------------------------------*/
 
 .c-pattern-library__navigation {
   list-style: none;
@@ -54,8 +56,11 @@
   }
 }
 
-// Colors
-div.colors {
+
+/*
+ * Colors
+ */
+.colors {
   @include grid-container;
 
   ul {
@@ -70,38 +75,35 @@ div.colors {
   }
 }
 
-ul.colors__element {
+.colors__element {
   color: $white;
 }
 
-// Colors primary
-div.colors.is-color-primary .colors__element li {
+.colors.is-color-primary .colors__element li {
 
   &:nth-child(1) { background: $color-primary-30; }
   &:nth-child(2) { background: $color-primary-50; }
   &:nth-child(3) { background: $color-primary-70; }
 }
 
-div.colors.is-color-primary .colors__text li {
+.colors.is-color-primary .colors__text li {
 
   &:nth-child(1) { color: $color-primary-30; }
   &:nth-child(2) { color: $color-primary-50; }
   &:nth-child(3) { color: $color-primary-70; }
 }
 
-// Colors secondary
-div.colors.is-color-secondary .colors__element li {
+.colors.is-color-secondary .colors__element li {
 
   &:nth-child(1) { background: $color-secondary-50; }
 }
 
-div.colors.is-color-secondary .colors__text li {
+.colors.is-color-secondary .colors__text li {
 
   &:nth-child(1) { color: $color-secondary-50; }
 }
 
-// Colors neutral
-div.colors.is-color-neutral .colors__element li {
+.colors.is-color-neutral .colors__element li {
 
   &:nth-child(1) { background: $color-neutral-10; }
   &:nth-child(2) { background: $color-neutral-30; }
@@ -110,7 +112,7 @@ div.colors.is-color-neutral .colors__element li {
   &:nth-child(5) { background: $color-neutral-90; }
 }
 
-div.colors.is-color-neutral .colors__text li {
+.colors.is-color-neutral .colors__text li {
 
   &:nth-child(1) { color: $color-neutral-10; }
   &:nth-child(2) { color: $color-neutral-30; }
@@ -119,27 +121,25 @@ div.colors.is-color-neutral .colors__text li {
   &:nth-child(5) { color: $color-neutral-90; }
 }
 
-// Colors success
-div.colors.is-color-success .colors__element li {
+.colors.is-color-success .colors__element li {
 
   &:nth-child(1) { background: $color-success-50; }
   &:nth-child(2) { background: $color-success-70; }
 }
 
-div.colors.is-color-success .colors__text li {
+.colors.is-color-success .colors__text li {
 
   &:nth-child(1) { color: $color-success-50; }
   &:nth-child(2) { color: $color-success-70; }
 }
 
-// Colors alert
-div.colors.is-color-alert .colors__element li {
+.colors.is-color-alert .colors__element li {
 
   &:nth-child(1) { background: $color-alert-50; }
   &:nth-child(2) { background: $color-alert-70; }
 }
 
-div.colors.is-color-alert .colors__text li {
+.colors.is-color-alert .colors__text li {
 
   &:nth-child(1) { color: $color-alert-50; }
   &:nth-child(2) { color: $color-alert-70; }

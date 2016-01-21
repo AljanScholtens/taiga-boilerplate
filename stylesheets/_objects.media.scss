@@ -1,6 +1,8 @@
-// =========== Figure
+/*------------------------------------*\
+  #OBJECTS-MEDIA
+\*------------------------------------*/
 
-figure.o-media__image {
+/*figure*/.o-media__image {
   display: inline-block;
   margin-bottom: $spacing;
   width: 100%;
@@ -16,7 +18,7 @@ figure.o-media__image {
   }
 }
 
-figure.o-media__video {
+/*figure*/.o-media__video {
   height: 0;
   padding-bottom: 56%;
   position: relative;

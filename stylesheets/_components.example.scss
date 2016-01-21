@@ -1,8 +1,15 @@
-// =========== Component Product
+/*------------------------------------*\
+  #COMPONENT-EXAMPLE
+\*------------------------------------*/
 
-// This is an example of a component.
+/*
+ * This is an example of a component.
+ */
 
-// Block
+
+/*
+ * Block
+ */
 .c-example {
 
   // 1: Add the direct properties of the element
@@ -21,7 +28,9 @@
   strong { property: value; }
 }
 
-// Modifier
+/*
+ * Modifier
+ */
 .c-example--modifier {
   property: value;
 }

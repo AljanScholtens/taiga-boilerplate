@@ -1,7 +1,11 @@
-// =========== Grid
+/*------------------------------------*\
+  #LAYOUT-GRID
+\*------------------------------------*/
 
-// Other layout rules are almost always nested in the HTML of the l-container.
-// You can also use .l-1 to .l-48 for full control.
+/*
+ * Other layout rules are almost always nested in the HTML of the l-container.
+ * You can also use .l-1 to .l-48 for full control.
+ */
 .l-full {
 
   @media (min-width: $breakpoint-10) {

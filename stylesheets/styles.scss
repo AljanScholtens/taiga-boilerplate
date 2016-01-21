@@ -1,44 +1,89 @@
-//  Taiga Boilerplate
-//  Copyright by Studio Wolf
-//  Licensed under the MIT license
+/*------------------------------------*\
+  #STYLES
+\*------------------------------------*/
 
-// =========== Includes
+/**
+ * CONTENTS
+ *
+ * SETTINGS
+ * Global...............Globally-available variables and config.
+ *
+ * TOOLS
+ * Mixins...............Useful mixins.
+ *
+ * GENERIC
+ * Normalize.css........A level playing field.
+ * Box-sizing...........Better default `box-sizing`.
+ *
+ * BASE
+ * Headings.............H1–H6 styles.
+ *
+ * OBJECTS
+ * Wrappers.............Wrapping and constraining elements.
+ *
+ * COMPONENTS
+ * Page-head............The main page header.
+ * Page-foot............The main page footer.
+ * Buttons..............Button elements.
+ *
+ * TRUMPS
+ * Text.................Text helpers.
+ */
 
-@import
 
-// Settings
-"_settings.global",
-"_settings.colors",
+/*
+ * #SETTINGS
+ */
+@import "_settings.global";
+@import "_settings.colors";
 
-// Tools
-"_tools.grid",
 
-// Base
-"_base.page",
-"_base.forms",
-"_base.tables",
-"_base.type",
-"_base.quote",
+/**
+ * #TOOLS
+ */
+@import "_tools.grid";
 
-// Layout
-"_layout.wrappers",
-"_layout.containers",
-"_layout.grid",
 
-// Objects
-"_objects.buttons",
-"_objects.forms",
-"_objects.icons",
-"_objects.labels",
-"_objects.list",
-"_objects.media",
-"_objects.messages",
-"_objects.pagination",
-"_objects.panels",
+/**
+ * #BASE
+ */
+@import "_base.page";
+@import "_base.forms";
+@import "_base.tables";
+@import "_base.type";
+@import "_base.quote";
 
-// Components
-"_components.example",
-"_components.pattern-library",
 
-// Utilities
-"_utilities.global";
+/**
+ * #LAYOUT
+ */
+@import "_layout.wrappers";
+@import "_layout.containers";
+@import "_layout.grid";
+
+
+/**
+ * #OBJECTS
+ */
+@import "_objects.buttons";
+@import "_objects.forms";
+@import "_objects.icons";
+@import "_objects.labels";
+@import "_objects.list";
+@import "_objects.media";
+@import "_objects.messages";
+@import "_objects.pagination";
+@import "_objects.panels";
+
+
+/**
+ * #COMPONENTS
+ */
+@import "_components.example";
+@import "_components.pattern-library";
+
+
+/**
+ * #UTILITIES
+ */
+@import "_utilities.global";

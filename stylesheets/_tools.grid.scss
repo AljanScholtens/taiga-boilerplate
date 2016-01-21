@@ -1,13 +1,18 @@
-// =========== Grid
+/*------------------------------------*\
+  #TOOLS-GRID
+\*------------------------------------*/
 
-// Use '@include grid(12, 2)' to make a column.
-// The first unit (12) is the column width.
-// The second unit (2) is the margin on both sides.
-// The margin will be auto substracted from the column width.
-// So don't recalculate the column width if you change your margin.
+/**
+ * Use '@include grid(12, 2)' to make a column.
+ * The first unit (12) is the column width.
+ * The second unit (2) is the margin on both sides.
+ * The margin will be auto substracted from the column width.
+ * So don't recalculate the column width if you change your margin.
+ *
+ * To set different margins on both sides use '@include grid(12, 2, 3)'.
+ * You can also use negative margins.
+ */
 
-// To set different margins on both sides use '@include grid(12, 2, 3)'.
-// You can also use negative margins.
 
 $grid-column: 100% / $grid-columns;
 
@@ -21,7 +26,10 @@ $grid-column: 100% / $grid-columns;
   @include append($grid-margin-right);
 }
 
-// Use this mixin to reset your grid by example for your mobile articles
+
+/*
+ * Use this mixin to reset your grid by example for your mobile articles
+ */
 @mixin grid-reset() {
   clear: both;
   float: none;
@@ -30,7 +38,10 @@ $grid-column: 100% / $grid-columns;
   width: auto;
 }
 
-// The grid-container mixin is necessary for the floats
+
+/*
+ * The grid-container mixin is necessary for the floats
+ */
 @mixin grid-container() {
 
   &:before,
