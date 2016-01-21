@@ -1,7 +1,7 @@
 # Taiga Boilerplate
 
 Taiga Boilerplate is a small HTML/Sass framework for starting a new web project.
-It is mobile-first with a semantic Sass grid and based on the principles of [SMACSS](http://smacss.com/) and [BEM](http://bem.info).
+It is mobile-first with a semantic Sass grid and based on the principles of [BEM](http://bem.info).
 
 ## Download
 
@@ -21,11 +21,11 @@ Use these options to quickly install Taiga Boilerplate.
 1. Make sure you've installed the [dependencies](#dependencies).
 2. Get the [latest version](#download) of Taiga Boilerplate.
 3. Go to the folder via terminal or your application of choice.
-4. **Run Sass via `sass --watch stylesheets`.**
+4. **Run Sass via `sass --watch assets/stylesheets:dist/stylesheets`.**
 5. Edit the `/stylesheets/core/settings.scss` to your wishes.
 6. Start building and use `/pattern-library/pattern-library.html` as example and inspiration.
 
-Tip: when deploying to a live environment make sure your CSS is compressed by running `sass --watch stylesheets --style compressed`.
+Tip: when deploying to a live environment make sure your CSS is compressed by running `sass --watch assets/stylesheets:dist/stylesheets --style compressed`.
 
 ## Modules and shared components
 
