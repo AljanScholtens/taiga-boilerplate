@@ -38,7 +38,7 @@ h6,
  * Paragraphs
  */
 p {
-  margin-bottom: $spacing;
+  margin: 0 auto $spacing auto;
 
   &.is-lead { font-size: $font-size-40; }
 }

@@ -2,4 +2,4 @@
 
 * Taiga is now in BEM.
 * Added the ITCSS mindset of Harry Roberts.
-* ([CSS Guidelines](Guidelin.es)) added.
+* [CSS Guidelines](Guidelin.es) added.
