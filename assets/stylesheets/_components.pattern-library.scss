@@ -6,6 +6,7 @@
   list-style: none;
   margin-left: 0;
   background: $color-neutral-10;
+  margin-bottom: $spacing;
 
   li:last-child a { border: 0; }
 
@@ -46,7 +47,7 @@
 }
 
 .c-pattern-library__grid {
-  @include grid-container;
+  lost-utility: clearfix;
 
   div {
     background: $color-neutral-30;
@@ -61,7 +62,7 @@
  * Colors
  */
 .colors {
-  @include grid-container;
+  lost-utility: clearfix;
 
   ul {
     width: 50%;

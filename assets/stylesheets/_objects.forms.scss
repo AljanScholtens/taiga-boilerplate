@@ -8,7 +8,7 @@
 }
 
 /*li*/.o-form__item {
-  @include grid-container;
+  lost-utility: clearfix;
 }
 
 /*label*/.o-form__label {
@@ -20,7 +20,7 @@
   text-align: left;
 
   @media (min-width: $breakpoint-10) {
-    @include grid(16, 0, 1);
+    lost-column: 1/3;
   }
 
   &:hover {
@@ -32,7 +32,7 @@
   margin-bottom: 0.5rem;
 
   @media (min-width: $breakpoint-10) {
-    @include grid(32);
+    lost-column: 2/3;
   }
 
   p, small {

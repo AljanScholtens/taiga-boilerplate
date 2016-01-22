@@ -10,7 +10,7 @@
   max-width: $max-width;
   padding: $spacing $spacing 0 $spacing;
   position: relative;
-  @include grid-container;
+  lost-utility: clearfix;
 
   @media (min-width: $breakpoint-20) {
     padding: $spacing * 2;

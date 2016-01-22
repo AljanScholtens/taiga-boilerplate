@@ -28,22 +28,21 @@ $font-size-50: 1.25rem;
 
 
 /*
- * Grid columns and grid gutter used in tools.grid, 48 columns is standard
+ * Default spacing for margin-bottom and other paddings
  */
-$grid-columns: 48;
-$grid-gutter: 1;
+$spacing: 1rem;
+
+
+/*
+ * Grid gutter used in tools.grid, 12 columns is standard
+ */
+@lost gutter #{$spacing * 2};
 
 
 /*
  * Maximum width of the website
  */
 $max-width: 1140px;
-
-
-/*
- * Default spacing for margin-bottom and other paddings
- */
-$spacing: 1rem;
 
 
 /*
