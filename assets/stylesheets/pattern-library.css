@@ -2,6 +2,8 @@
   #COMPONENT-PATTERN-LIBRARY
 \*------------------------------------*/
 
+@import "styles.css";
+
 .c-pattern-library__navigation {
   list-style: none;
   margin-left: 0;

@@ -8,7 +8,7 @@ var cssnext = require('postcss-cssnext');
 var postcssExtend = require('postcss-simple-extend');
 
 gulp.task('default',function() {
-  gulp.watch('assets/stylesheets/*.css',['css']);
+  gulp.watch('assets/stylesheets/*.css',['css', 'patterns']);
 });
 
 gulp.task("css", function() {
@@ -22,6 +22,24 @@ gulp.task("css", function() {
     lost()
   ];
   return gulp.src('assets/stylesheets/styles.css')
+    .pipe(sourcemaps.init())
+    .pipe(postcss(processors))
+    .pipe(cssnano())
+    .pipe(sourcemaps.write('.'))
+    .pipe(gulp.dest('dist/stylesheets'));
+});
+
+gulp.task("patterns", function() {
+  var processors = [
+    atImport,
+    postcssExtend,
+    cssnext({
+      browers: ['last 2 version'],
+      compress: true
+    }),
+    lost()
+  ];
+  return gulp.src('assets/stylesheets/pattern-library.css')
     .pipe(sourcemaps.init())
     .pipe(postcss(processors))
     .pipe(cssnano())

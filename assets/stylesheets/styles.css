@@ -38,7 +38,6 @@
  *
  * COMPONENTS
  * Example..............Example of how a component is build up
- * Pattern Library......Pattern Library specific
  *
  * Utilities
  * Global...............Global utility states like u-hidden
@@ -93,7 +92,6 @@
  * #COMPONENTS
  */
 @import "components.example.css";
-@import "components.pattern-library.css";
 
 
 /**

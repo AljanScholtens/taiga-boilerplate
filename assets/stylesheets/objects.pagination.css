@@ -27,7 +27,7 @@
 
     &:active,
     &:focus {
-      box-shadow: inset 0 1px 3px color(var(--black) alpha(80%));
+      box-shadow: inset 0 1px 3px color(var(--black) alpha(20%));
     }
   }
 }
@@ -43,7 +43,7 @@
 
   &:active,
   &:focus {
-    box-shadow: inset 0 1px 3px color(var(--black) alpha(80%));
+    box-shadow: inset 0 1px 3px color(var(--black) alpha(20%));
   }
 }
 
