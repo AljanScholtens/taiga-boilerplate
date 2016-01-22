@@ -3,47 +3,47 @@
 \*------------------------------------*/
 
 /*ul*/.o-pagination {
-  font-size: $font-size-20;
+  font-size: var(--font-size-20);
   list-style: none;
-  margin-bottom: $spacing;
+  margin-bottom: var(--spacing);
 }
 
 /*li*/.o-pagination__item {
   display: inline-block;
   margin-bottom: 0.25rem;
 
-  a {
-    background: $color-neutral-30;
-    border-radius: $border-radius-10;
-    color: $color-neutral-70;
+  & a {
+    background: var(--color-neutral-30);
+    border-radius: var(--border-radius-10);
+    color: var(--color-neutral-70);
     line-height: 1.5em;
     display: block;
     padding: 0.25rem 0.5rem;
 
     &:hover {
-      background: $color-neutral-50;
-      color: $color-neutral-70;
+      background: var(--color-neutral-50);
+      color: var(--color-neutral-70);
     }
 
     &:active,
     &:focus {
-      box-shadow: inset 0 1px 3px rgba($black, 0.2);
+      box-shadow: inset 0 1px 3px color(var(--black) alpha(80%));
     }
   }
 }
 
 /*li*/.o-pagination__item--selected a {
-  background: $color-primary-50;
-  color: $white;
+  background: var(--color-primary-50);
+  color: var(--white);
 
   &:hover {
-    background: $color-primary-70;
-    color: $white;
+    background: var(--color-primary-70);
+    color: var(--white);
   }
 
   &:active,
   &:focus {
-    box-shadow: inset 0 1px 3px rgba($black, 0.2);
+    box-shadow: inset 0 1px 3px color(var(--black) alpha(80%));
   }
 }
 

@@ -1,0 +1,28 @@
+/*------------------------------------*\
+  #BASE-TABLES
+\*------------------------------------*/
+
+table {
+  border-collapse: separate;
+  border-radius: var(--border-radius-10);
+  border-spacing: 0;
+  margin-bottom: var(--spacing);
+  width: 100%;
+}
+
+thead th {
+  padding: calc(var(--spacing) / 2);
+  text-align: left;
+  background: var(--color-primary-50);
+  color: var(--white);
+  font-weight: 600;
+}
+
+tbody {
+
+  & tr:nth-child(2n) { background: var(--color-neutral-10); }
+
+  & td {
+    padding: calc(var(--spacing) / 2);
+  }
+}

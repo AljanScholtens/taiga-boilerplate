@@ -7,16 +7,17 @@
  */
 .l-container {
   margin: auto;
-  max-width: $max-width;
-  padding: $spacing $spacing 0 $spacing;
+  max-width: var(--max-width);
+  padding: var(--spacing) var(--spacing) 0 var(--spacing);
   position: relative;
   lost-utility: clearfix;
 
-  @media (min-width: $breakpoint-20) {
-    padding: $spacing * 2;
-    padding-bottom: $spacing;
+  @media (--breakpoint-20) {
+    padding: calc(var(--spacing) * 2);
+    padding-bottom: var(--spacing);
   }
 }
+
 
 .l-container--full-width {
   max-width: none;

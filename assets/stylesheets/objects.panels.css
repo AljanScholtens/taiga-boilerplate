@@ -1,0 +1,20 @@
+/*------------------------------------*\
+  #OBJECTS-PANELS
+\*------------------------------------*/
+
+@define-placeholder o-panel {
+  border-radius: var(--border-radius-10);
+  margin-bottom: var(--spacing);
+  padding: var(--spacing);
+}
+
+.o-panel {
+  @extend o-panel;
+  background: var(--color-neutral-10);
+}
+
+.o-panel--callout {
+  @extend o-panel;
+  background: var(--color-primary-50);
+  color: var(--white);
+}

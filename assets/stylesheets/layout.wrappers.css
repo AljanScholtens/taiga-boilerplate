@@ -31,5 +31,5 @@
 }
 
 .l-wrapper--neutral {
-  background: $color-neutral-10;
+  background: var(--color-neutral-10);
 }

@@ -4,17 +4,17 @@
 
 /*figure*/.o-media__image {
   display: inline-block;
-  margin-bottom: $spacing;
+  margin-bottom: var(--spacing);
   width: 100%;
 
-  img {
+  & img {
     display: block;
     max-width: 100%;
     margin: auto;
   }
 
-  figcaption {
-    color: $color-neutral-50;
+  & figcaption {
+    color: var(--color-neutral-50);
   }
 }
 
@@ -24,8 +24,8 @@
   position: relative;
   width: 100%;
 
-  iframe,
-  object {
+  & iframe,
+  & object {
     height: 100%;
     left: 0;
     position: absolute;

@@ -52,7 +52,7 @@ Tip: Nesting more than 3 levels deep is never good.
     property: value;
 
     // 2: Add media queries or print styles
-    @include breakpoint($breakpoint-10) { property: value; }
+    @include breakpoint(var(--breakpoint-10)) { property: value; }
 
     // 3: Add selectors of the parent element
     &:hover { property: value; }
@@ -168,10 +168,10 @@ By default Taiga Boilerplate is mobile-first, meaning media query breakpoints fr
 
 ```
 // Media queries
-$breakpoint-10: 600px;
-$breakpoint-20: 750px;
-$breakpoint-30: 1000px;
-$breakpoint-30: 1200px;
+var(--breakpoint-10): 600px;
+var(--breakpoint-20): 750px;
+var(--breakpoint-30): 1000px;
+var(--breakpoint-30): 1200px;
 ```
 
 Use and combine breakpoints like this:
@@ -179,7 +179,7 @@ Use and combine breakpoints like this:
 .module {
     padding: 1rem;
 
-    @media (min-width: $breakpoint-10) and (min-height: $breakpoint-20) {
+    @media (min-width: var(--breakpoint-10)) and (min-height: var(--breakpoint-20)) {
         padding: 2rem;
     }
 }
@@ -194,13 +194,13 @@ The steps are created this way so you can easily add more in between. This way w
 
 ```
 // Border-radius
-$border-radius-10: 0.125rem; // Small
-$border-radius-20: 0.313rem; // Larger
+var(--border-radius-10): 0.125rem; // Small
+var(--border-radius-20): 0.313rem; // Larger
 
 // Color brand
-$color-primary-30: #29c882; // Lighter
-$color-primary-50: #09a25f; // Default
-$color-primary-70: #038049; // Darker
+var(--color-primary-30): #29c882; // Lighter
+var(--color-primary-50): #09a25f; // Default
+var(--color-primary-70): #038049; // Darker
 ```
 
 ### Examples
@@ -216,8 +216,8 @@ Wrong:
 Right:
 ```
 .module {
-    background: $color-primary-50;
-    font-size: $font-size-40;
+    background: var(--color-primary-50);
+    font-size: var(--font-size-40);
 }
 ```
 

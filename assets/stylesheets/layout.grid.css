@@ -9,42 +9,42 @@
 
 .l-3 {
 
-  @media (min-width: $breakpoint-10) {
+  @media (--breakpoint-10) {
     lost-column: 3/12;
   }
 }
 
 .l-4 {
 
-  @media (min-width: $breakpoint-10) {
+  @media (--breakpoint-10) {
     lost-column: 4/12;
   }
 }
 
 .l-6 {
 
-  @media (min-width: $breakpoint-10) {
+  @media (--breakpoint-10) {
     lost-column: 6/12;
   }
 }
 
 .l-8 {
 
-  @media (min-width: $breakpoint-10) {
+  @media (--breakpoint-10) {
     lost-column: 8/12;
   }
 }
 
 .l-9 {
 
-  @media (min-width: $breakpoint-10) {
+  @media (--breakpoint-10) {
     lost-column: 9/12;
   }
 }
 
 .l-12 {
 
-  @media (min-width: $breakpoint-10) {
+  @media (--breakpoint-10) {
     lost-column: 12/12;
   }
 }

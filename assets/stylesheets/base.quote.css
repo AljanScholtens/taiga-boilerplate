@@ -3,10 +3,10 @@
 \*------------------------------------*/
 
 blockquote {
-  color: $color-neutral-50;
-  font: italic $font-size-40 Georgia, serif;
+  color: var(--color-neutral-50);
+  font: italic var(--font-size-40) Georgia, serif;
   line-height: 1.5em;
-  margin-bottom: $spacing;
+  margin-bottom: var(--spacing);
   padding: 0 0 0 2.5rem;
   position: relative;
   quotes: none;
@@ -23,7 +23,7 @@ blockquote {
 
 cite {
   display: block;
-  font-size: $font-size-20;
+  font-size: var(--font-size-20);
 
   &:before { content: "\2014 \0020"; }
 }

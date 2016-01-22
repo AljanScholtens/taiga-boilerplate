@@ -9,8 +9,8 @@
 }
 
 html {
-  color: $color-neutral-90;
-  font: 400 $font-size-base $font-family-body;
+  color: var(--color-neutral-90);
+  font: 400 var(--font-size-base) var(--font-family-body);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;

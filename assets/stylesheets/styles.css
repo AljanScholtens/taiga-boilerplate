@@ -6,46 +6,50 @@
  * CONTENTS
  *
  * SETTINGS
- * Global...............Globally-available variables and config.
+ * Global...............Global variables and settings
+ * Colors...............Global color variables
  *
  * TOOLS
- * Mixins...............Useful mixins.
- *
- * GENERIC
- * Normalize.css........A level playing field.
- * Box-sizing...........Better default `box-sizing`.
+ * -
  *
  * BASE
- * Headings.............H1–H6 styles.
+ * Page.................Page setup like html and body
+ * Forms................Inputs
+ * Tables...............Table
+ * Type.................Header, links, paragraphs
+ * Quote................Blockquote
+ *
+ * LAYOUT
+ * Wrappers.............Wrappers for full width backgrounds
+ * Containers...........Container to center your web site
+ * Grid.................Global grid system based on Lost
  *
  * OBJECTS
- * Wrappers.............Wrapping and constraining elements.
+ * Buttons..............Buttons
+ * Cards................Cards
+ * Forms................Forms
+ * Icons................Icons
+ * Labels...............Labels
+ * List.................List
+ * Media................Media
+ * Messages.............Messages
+ * Pagination...........Pagination
+ * Panels...............Panels
  *
  * COMPONENTS
- * Page-head............The main page header.
- * Page-foot............The main page footer.
- * Buttons..............Button elements.
+ * Example..............Example of how a component is build up
+ * Pattern Library......Pattern Library specific
  *
- * TRUMPS
- * Text.................Text helpers.
+ * Utilities
+ * Global...............Global utility states like u-hidden
  */
-:root {
-  --background: red;
-}
 
-body {
-  background: var(--background);
-
-  .l-container {
-    background: yellow;
-  }
-}
 
 /*
  * #SETTINGS
  */
-/* @import "_settings.global";
-@import "_settings.colors";
+@import "settings.global.css";
+@import "settings.colors.css";
 
 /**
  * #TOOLS
@@ -55,44 +59,44 @@ body {
 /**
  * #BASE
  */
-/*@import "_base.page";
-@import "_base.forms";
-@import "_base.tables";
-@import "_base.type";
-@import "_base.quote";*/
+@import "base.page.css";
+@import "base.forms.css";
+@import "base.tables.css";
+@import "base.type.css";
+@import "base.quote.css";
 
 
 /**
  * #LAYOUT
  */
-/*@import "_layout.wrappers";
-@import "_layout.containers";
-@import "_layout.grid";*/
+@import "layout.wrappers.css";
+@import "layout.containers.css";
+@import "layout.grid.css";
 
 
 /**
  * #OBJECTS
  */
-/*@import "_objects.buttons";
-@import "_objects.cards";
-@import "_objects.forms";
-@import "_objects.icons";
-@import "_objects.labels";
-@import "_objects.list";
-@import "_objects.media";
-@import "_objects.messages";
-@import "_objects.pagination";
-@import "_objects.panels";*/
+@import "objects.buttons.css";
+@import "objects.cards.css";
+@import "objects.forms.css";
+@import "objects.icons.css";
+@import "objects.labels.css";
+@import "objects.list.css";
+@import "objects.media.css";
+@import "objects.messages.css";
+@import "objects.pagination.css";
+@import "objects.panels.css";
 
 
 /**
  * #COMPONENTS
  */
-/*@import "_components.example";
-@import "_components.pattern-library";*/
+@import "components.example.css";
+@import "components.pattern-library.css";
 
 
 /**
  * #UTILITIES
  */
-/*@import "_utilities.global";*/
+@import "utilities.global.css";

@@ -1,41 +1,30 @@
 var gulp = require('gulp');
-//var sass = require('gulp-sass');
 var sourcemaps = require('gulp-sourcemaps');
 var postcss = require('gulp-postcss');
+var cssnano = require('gulp-cssnano');
+var atImport = require('postcss-import');
 var lost = require('lost');
-var cssnext = require('gulp-cssnext');
+var cssnext = require('postcss-cssnext');
+var postcssExtend = require('postcss-simple-extend');
 
-// gulp.task('css', function () {
-//   gulp.src('assets/stylesheets/styles.scss')
-//
-//     .pipe(sass().on('error', sass.logError))
-//
-//     .pipe(sass({outputStyle: 'compressed'}))
-//
-//     .pipe(postcss([
-//       lost()
-//     ]))
-//
-//     .pipe(autoprefixer({
-//       browsers: ['last 2 versions'],
-//       cascade: false,
-//     }))
-//
-//     .pipe(gulp.dest('dist/stylesheets'));
-// });
+gulp.task('default',function() {
+  gulp.watch('assets/stylesheets/*.css',['css']);
+});
 
 gulp.task("css", function() {
   var processors = [
-    cssnext,
+    atImport,
+    postcssExtend,
+    cssnext({
+      browers: ['last 2 version'],
+      compress: true
+    }),
     lost()
   ];
   return gulp.src('assets/stylesheets/styles.css')
     .pipe(sourcemaps.init())
     .pipe(postcss(processors))
+    .pipe(cssnano())
     .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest('dist/stylesheets'));
-});
-
-gulp.task('default',function() {
-    gulp.watch('assets/stylesheets/*.css',['css']);
 });
