@@ -1,5 +1,6 @@
 var gulp = require('gulp');
 var sourcemaps = require('gulp-sourcemaps');
+// var autoprefixer = require('autoprefixer');
 var postcss = require('gulp-postcss');
 var cssnano = require('gulp-cssnano');
 var atImport = require('postcss-import');
@@ -15,17 +16,26 @@ gulp.task("css", function() {
   var processors = [
     atImport,
     postcssExtend,
-    cssnext({
-      browers: ['last 2 version'],
-      compress: true
-    }),
-    lost()
+    cssnext,
+    // cssnext([
+    //   browserslist('last 1 version')
+    // ]),
+    lost(),
+
+    //autoprefixer({ browsers: ['ie >= 11'] })
   ];
   return gulp.src('assets/stylesheets/styles.css')
     .pipe(sourcemaps.init())
     .pipe(postcss(processors))
     .pipe(cssnano())
     .pipe(sourcemaps.write('.'))
+
+    // IE7/8 CSS support is disbabled on default
+    // .pipe(autoprefixer({
+    //   browsers: ['last 2 versions'],
+    //   cascade: false,
+    // }))
+
     .pipe(gulp.dest('dist/stylesheets'));
 });
 
@@ -33,16 +43,24 @@ gulp.task("patterns", function() {
   var processors = [
     atImport,
     postcssExtend,
-    cssnext({
-      browers: ['last 2 version'],
-      compress: true
-    }),
-    lost()
+    cssnext,
+    // cssnext([
+    //   browserslist('last 1 version')
+    // ]),
+    lost(),
+    //autoprefixer({ browsers: ['ie >= 11'] })
   ];
   return gulp.src('assets/stylesheets/pattern-library.css')
     .pipe(sourcemaps.init())
     .pipe(postcss(processors))
     .pipe(cssnano())
     .pipe(sourcemaps.write('.'))
+
+    // IE7/8 CSS support is disbabled on default
+    // .pipe(autoprefixer({
+    //   browsers: ['last 2 versions'],
+    //   cascade: false,
+    // }))
+
     .pipe(gulp.dest('dist/stylesheets'));
 });
