@@ -29,14 +29,23 @@
  * TRUMPS
  * Text.................Text helpers.
  */
+:root {
+  --background: red;
+}
 
+body {
+  background: var(--background);
+
+  .l-container {
+    background: yellow;
+  }
+}
 
 /*
  * #SETTINGS
  */
-@import "_settings.global";
+/* @import "_settings.global";
 @import "_settings.colors";
-
 
 /**
  * #TOOLS
@@ -46,25 +55,25 @@
 /**
  * #BASE
  */
-@import "_base.page";
+/*@import "_base.page";
 @import "_base.forms";
 @import "_base.tables";
 @import "_base.type";
-@import "_base.quote";
+@import "_base.quote";*/
 
 
 /**
  * #LAYOUT
  */
-@import "_layout.wrappers";
+/*@import "_layout.wrappers";
 @import "_layout.containers";
-@import "_layout.grid";
+@import "_layout.grid";*/
 
 
 /**
  * #OBJECTS
  */
-@import "_objects.buttons";
+/*@import "_objects.buttons";
 @import "_objects.cards";
 @import "_objects.forms";
 @import "_objects.icons";
@@ -73,17 +82,17 @@
 @import "_objects.media";
 @import "_objects.messages";
 @import "_objects.pagination";
-@import "_objects.panels";
+@import "_objects.panels";*/
 
 
 /**
  * #COMPONENTS
  */
-@import "_components.example";
-@import "_components.pattern-library";
+/*@import "_components.example";
+@import "_components.pattern-library";*/
 
 
 /**
  * #UTILITIES
  */
-@import "_utilities.global";
+/*@import "_utilities.global";*/
