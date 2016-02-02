@@ -2,6 +2,7 @@ var gulp = require('gulp');
 var sourcemaps = require('gulp-sourcemaps');
 // var autoprefixer = require('autoprefixer');
 var postcss = require('gulp-postcss');
+var browserslist = require('browserslist');
 var cssnano = require('gulp-cssnano');
 var atImport = require('postcss-import');
 var lost = require('lost');
@@ -18,11 +19,14 @@ gulp.task("css", function() {
     postcssExtend,
     cssnext,
     // cssnext([
-    //   browserslist('last 1 version')
+    //   browsers: 'last 2 versions',
+    //   features: {
+    //     rem: false
+    //   },
     // ]),
-    lost(),
+    lost()
 
-    //autoprefixer({ browsers: ['ie >= 11'] })
+    // autoprefixer({ browsers: ['ie >= 11'] })
   ];
   return gulp.src('assets/stylesheets/styles.css')
     .pipe(sourcemaps.init())
@@ -45,10 +49,13 @@ gulp.task("patterns", function() {
     postcssExtend,
     cssnext,
     // cssnext([
-    //   browserslist('last 1 version')
+    //   browsers: 'last 2 versions',
+    //   features: {
+    //     rem: false
+    //   },
     // ]),
-    lost(),
-    //autoprefixer({ browsers: ['ie >= 11'] })
+    lost()
+    // autoprefixer({ browsers: ['ie >= 11'] })
   ];
   return gulp.src('assets/stylesheets/pattern-library.css')
     .pipe(sourcemaps.init())

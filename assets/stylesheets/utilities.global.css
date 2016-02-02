@@ -2,15 +2,15 @@
   #UTILITIES-GLOBAL
 \*------------------------------------*/
 
-.u-hidden { display: none !important; }
+.u-display-none { display: none !important; }
 
-.u-invisible { visibility: hidden !important; }
+.u-visibility-hidden { visibility: hidden !important; }
 
-.u-text-left { text-align: left; }
+.u-text-align-left { text-align: left; }
 
-.u-text-right { text-align: right; }
+.u-text-align-right { text-align: right; }
 
-.u-text-center { text-align: center; }
+.u-text-align-center { text-align: center; }
 
 .u-float-left { float: left; }
 

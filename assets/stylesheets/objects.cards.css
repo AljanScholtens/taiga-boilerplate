@@ -23,7 +23,7 @@
 
 
 .o-card__content {
-  padding: var(--spacing) var(--spacing) 0 var(--spacing);
+  padding: var(--spacing) var(--spacing) 0.1px var(--spacing);
 }
 
 
