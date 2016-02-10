@@ -6,7 +6,7 @@
  * Get full width backgrounds around your content
  */
 .l-wrapper {
-
+  clear: both;
 }
 
 

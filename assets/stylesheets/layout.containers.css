@@ -8,7 +8,7 @@
 .l-container {
   margin: auto;
   max-width: var(--max-width);
-  padding: var(--spacing) var(--spacing) 0 var(--spacing);
+  padding: var(--spacing) var(--spacing) 0.1px var(--spacing);
   position: relative;
   lost-utility: clearfix;
 

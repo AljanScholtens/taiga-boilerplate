@@ -15,3 +15,10 @@
 .u-float-left { float: left; }
 
 .u-float-right { float: right; }
+
+.u-spacing {
+
+  @media (--breakpoint-20) {
+    margin-bottom: calc(var(--spacing) * 2);
+  }
+}
