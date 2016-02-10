@@ -2,7 +2,7 @@
   #OBJECTS-BUTTONS
 \*------------------------------------*/
 
-@define-placeholder o-button {
+.o-button {
   border: 0;
   border-radius: var(--border-radius-20);
   cursor: pointer;
@@ -17,12 +17,6 @@
   padding: 0.5rem 1.25rem;
   text-decoration: none;
   vertical-align: bottom;
-
-  /*&:focus { outline: 0; }*/
-}
-
-.o-button {
-  @extend o-button;
   background: var(--color-primary-50);
   color: var(--white);
 
@@ -38,7 +32,6 @@
 }
 
 .o-button--neutral {
-  @extend o-button;
   background: var(--color-neutral-30);
   color: var(--color-neutral-70);
 
@@ -54,7 +47,6 @@
 }
 
 .o-button--success {
-  @extend o-button;
   background: var(--color-success-50);
   color: var(--white);
 
@@ -70,7 +62,6 @@
 }
 
 .o-button--alert {
-  @extend o-button;
   background: var(--color-alert-50);
   color: var(--white);
 
@@ -83,4 +74,10 @@
   &:focus {
     box-shadow: inset 0 1px 3px color(var(--black) alpha(80%));
   }
+}
+
+.o-button--disabled {
+  background: var(--color-neutral-30);
+  color: var(--color-neutral-50);
+  pointer-events: none;
 }

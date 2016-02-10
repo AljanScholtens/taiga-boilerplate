@@ -22,9 +22,9 @@
 }
 
 
-.o-card__content {
-  padding: var(--spacing) var(--spacing) 0.1px var(--spacing);
-}
+  .o-card__content {
+    padding: var(--spacing) var(--spacing) 0.1px var(--spacing);
+  }
 
 
 .o-card__image {

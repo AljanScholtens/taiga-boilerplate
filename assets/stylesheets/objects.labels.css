@@ -2,33 +2,26 @@
   #OBJECTS-LABELS
 \*------------------------------------*/
 
-@define-placeholder o-label {
+.o-label {
   border-radius: var(--border-radius-10);
   font-size: var(--font-size-10);
   font-weight: bold;
   padding: 0.1rem 0.25rem;
-}
-
-.o-label {
-  @extend o-label;
   background: var(--color-primary-50);
   color: var(--white);
 }
 
 .o-label--neutral {
-  @extend o-label;
   background: var(--color-neutral-30);
   color: var(--color-neutral-70);
 }
 
 .o-label--success {
-  @extend o-label;
   background: var(--color-success-50);
   color: var(--white);
 }
 
 .o-label--alert {
-  @extend o-label;
   background: var(--color-alert-50);
   color: var(--white);
 }
