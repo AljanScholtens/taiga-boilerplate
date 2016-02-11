@@ -14,27 +14,28 @@
  *
  * BASE
  * Page.................Page setup like html and body
- * Forms................Inputs
- * Tables...............Table
+ * Form.................Inputs
+ * Table................Table
  * Type.................Header, links, paragraphs
  * Quote................Blockquote
  *
  * LAYOUT
- * Wrappers.............Wrappers for full width backgrounds
- * Containers...........Container to center your web site
+ * Wrapper..............Wrappers for full width backgrounds
+ * Container............Container to center your web site
  * Grid.................Global grid system based on Lost
  *
  * OBJECTS
- * Buttons..............Buttons
- * Cards................Cards
- * Forms................Forms
- * Icons................Icons
- * Labels...............Labels
+ * Button...............Buttons
+ * Card.................Cards
+ * Form.................Forms
+ * Icon.................Icons
+ * Label................Labels
  * List.................List
  * Media................Media
  * Messages.............Messages
  * Pagination...........Pagination
- * Panels...............Panels
+ * Panel................Panels
+ * Paragraph............Paragraph
  *
  * COMPONENTS
  * Example..............Example of how a component is build up
@@ -59,8 +60,8 @@
  * #BASE
  */
 @import "base.page.css";
-@import "base.forms.css";
-@import "base.tables.css";
+@import "base.form.css";
+@import "base.table.css";
 @import "base.type.css";
 @import "base.quote.css";
 
@@ -68,24 +69,25 @@
 /**
  * #LAYOUT
  */
-@import "layout.wrappers.css";
-@import "layout.containers.css";
+@import "layout.wrapper.css";
+@import "layout.container.css";
 @import "layout.grid.css";
 
 
 /**
  * #OBJECTS
  */
-@import "objects.buttons.css";
-@import "objects.cards.css";
-@import "objects.forms.css";
-@import "objects.icons.css";
-@import "objects.labels.css";
+@import "objects.button.css";
+@import "objects.card.css";
+@import "objects.form.css";
+@import "objects.icon.css";
+@import "objects.label.css";
 @import "objects.list.css";
 @import "objects.media.css";
 @import "objects.messages.css";
 @import "objects.pagination.css";
-@import "objects.panels.css";
+@import "objects.panel.css";
+@import "objects.paragraph.css";
 
 
 /**
