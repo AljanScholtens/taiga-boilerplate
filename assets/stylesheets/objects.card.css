@@ -21,25 +21,23 @@
   background: var(--color-neutral-10);
 }
 
-
   .o-card__content {
     padding: var(--spacing) var(--spacing) 0.1px var(--spacing);
   }
 
+  .o-card__image {
 
-.o-card__image {
-
-  & img {
-    display: block;
-    width: 100%;
+    & img {
+      display: block;
+      width: 100%;
+    }
   }
-}
 
-.o-card__image--background {
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  flex: auto;
-  height: 0;
-  padding-bottom: 56.25%;
-}
+  .o-card__image--background {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    flex: auto;
+    height: 0;
+    padding-bottom: 56.25%;
+  }

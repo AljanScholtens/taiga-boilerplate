@@ -98,10 +98,6 @@ figure {
   margin: 0; 
 }
 
-button:focus { 
-  outline: 0; 
-}
-
 hr {
   background-color: transparent;
   border: solid var(--color-neutral-30);
