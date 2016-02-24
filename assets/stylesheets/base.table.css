@@ -14,7 +14,7 @@ thead th {
   padding: calc(var(--spacing) / 2);
   text-align: left;
   background: var(--color-primary-50);
-  color: var(--white);
+  color: var(--color-white);
   font-weight: 600;
 }
 

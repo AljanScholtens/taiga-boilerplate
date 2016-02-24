@@ -57,7 +57,7 @@
     & input,
     & input:focus {
       border: 1px solid var(--color-alert-50);
-      box-shadow: 0px 0px 3px var(--color-alert-50);
+      box-shadow: 0 0 10px color(var(--color-alert-50) alpha(50%));
     }
 
     & /*ul*/.o-form__errors {

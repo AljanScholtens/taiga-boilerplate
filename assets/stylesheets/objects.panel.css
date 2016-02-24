@@ -11,5 +11,5 @@
 
 .o-panel--callout {
   background: var(--color-primary-50);
-  color: var(--white);
+  color: var(--color-white);
 }

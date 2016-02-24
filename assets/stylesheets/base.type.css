@@ -7,42 +7,42 @@
  */
 h1, h2, legend, h3, h4, h5, h6 {
   font-family: var(--font-family-heading);
-  font-weight: 400;
+  font-weight: 600;
   line-height: 1.5em;
   margin: 0 0 0.25em 0;
 }
 
-h1 { 
-  font-size: 2.25rem; 
+h1 {
+  font-size: 2.25rem;
 }
 
-h2, 
+h2,
 legend {
   font-size: 1.5rem;
 }
 
-h3 { 
-  font-size: 1.25rem; 
+h3 {
+  font-size: 1.25rem;
 }
 
-h4 { 
-  font-size: 1.2rem; 
+h4 {
+  font-size: 1.2rem;
 }
 
-h5 { 
-  font-size: 1.125rem; 
+h5 {
+  font-size: 1.125rem;
 }
 
-h6 { 
-  font-size: 1rem; 
+h6 {
+  font-size: 1rem;
 }
 
 
 /*
  * Paragraphs
  */
-p { 
-  margin: 0 auto var(--spacing) auto; 
+p {
+  margin: 0 auto var(--spacing) auto;
 }
 
 
@@ -66,36 +66,36 @@ small {
   font-size: var(--font-size-20);
 }
 
-em { 
-  font-style: italic; 
+em {
+  font-style: italic;
 }
 
-strong { 
-  font-weight: bold; 
+strong {
+  font-weight: bold;
 }
 
-code, pre { 
-  font-family: 'courier new', monospace; 
+code, pre {
+  font-family: 'courier new', monospace;
 }
 
-pre { 
-  overflow-x: auto; 
+pre {
+  overflow-x: auto;
 }
 
-abbr { 
-  border-bottom: 1px dotted var(--color-neutral-50); 
+abbr {
+  border-bottom: 1px dotted var(--color-neutral-50);
 }
 
-del { 
-  text-decoration: line-through; 
+del {
+  text-decoration: line-through;
 }
 
-mark { 
-  background: color(yellow alpha(-50%)); 
+mark {
+  background: color(yellow alpha(-50%));
 }
 
-figure { 
-  margin: 0; 
+figure {
+  margin: 0;
 }
 
 hr {

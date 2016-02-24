@@ -14,7 +14,7 @@
     padding: 0.5rem 0.75rem;
     vertical-align: baseline;
     background: var(--color-primary-50);
-    color: var(--white);
+    color: var(--color-white);
   }
 
   /*li*/.o-messages__item--neutral {
@@ -24,10 +24,10 @@
 
   /*li*/.o-messages__item--success {
     background: var(--color-success-50);
-    color: var(--white);
+    color: var(--color-white);
   }
 
   /*li*/.o-messages__item--alert {
     background: var(--color-alert-50);
-    color: var(--white);
+    color: var(--color-white);
   }

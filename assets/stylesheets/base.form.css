@@ -37,7 +37,6 @@ select {
 
   &:focus {
     border: 1px solid var(--color-neutral-50);
-    box-shadow: 0px 0px 3px color(var(--black) alpha(-90%));
     outline: 0;
   }
 }
@@ -57,6 +56,6 @@ select {
   }
 }
 
-button:focus { 
-  outline: 0; 
+button:focus {
+  outline: 0;
 }

@@ -4,7 +4,7 @@
 
 .o-button {
   border: 0;
-  border-radius: var(--border-radius-20);
+  border-radius: var(--border-radius-50);
   cursor: pointer;
   display: inline-block;
   font-family: var(--font-family-body);
@@ -18,16 +18,16 @@
   text-decoration: none;
   vertical-align: bottom;
   background: var(--color-primary-50);
-  color: var(--white);
+  color: var(--color-white);
 
   &:hover {
     background: var(--color-primary-70);
-    color: var(--white);
+    color: var(--color-white);
   }
 
   &:active,
   &:focus {
-    box-shadow: inset 0 1px 3px color(var(--black) alpha(80%));
+    box-shadow: inset 0 1px 3px color(var(--color-black) alpha(80%));
   }
 }
 
@@ -42,37 +42,37 @@
 
   &:active,
   &:focus {
-    box-shadow: inset 0 1px 3px color(var(--black) alpha(80%));
+    box-shadow: inset 0 1px 3px color(var(--color-black) alpha(80%));
   }
 }
 
 .o-button--success {
   background: var(--color-success-50);
-  color: var(--white);
+  color: var(--color-white);
 
   &:hover {
     background: var(--color-success-70);
-    color: var(--white);
+    color: var(--color-white);
   }
 
   &:active,
   &:focus {
-    box-shadow: inset 0 1px 3px color(var(--black) alpha(80%));
+    box-shadow: inset 0 1px 3px color(var(--color-black) alpha(80%));
   }
 }
 
 .o-button--alert {
   background: var(--color-alert-50);
-  color: var(--white);
+  color: var(--color-white);
 
   &:hover {
     background: var(--color-alert-70);
-    color: var(--white);
+    color: var(--color-white);
   }
 
   &:active,
   &:focus {
-    box-shadow: inset 0 1px 3px color(var(--black) alpha(80%));
+    box-shadow: inset 0 1px 3px color(var(--color-black) alpha(80%));
   }
 }
 

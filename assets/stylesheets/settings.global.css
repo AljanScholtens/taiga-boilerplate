@@ -13,8 +13,8 @@
   /*
    * Set your font
    */
-  --font-family-body: sans-serif;
-  --font-family-heading: georgia;
+  --font-family-body: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  --font-family-heading: avenir next, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
 
 
   /*
@@ -52,7 +52,7 @@
    * Adjust the border-radius
    */
   --border-radius-10: 0.125rem;
-  --border-radius-20: 0.313rem;
+  --border-radius-50: 5rem;
 
 
   /*
