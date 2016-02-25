@@ -2,6 +2,6 @@
   #OBJECTS-PARAGRAPH
 \*------------------------------------*/
 
-.paragraph--lead { 
-  font-size: var(--font-size-40); 
+.o-paragraph--lead { 
+  font-size: var(--font-size-40);
 }
