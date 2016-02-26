@@ -6,7 +6,7 @@ blockquote {
   color: var(--color-neutral-50);
   font: italic var(--font-size-40) Georgia, serif;
   line-height: 1.5em;
-  margin-bottom: var(--spacing);
+  margin: 0 0 var(--spacing) 0;
   padding: 0 0 0 2.5rem;
   position: relative;
   quotes: none;
@@ -15,7 +15,7 @@ blockquote {
     content: "\201C";
     display: block;
     font-size: 5rem;
-    left: -0.5rem;
+    left: 0;
     position: absolute;
     top: 1.5rem;
   }

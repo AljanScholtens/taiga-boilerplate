@@ -6,7 +6,6 @@
 
 ?>
 
-<h1><?php echo $title; ?></h1>
-<p>Introduction</p>
+<h1 class="o-heading--30 u-spacing"><?php echo $title; ?></h1>
 
 <?php include "footer.php"; ?>

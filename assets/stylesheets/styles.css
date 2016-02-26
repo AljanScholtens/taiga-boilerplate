@@ -28,6 +28,7 @@
  * Button...............Buttons
  * Card.................Cards
  * Form.................Forms
+ * Heading..............Heading
  * Icon.................Icons
  * Label................Labels
  * List.................List
@@ -80,6 +81,7 @@
 @import "objects.button.css";
 @import "objects.card.css";
 @import "objects.form.css";
+@import "objects.heading.css";
 @import "objects.icon.css";
 @import "objects.label.css";
 @import "objects.list.css";

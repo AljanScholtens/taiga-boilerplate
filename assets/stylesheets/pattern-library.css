@@ -5,26 +5,34 @@
 @import "styles.css";
 
 .c-pattern-library__wrapper {
-  display: flex;
-  position: absolute;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  /*overflow: hidden;*/
+
+  @media (--breakpoint-20) {
+    display: flex;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+  }
 }
 
 .c-pattern-library__aside {
   background: var(--color-neutral-10);
-  overflow-y: auto;
-  flex: 0 0 20rem;
-  -webkit-overflow-scrolling: touch;
+
+  @media (--breakpoint-20) {
+    overflow-y: auto;
+    flex: 0 0 16rem;
+    -webkit-overflow-scrolling: touch;
+  }
 }
 
 .c-pattern-library__main {
-  overflow-y: auto;
-  flex: auto;
-  -webkit-overflow-scrolling: touch;
+
+  @media (--breakpoint-20) {
+    overflow-y: auto;
+    flex: auto;
+    -webkit-overflow-scrolling: touch;
+  }
 }
 
 .c-pattern-library__navigation {
@@ -73,7 +81,7 @@
   lost-utility: clearfix;
 
   & div {
-    lost-column: 1/12;
+    /*lost-column: 1/12;*/
     background: var(--color-neutral-30);
     margin-bottom: 2.08333%;
     padding: 0.5rem;
@@ -81,6 +89,13 @@
   }
 }
 
+.c-pattern-library__component {
+  margin-bottom: var(--spacing);
+
+  @media (--breakpoint-20) {
+    margin-bottom: calc(var(--spacing) * 3);
+  }
+}
 
 /*
  * Colors

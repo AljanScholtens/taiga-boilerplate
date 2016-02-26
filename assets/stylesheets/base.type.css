@@ -8,33 +8,8 @@
 h1, h2, legend, h3, h4, h5, h6 {
   font-family: var(--font-family-heading);
   font-weight: 600;
-  line-height: 1.5em;
+  font-size: var(--font-size-50);
   margin: 0 0 0.25em 0;
-}
-
-h1 {
-  font-size: 2.25rem;
-}
-
-h2,
-legend {
-  font-size: 1.5rem;
-}
-
-h3 {
-  font-size: 1.25rem;
-}
-
-h4 {
-  font-size: 1.2rem;
-}
-
-h5 {
-  font-size: 1.125rem;
-}
-
-h6 {
-  font-size: 1rem;
 }
 
 

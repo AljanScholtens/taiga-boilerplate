@@ -3,8 +3,7 @@
 \*------------------------------------*/
 
 /*
- * Other layout rules are almost always nested in the HTML of the l-container.
- * You can also use .l-1 to .l-48 for full control.
+ * Add your own grid items
  */
 
 .l-3 {
@@ -39,13 +38,6 @@
 
   @media (--breakpoint-10) {
     lost-column: 9/12;
-  }
-}
-
-.l-12 {
-
-  @media (--breakpoint-10) {
-    lost-column: 12/12;
   }
 }
 
