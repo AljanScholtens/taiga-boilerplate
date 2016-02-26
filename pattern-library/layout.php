@@ -6,7 +6,7 @@
 
 ?>
 
-<h1 class="o-heading--30 u-spacing"><?php echo $title; ?></h1>
+<h1 class="o-heading o-heading--30 u-spacing"><?php echo $title; ?></h1>
 
 <h2 class="c-pattern-library__h2" id="grid">Grid</h2>
 <h3 class="c-pattern-library__h3">Standard</h3>
