@@ -16,6 +16,11 @@
   <link rel="stylesheet" href="../dist/stylesheets/pattern-library.css">
   <link rel="shortcut icon" href="../favicon-32.ico">
   <link rel="apple-touch-icon-precomposed" href="../favicon-152.png">
+
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/styles/github.min.css">
+	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/highlight.min.js"></script>
+
+  <script>hljs.initHighlightingOnLoad();</script>
 </head>
 
 <body>

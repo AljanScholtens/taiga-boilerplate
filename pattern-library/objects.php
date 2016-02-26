@@ -10,6 +10,13 @@
 
 <h2 class="c-pattern-library__h2" id="buttons">Object Button</h2>
 <h3 class="c-pattern-library__h3">Mixed</h3>
+<div class="o-panel"><pre><code class="html hljs">&lt;!-- Een kolom over de gehele breedte --&gt;
+&#x3C;button class=&#x22;o-button&#x22; type=&#x22;submit&#x22;&#x3E;Button&#x3C;/button&#x3E;
+&#x3C;a class=&#x22;o-button o-button--neutral&#x22; href=&#x22;&#x22;&#x3E;Button Neutral&#x3C;/a&#x3E;
+&#x3C;a class=&#x22;o-button o-button--success&#x22; href=&#x22;&#x22;&#x3E;Button Success&#x3C;/a&#x3E;
+&#x3C;a class=&#x22;o-button o-button--alert&#x22; href=&#x22;&#x22;&#x3E;Button Alert&#x3C;/a&#x3E;
+&#x3C;a class=&#x22;o-button o-button--disabled&#x22; href=&#x22;&#x22;&#x3E;Button Disabled&#x3C;/a&#x3E;
+</code></pre></div>
 <div class="c-pattern-library__component">
   <button class="o-button" type="submit">Button</button>
   <a class="o-button o-button--neutral" href="">Button Neutral</a>
@@ -17,6 +24,9 @@
   <a class="o-button o-button--alert" href="">Button Alert</a>
   <a class="o-button o-button--disabled" href="">Button Disabled</a>
 </div>
+
+
+
 
 
 <h2 class="c-pattern-library__h2" id="cards">Object Card</h2>

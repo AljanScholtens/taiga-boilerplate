@@ -184,3 +184,13 @@
   &:nth-child(1) { color: var(--color-alert-50); }
   &:nth-child(2) { color: var(--color-alert-70); }
 }
+
+.hljs {
+  background: transparent !important;
+  margin-bottom: var(--spacing);
+  padding: 0 !important;
+}
+
+.hljs-comment {
+  color: var(--color-neutral-50) !important;
+}
