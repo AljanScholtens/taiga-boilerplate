@@ -8,7 +8,7 @@
 
 <h1 class="o-heading o-heading--30 u-spacing"><?php echo $title; ?></h1>
 
-<h2 class="c-pattern-library__h2" id="quote">Form</h2>
+<h2 class="c-pattern-library__h2" id="form">Form</h2>
 <h3 class="c-pattern-library__h3">Input</h3>
 <div class="c-pattern-library__component">
   <input type="text" placeholder="Input" />
