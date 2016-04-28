@@ -2,14 +2,18 @@
   #OBJECTS-ICONS
 \*------------------------------------*/
 
-/*svg*/.o-icon {
+.o-icon {
   height: 24px;
   width: 24px;
   display: inline-block;
+  fill: var(--color-neutral-70);
   vertical-align:top;
 }
 
-/*svg*/.o-icon--inline {
-  position: relative;
+.o-icon--inline {
   margin: 0 0.25rem;
+}
+
+.o-icon--white {
+  fill: var(--color-white);
 }

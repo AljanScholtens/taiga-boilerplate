@@ -9,7 +9,7 @@
 
   /*li*/.o-messages__item {
     border-radius: var(--border-radius-10);
-    font-weight: bold;
+    font-weight: 600;
     margin-bottom: 0.25rem;
     padding: 0.5rem 0.75rem;
     vertical-align: baseline;
@@ -18,7 +18,7 @@
   }
 
   /*li*/.o-messages__item--neutral {
-    background: var(--color-neutral-30);
+    background: var(--color-neutral-10);
     color: var(--color-neutral-70);
   }
 
