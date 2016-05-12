@@ -16,11 +16,6 @@
   <link rel="stylesheet" href="../dist/stylesheets/pattern-library.css">
   <link rel="shortcut icon" href="../favicon-32.ico">
   <link rel="apple-touch-icon-precomposed" href="../favicon-152.png">
-
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/styles/github.min.css">
-	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/highlight.min.js"></script>
-
-  <script>hljs.initHighlightingOnLoad();</script>
 </head>
 
 <body>
@@ -46,28 +41,9 @@
           <li><a href="settings.php">Settings</a></li>
           <li><a href="base.php">Base</a></li>
           <li><a href="layout.php">Layout</a></li>
-          <li><a href="objects.php">Objects</a></li>
           <li><a href="components.php">Components</a></li>
           <li><a href="utilities.php">Utilities</a></li>
         </ul>
-        <!-- <ul class="c-pattern-library__navigation">
-          <li><a href="#colors">Colors</a></li>
-          <li><a href="#headings">Headings</a></li>
-          <li><a href="#copy">Copy</a></li>
-          <li><a href="#code">Code</a></li>
-          <li><a href="#quote">Quote</a></li>
-          <li><a href="#icons">Icons</a></li>
-          <li><a href="#lists">Lists</a></li>
-          <li><a href="#media">Media</a></li>
-          <li><a href="#buttons">Buttons</a></li>
-          <li><a href="#labels">Labels</a></li>
-          <li><a href="#messages">Messages</a></li>
-          <li><a href="#tabs">Tabs</a></li>
-          <li><a href="#pagination">Pagination</a></li>
-          <li><a href="#tables">Tables</a></li>
-          <li><a href="#forms">Forms</a></li>
-          <li><a href="#cards">Cards</a></li>
-        </ul> -->
       </div>
     </aside>
 

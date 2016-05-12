@@ -1,8 +1,8 @@
 /*------------------------------------*\
-  #OBJECTS-BUTTONS
+  #COMPONENTS-BUTTONS
 \*------------------------------------*/
 
-.o-button {
+.c-button {
   border: 0;
   border-radius: var(--border-radius-50);
   cursor: pointer;
@@ -31,18 +31,18 @@
   }
 }
 
-.o-button--small {
+.c-button--small {
   padding: 0.5rem 0.9rem;
   line-height: 1;
   font-size: var(--font-size-20);
   border-radius: var(--border-radius-10);
 }
 
-.o-button--large {
+.c-button--large {
   padding: 0.75rem 1.75rem;
 }
 
-.o-button--neutral {
+.c-button--neutral {
   background: var(--color-neutral-10);
   color: var(--color-neutral-70);
 
@@ -57,7 +57,7 @@
   }
 }
 
-.o-button--success {
+.c-button--success {
   background: var(--color-success-50);
   color: var(--color-white);
 
@@ -72,7 +72,7 @@
   }
 }
 
-.o-button--alert {
+.c-button--alert {
   background: var(--color-alert-50);
   color: var(--color-white);
 
@@ -87,7 +87,7 @@
   }
 }
 
-.o-button--disabled {
+.c-button--disabled {
   background: var(--color-neutral-30);
   color: var(--color-neutral-50);
   pointer-events: none;

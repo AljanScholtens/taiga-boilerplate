@@ -1,14 +1,14 @@
 /*------------------------------------*\
-  #OBJECTS-PAGINATION
+  #COMPONENTS-PAGINATION
 \*------------------------------------*/
 
-/*ul*/.o-pagination {
+.c-pagination {
   font-size: var(--font-size-20);
   list-style: none;
   margin-bottom: var(--spacing);
 }
 
-  /*li*/.o-pagination__item {
+  .c-pagination__item {
     display: inline-block;
     margin-bottom: 0.25rem;
 
@@ -32,7 +32,7 @@
     }
   }
 
-  /*li*/.o-pagination__item--selected a {
+  .c-pagination__item--selected a {
     background: var(--color-primary-50);
     color: var(--color-white);
 
@@ -47,7 +47,7 @@
     }
   }
 
-  /*li*/.pagination__item--gap {
+  .c-pagination__item--gap {
     background: none;
     padding: 0.25rem 0.5rem;
   }

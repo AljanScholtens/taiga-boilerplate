@@ -1,8 +1,8 @@
 /*------------------------------------*\
-  #OBJECTS-ICONS
+  #COMPONENTS-ICONS
 \*------------------------------------*/
 
-.o-icon {
+.c-icon {
   height: 24px;
   width: 24px;
   display: inline-block;
@@ -10,10 +10,10 @@
   vertical-align:top;
 }
 
-.o-icon--inline {
+.c-icon--inline {
   margin: 0 0.25rem;
 }
 
-.o-icon--white {
+.c-icon--white {
   fill: var(--color-white);
 }

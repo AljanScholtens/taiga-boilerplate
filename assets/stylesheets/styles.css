@@ -24,9 +24,10 @@
  * Container............Container to center your web site
  * Grid.................Global grid system based on Lost
  *
- * OBJECTS
+ * COMPONENTS
  * Button...............Buttons
  * Card.................Cards
+ * Example..............Example of how a component is build up
  * Form.................Forms
  * Heading..............Heading
  * Icon.................Icons
@@ -37,9 +38,6 @@
  * Pagination...........Pagination
  * Panel................Panels
  * Paragraph............Paragraph
- *
- * COMPONENTS
- * Example..............Example of how a component is build up
  *
  * Utilities
  * Global...............Global utility states like u-hidden
@@ -76,26 +74,21 @@
 
 
 /**
- * #OBJECTS
- */
-@import "objects.button.css";
-@import "objects.card.css";
-@import "objects.form.css";
-@import "objects.heading.css";
-@import "objects.icon.css";
-@import "objects.label.css";
-@import "objects.list.css";
-@import "objects.media.css";
-@import "objects.messages.css";
-@import "objects.pagination.css";
-@import "objects.panel.css";
-@import "objects.paragraph.css";
-
-
-/**
  * #COMPONENTS
  */
+@import "components.button.css";
+@import "components.card.css";
 @import "components.example.css";
+@import "components.form.css";
+@import "components.heading.css";
+@import "components.icon.css";
+@import "components.label.css";
+@import "components.list.css";
+@import "components.media.css";
+@import "components.messages.css";
+@import "components.pagination.css";
+@import "components.panel.css";
+@import "components.paragraph.css";
 
 
 /**

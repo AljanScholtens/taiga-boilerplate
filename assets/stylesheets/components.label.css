@@ -1,8 +1,8 @@
 /*------------------------------------*\
-  #OBJECTS-LABELS
+  #COMPONENTS-LABELS
 \*------------------------------------*/
 
-.o-label {
+.c-label {
   border-radius: var(--border-radius-10);
   font-size: var(--font-size-10);
   font-weight: 600;
@@ -11,17 +11,17 @@
   color: var(--color-white);
 }
 
-.o-label--neutral {
+.c-label--neutral {
   background: var(--color-neutral-10);
   color: var(--color-neutral-70);
 }
 
-.o-label--success {
+.c-label--success {
   background: var(--color-success-50);
   color: var(--color-white);
 }
 
-.o-label--alert {
+.c-label--alert {
   background: var(--color-alert-50);
   color: var(--color-white);
 }

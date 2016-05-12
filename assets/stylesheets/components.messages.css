@@ -1,13 +1,13 @@
 /*------------------------------------*\
-  #OBJECTS-MESSAGES
+  #COMPONENTS-MESSAGES
 \*------------------------------------*/
 
-/*ul*/.o-messages {
+.c-messages {
   list-style: none;
   margin-bottom: var(--spacing);
 }
 
-  /*li*/.o-messages__item {
+  .c-messages__item {
     border-radius: var(--border-radius-10);
     font-weight: 600;
     margin-bottom: 0.25rem;
@@ -17,17 +17,17 @@
     color: var(--color-white);
   }
 
-  /*li*/.o-messages__item--neutral {
+  .c-messages__item--neutral {
     background: var(--color-neutral-10);
     color: var(--color-neutral-70);
   }
 
-  /*li*/.o-messages__item--success {
+  .c-messages__item--success {
     background: var(--color-success-50);
     color: var(--color-white);
   }
 
-  /*li*/.o-messages__item--alert {
+  .c-messages__item--alert {
     background: var(--color-alert-50);
     color: var(--color-white);
   }

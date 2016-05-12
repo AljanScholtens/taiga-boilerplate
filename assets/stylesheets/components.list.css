@@ -1,13 +1,13 @@
 /*------------------------------------*\
-  #OBJECTS-LIST
+  #COMPONENTS-LIST
 \*------------------------------------*/
 
-/*ul or ol*/.o-list {
+.c-list {
   list-style: none;
   margin: -0.3rem 0 calc(var(--spacing) - 0.3rem) 0;
 }
 
-  /*li*/.o-list__item {
+  .c-list__item {
     padding: .3rem 0 .3rem 2rem;
     position: relative;
 
@@ -26,9 +26,9 @@
     }
   }
 
-ul.o-list {
+ul.c-list {
 
-  & /*li*/.o-list__item:before {
+  & .c-list__item:before {
     top: 0.95rem;
     height: 2px;
     width: 8px;
@@ -36,9 +36,9 @@ ul.o-list {
   }
 }
 
-ol.o-list {
+ol.c-list {
 
-  & /*li*/.o-list__item {
+  & .c-list__item {
     counter-increment: list__counter;
 
     &:before {

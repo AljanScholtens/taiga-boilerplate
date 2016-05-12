@@ -1,5 +1,5 @@
 /*------------------------------------*\
-  #COMPONENT-EXAMPLE
+  #COMPONENTS-EXAMPLE
 \*------------------------------------*/
 
 /*
@@ -28,16 +28,16 @@
   & strong { property: value; }
 }
 
+  /*
+   * Element
+   */
+  .c-example__subcomponent {
+    property: value;
+  }
+
 /*
  * Modifier
  */
 .c-example--modifier {
-  property: value;
-}
-
-/*
- * Element
- */
-.c-example__subcomponent {
   property: value;
 }

@@ -23,7 +23,7 @@
 .l-6 {
 
   @media (--breakpoint-10) {
-    lost-column: 6/12;
+    lost-column: 1/2;
   }
 }
 

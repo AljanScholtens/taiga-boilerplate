@@ -1,8 +1,8 @@
 /*------------------------------------*\
-  #OBJECTS-CARDS
+  #COMPONENTS-CARDS
 \*------------------------------------*/
 
-.o-card {
+.c-card {
   border-radius: var(--border-radius-10);
   overflow: hidden;
   margin-bottom: var(--spacing);
@@ -12,20 +12,20 @@
   align-content: stretch;
 }
 
-.o-card--color-white {
+.c-card--color-white {
   background: var(--color-white);
   box-shadow: 0px 3px 10px color(var(--color-black) alpha(20%));
 }
 
-.o-card--neutral {
+.c-card--neutral {
   background: var(--color-neutral-10);
 }
 
-  .o-card__content {
+  .c-card__content {
     padding: var(--spacing) var(--spacing) 0.1px var(--spacing);
   }
 
-  .o-card__image {
+  .c-card__image {
 
     & img {
       display: block;
@@ -33,7 +33,7 @@
     }
   }
 
-  .o-card__image--background {
+  .c-card__image--background {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

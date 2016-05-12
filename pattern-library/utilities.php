@@ -6,6 +6,6 @@
 
 ?>
 
-<h1 class="o-heading o-heading--30 u-spacing"><?php echo $title; ?></h1>
+<h1 class="c-heading c-heading--30 u-spacing"><?php echo $title; ?></h1>
 
 <?php include "footer.php"; ?>

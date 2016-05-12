@@ -1,7 +1,7 @@
 /*------------------------------------*\
-  #OBJECTS-PARAGRAPH
+  #COMPONENTS-PARAGRAPH
 \*------------------------------------*/
 
-.o-paragraph--lead { 
+.c-paragraph--lead {
   font-size: var(--font-size-40);
 }

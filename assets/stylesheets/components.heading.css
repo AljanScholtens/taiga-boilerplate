@@ -1,24 +1,24 @@
 /*------------------------------------*\
-  #OBJECTS-HEADING
+  #COMPONENTS-HEADING
 \*------------------------------------*/
 
-.o-heading {
+.c-heading {
   font-family: var(--font-family-heading);
   font-weight: 600;
   margin: 0 0 0.25em 0;
 }
 
-.o-heading--10 {
+.c-heading--10 {
   font-size: 1.5rem;
   line-height: 1.5em;
 }
 
-.o-heading--30 {
+.c-heading--30 {
   font-size: 2rem;
   line-height: 1.25em;
 }
 
-.o-heading--50 {
+.c-heading--50 {
   font-size: 3rem;
   line-height: 1em;
 }

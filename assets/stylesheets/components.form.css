@@ -1,17 +1,17 @@
 /*------------------------------------*\
-  #OBJECTS-FORMS
+  #COMPONENTS-FORMS
 \*------------------------------------*/
 
-/*ul*/.o-form {
+.c-form {
   list-style: none;
   margin: 0 0 var(--spacing) 0;
 }
 
-  /*li*/.o-form__item {
+  .c-form__item {
     lost-utility: clearfix;
   }
 
-  /*label*/.o-form__label {
+  .c-form__label {
     clear: left;
     cursor: pointer;
     display: inline-block;
@@ -28,7 +28,7 @@
     }
   }
 
-  /*div*/.o-form__fields {
+  .c-form__fields {
     margin-bottom: 0.5rem;
 
     @media (--breakpoint-10) {
@@ -42,11 +42,11 @@
     }
   }
 
-  /*p*/.o-form__description {
+  .c-form__description {
     margin: 0.5rem 0;
   }
 
-  /*li*/.o-form__item--error {
+  .c-form__item--error {
 
     & label {
       color: var(--color-alert-50);
@@ -60,7 +60,7 @@
       box-shadow: 0 0 10px color(var(--color-alert-50) alpha(50%));
     }
 
-    & /*ul*/.o-form__errors {
+    & .c-form__errors {
       color: var(--color-alert-50);
       list-style: none;
       margin: 0.25rem 0;
@@ -69,7 +69,7 @@
     }
   }
 
-  /*ul*/.o-form__checklist {
+  .c-form__checklist {
     list-style: none;
     margin: 0.5rem 0;
 

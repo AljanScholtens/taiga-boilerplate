@@ -1,25 +1,25 @@
 /*------------------------------------*\
-  #OBJECTS-MEDIA
+  #COMPONENTS-MEDIA
 \*------------------------------------*/
 
-/*figure*/.o-media {
+.c-media {
   margin-bottom: var(--spacing);
   position: relative;
   width: 100%;
 }
 
-  /*img*/.o-media__image {
+  .c-media__image {
     display: block;
     max-width: 100%;
   }
 
-  /*figcaption*/.o-media__caption {
+  .c-media__caption {
     color: var(--color-neutral-50);
     font-size: var(--font-size-20);
   }
 
 
-/*figure*/.o-media--video {
+.c-media--video {
   height: 0;
   padding-bottom: 56.25%;
   width: 100%;
