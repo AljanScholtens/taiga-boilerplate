@@ -14,10 +14,14 @@
 <div class="c-pattern-library__grid">
   <div class="l-3">l-3</div>
   <div class="l-9">l-9</div>
+</div>
 
+<div class="c-pattern-library__grid">
   <div class="l-4">l-4</div>
   <div class="l-8">l-8</div>
+</div>
 
+<div class="c-pattern-library__grid">
   <div class="l-6">l-6</div>
   <div class="l-6">l-6</div>
 </div>
