@@ -1,0 +1,31 @@
+/*------------------------------------*\
+  #BASE-QUOTE
+\*------------------------------------*/
+
+blockquote {
+  color: var(--color-neutral-50);
+  font: italic var(--font-size-40) Georgia, serif;
+  line-height: 1.5em;
+  margin: 0 0 var(--spacing) 0;
+  padding: 0 0 0 2.5rem;
+  position: relative;
+  quotes: none;
+
+  &:before {
+    background: var(--color-neutral-10);
+    bottom: 0;
+    content: " ";
+    display: block;
+    left: 1rem;
+    position: absolute;
+    top: 0;
+    width: 2px;
+  }
+}
+
+cite {
+  display: block;
+  font-size: var(--font-size-20);
+
+  &:before { content: "\2014 \0020"; }
+}

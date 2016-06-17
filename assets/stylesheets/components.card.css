@@ -1,0 +1,43 @@
+/*------------------------------------*\
+  #COMPONENTS-CARDS
+\*------------------------------------*/
+
+.c-card {
+  border-radius: var(--border-radius-10);
+  overflow: hidden;
+  margin-bottom: var(--spacing);
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  align-content: stretch;
+}
+
+.c-card--color-white {
+  background: var(--color-white);
+  box-shadow: 0px 3px 10px color(var(--color-black) alpha(20%));
+}
+
+.c-card--neutral {
+  background: var(--color-neutral-10);
+}
+
+  .c-card__content {
+    padding: var(--spacing) var(--spacing) 0.1px var(--spacing);
+  }
+
+  .c-card__image {
+
+    & img {
+      display: block;
+      width: 100%;
+    }
+  }
+
+  .c-card__image--background {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    flex: auto;
+    height: 0;
+    padding-bottom: 56.25%;
+  }

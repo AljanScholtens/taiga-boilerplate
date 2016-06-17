@@ -1,0 +1,24 @@
+/*------------------------------------*\
+  #COMPONENTS-HEADING
+\*------------------------------------*/
+
+.c-heading {
+  font-family: var(--font-family-heading);
+  font-weight: 600;
+  margin: 0 0 0.25em 0;
+}
+
+.c-heading--10 {
+  font-size: 1.5rem;
+  line-height: 1.5em;
+}
+
+.c-heading--30 {
+  font-size: 2rem;
+  line-height: 1.25em;
+}
+
+.c-heading--50 {
+  font-size: 3rem;
+  line-height: 1em;
+}

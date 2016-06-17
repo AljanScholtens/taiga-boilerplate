@@ -1,0 +1,35 @@
+/*------------------------------------*\
+  #LAYOUT-WRAPPERS
+\*------------------------------------*/
+
+/*
+ * Get full width backgrounds around your content
+ */
+.l-wrapper {
+  clear: both;
+}
+
+
+/*
+ * Options to change the layout of the wrapper
+ */
+.l-wrapper--full-height {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  min-height: 80vmin;
+}
+
+
+/*
+ * Set up different backgrounds
+ */
+.l-wrapper--image {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.l-wrapper--neutral {
+  background: var(--color-neutral-10);
+}

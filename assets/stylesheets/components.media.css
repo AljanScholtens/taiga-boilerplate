@@ -1,0 +1,34 @@
+/*------------------------------------*\
+  #COMPONENTS-MEDIA
+\*------------------------------------*/
+
+.c-media {
+  margin-bottom: var(--spacing);
+  position: relative;
+  width: 100%;
+}
+
+  .c-media__image {
+    display: block;
+    max-width: 100%;
+  }
+
+  .c-media__caption {
+    color: var(--color-neutral-50);
+    font-size: var(--font-size-20);
+  }
+
+
+.c-media--video {
+  height: 0;
+  padding-bottom: 56.25%;
+  width: 100%;
+
+  & iframe {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+}

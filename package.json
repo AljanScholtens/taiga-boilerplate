@@ -1,0 +1,18 @@
+{
+  "name": "taiga-boilerplate",
+  "description": "Taiga Boilerplate",
+  "version": "2.0.0",
+  "author": "Studio Wolf <hello@studiowolf.com>",
+  "license": "MIT",
+  "main": "gulpfile.js",
+  "devDependencies": {
+    "browserslist": "^1.1.1",
+    "gulp": "^3.9.1",
+    "gulp-cssnano": "^2.1.0",
+    "gulp-postcss": "^6.0.1",
+    "gulp-sourcemaps": "^1.6.0",
+    "lost": "^6.7.1",
+    "postcss-cssnext": "^2.4.0",
+    "postcss-import": "^8.0.2"
+  }
+}

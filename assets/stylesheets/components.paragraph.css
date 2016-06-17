@@ -1,0 +1,7 @@
+/*------------------------------------*\
+  #COMPONENTS-PARAGRAPH
+\*------------------------------------*/
+
+.c-paragraph--lead {
+  font-size: var(--font-size-40);
+}

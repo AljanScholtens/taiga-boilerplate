@@ -1,0 +1,24 @@
+/*------------------------------------*\
+  #UTILITIES-GLOBAL
+\*------------------------------------*/
+
+.u-display-none { display: none !important; }
+
+.u-visibility-hidden { visibility: hidden !important; }
+
+.u-text-align-left { text-align: left; }
+
+.u-text-align-right { text-align: right; }
+
+.u-text-align-center { text-align: center; }
+
+.u-float-left { float: left; }
+
+.u-float-right { float: right; }
+
+.u-spacing {
+
+  @media (--breakpoint-20) {
+    margin-bottom: calc(var(--spacing) * 2);
+  }
+}

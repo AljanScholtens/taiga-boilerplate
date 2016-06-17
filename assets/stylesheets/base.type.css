@@ -1,0 +1,89 @@
+/*------------------------------------*\
+  #BASE-TYPE
+\*------------------------------------*/
+
+/*
+ * Headings
+ */
+h1, h2, legend, h3, h4, h5, h6 {
+  font-family: var(--font-family-heading);
+  font-weight: 600;
+  font-size: var(--font-size-50);
+  margin: 0 0 0.25em 0;
+}
+
+
+/*
+ * Paragraphs
+ */
+p {
+  margin: 0 auto var(--spacing) auto;
+}
+
+
+/*
+ * Links
+ */
+a {
+  color: var(--color-primary-50);
+  cursor: pointer;
+  text-decoration: none;
+
+  &:hover { color: var(--color-primary-70); }
+}
+
+
+/*
+ * Other
+ */
+small {
+  color: var(--color-neutral-50);
+  font-size: var(--font-size-20);
+}
+
+em {
+  font-style: italic;
+}
+
+strong {
+  font-weight: bold;
+}
+
+code, pre {
+  font-family: 'courier new', monospace;
+}
+
+pre {
+  margin: 0;
+  overflow-x: auto;
+}
+
+abbr {
+  border-bottom: 1px dotted var(--color-neutral-50);
+}
+
+del {
+  text-decoration: line-through;
+}
+
+mark {
+  background: color(yellow alpha(-50%));
+}
+
+figure {
+  margin: 0;
+}
+
+hr {
+  background-color: transparent;
+  border: solid var(--color-neutral-30);
+  border-width: 1px 0 0;
+  clear: both;
+  margin: 2.5rem var(--spacing);
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}

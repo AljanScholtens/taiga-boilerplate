@@ -1,0 +1,48 @@
+/*------------------------------------*\
+  #COMPONENTS-LIST
+\*------------------------------------*/
+
+.c-list {
+  list-style: none;
+  margin: -0.3rem 0 calc(var(--spacing) - 0.3rem) 0;
+}
+
+  .c-list__item {
+    padding: .3rem 0 .3rem 2rem;
+    position: relative;
+
+    @media (--breakpoint-20) {
+      padding-left: 3rem;
+    }
+
+    &:before {
+      position: absolute;
+      left: 0.5rem;
+      content: " ";
+
+      @media (--breakpoint-20) {
+        left: 1.5rem;
+      }
+    }
+  }
+
+ul.c-list {
+
+  & .c-list__item:before {
+    top: 0.95rem;
+    height: 2px;
+    width: 8px;
+    background: var(--color-primary-50);
+  }
+}
+
+ol.c-list {
+
+  & .c-list__item {
+    counter-increment: list__counter;
+
+    &:before {
+      content: counter(list__counter)".";
+    }
+  }
+}

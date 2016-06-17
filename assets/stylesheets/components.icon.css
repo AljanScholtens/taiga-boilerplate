@@ -1,0 +1,19 @@
+/*------------------------------------*\
+  #COMPONENTS-ICONS
+\*------------------------------------*/
+
+.c-icon {
+  height: 24px;
+  width: 24px;
+  display: inline-block;
+  fill: var(--color-neutral-70);
+  vertical-align:top;
+}
+
+.c-icon--inline {
+  margin: 0 0.25rem;
+}
+
+.c-icon--white {
+  fill: var(--color-white);
+}

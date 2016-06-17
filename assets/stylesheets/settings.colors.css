@@ -1,0 +1,56 @@
+/*------------------------------------*\
+  #SETTINGS-COLORS
+\*------------------------------------*/
+
+/*
+ * Most of the variables are based on some kind of percentages to maintain stability and consistency.
+ * So $variable-10 is small or light and $variable-100 is big or dark.
+ */
+
+
+:root {
+
+  /*
+   * Primary colors
+   */
+  --color-primary-30: #81D0AE;
+  --color-primary-50: #09A25F;
+  --color-primary-70: #05683D;
+
+
+  /*
+   * Secondary colors
+   */
+  --color-secondary-50: #5F61C0;
+
+
+  /*
+   * Success and positive colors
+   */
+  --color-success-50: #54C24B;
+  --color-success-70: #25731F;
+
+
+  /*
+   * Alert en negative colors
+   */
+  --color-alert-50: #D7526D;
+  --color-alert-70: #782233;
+
+
+  /*
+   * Neutral colors
+   */
+  --color-neutral-10: #F1F1F2;
+  --color-neutral-30: #C9C9CE;
+  --color-neutral-50: #89898C;
+  --color-neutral-70: #484849;
+  --color-neutral-90: #131313;
+
+
+  /*
+   * Black and white
+   */
+  --color-black: #000;
+  --color-white: #fff;
+}

@@ -1,0 +1,15 @@
+/*------------------------------------*\
+  #COMPONENTS-PANELS
+\*------------------------------------*/
+
+.c-panel {
+  border-radius: var(--border-radius-10);
+  margin-bottom: var(--spacing);
+  padding: var(--spacing) var(--spacing) 0.1px var(--spacing);
+  background: var(--color-neutral-10);
+}
+
+.c-panel--primary {
+  background: var(--color-primary-50);
+  color: var(--color-white);
+}
