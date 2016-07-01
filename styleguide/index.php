@@ -1,6 +1,6 @@
 <?php
 
-  $title = "Pattern Library";
+  $title = "Styleguide";
   $theme = "";
   include "header.php";
 

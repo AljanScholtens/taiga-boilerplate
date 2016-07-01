@@ -22,7 +22,7 @@ Use these options to quickly install Taiga Boilerplate.
 3. Go to the folder via terminal or your application of choice.
 4. **Install via `npm install`.**
 5. **Run via `gulp`.**
-6. Start building and use `/pattern-library/pattern-library.html` as example and inspiration.
+6. Start building and use `/styleguide/` as example and inspiration.
 
 ## ITCSS
 

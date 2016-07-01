@@ -21,7 +21,7 @@ gulp.task("css", function() {
     cssnext(),
     lost()
   ];
-  return gulp.src(['assets/stylesheets/styles.css', 'assets/stylesheets/pattern-library.css'])
+  return gulp.src(['assets/stylesheets/styles.css', 'assets/stylesheets/styleguide.css'])
     .pipe(sourcemaps.init())
     .pipe(postcss(processors))
     .pipe(cssnano())

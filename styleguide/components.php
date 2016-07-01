@@ -12,9 +12,9 @@
 
 
 
-<h2 class="c-pattern-library__h2" id="buttons">Object Button</h2>
-<h3 class="c-pattern-library__h3">Standard</h3>
-<div class="c-pattern-library__component">
+<h2 class="sg-h2" id="buttons">Object Button</h2>
+<h3 class="sg-h3">Standard</h3>
+<div class="sg-component">
   <button class="c-button" type="submit">Button</button>
   <a class="c-button c-button--neutral" href="">Button Neutral</a>
   <a class="c-button c-button--success" href="">Button Success</a>
@@ -22,19 +22,19 @@
   <a class="c-button c-button--disabled" href="">Button Disabled</a>
 </div>
 
-<h3 class="c-pattern-library__h3">Button with icon</h3>
-<div class="c-pattern-library__component">
+<h3 class="sg-h3">Button with icon</h3>
+<div class="sg-component">
   <a class="c-button" href=""><svg class="c-icon c-icon--white"><use xlink:href="#icon-printer" /></svg></a>
   <a class="c-button c-button--neutral" href=""><svg class="c-icon c-icon--inline"><use xlink:href="#icon-printer" /></svg> Button Neutral</a>
 </div>
 
-<h3 class="c-pattern-library__h3">Button large</h3>
-<div class="c-pattern-library__component">
+<h3 class="sg-h3">Button large</h3>
+<div class="sg-component">
   <a class="c-button c-button--large" href="">Button</a>
 </div>
 
-<h3 class="c-pattern-library__h3">Button small</h3>
-<div class="c-pattern-library__component">
+<h3 class="sg-h3">Button small</h3>
+<div class="sg-component">
   <a class="c-button c-button--small" href="">Button</a>
 </div>
 
@@ -42,9 +42,9 @@
 
 
 
-<h2 class="c-pattern-library__h2" id="cards">Object Card</h2>
-<h3 class="c-pattern-library__h3">Image</h3>
-<div class="c-pattern-library__component l-6">
+<h2 class="sg-h2" id="cards">Object Card</h2>
+<h3 class="sg-h3">Image</h3>
+<div class="sg-component l-6">
   <div class="c-card c-card--color-white">
     <div class="c-card__content">
       <h2>Card with image</h2>
@@ -60,8 +60,8 @@
   </div>
 </div>
 
-<h3 class="c-pattern-library__h3">Background image</h3>
-<div class="c-pattern-library__component l-6">
+<h3 class="sg-h3">Background image</h3>
+<div class="sg-component l-6">
   <div class="c-card c-card--color-white">
     <div class="c-card__content">
       <h2>Card with image</h2>
@@ -76,9 +76,9 @@
 
 
 
-<h2 class="c-pattern-library__h2" id="forms">Object Form</h2>
-<h3 class="c-pattern-library__h3">Floated</h3>
-<div class="c-pattern-library__component">
+<h2 class="sg-h2" id="forms">Object Form</h2>
+<h3 class="sg-h3">Floated</h3>
+<div class="sg-component">
   <form action="/" method="post">
     <fieldset>
       <legend>Personal details</legend>
@@ -149,9 +149,9 @@
 
 
 
-<h2 class="c-pattern-library__h2" id="headings">Object Heading</h2>
-<h3 class="c-pattern-library__h3">Standard</h3>
-<div class="c-pattern-library__component">
+<h2 class="sg-h2" id="headings">Object Heading</h2>
+<h3 class="sg-h3">Standard</h3>
+<div class="sg-component">
   <h1 class="c-heading--50">Heading 50</h1>
   <h2 class="c-heading--30"><a href="">Heading 30</a></h2>
   <h3 class="c-heading--10">Heading 10</h3>
@@ -161,9 +161,9 @@
 
 
 
-<h2 class="c-pattern-library__h2" id="icons">Object Icon</h2>
-<h3 class="c-pattern-library__h3">Inline</h3>
-<div class="c-pattern-library__component">
+<h2 class="sg-h2" id="icons">Object Icon</h2>
+<h3 class="sg-h3">Inline</h3>
+<div class="sg-component">
   <svg class="c-icon c-icon--inline"><use xlink:href="#icon-printer" /></svg> Let's grab a coffee.
 </div>
 
@@ -171,9 +171,9 @@
 
 
 
-<h2 class="c-pattern-library__h2" id="labels">Object Label</h2>
-<h3 class="c-pattern-library__h3">Mixed</h3>
-<div class="c-pattern-library__component">
+<h2 class="sg-h2" id="labels">Object Label</h2>
+<h3 class="sg-h3">Mixed</h3>
+<div class="sg-component">
   <span class="c-label">Label</span>
   <span class="c-label c-label--neutral">Label Neutral</span>
   <span class="c-label c-label--success">Label Success</span>
@@ -184,9 +184,9 @@
 
 
 
-<h2 class="c-pattern-library__h2" id="lists">Object List</h2>
-<h3 class="c-pattern-library__h3">Unordered</h3>
-<div class="c-pattern-library__component">
+<h2 class="sg-h2" id="lists">Object List</h2>
+<h3 class="sg-h3">Unordered</h3>
+<div class="sg-component">
   <ul class="c-list">
     <li class="c-list__item">Nice warm brown bread from the big oven</li>
     <li class="c-list__item">Some candy</li>
@@ -195,8 +195,8 @@
   </ul>
 </div>
 
-<h3 class="c-pattern-library__h3">Ordered</h3>
-<div class="c-pattern-library__component">
+<h3 class="sg-h3">Ordered</h3>
+<div class="sg-component">
   <ol class="c-list">
     <li class="c-list__item">I need chocolate</li>
     <li class="c-list__item">Chewing gum</li>
@@ -208,9 +208,9 @@
 
 
 
-<h2 class="c-pattern-library__h2" id="media">Object Media</h2>
-<h3 class="c-pattern-library__h3">Image</h3>
-<div class="c-pattern-library__component">
+<h2 class="sg-h2" id="media">Object Media</h2>
+<h3 class="sg-h3">Image</h3>
+<div class="sg-component">
   <figure class="c-media c-media--image">
     <img class="c-media__image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Canis_lupus_laying.jpg/266px-Canis_lupus_laying.jpg"/>
     <figcaption class="c-media__caption">A Wolf</figcaption>
@@ -221,8 +221,8 @@
 
 
 
-<h3 class="c-pattern-library__h3">Video</h3>
-<div class="c-pattern-library__component">
+<h3 class="sg-h3">Video</h3>
+<div class="sg-component">
   <figure class="c-media c-media--video">
     <iframe src="https://player.vimeo.com/video/155640569?title=0&byline=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
   </figure>
@@ -232,9 +232,9 @@
 
 
 
-<h2 class="c-pattern-library__h2" id="messages">Object Messages</h2>
-<h3 class="c-pattern-library__h3">Mixed</h3>
-<div class="c-pattern-library__component">
+<h2 class="sg-h2" id="messages">Object Messages</h2>
+<h3 class="sg-h3">Mixed</h3>
+<div class="sg-component">
   <ul class="c-messages">
     <li class="c-messages__item">Don't forget to check your tasks</li>
     <li class="c-messages__item c-messages__item--neutral">Did you know about our recent changes?</li>
@@ -247,9 +247,9 @@
 
 
 
-<h2 class="c-pattern-library__h2" id="pagination">Object Pagination</h2>
-<h3 class="c-pattern-library__h3">Standard</h3>
-<div class="c-pattern-library__component">
+<h2 class="sg-h2" id="pagination">Object Pagination</h2>
+<h3 class="sg-h3">Standard</h3>
+<div class="sg-component">
   <ul class="c-pagination">
     <li class="c-pagination__item"><a href="">Previous</a></li>
     <li class="c-pagination__item c-pagination__item--selected"><a href="">3</a></li>
@@ -265,16 +265,16 @@
 
 
 
-<h2 class="c-pattern-library__h2" id="panel">Object Panel</h2>
-<h3 class="c-pattern-library__h3">Neutral</h3>
-<div class="c-pattern-library__component">
+<h2 class="sg-h2" id="panel">Object Panel</h2>
+<h3 class="sg-h3">Neutral</h3>
+<div class="sg-component">
   <div class="c-panel">
     <p>Panel neutral</p>
   </div>
 </div>
 
-<h3 class="c-pattern-library__h3">Primary</h3>
-<div class="c-pattern-library__component">
+<h3 class="sg-h3">Primary</h3>
+<div class="sg-component">
   <div class="c-panel c-panel--primary">
     <p>Panel primary</p>
   </div>
@@ -284,9 +284,9 @@
 
 
 
-<h2 class="c-pattern-library__h2" id="paragraph">Object Paragraph</h2>
-<h3 class="c-pattern-library__h3">Lead</h3>
-<div class="c-pattern-library__component">
+<h2 class="sg-h2" id="paragraph">Object Paragraph</h2>
+<h3 class="sg-h3">Lead</h3>
+<div class="sg-component">
   <p class="c-paragraph c-paragraph--lead">The release of atom power has changed everything except our way of thinking...the solution to this problem lies in the heart of mankind.</p>
 </div>
 
