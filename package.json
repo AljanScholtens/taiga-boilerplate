@@ -1,18 +1,24 @@
 {
   "name": "taiga-boilerplate",
   "description": "Taiga Boilerplate",
-  "version": "2.0.0",
-  "author": "Studio Wolf <hello@studiowolf.com>",
+  "version": "2.1.0",
+  "author": "Aljan Scholtens",
   "license": "MIT",
   "main": "gulpfile.js",
   "devDependencies": {
-    "browserslist": "^1.1.1",
-    "gulp": "^3.9.1",
-    "gulp-cssnano": "^2.1.0",
-    "gulp-postcss": "^6.0.1",
-    "gulp-sourcemaps": "^1.6.0",
-    "lost": "^6.7.1",
-    "postcss-cssnext": "^2.4.0",
-    "postcss-import": "^8.0.2"
+    "browser-sync": "latest",
+    "gulp": "latest",
+    "gulp-cssnano": "latest",
+    "gulp-nunjucks": "latest",
+    "gulp-postcss": "latest",
+    "gulp-smushit": "latest",
+    "gulp-sourcemaps": "latest",
+    "lost": "latest",
+    "postcss-cssnext": "latest",
+    "postcss-import": "latest"
+  },
+  "dependencies": {
+    "connect-modrewrite": "latest",
+    "del": "latest"
   }
 }

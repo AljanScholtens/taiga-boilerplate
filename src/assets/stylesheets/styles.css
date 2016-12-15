@@ -76,19 +76,19 @@
 /**
  * #COMPONENTS
  */
-@import "components.button.css";
-@import "components.card.css";
-@import "components.example.css";
-@import "components.form.css";
-@import "components.heading.css";
-@import "components.icon.css";
-@import "components.label.css";
-@import "components.list.css";
-@import "components.media.css";
-@import "components.messages.css";
-@import "components.pagination.css";
-@import "components.panel.css";
-@import "components.paragraph.css";
+@import "../../components/button/button.css";
+@import "../../components/card/card.css";
+@import "../../components/example/example.css";
+@import "../../components/form/form.css";
+@import "../../components/heading/heading.css";
+@import "../../components/icon/icon.css";
+@import "../../components/label/label.css";
+@import "../../components/list/list.css";
+@import "../../components/media/media.css";
+@import "../../components/messages/messages.css";
+@import "../../components/pagination/pagination.css";
+@import "../../components/panel/panel.css";
+@import "../../components/paragraph/paragraph.css";
 
 
 /**
