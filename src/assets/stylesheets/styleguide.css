@@ -5,6 +5,7 @@
 @import "styles.css";
 
 .sg-wrapper {
+  height: 100%;
 
   @media (--breakpoint-20) {
     display: flex;

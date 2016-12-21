@@ -9,7 +9,7 @@
 
 
 
-  {% from "components/button/button.html" import Button %}
+  <!-- {% from 'components/button/button.html' import Button %} -->
 
   <h2 class="sg-h2" id="buttons">Component Button</h2>
   <h3 class="sg-h3">Standard</h3>
@@ -170,14 +170,29 @@
 
 
 
+  {% from 'components/message/message.html' import Message %}
+
+  <h2 class="sg-h2" id="messages">Component Messages</h2>
+  <h3 class="sg-h3">Mixed</h3>
+  <div class="sg-component">
+    {% call Message() %} Don't forget to check your tasks {% endcall %}
+    {% call Message(type='primary') %} Did you know about our recent changes? {% endcall %}
+    {% call Message(type='success') %} Wow, that's great, you finished your tasks {% endcall %}
+    {% call Message(type='alert') %} Hmm, it's not possible to delete your task {% endcall %}
+  </div>
+
+
+
+
+  {% from 'components/label/label.html' import Label %}
 
   <h2 class="sg-h2" id="labels">Component Label</h2>
   <h3 class="sg-h3">Mixed</h3>
   <div class="sg-component">
-    <span class="c-label">Label</span>
-    <span class="c-label c-label--neutral">Label Neutral</span>
-    <span class="c-label c-label--success">Label Success</span>
-    <span class="c-label c-label--alert">Label Alert</span>
+    {% call Label() %} Label {% endcall %}
+    {% call Label(type='primary') %} Label Primary {% endcall %}
+    {% call Label(type='success') %} Label Success {% endcall %}
+    {% call Label(type='alert') %} Label Alert {% endcall %}
   </div>
 
 
@@ -230,17 +245,15 @@
 
 
 
-
+  {% from 'components/message/message.html' import Message %}
 
   <h2 class="sg-h2" id="messages">Component Messages</h2>
   <h3 class="sg-h3">Mixed</h3>
   <div class="sg-component">
-    <ul class="c-messages">
-      <li class="c-messages__item">Don't forget to check your tasks</li>
-      <li class="c-messages__item c-messages__item--neutral">Did you know about our recent changes?</li>
-      <li class="c-messages__item c-messages__item--success">Wow, that's great, you finished your tasks</li>
-      <li class="c-messages__item c-messages__item--alert">Hmm, it's not possible to delete your task</li>
-    </ul>
+    {% call Message() %} Don't forget to check your tasks {% endcall %}
+    {% call Message(type='primary') %} Did you know about our recent changes? {% endcall %}
+    {% call Message(type='success') %} Wow, that's great, you finished your tasks {% endcall %}
+    {% call Message(type='alert') %} Hmm, it's not possible to delete your task {% endcall %}
   </div>
 
 
@@ -264,7 +277,7 @@
 
 
 
-  {% from "components/panel/panel.html" import Panel %}
+  <!-- {% from 'components/panel/panel.html' import Panel %} -->
 
   <h2 class="sg-h2" id="panel">Component Panel</h2>
   <h3 class="sg-h3">Neutral</h3>

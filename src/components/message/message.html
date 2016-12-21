@@ -1,0 +1,5 @@
+{% macro Message(type='neutral') %}
+  {% set typeClass = type and 'c-message--' + type %}
+
+  <div class="c-message {{ typeClass }}">{{ caller() }}</div>
+{% endmacro %}
