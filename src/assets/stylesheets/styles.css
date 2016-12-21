@@ -19,25 +19,23 @@
  * Type.................Header, links, paragraphs
  * Quote................Blockquote
  *
- * LAYOUT
- * Wrapper..............Wrappers for full width backgrounds
- * Container............Container to center your web site
- * Grid.................Global grid system based on Lost
- *
  * COMPONENTS
  * Button...............Buttons
  * Card.................Cards
+ * Container............Container to center your web site
  * Example..............Example of how a component is build up
  * Form.................Forms
+ * Grid.................Global grid system based on Lost
  * Heading..............Heading
  * Icon.................Icons
  * Label................Labels
  * List.................List
  * Media................Media
- * Messages.............Messages
+ * Message..............Message
  * Pagination...........Pagination
  * Panel................Panels
  * Paragraph............Paragraph
+ * Wrapper..............Wrappers for full width backgrounds
  *
  * Utilities
  * Global...............Global utility states like u-hidden
@@ -66,29 +64,24 @@
 
 
 /**
- * #LAYOUT
- */
-@import "layout.wrapper.css";
-@import "layout.container.css";
-@import "layout.grid.css";
-
-
-/**
  * #COMPONENTS
  */
 @import "../../components/button/button.css";
 @import "../../components/card/card.css";
+@import "../../components/container/container.css";
 @import "../../components/example/example.css";
 @import "../../components/form/form.css";
+@import "../../components/grid/grid.css";
 @import "../../components/heading/heading.css";
 @import "../../components/icon/icon.css";
 @import "../../components/label/label.css";
 @import "../../components/list/list.css";
 @import "../../components/media/media.css";
-@import "../../components/messages/messages.css";
+@import "../../components/message/message.css";
 @import "../../components/pagination/pagination.css";
 @import "../../components/panel/panel.css";
 @import "../../components/paragraph/paragraph.css";
+@import "../../components/wrapper/wrapper.css";
 
 
 /**

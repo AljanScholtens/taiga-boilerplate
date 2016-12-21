@@ -1,3 +1,5 @@
-<div class="c-panel">
-  <p>Panel neutral</p>
-</div>
+{% macro Panel(type='neutral') %}
+  <div class="c-panel {{ type }}">
+    {{ caller() }}
+  </div>
+{% endmacro %}

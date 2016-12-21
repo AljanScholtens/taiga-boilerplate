@@ -30,7 +30,7 @@ gulp.task('serve', ['build', 'watch'], function() {
 
 gulp.task('watch', function() {
   gulp.watch('src/**/*.html', ['html'])
-  gulp.watch('src/assets/stylesheets/**/*.css', ['css'])
+  gulp.watch('src/**/*.css', ['css'])
   gulp.watch('src/assets/images/**/*', ['images'])
   gulp.watch('src/assets/media/**/*', ['media'])
   gulp.watch('src/assets/scripts/**/*', ['scripts'])

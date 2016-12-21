@@ -8,11 +8,11 @@
 
   @media (--breakpoint-20) {
     display: flex;
-    position: absolute;
+    /*position: absolute;
     left: 0;
     top: 0;
     right: 0;
-    bottom: 0;
+    bottom: 0;*/
   }
 }
 
@@ -20,18 +20,18 @@
   background: var(--color-neutral-10);
 
   @media (--breakpoint-20) {
-    overflow-y: auto;
+    /*overflow-y: auto;
+    -webkit-overflow-scrolling: touch;*/
     flex: 0 0 16rem;
-    -webkit-overflow-scrolling: touch;
   }
 }
 
 .sg-main {
 
   @media (--breakpoint-20) {
-    overflow-y: auto;
+    /*overflow-y: auto;
+    -webkit-overflow-scrolling: touch;*/
     flex: auto;
-    -webkit-overflow-scrolling: touch;
   }
 }
 

@@ -4,43 +4,45 @@
 
 {% block content %}
 
-  <h1 class="c-heading c-heading--30 u-spacing">{{page_title}}</h1>
+  <h1 class="c-heading c-heading--30 u-spacing">{{ page_title }}</h1>
 
 
 
 
+  {% from "components/button/button.html" import Button %}
 
-  <h2 class="sg-h2" id="buttons">Object Button</h2>
+  <h2 class="sg-h2" id="buttons">Component Button</h2>
   <h3 class="sg-h3">Standard</h3>
   <div class="sg-component">
-    <button class="c-button" type="submit">Button</button>
-    <a class="c-button c-button--neutral" href="">Button Neutral</a>
-    <a class="c-button c-button--success" href="">Button Success</a>
-    <a class="c-button c-button--alert" href="">Button Alert</a>
-    <a class="c-button c-button--disabled" href="">Button Disabled</a>
+    {% call Button(url='http://github.com') %} Button {% endcall %}
+    {% call Button(type='primary') %} Button Primary {% endcall %}
+    {% call Button(type='success') %} Button Success {% endcall %}
+    {% call Button(type='alert') %} Button Alert {% endcall %}
+    {% call Button(type='disabled') %} Button Disabled {% endcall %}
   </div>
 
   <h3 class="sg-h3">Button with icon</h3>
   <div class="sg-component">
-    <a class="c-button" href=""><svg class="c-icon c-icon--white"><use xlink:href="#icon-printer" /></svg></a>
-    <a class="c-button c-button--neutral" href=""><svg class="c-icon c-icon--inline"><use xlink:href="#icon-printer" /></svg> Button Neutral</a>
+    {% call Button(icon='printer') %} Button {% endcall %}
+    {% call Button(type='primary', icon='printer', iconPosition='right') %} Button {% endcall %}
+    {% call Button(icon='printer') %}{% endcall %}
   </div>
 
   <h3 class="sg-h3">Button large</h3>
   <div class="sg-component">
-    <a class="c-button c-button--large" href="">Button</a>
+    {% call Button(size='large') %} Button Large {% endcall %}
   </div>
 
   <h3 class="sg-h3">Button small</h3>
   <div class="sg-component">
-    <a class="c-button c-button--small" href="">Button</a>
+    {% call Button(size='small') %} Button Small {% endcall %}
   </div>
 
 
 
 
 
-  <h2 class="sg-h2" id="cards">Object Card</h2>
+  <h2 class="sg-h2" id="cards">Component Card</h2>
   <h3 class="sg-h3">Image</h3>
   <div class="sg-component l-6">
     <div class="c-card c-card--color-white">
@@ -74,7 +76,7 @@
 
 
 
-  <h2 class="sg-h2" id="forms">Object Form</h2>
+  <h2 class="sg-h2" id="forms">Component Form</h2>
   <h3 class="sg-h3">Floated</h3>
   <div class="sg-component">
     <form action="/" method="post">
@@ -147,7 +149,7 @@
 
 
 
-  <h2 class="sg-h2" id="headings">Object Heading</h2>
+  <h2 class="sg-h2" id="headings">Component Heading</h2>
   <h3 class="sg-h3">Standard</h3>
   <div class="sg-component">
     <h1 class="c-heading--50">Heading 50</h1>
@@ -159,7 +161,7 @@
 
 
 
-  <h2 class="sg-h2" id="icons">Object Icon</h2>
+  <h2 class="sg-h2" id="icons">Component Icon</h2>
   <h3 class="sg-h3">Inline</h3>
   <div class="sg-component">
     <svg class="c-icon c-icon--inline"><use xlink:href="#icon-printer" /></svg> Let's grab a coffee.
@@ -169,7 +171,7 @@
 
 
 
-  <h2 class="sg-h2" id="labels">Object Label</h2>
+  <h2 class="sg-h2" id="labels">Component Label</h2>
   <h3 class="sg-h3">Mixed</h3>
   <div class="sg-component">
     <span class="c-label">Label</span>
@@ -182,7 +184,7 @@
 
 
 
-  <h2 class="sg-h2" id="lists">Object List</h2>
+  <h2 class="sg-h2" id="lists">Component List</h2>
   <h3 class="sg-h3">Unordered</h3>
   <div class="sg-component">
     <ul class="c-list">
@@ -206,7 +208,7 @@
 
 
 
-  <h2 class="sg-h2" id="media">Object Media</h2>
+  <h2 class="sg-h2" id="media">Component Media</h2>
   <h3 class="sg-h3">Image</h3>
   <div class="sg-component">
     <figure class="c-media c-media--image">
@@ -230,7 +232,7 @@
 
 
 
-  <h2 class="sg-h2" id="messages">Object Messages</h2>
+  <h2 class="sg-h2" id="messages">Component Messages</h2>
   <h3 class="sg-h3">Mixed</h3>
   <div class="sg-component">
     <ul class="c-messages">
@@ -245,7 +247,7 @@
 
 
 
-  <h2 class="sg-h2" id="pagination">Object Pagination</h2>
+  <h2 class="sg-h2" id="pagination">Component Pagination</h2>
   <h3 class="sg-h3">Standard</h3>
   <div class="sg-component">
     <ul class="c-pagination">
@@ -262,27 +264,28 @@
 
 
 
+  {% from "components/panel/panel.html" import Panel %}
 
-  <h2 class="sg-h2" id="panel">Object Panel</h2>
+  <h2 class="sg-h2" id="panel">Component Panel</h2>
   <h3 class="sg-h3">Neutral</h3>
   <div class="sg-component">
-    <div class="c-panel">
+    {% call Panel() %}
       <p>Panel neutral</p>
-    </div>
+    {% endcall %}
   </div>
 
   <h3 class="sg-h3">Primary</h3>
   <div class="sg-component">
-    <div class="c-panel c-panel--primary">
+    {% call Panel(type='c-panel--primary') %}
       <p>Panel primary</p>
-    </div>
+    {% endcall %}
   </div>
 
 
 
 
 
-  <h2 class="sg-h2" id="paragraph">Object Paragraph</h2>
+  <h2 class="sg-h2" id="paragraph">Component Paragraph</h2>
   <h3 class="sg-h3">Lead</h3>
   <div class="sg-component">
     <p class="c-paragraph c-paragraph--lead">The release of atom power has changed everything except our way of thinking...the solution to this problem lies in the heart of mankind.</p>

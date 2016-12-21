@@ -1,5 +1,7 @@
 {% extends 'layout/base.html' %}
 
+{% from "components/panel/panel.html" import Panel %}
+
 {% set page_title = 'Home' %}
 
 {% block content %}
@@ -28,7 +30,9 @@
       <li class="c-list__item">Questions? Mail me at <a href="mailto:aljan@studiowolf.com">aljan@scholtens.me</a> or tweet to <a href="http://twitter.com/aljanscholtens/">@AljanScholtens</a>.</li>
     </ul>
 
-    {% include 'components/panel/panel.html' %}
+    {% call Panel() %}
+      <p>Dit is een test</p>
+    {% endcall %}
 
   </div>
 
