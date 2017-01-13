@@ -51,7 +51,25 @@
     {% include 'components/Card/example.html' %}
   </div>
 
+  <h2 class="sg-h2" id="list">Media</h2>
+  <div class="sg-component">
+    {% include 'components/Media/example.html' %}
+  </div>
 
+  <h2 class="sg-h2" id="list">Pagination</h2>
+  <div class="sg-component">
+    {% include 'components/Pagination/example.html' %}
+  </div>
+
+
+
+  Ok, voor het form heb je de volgende componenten:
+
+  Form
+  FormField
+  FormInput (type=text, email, number etc etc)
+  FormSelect
+  FormTextarea
 
 
   <h2 class="sg-h2" id="forms">Component Form</h2>
@@ -122,55 +140,5 @@
       </fieldset>
     </form>
   </div>
-
-
-
-
-
-
-
-
-
-
-  <h2 class="sg-h2" id="media">Component Media</h2>
-  <h3 class="sg-h3">Image</h3>
-  <div class="sg-component">
-    <figure class="c-media c-media--image">
-      <img class="c-media__image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Canis_lupus_laying.jpg/266px-Canis_lupus_laying.jpg"/>
-      <figcaption class="c-media__caption">A Wolf</figcaption>
-    </figure>
-  </div>
-
-  <h3 class="sg-h3">Video</h3>
-  <div class="sg-component">
-    <figure class="c-media c-media--video">
-      <iframe src="https://player.vimeo.com/video/155640569?title=0&byline=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-    </figure>
-  </div>
-
-
-
-
-
-  <h2 class="sg-h2" id="pagination">Component Pagination</h2>
-  <h3 class="sg-h3">Standard</h3>
-  <div class="sg-component">
-    <ul class="c-pagination">
-      <li class="c-pagination__item"><a href="">Previous</a></li>
-      <li class="c-pagination__item c-pagination__item--selected"><a href="">3</a></li>
-      <li class="c-pagination__item"><a href="">4</a></li>
-      <li class="c-pagination__item c-pagination__item--gap">...</li>
-      <li class="c-pagination__item"><a href="">11</a></li>
-      <li class="c-pagination__item"><a href="">12</a></li>
-      <li class="c-pagination__item"><a href="">Next</a></li>
-    </ul>
-  </div>
-
-
-
-
-
-
-
 
 {% endblock %}
