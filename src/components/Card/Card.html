@@ -1,0 +1,26 @@
+{% from "components/Heading/Heading.html" import Heading %}
+
+{% macro Card(type='white', title='', image='') %}
+  {% set typeClass = type and 'c-card--' + type %}
+
+  <div class="c-card {{ typeClass }}">
+
+    {% if title %}
+      <div class="c-card__content">
+        {% call Heading(size='10', element='h2') %}
+          {{ title }}
+        {% endcall %}
+      </div>
+    {% endif %}
+
+    {% if image %}
+      <div class="c-card__image">
+        <img src="{{ image }}" />
+      </div>
+    {% endif %}
+
+    <div class="c-card__content">
+      {{ caller() }}
+    </div>
+  </div>
+{% endmacro %}

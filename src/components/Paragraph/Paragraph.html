@@ -1,0 +1,7 @@
+{% macro Paragraph(type='') %}
+  {% set typeClass = type and 'c-paragraph--' + type %}
+
+  <p class="c-paragraph {{ typeClass }}">
+    {{ caller() }}
+  </p>
+{% endmacro %}

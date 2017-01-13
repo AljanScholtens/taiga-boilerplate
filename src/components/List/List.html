@@ -1,0 +1,13 @@
+{% macro List(type='unordered') %}
+
+  {% if type == 'ordered' %}
+    <ol class="c-list">
+      {{ caller() }}
+    </ol>
+  {% else %}
+    <ul class="c-list">
+      {{ caller() }}
+    </ul>
+  {% endif %}
+
+{% endmacro %}

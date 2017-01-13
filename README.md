@@ -54,6 +54,13 @@ Soon
   & strong { property: value; }
 }
 
+  /*
+   * Element
+   */
+  .c-example__subcomponent {
+    property: value;
+  }
+
 /*
  * Modifier
  */
@@ -61,12 +68,6 @@ Soon
   property: value;
 }
 
-/*
- * Element
- */
-.c-example__subcomponent {
-  property: value;
-}
 ```
 
 ## Grid

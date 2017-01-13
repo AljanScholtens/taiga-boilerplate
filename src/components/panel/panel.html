@@ -1,5 +1,7 @@
 {% macro Panel(type='neutral') %}
-  <div class="c-panel {{ type }}">
+  {% set typeClass = type and 'c-panel--' + type %}
+
+  <div class="c-panel {{ typeClass }}">
     {{ caller() }}
   </div>
 {% endmacro %}

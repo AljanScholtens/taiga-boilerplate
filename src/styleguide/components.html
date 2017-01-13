@@ -6,72 +6,50 @@
 
   <h1 class="c-heading c-heading--30 u-spacing">{{ page_title }}</h1>
 
-
-
-
-  <!-- {% from 'components/button/button.html' import Button %} -->
-
-  <h2 class="sg-h2" id="buttons">Component Button</h2>
-  <h3 class="sg-h3">Standard</h3>
+  <h2 class="sg-h2" id="button">Button</h2>
   <div class="sg-component">
-    {% call Button(url='http://github.com') %} Button {% endcall %}
-    {% call Button(type='primary') %} Button Primary {% endcall %}
-    {% call Button(type='success') %} Button Success {% endcall %}
-    {% call Button(type='alert') %} Button Alert {% endcall %}
-    {% call Button(type='disabled') %} Button Disabled {% endcall %}
+    {% include 'components/Button/example.html' %}
   </div>
 
-  <h3 class="sg-h3">Button with icon</h3>
+  <h2 class="sg-h2" id="message">Message</h2>
   <div class="sg-component">
-    {% call Button(icon='printer') %} Button {% endcall %}
-    {% call Button(type='primary', icon='printer', iconPosition='right') %} Button {% endcall %}
-    {% call Button(icon='printer') %}{% endcall %}
+    {% include 'components/Message/example.html' %}
   </div>
 
-  <h3 class="sg-h3">Button large</h3>
+  <h2 class="sg-h2" id="panel">Panel</h2>
   <div class="sg-component">
-    {% call Button(size='large') %} Button Large {% endcall %}
+    {% include 'components/Panel/example.html' %}
   </div>
 
-  <h3 class="sg-h3">Button small</h3>
+  <h2 class="sg-h2" id="label">Label</h2>
   <div class="sg-component">
-    {% call Button(size='small') %} Button Small {% endcall %}
+    {% include 'components/Label/example.html' %}
   </div>
 
-
-
-
-
-  <h2 class="sg-h2" id="cards">Component Card</h2>
-  <h3 class="sg-h3">Image</h3>
-  <div class="sg-component l-6">
-    <div class="c-card c-card--color-white">
-      <div class="c-card__content">
-        <h2>Card with image</h2>
-      </div>
-
-      <div class="c-card__image">
-        <img src="https://kisanakbijak.files.wordpress.com/2011/11/amazing-wolf-0291.jpg" />
-      </div>
-
-      <div class="c-card__content">
-        <p>The release of atom power has changed everything except our way of thinking...the solution to this problem lies in the heart of mankind.</p>
-      </div>
-    </div>
+  <h2 class="sg-h2" id="heading">Heading</h2>
+  <div class="sg-component">
+    {% include 'components/Heading/example.html' %}
   </div>
 
-  <h3 class="sg-h3">Background image</h3>
-  <div class="sg-component l-6">
-    <div class="c-card c-card--color-white">
-      <div class="c-card__content">
-        <h2>Card with image</h2>
-        <p>The release of atom power has changed everything except our way of thinking...the solution to this problem lies in the heart of mankind.</p>
-      </div>
-
-      <div class="c-card__image--background" style="background-image: url('https://kisanakbijak.files.wordpress.com/2011/11/amazing-wolf-0291.jpg')"></div>
-    </div>
+  <h2 class="sg-h2" id="icon">Icon</h2>
+  <div class="sg-component">
+    {% include 'components/Icon/example.html' %}
   </div>
 
+  <h2 class="sg-h2" id="list">List &amp; ListItem</h2>
+  <div class="sg-component">
+    {% include 'components/List/example.html' %}
+  </div>
+
+  <h2 class="sg-h2" id="list">Paragraph</h2>
+  <div class="sg-component">
+    {% include 'components/Paragraph/example.html' %}
+  </div>
+
+  <h2 class="sg-h2" id="list">Card</h2>
+  <div class="sg-component">
+    {% include 'components/Card/example.html' %}
+  </div>
 
 
 
@@ -149,75 +127,6 @@
 
 
 
-  <h2 class="sg-h2" id="headings">Component Heading</h2>
-  <h3 class="sg-h3">Standard</h3>
-  <div class="sg-component">
-    <h1 class="c-heading--50">Heading 50</h1>
-    <h2 class="c-heading--30"><a href="">Heading 30</a></h2>
-    <h3 class="c-heading--10">Heading 10</h3>
-  </div>
-
-
-
-
-
-  <h2 class="sg-h2" id="icons">Component Icon</h2>
-  <h3 class="sg-h3">Inline</h3>
-  <div class="sg-component">
-    <svg class="c-icon c-icon--inline"><use xlink:href="#icon-printer" /></svg> Let's grab a coffee.
-  </div>
-
-
-
-
-  {% from 'components/message/message.html' import Message %}
-
-  <h2 class="sg-h2" id="messages">Component Messages</h2>
-  <h3 class="sg-h3">Mixed</h3>
-  <div class="sg-component">
-    {% call Message() %} Don't forget to check your tasks {% endcall %}
-    {% call Message(type='primary') %} Did you know about our recent changes? {% endcall %}
-    {% call Message(type='success') %} Wow, that's great, you finished your tasks {% endcall %}
-    {% call Message(type='alert') %} Hmm, it's not possible to delete your task {% endcall %}
-  </div>
-
-
-
-
-  {% from 'components/label/label.html' import Label %}
-
-  <h2 class="sg-h2" id="labels">Component Label</h2>
-  <h3 class="sg-h3">Mixed</h3>
-  <div class="sg-component">
-    {% call Label() %} Label {% endcall %}
-    {% call Label(type='primary') %} Label Primary {% endcall %}
-    {% call Label(type='success') %} Label Success {% endcall %}
-    {% call Label(type='alert') %} Label Alert {% endcall %}
-  </div>
-
-
-
-
-
-  <h2 class="sg-h2" id="lists">Component List</h2>
-  <h3 class="sg-h3">Unordered</h3>
-  <div class="sg-component">
-    <ul class="c-list">
-      <li class="c-list__item">Nice warm brown bread from the big oven</li>
-      <li class="c-list__item">Some candy</li>
-      <li class="c-list__item">Dinner with salmon and spinach</li>
-      <li class="c-list__item">And I love ice cream</li>
-    </ul>
-  </div>
-
-  <h3 class="sg-h3">Ordered</h3>
-  <div class="sg-component">
-    <ol class="c-list">
-      <li class="c-list__item">I need chocolate</li>
-      <li class="c-list__item">Chewing gum</li>
-      <li class="c-list__item">Nice lollypop</li>
-    </ol>
-  </div>
 
 
 
@@ -232,28 +141,11 @@
     </figure>
   </div>
 
-
-
-
-
   <h3 class="sg-h3">Video</h3>
   <div class="sg-component">
     <figure class="c-media c-media--video">
       <iframe src="https://player.vimeo.com/video/155640569?title=0&byline=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
     </figure>
-  </div>
-
-
-
-  {% from 'components/message/message.html' import Message %}
-
-  <h2 class="sg-h2" id="messages">Component Messages</h2>
-  <h3 class="sg-h3">Mixed</h3>
-  <div class="sg-component">
-    {% call Message() %} Don't forget to check your tasks {% endcall %}
-    {% call Message(type='primary') %} Did you know about our recent changes? {% endcall %}
-    {% call Message(type='success') %} Wow, that's great, you finished your tasks {% endcall %}
-    {% call Message(type='alert') %} Hmm, it's not possible to delete your task {% endcall %}
   </div>
 
 
@@ -275,34 +167,6 @@
   </div>
 
 
-
-
-  <!-- {% from 'components/panel/panel.html' import Panel %} -->
-
-  <h2 class="sg-h2" id="panel">Component Panel</h2>
-  <h3 class="sg-h3">Neutral</h3>
-  <div class="sg-component">
-    {% call Panel() %}
-      <p>Panel neutral</p>
-    {% endcall %}
-  </div>
-
-  <h3 class="sg-h3">Primary</h3>
-  <div class="sg-component">
-    {% call Panel(type='c-panel--primary') %}
-      <p>Panel primary</p>
-    {% endcall %}
-  </div>
-
-
-
-
-
-  <h2 class="sg-h2" id="paragraph">Component Paragraph</h2>
-  <h3 class="sg-h3">Lead</h3>
-  <div class="sg-component">
-    <p class="c-paragraph c-paragraph--lead">The release of atom power has changed everything except our way of thinking...the solution to this problem lies in the heart of mankind.</p>
-  </div>
 
 
 

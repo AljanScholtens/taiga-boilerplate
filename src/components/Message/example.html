@@ -1,0 +1,6 @@
+{% from 'components/Message/Message.html' import Message %}
+
+{% call Message() %} Don't forget to check your tasks {% endcall %}
+{% call Message(type='primary') %} Did you know about our recent changes? {% endcall %}
+{% call Message(type='success') %} Wow, that's great, you finished your tasks {% endcall %}
+{% call Message(type='alert') %} Hmm, it's not possible to delete your task {% endcall %}

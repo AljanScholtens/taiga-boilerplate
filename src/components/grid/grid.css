@@ -5,43 +5,48 @@
 /*
  * Add your own grid items
  */
+.c-grid {
 
-.l-3 {
+}
+
+/* Columns */
+.c-grid--3 {
 
   @media (--breakpoint-10) {
     lost-column: 3/12;
   }
 }
 
-.l-4 {
+.c-grid--4 {
 
   @media (--breakpoint-10) {
     lost-column: 4/12;
   }
 }
 
-.l-6 {
+.c-grid--6 {
 
   @media (--breakpoint-10) {
     lost-column: 6/12;
   }
 }
 
-.l-8 {
+.c-grid--8 {
 
   @media (--breakpoint-10) {
     lost-column: 8/12;
   }
 }
 
-.l-9 {
+.c-grid--9 {
 
   @media (--breakpoint-10) {
     lost-column: 9/12;
   }
 }
 
-.l-single {
+/* Types */
+.c-grid--single {
   max-width: 36rem;
   margin: auto;
   clear: both;

@@ -23,7 +23,6 @@
  * Button...............Buttons
  * Card.................Cards
  * Container............Container to center your web site
- * Example..............Example of how a component is build up
  * Form.................Forms
  * Grid.................Global grid system based on Lost
  * Heading..............Heading
@@ -66,22 +65,22 @@
 /**
  * #COMPONENTS
  */
-@import "../../components/button/button.css";
-@import "../../components/card/card.css";
-@import "../../components/container/container.css";
-@import "../../components/example/example.css";
-@import "../../components/form/form.css";
-@import "../../components/grid/grid.css";
-@import "../../components/heading/heading.css";
-@import "../../components/icon/icon.css";
-@import "../../components/label/label.css";
-@import "../../components/list/list.css";
-@import "../../components/media/media.css";
-@import "../../components/message/message.css";
-@import "../../components/pagination/pagination.css";
-@import "../../components/panel/panel.css";
-@import "../../components/paragraph/paragraph.css";
-@import "../../components/wrapper/wrapper.css";
+@import "../../components/Button/Button.css";
+@import "../../components/Card/Card.css";
+@import "../../components/Container/Container.css";
+@import "../../components/Form/Form.css";
+@import "../../components/Grid/Grid.css";
+@import "../../components/Heading/Heading.css";
+@import "../../components/Icon/Icon.css";
+@import "../../components/Label/Label.css";
+@import "../../components/List/List.css";
+@import "../../components/ListItem/ListItem.css";
+@import "../../components/Media/Media.css";
+@import "../../components/Message/Message.css";
+@import "../../components/Pagination/Pagination.css";
+@import "../../components/Panel/Panel.css";
+@import "../../components/Paragraph/Paragraph.css";
+@import "../../components/Wrapper/Wrapper.css";
 
 
 /**

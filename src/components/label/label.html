@@ -1,5 +1,5 @@
 {% macro Label(type='neutral') %}
-  {% set typeClass = type and 'c-message--' + type %}
+  {% set typeClass = type and 'c-label--' + type %}
 
   <span class="c-label {{ typeClass }}">{{ caller() }}</span>
 {% endmacro %}

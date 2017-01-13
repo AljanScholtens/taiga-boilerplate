@@ -1,0 +1,8 @@
+{% macro Grid(columns='', type='') %}
+  {% set columnsClass = columns and 'c-grid--' + columns %}
+  {% set typeClass = type and 'c-grid--' + type %}
+
+  <div class="c-grid {{ columnsClass }} {{ typeClass }}">
+    {{ caller() }}
+  </div>
+{% endmacro %}
