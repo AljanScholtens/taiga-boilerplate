@@ -1,0 +1,5 @@
+{% macro FormTextarea(placeholder='') %}
+
+  <textarea cols="50" rows="6" placeholder="{{ placeholder }}">{{ caller() }}</textarea>
+
+{% endmacro %}

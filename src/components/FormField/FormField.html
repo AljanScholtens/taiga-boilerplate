@@ -1,0 +1,9 @@
+{% macro FormField(label='', error='', description='') %}
+
+  <div class="c-form-field {% if error == 'true' %} c-form-field--error {% endif %}">
+    <label>{{ label }}</label>
+    {{ caller() }}
+    <small>{{ description }}</small>
+  </div>
+
+{% endmacro %}

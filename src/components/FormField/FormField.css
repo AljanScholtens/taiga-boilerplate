@@ -1,0 +1,12 @@
+/*------------------------------------*\
+  #COMPONENTS-FORM-FIELD
+\*------------------------------------*/
+
+.c-form-field {
+
+}
+
+.c-form-field--error {
+
+  color: var(--color-alert-50);
+}

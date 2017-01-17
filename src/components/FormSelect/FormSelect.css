@@ -1,0 +1,17 @@
+.c-form-select {
+  border: 1px solid var(--color-neutral-30);
+  border-radius: var(--border-radius-10);
+  box-shadow: 0px 1px 3px color(var(--color-neutral-10) alpha(10%));
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  background: url('image.svg') right 0.5rem center no-repeat;
+
+  & select {
+    border: none;
+    box-shadow: none;
+    background: transparent;
+    background-image: none;
+    -webkit-appearance: none;
+  }
+}

@@ -1,0 +1,5 @@
+{% macro FormInput(type='text', value='', placeholder='', disabled='false') %}
+
+  <input type="{{ type }}" placeholder="{{ placeholder }}" value="{{ value }}" {% if disabled == 'true' %} disabled {% endif %}>
+
+{% endmacro %}

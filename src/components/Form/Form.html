@@ -1,0 +1,8 @@
+{% from 'components/FormInput/FormInput.html' import FormInput %}
+
+{% macro Form(value='', type='', description='', label='') %}
+
+  {{ FormInput(value=value) }}
+  <label>{{ label }}</label>
+
+{% endmacro %}

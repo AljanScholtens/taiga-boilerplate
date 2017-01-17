@@ -61,84 +61,39 @@
     {% include 'components/Pagination/example.html' %}
   </div>
 
-
-
-  Ok, voor het form heb je de volgende componenten:
-
-  Form
-  FormField
-  FormInput (type=text, email, number etc etc)
-  FormSelect
-  FormTextarea
-
-
-  <h2 class="sg-h2" id="forms">Component Form</h2>
-  <h3 class="sg-h3">Floated</h3>
+  <h2 class="sg-h2" id="list">FormInput</h2>
   <div class="sg-component">
-    <form action="/" method="post">
-      <fieldset>
-        <legend>Personal details</legend>
-        <ul class="c-form">
-          <li class="c-form__item">
-            <label class="c-form__label" for="#TAG1">Name</label>
-            <div class="c-form__fields">
-              <input type="text" id="#TAG1" name="#TAG1" />
-              <small>Please add your first and last name</small>
-            </div>
-          </li>
-          <li class="c-form__item c-form__item--error">
-            <label class="c-form__label" for="#TAG3">E-mail</label>
-            <div class="c-form__fields">
-              <input type="text" id="#TAG3" name="#TAG3" />
-              <ul class="c-form__errors">
-                <li>Oh no, that can't be your e-mail address</li>
-              </ul>
-            </div>
-          </li>
-          <li class="c-form__item">
-            <label class="c-form__label" for="#TAG4">Suggestions</label>
-            <div class="c-form__fields">
+    {% include 'components/FormInput/example.html' %}
+  </div>
 
-              <select>
-                <option value="volvo">Volvo</option>
-                <option value="saab">Saab</option>
-                <option value="opel">Opel</option>
-                <option value="audi">Audi</option>
-              </select>
+  <h2 class="sg-h2" id="list">FormSelect</h2>
+  <div class="sg-component">
+    {% include 'components/FormSelect/example.html' %}
+  </div>
 
-              <br />
+  <h2 class="sg-h2" id="list">FormTextarea</h2>
+  <div class="sg-component">
+    {% include 'components/FormTextarea/example.html' %}
+  </div>
 
-              <select multiple>
-                <option value="volvo">Volvo</option>
-                <option value="saab">Saab</option>
-                <option value="opel">Opel</option>
-                <option value="audi">Audi</option>
-              </select>
+  <h2 class="sg-h2" id="list">FormRadiobutton</h2>
+  <div class="sg-component">
+    {% include 'components/FormRadiobutton/example.html' %}
+  </div>
 
-              <br />
+  <h2 class="sg-h2" id="list">FormCheckbox</h2>
+  <div class="sg-component">
+    {% include 'components/FormCheckbox/example.html' %}
+  </div>
 
-              <textarea cols="50" rows="6" id="#TAG4" name="#TAG4"></textarea>
-              <small>Your suggestions and feedback would be really helpful to us</small>
-            </div>
-          </li>
-          <li class="c-form__item">
-            <label class="c-form__label">Subscription</label>
-            <div class="c-form__fields">
-              <p class="c-form__description">Premium</p>
-            </div>
-          </li>
-          <li class="c-form__item">
-            <label class="c-form__label" for="#TAG6">Extra options</label>
-            <div class="c-form__fields">
-              <ul class="c-form__checklist">
-                <li><label for="#TAG6"><input type="checkbox" id="#TAG6" name="#TAG6" />I want to receive awesome newsletters</label></li>
-                <li><label for="#TAG7"><input type="checkbox" id="#TAG7" name="#TAG7" />Send me a wolf doll</label></li>
-              </ul>
-            </div>
-          </li>
-        </ul>
-      </fieldset>
-    </form>
+  <h2 class="sg-h2" id="list">FormField</h2>
+  <div class="sg-component">
+    {% include 'components/FormField/example.html' %}
+  </div>
+
+  <h2 class="sg-h2" id="list">Form</h2>
+  <div class="sg-component">
+    {% include 'components/Form/example.html' %}
   </div>
 
 {% endblock %}

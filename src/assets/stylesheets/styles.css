@@ -2,44 +2,6 @@
   #STYLES
 \*------------------------------------*/
 
-/**
- * CONTENTS
- *
- * SETTINGS
- * Global...............Global variables and settings
- * Colors...............Global color variables
- *
- * TOOLS
- * -
- *
- * BASE
- * Page.................Page setup like html and body
- * Form.................Inputs
- * Table................Table
- * Type.................Header, links, paragraphs
- * Quote................Blockquote
- *
- * COMPONENTS
- * Button...............Buttons
- * Card.................Cards
- * Container............Container to center your web site
- * Form.................Forms
- * Grid.................Global grid system based on Lost
- * Heading..............Heading
- * Icon.................Icons
- * Label................Labels
- * List.................List
- * Media................Media
- * Message..............Message
- * Pagination...........Pagination
- * Panel................Panels
- * Paragraph............Paragraph
- * Wrapper..............Wrappers for full width backgrounds
- *
- * Utilities
- * Global...............Global utility states like u-hidden
- */
-
 
 /*
  * #SETTINGS
@@ -69,6 +31,8 @@
 @import "../../components/Card/Card.css";
 @import "../../components/Container/Container.css";
 @import "../../components/Form/Form.css";
+@import "../../components/FormField/FormField.css";
+@import "../../components/FormSelect/FormSelect.css";
 @import "../../components/Grid/Grid.css";
 @import "../../components/Heading/Heading.css";
 @import "../../components/Icon/Icon.css";
