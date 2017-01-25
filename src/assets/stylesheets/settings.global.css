@@ -57,7 +57,6 @@
   /*
    * Grid gutter used in tools.grid, 12 columns is standard
    */
-  @lost gutter 32px;
   --gutter: 32px;
 
 

@@ -7,43 +7,54 @@
  */
 .c-grid {
 
+  @media (--breakpoint-10) {
+    float: left;
+    min-height: 1px;
+    padding-right: var(--gutter);
+
+    &:last-of-type {
+      padding-right: 0;
+    }
+  }
 }
+
 
 /* Columns */
 .c-grid--3 {
 
   @media (--breakpoint-10) {
-    lost-column: 3/12;
+    width: 25%;
   }
 }
 
 .c-grid--4 {
 
   @media (--breakpoint-10) {
-    lost-column: 4/12;
+    width: 33.33333%;
   }
 }
 
 .c-grid--6 {
 
   @media (--breakpoint-10) {
-    lost-column: 6/12;
+    width: 50%;
   }
 }
 
 .c-grid--8 {
 
   @media (--breakpoint-10) {
-    lost-column: 8/12;
+    width: 66.66666%;
   }
 }
 
 .c-grid--9 {
 
   @media (--breakpoint-10) {
-    lost-column: 9/12;
+    width: 75%;
   }
 }
+
 
 /* Types */
 .c-grid--single {

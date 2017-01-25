@@ -11,9 +11,7 @@
     "gulp-cssnano": "latest",
     "gulp-nunjucks": "latest",
     "gulp-postcss": "latest",
-    "gulp-smushit": "latest",
     "gulp-sourcemaps": "latest",
-    "lost": "latest",
     "postcss-cssnext": "latest",
     "postcss-import": "latest"
   },

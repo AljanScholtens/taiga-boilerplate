@@ -3,12 +3,10 @@ var sourcemaps = require('gulp-sourcemaps')
 var postcss = require('gulp-postcss')
 var cssnano = require('gulp-cssnano')
 var atImport = require('postcss-import')
-var lost = require('lost')
 var cssnext = require('postcss-cssnext')
 var nunjucks = require('gulp-nunjucks')
 var browserSync = require('browser-sync').create()
 var modRewrite  = require('connect-modrewrite')
-var smushit = require('gulp-smushit');
 var del = require('del');
 
 gulp.task('default', ['clean', 'serve'])
@@ -55,10 +53,6 @@ gulp.task('images', () =>
 
 gulp.task('media', () =>
   gulp.src('src/assets/media/**/*')
-    // .pipe(smushit())
-    // .pipe(imagemin({
-    //     progressive: true,
-    // }))
     .pipe(gulp.dest('dist/assets/media'))
 )
 
@@ -71,7 +65,6 @@ gulp.task("css", function() {
   var processors = [
     atImport,
     cssnext(),
-    lost()
   ]
   gulp.src(['src/assets/stylesheets/styles.css', 'src/assets/stylesheets/styleguide.css'])
     .pipe(sourcemaps.init())

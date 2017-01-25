@@ -16,4 +16,10 @@
     padding: calc(var(--spacing) * 2);
     padding-bottom: var(--spacing);
   }
+
+  &:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
 }
