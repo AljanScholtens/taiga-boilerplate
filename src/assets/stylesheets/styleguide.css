@@ -6,15 +6,26 @@
 
 .sg-wrapper {
   height: 100%;
-  display: grid;
 
   @media (--breakpoint-20) {
+    display: grid;
     grid-template-columns: 16rem auto;
+
+    @supports not (display: grid) {
+      display: flex;
+    }
   }
 }
 
 .sg-aside {
   background: var(--color-neutral-10);
+
+  @media (--breakpoint-20) {
+
+    @supports not (display: grid) {
+      flex: 0 0 16rem;
+    }
+  }
 }
 
 .sg-main {
