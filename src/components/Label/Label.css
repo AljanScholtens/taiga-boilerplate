@@ -6,9 +6,13 @@
   border-radius: var(--border-radius-10);
   font-size: var(--font-size-10);
   font-weight: 600;
-  padding: 0.1rem 0.25rem;
+  padding: 0.15rem 0.25rem;
   background: var(--color-primary-50);
   color: var(--color-white);
+
+  & + .c-label {
+    margin-right: 0.15rem;
+  }
 }
 
 .c-label--neutral {

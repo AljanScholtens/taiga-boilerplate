@@ -20,6 +20,10 @@
   background: var(--color-neutral-10);
   color: var(--color-neutral-70);
 
+  &:visited {
+    color: currentColor;
+  }
+
   &:hover {
     background: var(--color-neutral-30);
     color: var(--color-neutral-70);
@@ -53,6 +57,10 @@
   background: var(--color-primary-50);
   color: var(--color-white);
 
+  &:visited {
+    color: currentColor;
+  }
+
   &:hover {
     background: var(--color-primary-70);
     color: var(--color-white);
@@ -68,6 +76,10 @@
   background: var(--color-success-50);
   color: var(--color-white);
 
+  &:visited {
+    color: currentColor;
+  }
+
   &:hover {
     background: var(--color-success-70);
     color: var(--color-white);
@@ -82,6 +94,10 @@
 .c-button--alert {
   background: var(--color-alert-50);
   color: var(--color-white);
+
+  &:visited {
+    color: currentColor;
+  }
 
   &:hover {
     background: var(--color-alert-70);

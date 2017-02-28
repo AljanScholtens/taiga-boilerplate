@@ -27,9 +27,14 @@ p {
 a {
   color: var(--color-primary-50);
   cursor: pointer;
-  text-decoration: none;
 
-  &:hover { color: var(--color-primary-70); }
+  &:visited {
+    color: var(--color-neutral-50);
+  }
+
+  &:hover {
+    color: var(--color-primary-70);
+  }
 }
 
 

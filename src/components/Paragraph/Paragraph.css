@@ -2,6 +2,13 @@
   #COMPONENTS-PARAGRAPH
 \*------------------------------------*/
 
-.c-paragraph--lead {
-  font-size: var(--font-size-40);
+.c-paragraph--large {
+  font-size: var(--font-size-50);
+  line-height: 1.5em;
+  font-weight: 300;
+}
+
+.c-paragraph--small {
+  font-size: var(--font-size-20);
+  color: var(--color-neutral-50);
 }

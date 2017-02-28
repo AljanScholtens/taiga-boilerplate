@@ -5,9 +5,13 @@
 
   <div class="c-card {{ typeClass }}">
 
+    {% call Heading(size='30', element='h2') %}
+      {{ title }}
+    {% endcall %}
+
     {% if title %}
       <div class="c-card__content">
-        {% call Heading(size='10', element='h2') %}
+        {% call Heading(size='30', element='h2') %}
           {{ title }}
         {% endcall %}
       </div>
@@ -23,5 +27,5 @@
       {{ caller() }}
     </div>
   </div>
-  
+
 {% endmacro %}
