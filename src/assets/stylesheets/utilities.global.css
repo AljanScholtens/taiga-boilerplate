@@ -22,3 +22,7 @@
     margin-bottom: calc(var(--spacing) * 2);
   }
 }
+
+.u-line-through {
+  text-decoration: line-through;
+}
