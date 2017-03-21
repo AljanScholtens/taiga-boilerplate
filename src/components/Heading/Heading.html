@@ -1,4 +1,4 @@
-{% macro Heading(size='', element='h2') %}
+{% macro Heading(size='medium', element='h2') %}
   {% set sizeClass = size and 'c-heading--' + size %}
 
   <{{ element }} class="c-heading {{ sizeClass }}">{{ caller() }}</{{ element }}>

@@ -5,14 +5,14 @@
 
   <div class="c-card {{ typeClass }}">
 
-    {% call Heading(size='30', element='h2') %}
+    {% call Heading(size='', element='h2') %}
       {{ title }}
     {% endcall %}
 
     {% if title %}
       <div class="c-card__content">
-        {% call Heading(size='30', element='h2') %}
-          {{ title }}
+        {% call Heading(size='', element='h2') %}
+          {{ title }}Test
         {% endcall %}
       </div>
     {% endif %}

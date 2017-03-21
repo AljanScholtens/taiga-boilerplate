@@ -1,6 +1,10 @@
 {% from 'components/Icon/Icon.html' import Icon %}
 
 <p>
+  {{ Icon(icon='print', size='large') }}
+</p>
+
+<p>
   {{ Icon(icon='print') }}
 </p>
 
@@ -9,5 +13,5 @@
 </p>
 
 <p>
-  <a href="">{{ Icon(icon='arrow-forward') }} Go to link</a>
+  <a href="">Go to link {{ Icon(icon='arrow-forward') }}</a>
 </p>

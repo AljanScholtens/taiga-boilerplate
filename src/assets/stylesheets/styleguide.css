@@ -79,6 +79,10 @@
   @media (--breakpoint-20) {
     margin-bottom: calc(var(--spacing) * 3);
   }
+
+  & .c-grid-item {
+    background: var(--color-neutral-10);
+  }
 }
 
 /*

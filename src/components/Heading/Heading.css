@@ -4,21 +4,21 @@
 
 .c-heading {
   font-family: var(--font-family-heading);
-  font-weight: 600;
-  margin: 0 0 0.25em 0;
+  font-size: var(--font-size-60);
 }
 
-.c-heading--10 {
-  font-size: 1.5rem;
-  line-height: 1.5em;
+/* Sizes */
+.c-heading--small {
+  font-size: var(--font-size-50);
+  line-height: 1.1em;
 }
 
-.c-heading--30 {
-  font-size: 2rem;
-  line-height: 1.25em;
+/* Default */
+.c-heading--medium {
+
 }
 
-.c-heading--50 {
-  font-size: 3rem;
+.c-heading--large {
+  font-size: var(--font-size-70);
   line-height: 1em;
 }

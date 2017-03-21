@@ -28,6 +28,10 @@
   --font-size-40: 1.125rem;
   --font-size-50: 1.35rem;
 
+  /* For headings, use carefully */
+  --font-size-60: 1.75rem;
+  --font-size-70: 2.5rem;
+
 
   /*
    * Default spacing for margin-bottom and other paddings

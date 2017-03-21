@@ -8,8 +8,9 @@
 h1, h2, legend, h3, h4, h5, h6 {
   font-family: var(--font-family-heading);
   font-weight: 600;
+  line-height: 1em;
   font-size: var(--font-size-50);
-  margin: 0 0 0.25em 0;
+  margin: 0 0 var(--spacing) 0;
 }
 
 
@@ -18,6 +19,7 @@ h1, h2, legend, h3, h4, h5, h6 {
  */
 p {
   margin: 0 auto var(--spacing) auto;
+  line-height: 1.5em;
 }
 
 

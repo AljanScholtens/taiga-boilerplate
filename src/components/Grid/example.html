@@ -1,0 +1,30 @@
+{% from 'components/Grid/Grid.html' import Grid %}
+{% from 'components/GridItem/GridItem.html' import GridItem %}
+
+{% call Grid(type='thirds') %}
+
+  {% call GridItem() %} Dit is mijn grid {% endcall %}
+  {% call GridItem() %} Dit is mijn grid {% endcall %}
+  {% call GridItem() %} Dit is mijn grid {% endcall %}
+
+{% endcall %}
+
+{% call Grid(type='halves') %}
+
+  {% call GridItem() %} Dit is mijn grid {% endcall %}
+  {% call GridItem() %} Dit is mijn grid {% endcall %}
+
+{% endcall %}
+
+{% call Grid(type='sidebar') %}
+
+  {% call GridItem() %} Dit is mijn grid {% endcall %}
+  {% call GridItem() %} Dit is mijn grid {% endcall %}
+
+{% endcall %}
+
+{% call Grid(type='single') %}
+
+  {% call GridItem() %} Dit is mijn grid {% endcall %}
+
+{% endcall %}
