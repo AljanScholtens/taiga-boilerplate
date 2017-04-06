@@ -1,0 +1,178 @@
+/*------------------------------------*\
+  #TOKENS
+\*------------------------------------*/
+
+/*
+ * Most of the variables are based on some kind of percentages to maintain stability and consistency.
+ * So --variable-10 is small or light and --variable-100 is big or dark.
+ */
+
+
+:root {
+
+  /*
+   * Typography
+   */
+
+
+  /* Fonts */
+  --font-family-body: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  --font-family-heading: avenir next, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+
+
+  /* Font size */
+  --font-size-base: 16px;
+
+  --font-size-default: 1rem;
+  --font-size-10: 0.75rem;
+  --font-size-20: 0.875rem;
+  --font-size-30: 1rem;
+  --font-size-40: 1.125rem;
+  --font-size-50: 1.35rem;
+  --font-size-60: 1.75rem;
+  --font-size-70: 2.5rem;
+
+
+  /* Line-height */
+  --line-height-default: 1em;
+  --line-height-10: 1em;
+  --line-height-20: 1.25em;
+  --line-height-30: 1.5em;
+
+
+  /* Letter spacing */
+  --letter-spacing-default: 2px;
+
+
+  /* Font weight */
+  --font-weight-default: 400;
+  --font-weight-10: 300;
+  --font-weight-20: 400;
+  --font-weight-30: 500;
+
+
+
+
+
+  /*
+   * Spacing
+   */
+
+
+  /* Spacing system */
+  --space-default: 16px;
+  --space-10: 4px;
+  --space-20: 8px;
+  --space-25: 12px; /* Not default */
+  --space-30: 16px;
+  --space-40: 32px;
+  --space-50: 64px;
+
+  --space-stack-default: 0 0 16px 0;
+  --space-stack-10: 0 0 4px 0;
+  --space-stack-20: 0 0 8px 0;
+  --space-stack-30: 0 0 16px 0;
+  --space-stack-40: 0 0 32px 0;
+  --space-stack-50: 0 0 64px 0;
+
+  --space-inset-default: 16px 16px 0.1px 16px;
+  --space-inset-10: 4px 4px 0.1px 4px;
+  --space-inset-20: 8px 8px 0.1px 8px;
+  --space-inset-30: 16px 16px 0.1px 16px;
+  --space-inset-40: 32px 32px 16px 32px;
+  --space-inset-50: 64px 64px 48px 64px;
+
+  --space-squish-10: 4px 8px;
+  --space-squish-20: 8px 16px;
+  --space-squish-25: 12px 24px; /* Not default */
+  --space-squish-30: 16px 32px;
+
+
+  /* Grid gutter */
+  --gutter: 32px;
+
+
+  /* Maximum width of the website */
+  --max-width: 1140px;
+
+
+  /* Breakpoints */
+  @custom-media --breakpoint-10 (min-width: 600px);
+  @custom-media --breakpoint-20 (min-width: 750px);
+  @custom-media --breakpoint-30 (min-width: 1000px);
+  @custom-media --breakpoint-40 (min-width: 1200px);
+
+
+
+
+
+  /*
+   * Colors
+   */
+
+
+  /* Primary */
+  --color-primary-30: #A1A3EC;
+  --color-primary-50: #5F61C0;
+  --color-primary-70: #3A3C95;
+
+
+  /* Secondary */
+  --color-secondary-50: #B862D8;
+
+
+  /* Success and positive colors */
+  --color-success-30: #81D0AE;
+  --color-success-50: #099F5E;
+  --color-success-70: #05673C;
+
+
+  /* Error and negative colors */
+  --color-error-30: #F696A6;
+  --color-error-50: #D44A60;
+  --color-error-70: #9F1F33;
+
+
+  /* Neutral or gray colors */
+  --color-neutral-10: #F0F0F3;
+  --color-neutral-30: #C7C7CE;
+  --color-neutral-50: #808087;
+  --color-neutral-70: #3C3C43;
+  --color-neutral-90: #202025;
+
+
+  /* Black and white */
+  --color-black: #000;
+  --color-white: #fff;
+
+
+
+
+
+  /*
+   * Other
+   */
+
+
+  /* Rounded borders */
+  --border-radius-default: 2px;
+  --border-radius-10: 2px;
+  --border-radius-20: 4px;
+  --border-radius-50: 32px;
+
+
+  /* Shadows */
+  --box-shadow-default: 0px 2px 4px 1px color(var(--color-black) alpha(10%));
+  --box-shadow-10: 0px 2px 4px 1px color(var(--color-black) alpha(10%));
+  --box-shadow-30: 0px 8px 16px color(var(--color-black) alpha(20%));
+
+
+  /* Animation beziers */
+  --bezier-a: cubic-bezier(0.075, 0.82, 0.165, 1);
+
+
+  /* Z-index plan */
+  --layer-10: 10;
+  --layer-20: 20;
+  --layer-30: 30;
+}

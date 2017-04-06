@@ -8,13 +8,13 @@
   cursor: pointer;
   display: inline-block;
   font-family: var(--font-family-body);
-  font-size: var(--font-size-30);
+  font-size: var(--font-size-default);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-weight: 600;
+  font-weight: var(--font-weight-30);
   line-height: var(--line-height-default);
   margin: 0;
-  padding: var(--space-squish-l);
+  padding: var(--space-squish-25);
   text-decoration: none;
   background: var(--color-neutral-10);
   color: var(--color-neutral-70);
@@ -38,12 +38,12 @@
 /* Sizes */
 .c-button--small {
   font-size: var(--font-size-20);
-  border-radius: var(--border-radius-10);
-  padding: var(--space-squish-m);
+  border-radius: var(--border-radius-default);
+  padding: var(--space-squish-20);
 }
 
 .c-button--large {
-  padding: var(--space-squish-xl);
+  padding: var(--space-squish-30);
 }
 
 
@@ -67,8 +67,8 @@
   }
 }
 
-.c-button--alert {
-  background: var(--color-alert-50);
+.c-button--error {
+  background: var(--color-error-50);
   color: var(--color-white);
 
   &:visited {
@@ -76,7 +76,7 @@
   }
 
   &:hover {
-    background: var(--color-alert-70);
+    background: var(--color-error-70);
     color: var(--color-white);
   }
 

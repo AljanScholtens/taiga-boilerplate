@@ -3,15 +3,17 @@
 \*------------------------------------*/
 
 .c-label {
-  border-radius: var(--border-radius-10);
+  border-radius: var(--border-radius-default);
   font-size: var(--font-size-10);
-  font-weight: 600;
-  padding: var(--space-squish-s);
+  font-weight: var(--font-weight-30);
+  padding: var(--space-squish-10);
   background: var(--color-primary-50);
   color: var(--color-white);
+  text-transform: uppercase;
+  letter-spacing: var(--letter-spacing-default);
 
   & + .c-label {
-    margin-left: var(--space-xs);
+    margin-left: var(--space-10);
   }
 }
 
@@ -25,7 +27,7 @@
   color: var(--color-white);
 }
 
-.c-label--alert {
-  background: var(--color-alert-50);
+.c-label--error {
+  background: var(--color-error-50);
   color: var(--color-white);
 }

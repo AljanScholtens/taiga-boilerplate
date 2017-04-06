@@ -19,8 +19,10 @@
 
 .sg-aside {
   background: var(--color-neutral-10);
+  padding: var(--space-inset-default);
 
   @media (--breakpoint-20) {
+    padding: var(--space-inset-40);
 
     @supports not (display: grid) {
       flex: 0 0 16rem;
@@ -29,7 +31,11 @@
 }
 
 .sg-main {
+  padding: var(--space-inset-default);
 
+  @media (--breakpoint-20) {
+    padding: var(--space-inset-40);
+  }
 }
 
 
@@ -68,7 +74,7 @@
   font-family: var(--font-family-body);
   border-bottom: 1px solid var(--color-neutral-10);
   margin: var(--space-default) 0 var(--space-default) 0;
-  font-weight: 600;
+  font-weight: var(--font-weight-30);
   text-transform: uppercase;
 
   & a { float: right; }
@@ -170,12 +176,12 @@
 
 .sg-colors--alert .sg-colors__fill li {
 
-  &:nth-child(1) { background: var(--color-alert-50); }
-  &:nth-child(2) { background: var(--color-alert-70); }
+  &:nth-child(1) { background: var(--color-error-50); }
+  &:nth-child(2) { background: var(--color-error-70); }
 }
 
 .sg-colors--alert .sg-colors__text li {
 
-  &:nth-child(1) { color: var(--color-alert-50); }
-  &:nth-child(2) { color: var(--color-alert-70); }
+  &:nth-child(1) { color: var(--color-error-50); }
+  &:nth-child(2) { color: var(--color-error-70); }
 }

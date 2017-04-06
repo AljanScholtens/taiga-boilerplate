@@ -3,7 +3,7 @@
 \*------------------------------------*/
 
 .c-card {
-  border-radius: var(--border-radius-10);
+  border-radius: var(--border-radius-default);
   overflow: hidden;
   margin: var(--space-stack-default);
   width: 100%;

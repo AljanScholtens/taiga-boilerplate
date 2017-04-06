@@ -83,7 +83,7 @@ The steps are created this way so you can easily add more in between. This way w
 
 ```
 // Border-radius
---border-radius-10: 0.125rem; // Small
+--border-radius-default: 0.125rem; // Small
 --border-radius-20: 0.313rem; // Larger
 
 // Color brand

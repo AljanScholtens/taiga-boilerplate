@@ -5,7 +5,7 @@
 table {
   border-collapse: separate;
   border-spacing: 0;
-  margin-bottom: calc(var(--space-default) * 2);
+  margin: var(--space-stack-40);
   width: 100%;
 }
 

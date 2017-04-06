@@ -10,16 +10,16 @@
 }
 
   .c-pagination__item {
-    margin-right: var(--space-xs);
+    margin-right: var(--space-10);
 
     & a {
       background: var(--color-neutral-10);
-      border-radius: var(--border-radius-10);
+      border-radius: var(--border-radius-default);
       color: var(--color-neutral-70);
       display: block;
-      font-weight: 600;
+      font-weight: var(--font-weight-30);
       text-decoration: none;
-      padding: var(--space-squish-m);
+      padding: var(--space-squish-20);
 
       &:hover {
         background: var(--color-neutral-30);
@@ -50,5 +50,5 @@
 
   .c-pagination__item--gap {
     background: none;
-    padding: var(--space-squish-m);
+    padding: var(--space-squish-20);
   }

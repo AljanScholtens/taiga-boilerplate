@@ -11,7 +11,7 @@
   grid-column-gap: var(--space-default);
 
   @media(--breakpoint-30) {
-    grid-column-gap: var(--space-l);
+    grid-column-gap: var(--space-40);
     grid-row-gap: var(--space-default);
     margin: var(--space-stack-default);
   }

@@ -7,7 +7,7 @@
  */
 h1, h2, legend, h3, h4, h5, h6 {
   font-family: var(--font-family-heading);
-  font-weight: 600;
+  font-weight: var(--font-weight-30);
   font-size: var(--font-size-50);
   margin: var(--space-stack-default);
 }
@@ -18,7 +18,7 @@ h1, h2, legend, h3, h4, h5, h6 {
  */
 p {
   margin: var(--space-stack-default);
-  line-height: var(--line-height-l);
+  line-height: var(--line-height-30);
 }
 
 
@@ -52,7 +52,7 @@ em {
 }
 
 strong {
-  font-weight: bold;
+  font-weight: var(--font-weight-30);
 }
 
 code, pre {

@@ -4,14 +4,9 @@
 
 
 /*
- * #SETTINGS
+ * #TOKENS
  */
-@import "settings.global.css";
-@import "settings.colors.css";
-
-/**
- * #TOOLS
- */
+@import "tokens.css";
 
 
 /**
@@ -41,7 +36,7 @@
 @import "../../components/List/List.css";
 @import "../../components/ListItem/ListItem.css";
 @import "../../components/Media/Media.css";
-@import "../../components/Message/Message.css";
+@import "../../components/Alert/Alert.css";
 @import "../../components/Pagination/Pagination.css";
 @import "../../components/Panel/Panel.css";
 @import "../../components/Paragraph/Paragraph.css";
@@ -51,4 +46,4 @@
 /**
  * #UTILITIES
  */
-@import "utilities.global.css";
+@import "utilities.css";

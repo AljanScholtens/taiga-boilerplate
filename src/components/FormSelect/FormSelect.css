@@ -4,8 +4,8 @@
 
 .c-form-select {
   border: 1px solid var(--color-neutral-30);
-  border-radius: var(--border-radius-10);
-  box-shadow: var(--box-shadow-10);
+  border-radius: var(--border-radius-default);
+  box-shadow: var(--box-shadow-default);
   width: 100%;
   overflow: hidden;
   position: relative;

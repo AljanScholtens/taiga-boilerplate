@@ -12,7 +12,7 @@
   position: relative;
 
   @media (--breakpoint-20) {
-    padding: var(--space-inset-l);
+    padding: var(--space-inset-40);
   }
 
   &:after {

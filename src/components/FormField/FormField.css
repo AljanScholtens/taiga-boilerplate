@@ -7,5 +7,5 @@
 }
 
 .c-form-field--error {
-  color: var(--color-alert-50);
+  color: var(--color-error-50);
 }

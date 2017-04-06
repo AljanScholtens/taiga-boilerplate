@@ -1,0 +1,5 @@
+{% macro Alert(type='neutral') %}
+  {% set typeClass = type and 'c-alert--' + type %}
+
+  <div class="c-alert {{ typeClass }}">{{ caller() }}</div>
+{% endmacro %}
