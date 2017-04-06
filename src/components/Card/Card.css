@@ -5,7 +5,7 @@
 .c-card {
   border-radius: var(--border-radius-10);
   overflow: hidden;
-  margin-bottom: var(--spacing);
+  margin: var(--space-stack-default);
   width: 100%;
   display: flex;
   flex-flow: column nowrap;
@@ -14,7 +14,7 @@
 
 .c-card--white {
   background: var(--color-white);
-  box-shadow: 0px 3px 10px color(var(--color-black) alpha(20%));
+  box-shadow: var(--box-shadow-30);
 }
 
 .c-card--neutral {
@@ -22,7 +22,7 @@
 }
 
   .c-card__content {
-    padding: var(--spacing) var(--spacing) 0.1px var(--spacing);
+    padding: var(--space-inset-default);
   }
 
   .c-card__image {

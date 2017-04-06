@@ -3,10 +3,9 @@
 \*------------------------------------*/
 
 .c-form-field {
-  margin-bottom: var(--spacing);
+  margin: var(--space-stack-default);
 }
 
 .c-form-field--error {
-
   color: var(--color-alert-50);
 }

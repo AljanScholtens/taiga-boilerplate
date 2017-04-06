@@ -4,7 +4,7 @@
 
 .c-paragraph--large {
   font-size: var(--font-size-50);
-  line-height: 1.5em;
+  line-height: var(--line-height-l);
   font-weight: 300;
 }
 

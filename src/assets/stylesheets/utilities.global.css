@@ -19,7 +19,7 @@
 .u-spacing {
 
   @media (--breakpoint-20) {
-    margin-bottom: calc(var(--spacing) * 2);
+    margin-bottom: calc(var(--space-default) * 2);
   }
 }
 

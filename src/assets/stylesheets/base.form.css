@@ -29,9 +29,8 @@ select {
   display: block;
   font-family: var(--font-family-body);
   font-size: var(--font-size-30);
-  line-height: 1.5em;
   margin: 0;
-  padding: 0.5rem;
+  padding: var(--space-m);
   vertical-align: baseline;
   width: 100%;
 
@@ -46,16 +45,5 @@ textarea {
   overflow: auto;
   resize: vertical;
   vertical-align: top;
-}
-
-select {
-  height: 2.85rem;
-
-  &[multiple] {
-    height: auto;
-  }
-}
-
-button:focus {
-  outline: 0;
+  line-height: var(--line-height-l);
 }

@@ -34,28 +34,44 @@
 
 
   /*
+   * Set your line-height
+   */
+  --line-height-default: 1em;
+  --line-height-s: 1em;
+  --line-height-m: 1.25em;
+  --line-height-l: 1.5em;
+
+
+  /*
    * Default spacing for margin-bottom and other paddings
    */
-  --spacing: 1rem;
-
-  --space-inset-default: 16px 16px 16px 16px;
-  --space-inset-xs: 4px 4px 4px 4px;
-  --space-inset-s: 8px 8px 8px 8px;
-  --space-inset-m: 16px 16px 16px 16px;
-  --space-inset-l: 32px 32px 32px 32px;
-  --space-inset-xl: 64px 64px 64px 64px;
-  --space-stack-default: 0 0 16px 0;
-  --space-stack-xs: 0 0 4px 0;
-  --space-stack-s: 0 0 8px 0;
-  --space-stack-m: 0 0 16px 0;
-  --space-stack-l: 0 0 32px 0;
-  --space-stack-xl: 0 0 64px 0;
   --space-default: 16px;
   --space-xs: 4px;
   --space-s: 8px;
   --space-m: 16px;
   --space-l: 32px;
   --space-xl: 64px;
+
+  --space-stack-default: 0 0 16px 0;
+  --space-stack-xs: 0 0 4px 0;
+  --space-stack-s: 0 0 8px 0;
+  --space-stack-m: 0 0 16px 0;
+  --space-stack-l: 0 0 32px 0;
+  --space-stack-xl: 0 0 64px 0;
+
+  --space-inset-default: 16px 16px 0.1px 16px;
+  --space-inset-xs: 4px 4px 0.1px 4px;
+  --space-inset-s: 8px 8px 0.1px 8px;
+  --space-inset-m: 16px 16px 0.1px 16px;
+  --space-inset-l: 32px 32px 16px 32px;
+  --space-inset-xl: 64px 64px 48px 64px;
+
+  --space-squish-s: 4px 8px 4px 8px;
+  --space-squish-m: 8px 16px 8px 16px;
+  --space-squish-l: 12px 24px;
+  --space-squish-xl: 16px 32px;
+
+
 
 
   /*
@@ -78,6 +94,13 @@
 
 
   /*
+   * Adjust the shadows
+   */
+  --box-shadow-10: 0px 1px 3px color(var(--color-black) alpha(10%));
+  --box-shadow-30: 0px 3px 10px color(var(--color-black) alpha(20%));
+
+
+  /*
    * Media queries
    */
   @custom-media --breakpoint-10 (min-width: 600px);
@@ -89,9 +112,9 @@
   /*
    * Z-index plan
    */
-  --z-index-10: 10;
-  --z-index-20: 20;
-  --z-index-30: 30;
+  --layer-10: 10;
+  --layer-20: 20;
+  --layer-30: 30;
 
 
   /*

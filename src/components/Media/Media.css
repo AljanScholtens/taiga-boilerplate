@@ -3,7 +3,7 @@
 \*------------------------------------*/
 
 .c-media {
-  margin-bottom: var(--spacing);
+  margin: var(--space-stack-default);
   position: relative;
   width: 100%;
 }

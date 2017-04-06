@@ -5,8 +5,8 @@
 .c-message {
   border-radius: var(--border-radius-10);
   font-weight: 600;
-  margin-bottom: 0.25rem;
-  padding: 0.5rem 0.75rem;
+  margin: var(--space-stack-xs);
+  padding: var(--space-squish-m);
   vertical-align: baseline;
   background: var(--color-neutral-10);
   color: var(--color-neutral-70);

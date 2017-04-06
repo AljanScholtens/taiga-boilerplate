@@ -8,9 +8,8 @@
 h1, h2, legend, h3, h4, h5, h6 {
   font-family: var(--font-family-heading);
   font-weight: 600;
-  line-height: 1em;
   font-size: var(--font-size-50);
-  margin: 0 0 var(--spacing) 0;
+  margin: var(--space-stack-default);
 }
 
 
@@ -18,8 +17,8 @@ h1, h2, legend, h3, h4, h5, h6 {
  * Paragraphs
  */
 p {
-  margin: 0 auto var(--spacing) auto;
-  line-height: 1.5em;
+  margin: var(--space-stack-default);
+  line-height: var(--line-height-l);
 }
 
 
@@ -86,7 +85,7 @@ hr {
   border: solid var(--color-neutral-30);
   border-width: 1px 0 0;
   clear: both;
-  margin: 2.5rem var(--spacing);
+  margin: 2.5rem var(--space-default);
 }
 
 ul,

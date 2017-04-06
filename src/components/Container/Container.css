@@ -8,12 +8,11 @@
 .c-container {
   margin: auto;
   max-width: var(--max-width);
-  padding: var(--spacing) var(--spacing) 0.1px var(--spacing);
+  padding: var(--space-inset-default);
   position: relative;
 
   @media (--breakpoint-20) {
-    padding: calc(var(--spacing) * 2);
-    padding-bottom: var(--spacing);
+    padding: var(--space-inset-l);
   }
 
   &:after {

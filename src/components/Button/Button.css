@@ -12,11 +12,10 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: 600;
-  line-height: 2.25em;
+  line-height: var(--line-height-default);
   margin: 0;
-  padding: 0 1.25rem 0.1rem 1.25rem;
+  padding: var(--space-squish-l);
   text-decoration: none;
-  vertical-align: middle;
   background: var(--color-neutral-10);
   color: var(--color-neutral-70);
 
@@ -40,15 +39,11 @@
 .c-button--small {
   font-size: var(--font-size-20);
   border-radius: var(--border-radius-10);
-  line-height: 1.9rem;
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
+  padding: var(--space-squish-m);
 }
 
 .c-button--large {
-  line-height: 3rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding: var(--space-squish-xl);
 }
 
 

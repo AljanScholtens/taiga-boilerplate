@@ -5,12 +5,12 @@
 .c-heading {
   font-family: var(--font-family-heading);
   font-size: var(--font-size-60);
+  line-height: var(--line-height-default);
 }
 
 /* Sizes */
 .c-heading--small {
   font-size: var(--font-size-50);
-  line-height: 1.1em;
 }
 
 /* Default */
@@ -20,5 +20,4 @@
 
 .c-heading--large {
   font-size: var(--font-size-70);
-  line-height: 1em;
 }

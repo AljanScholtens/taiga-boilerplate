@@ -4,5 +4,5 @@
 
 .c-list {
   list-style: none;
-  margin: -0.3rem 0 calc(var(--spacing) - 0.3rem) 0;
+  margin: -0.3rem 0 calc(var(--space-default) - 0.3rem) 0;
 }

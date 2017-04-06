@@ -4,8 +4,8 @@
 
 .c-panel {
   border-radius: var(--border-radius-10);
-  margin-bottom: var(--spacing);
-  padding: var(--spacing) var(--spacing) 0.1px var(--spacing);
+  margin: var(--space-stack-default);
+  padding: var(--space-inset-default);
   background: var(--color-neutral-10);
 }
 

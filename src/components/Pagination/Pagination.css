@@ -5,12 +5,12 @@
 .c-pagination {
   font-size: var(--font-size-20);
   list-style: none;
-  margin-bottom: var(--spacing);
+  display: flex;
+  margin: var(--space-stack-default);
 }
 
   .c-pagination__item {
-    display: inline-block;
-    margin-bottom: 0.25rem;
+    margin-right: var(--space-xs);
 
     & a {
       background: var(--color-neutral-10);
@@ -19,7 +19,7 @@
       display: block;
       font-weight: 600;
       text-decoration: none;
-      padding: 0.25rem 0.5rem;
+      padding: var(--space-squish-m);
 
       &:hover {
         background: var(--color-neutral-30);
@@ -50,5 +50,5 @@
 
   .c-pagination__item--gap {
     background: none;
-    padding: 0.25rem 0.5rem;
+    padding: var(--space-squish-m);
   }
