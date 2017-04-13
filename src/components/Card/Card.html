@@ -4,25 +4,6 @@
   {% set typeClass = type and 'c-card--' + type %}
 
   <div class="c-card {{ typeClass }}">
-
-    {% call Heading(size='', element='h2') %}
-      {{ title }}
-    {% endcall %}
-
-    {% if title %}
-      <div class="c-card__content">
-        {% call Heading(size='', element='h2') %}
-          {{ title }}Test
-        {% endcall %}
-      </div>
-    {% endif %}
-
-    {% if image %}
-      <div class="c-card__image">
-        <img src="{{ image }}" />
-      </div>
-    {% endif %}
-
     <div class="c-card__content">
       {{ caller() }}
     </div>

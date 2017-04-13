@@ -24,11 +24,3 @@
   .c-card__content {
     padding: var(--space-inset-default);
   }
-
-  .c-card__image {
-
-    & img {
-      display: block;
-      width: 100%;
-    }
-  }
