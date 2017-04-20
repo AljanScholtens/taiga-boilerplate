@@ -8,6 +8,8 @@ var nunjucks = require('gulp-nunjucks')
 var browserSync = require('browser-sync').create()
 var modRewrite  = require('connect-modrewrite')
 var del = require('del');
+var debounce = require('lodash/debounce');
+var debouncedReload = debounce(browserSync.reload, 200)
 
 gulp.task('default', ['clean', 'serve'])
 
@@ -15,15 +17,13 @@ gulp.task('serve', ['build', 'watch'], function() {
   browserSync.init({
     server: {
       baseDir: "./dist/",
-      middleware: [
-        modRewrite([
-          '^/([^\.]+)$ /$1.html [L]'
-        ])
-      ]
+      serveStaticOptions: {
+        extensions: ['html']
+      }
     },
     open: false
   });
-  gulp.watch('dist/**/*').on('change', browserSync.reload)
+  gulp.watch('dist/**/*').on('change', debouncedReload)
 })
 
 gulp.task('watch', function() {

@@ -12,6 +12,7 @@
     "gulp-nunjucks": "latest",
     "gulp-postcss": "latest",
     "gulp-sourcemaps": "latest",
+    "lodash": "^4.17.4",
     "postcss-cssnext": "latest",
     "postcss-import": "latest"
   },

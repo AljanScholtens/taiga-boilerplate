@@ -6,6 +6,7 @@
 {% from "components/List/List.html" import List %}
 {% from "components/ListItem/ListItem.html" import ListItem %}
 {% from "components/Heading/Heading.html" import Heading %}
+{% from "components/Panel/Panel.html" import Panel %}
 
 {% set page_title = 'Home' %}
 
@@ -33,6 +34,10 @@
       {% call ListItem() %}Need components? Taiga has a small <strong><a href="styleguide/index.html">styleguide</a></strong>.{% endcall %}
       {% call ListItem() %}If you like Taiga, please star it on <a href="https://github.com/aljanscholtens/taiga-boilerplate">Github</a>.{% endcall %}
       {% call ListItem() %}Questions? Mail me at <a href="mailto:aljan@studiowolf.com">aljan@scholtens.me</a> or tweet to <a href="http://twitter.com/aljanscholtens/">@AljanScholtens</a>.{% endcall %}
+    {% endcall %}
+
+    {% call Panel() %}
+      <p>Test</p>
     {% endcall %}
 
   {% endcall %}
