@@ -72,11 +72,11 @@ Soon
 
 ## Grid
 
-The grid we are using is Lost-grid.
+Taiga uses CSS Grid Layout.
 
-## Settings and variables
+## Tokens and variables
 
-Variables are defined in `assets/stylesheets/settings.global.css` and are treated a bit differently.
+Variables are defined in `assets/stylesheets/tokens.css` and are treated a bit differently.
 In the example below you'll notice Taiga works with steps of 10, 20, 30 and so on. The trick is simple, 10 is small or light and 100 is large or dark. So we work from nothing to something.
 
 The steps are created this way so you can easily add more in between. This way we will have more consistency in a website, but maintain the creativity and freedom.
@@ -120,8 +120,8 @@ Right:
 As an interface designer I had the problem with most other boilerplates that they are created for developers.
 You'll get everything you need to build a prototype rapidly, but adjusting and adding components and design can be difficult. That's why we built our own boilerplate, Taiga Boilerplate.
 
-Taiga is inspired by these awesome people: Harry Roberts, Miller Medeiros, Paul Irish, Olav Bjørkøy and Jonathan Snook.
+Taiga is inspired by these awesome people: Harry Roberts, Nathan Curtis, Brad Frost and Dominic Nguyen.
 
 ## Copyright and license
 
-Copyright 2012-2016 by [Studio Wolf](http://studiowolf.com) under the [MIT License](LICENSE).
+Copyright 2012-2017 by [Aljan Scholtens](http://aljanscholtens.nl) under the [MIT License](LICENSE).
