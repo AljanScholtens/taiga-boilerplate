@@ -64,7 +64,12 @@ gulp.task('scripts', () =>
 gulp.task("css", function() {
   var processors = [
     atImport,
-    cssnext(),
+    cssnext({
+      features: {
+        filter: false,
+        autoprefixer: false
+      }
+    }),
   ]
   gulp.src(['src/assets/stylesheets/styles.css', 'src/assets/stylesheets/styleguide.css'])
     .pipe(sourcemaps.init())
