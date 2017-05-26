@@ -32,7 +32,6 @@
 @import "../../components/GridItem/GridItem.css";
 @import "../../components/Heading/Heading.css";
 @import "../../components/Icon/Icon.css";
-@import "../../components/Label/Label.css";
 @import "../../components/List/List.css";
 @import "../../components/ListItem/ListItem.css";
 @import "../../components/Media/Media.css";
@@ -40,6 +39,7 @@
 @import "../../components/Pagination/Pagination.css";
 @import "../../components/Panel/Panel.css";
 @import "../../components/Paragraph/Paragraph.css";
+@import "../../components/Tag/Tag.css";
 @import "../../components/Wrapper/Wrapper.css";
 
 

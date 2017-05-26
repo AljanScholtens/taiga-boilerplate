@@ -1,8 +1,8 @@
 /*------------------------------------*\
-  #COMPONENTS-LABELS
+  #COMPONENTS-TAG
 \*------------------------------------*/
 
-.c-label {
+.c-tag {
   border-radius: var(--border-radius-default);
   font-size: var(--font-size-10);
   font-weight: var(--font-weight-30);
@@ -12,22 +12,22 @@
   text-transform: uppercase;
   letter-spacing: var(--letter-spacing-default);
 
-  & + .c-label {
+  & + .c-tag {
     margin-left: var(--space-10);
   }
 }
 
-.c-label--neutral {
+.c-tag--neutral {
   background: var(--color-neutral-10);
   color: var(--color-neutral-70);
 }
 
-.c-label--success {
+.c-tag--success {
   background: var(--color-success-50);
   color: var(--color-white);
 }
 
-.c-label--error {
+.c-tag--error {
   background: var(--color-error-50);
   color: var(--color-white);
 }
