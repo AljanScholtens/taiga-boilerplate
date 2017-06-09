@@ -4,7 +4,8 @@
 
 {% block content %}
 
-  <h1 class="c-heading c-heading--30 u-spacing">{{ page_title }}</h1>
+  <h1 class="c-heading c-heading--large">{{ page_title }}</h1>
+  <p class="sg-lead">On this page you can find all available components. To change or add a component, dive into the folder components/.</p>
 
   <h2 class="sg-h2" id="Alert">Alert</h2>
   <div class="sg-component">
@@ -12,7 +13,6 @@
   </div>
 
   <h2 class="sg-h2" id="Button">Button</h2>
-  <p>A button gives the option for an action.
   <div class="sg-component">
     {% include 'components/Button/example.html' %}
   </div>

@@ -70,13 +70,9 @@
 
 .sg-h2 {
   clear: both;
+  font-weight: 600;
   padding-top: var(--space-default);
   margin-top: var(--space-default) * 2;
-
-  /*&:first-of-type {
-    padding-top: 0;
-    margin-top: 0;
-  }*/
 }
 
 .sg-h3 {
@@ -90,6 +86,20 @@
   text-transform: uppercase;
 
   & a { float: right; }
+}
+
+.sg-lead {
+  font-size: var(--font-size-50);
+  line-height: var(--line-height-30);
+  color: var(--color-neutral-50);
+  font-weight: 300;
+}
+
+.sg-code {
+  background: var(--color-neutral-10);
+  padding: var(--space-default);
+  line-height: 1.35em;
+  margin: var(--space-stack-default);
 }
 
 .sg-component {
@@ -108,11 +118,11 @@
  * Colors
  */
 .sg-colors {
-  lost-utility: clearfix;
+  margin: var(--space-stack-default);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 
   & ul {
-    width: 50%;
-    float: left;
     list-style: none;
     margin-left: 0;
   }

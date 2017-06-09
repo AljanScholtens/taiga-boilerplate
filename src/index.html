@@ -7,6 +7,7 @@
 {% from "components/ListItem/ListItem.html" import ListItem %}
 {% from "components/Heading/Heading.html" import Heading %}
 {% from "components/Panel/Panel.html" import Panel %}
+{% from "components/Paragraph/Paragraph.html" import Paragraph %}
 
 {% set page_title = 'Home' %}
 
@@ -18,8 +19,8 @@
 
       {% call Grid(columns='8') %}
 
-        {% call Heading(element='h1') %} Set up Taiga {% endcall %}
-        <p>Taiga Boilerplate is a small HTML/PostCSS framework for starting a new web project. It is mobile-first with CSS Grid Layout and based on the principles of ITCSS and BEM.</p>
+        {% call Heading(element='h1', size='large') %}Index{% endcall %}
+        {% call Paragraph(type='large') %}This is your home page, create your components in the style guide and insert them on your pages like this one.{% endcall %}
 
       {% endcall %}
 
@@ -30,8 +31,8 @@
   {% call Container() %}
 
     {% call List() %}
-      {% call ListItem() %}<strong>Get started</strong> with Taiga, check the <a href="https://github.com/aljanscholtens/taiga-boilerplate/blob/master/README.md">Readme on Github</a>.{% endcall %}
-      {% call ListItem() %}Need components? Taiga has a small <strong><a href="styleguide/index.html">styleguide</a></strong>.{% endcall %}
+      {% call ListItem() %}<strong>Get started</strong> with Taiga, check the <a href="styleguide/">Getting Started</a> chapter in the style guide.{% endcall %}
+      {% call ListItem() %}Need components? Taiga has a small set of components in the <strong><a href="styleguide/components.html">styleguide</a></strong>.{% endcall %}
       {% call ListItem() %}If you like Taiga, please star it on <a href="https://github.com/aljanscholtens/taiga-boilerplate">Github</a>.{% endcall %}
       {% call ListItem() %}Questions? Mail me at <a href="mailto:aljan@studiowolf.com">aljan@scholtens.me</a> or tweet to <a href="http://twitter.com/aljanscholtens/">@AljanScholtens</a>.{% endcall %}
     {% endcall %}
