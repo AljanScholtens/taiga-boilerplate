@@ -3,7 +3,7 @@
 \*------------------------------------*/
 
 /*
- * Add your own grid items
+ * The grid is build on CSS Grid Layout
  */
 .c-grid {
   width: 100%;
@@ -45,4 +45,12 @@
 .c-grid--single {
   margin: auto;
   max-width: 54rem;
+}
+
+
+/*
+ * Set up a grid item
+ */
+.c-grid-item {
+  background: var(--color-neutral-10);
 }
