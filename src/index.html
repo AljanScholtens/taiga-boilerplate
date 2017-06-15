@@ -1,10 +1,11 @@
 {% extends 'layout/base.html' %}
 
-{% from "components/Wrapper/Wrapper.html" import Wrapper %}
-{% from "components/Container/Container.html" import Container %}
+{% from "components/Layout/Layout.html" import Layout %}
+{% from "components/Layout/Layout.Row.html" import LayoutRow %}
+{% from "components/Layout/Layout.Container.html" import LayoutContainer %}
 {% from "components/Grid/Grid.html" import Grid %}
 {% from "components/List/List.html" import List %}
-{% from "components/ListItem/ListItem.html" import ListItem %}
+{% from "components/List/List.Item.html" import ListItem %}
 {% from "components/Heading/Heading.html" import Heading %}
 {% from "components/Panel/Panel.html" import Panel %}
 {% from "components/Paragraph/Paragraph.html" import Paragraph %}
@@ -13,28 +14,32 @@
 
 {% block content %}
 
-  {% call Wrapper(type='neutral') %}
+  {% call Layout() %}
 
-    {% call Container() %}
+    {% call LayoutRow(type='neutral') %}
 
-      {% call Grid(columns='8') %}
+      {% call LayoutContainer() %}
 
-        {% call Heading(element='h1', size='large') %}Index{% endcall %}
-        {% call Paragraph(type='large') %}This is your home page, create your components in the style guide and insert them on your pages like this one.{% endcall %}
+        {% call Grid(columns='8') %}
+
+          {% call Heading(element='h1', size='large') %}Index{% endcall %}
+          {% call Paragraph(type='large') %}This is your home page, create your components in the style guide and insert them on your pages like this one.{% endcall %}
+
+        {% endcall %}
 
       {% endcall %}
 
     {% endcall %}
 
-  {% endcall %}
+    {% call LayoutContainer() %}
 
-  {% call Container() %}
+      {% call List() %}
+        {% call ListItem() %}<strong>Get started</strong> with Taiga, check the <a href="styleguide/">Getting Started</a> chapter in the style guide.{% endcall %}
+        {% call ListItem() %}Need components? Taiga has a small set of components in the <strong><a href="styleguide/components.html">styleguide</a></strong>.{% endcall %}
+        {% call ListItem() %}If you like Taiga, please star it on <a href="https://github.com/aljanscholtens/taiga-boilerplate">Github</a>.{% endcall %}
+        {% call ListItem() %}Questions? Mail me at <a href="mailto:aljan@studiowolf.com">aljan@scholtens.me</a> or tweet to <a href="http://twitter.com/aljanscholtens/">@AljanScholtens</a>.{% endcall %}
+      {% endcall %}
 
-    {% call List() %}
-      {% call ListItem() %}<strong>Get started</strong> with Taiga, check the <a href="styleguide/">Getting Started</a> chapter in the style guide.{% endcall %}
-      {% call ListItem() %}Need components? Taiga has a small set of components in the <strong><a href="styleguide/components.html">styleguide</a></strong>.{% endcall %}
-      {% call ListItem() %}If you like Taiga, please star it on <a href="https://github.com/aljanscholtens/taiga-boilerplate">Github</a>.{% endcall %}
-      {% call ListItem() %}Questions? Mail me at <a href="mailto:aljan@studiowolf.com">aljan@scholtens.me</a> or tweet to <a href="http://twitter.com/aljanscholtens/">@AljanScholtens</a>.{% endcall %}
     {% endcall %}
 
   {% endcall %}

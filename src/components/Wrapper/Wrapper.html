@@ -1,9 +1,0 @@
-{% macro Wrapper(type='', size='') %}
-  {% set typeClass = type and 'c-wrapper--' + type %}
-  {% set sizeClass = size and 'c-wrapper--' + size %}
-
-  <div class="c-wrapper {{ typeClass }} {{ sizeClass }}">
-    {{ caller() }}
-  </div>
-
-{% endmacro %}
