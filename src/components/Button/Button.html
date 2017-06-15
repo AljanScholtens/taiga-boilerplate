@@ -1,0 +1,18 @@
+{% from "components/Icon/Icon.html" import Icon %}
+
+{% macro Button(size='', url='', icon='', iconPosition='left', type='neutral') %}
+  {% set typeClass = type and 'c-button--' + type %}
+  {% set sizeClass = size and 'c-button--' + size %}
+
+  <a class="c-button {{ typeClass }} {{ sizeClass }}" href="{{ url }}">
+    {% if icon and iconPosition == 'left' %}
+      {{ Icon(icon=icon) }}
+    {% endif %}
+
+    {{ caller() }}
+
+    {% if icon and iconPosition == 'right' %}
+      {{ Icon(icon=icon) }}
+    {% endif %}
+  </a>
+{% endmacro %}

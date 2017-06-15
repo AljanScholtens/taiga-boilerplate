@@ -1,0 +1,14 @@
+/*------------------------------------*\
+  #COMPONENTS-PARAGRAPH
+\*------------------------------------*/
+
+.c-paragraph--large {
+  font-size: var(--font-size-50);
+  line-height: var(--line-height-30);
+  font-weight: 300;
+}
+
+.c-paragraph--small {
+  font-size: var(--font-size-20);
+  color: var(--color-neutral-50);
+}

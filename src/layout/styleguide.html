@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>{{page_title}} - Style Guide</title>
+  <meta name="description" content="">
+
+  <link rel="stylesheet" href="/assets/stylesheets/styleguide.css" crossorigin="anonymous">
+  <link rel="shortcut icon" href="/assets/images/favicon-32.ico">
+  <link rel="apple-touch-icon-precomposed" href="/assets/images/favicon-152.png">
+</head>
+
+<body>
+
+  {% include 'components/sprite/sprite.html' %}
+
+  <div class="sg-wrapper">
+
+    <aside class="sg-aside">
+      <h2 class="u-spacing">Styleguide</h2>
+      <ul class="sg-navigation">
+        <li><a href="/styleguide/index.html">Getting Started</a></li>
+        <li><a href="/styleguide/guidelines.html">Guidelines</a></li>
+        <li><a href="/styleguide/tokens.html">Tokens</a></li>
+        <li><a href="/styleguide/base.html">Base</a></li>
+        <li>
+          <a href="/styleguide/components.html">Components</a>
+          <ul class="sg-navigation-sub">
+            <li><a href="/styleguide/components.html#Alert">Alert</a></li>
+            <li><a href="/styleguide/components.html#Button">Button</a></li>
+            <li><a href="/styleguide/components.html#Card">Card</a></li>
+            <li><a href="/styleguide/components.html#Container">Container</a></li>
+            <li><a href="/styleguide/components.html#Form">Form</a></li>
+            <li><a href="/styleguide/components.html#FormCheckbox">FormCheckbox</a></li>
+            <li><a href="/styleguide/components.html#FormField">FormField</a></li>
+            <li><a href="/styleguide/components.html#FormInput">FormInput</a></li>
+            <li><a href="/styleguide/components.html#FormRadiobutton">FormRadiobutton</a></li>
+            <li><a href="/styleguide/components.html#FormSelect">FormRadiobutton</a></li>
+            <li><a href="/styleguide/components.html#FormTextarea">FormTextarea</a></li>
+            <li><a href="/styleguide/components.html#Grid">Grid</a></li>
+            <li><a href="/styleguide/components.html#Heading">Heading</a></li>
+            <li><a href="/styleguide/components.html#Icon">Icon</a></li>
+            <li><a href="/styleguide/components.html#Tag">Tag</a></li>
+            <li><a href="/styleguide/components.html#List">List</a></li>
+            <li><a href="/styleguide/components.html#Media">Media</a></li>
+            <li><a href="/styleguide/components.html#Pagination">Pagination</a></li>
+            <li><a href="/styleguide/components.html#Panel">Panel</a></li>
+            <li><a href="/styleguide/components.html#Paragraph">Paragraph</a></li>
+            <li><a href="/styleguide/components.html#Wrapper">Wrapper</a></li>
+          </ul>
+        </li>
+        <li><a href="/styleguide/utilities.html">Utilities</a></li>
+        <li><a href="/styleguide/templates.html">Templates</a></li>
+        <li><a href="/styleguide/support.html">Support</a></li>
+      </ul>
+    </aside>
+
+    <main class="sg-main">
+
+      {% block content %}{% endblock %}
+
+    </main>
+
+  </div>
+
+</body>
+
+</html>

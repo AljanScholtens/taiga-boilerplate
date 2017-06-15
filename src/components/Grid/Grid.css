@@ -1,0 +1,48 @@
+/*------------------------------------*\
+  #COMPONENTS-GRID
+\*------------------------------------*/
+
+/*
+ * Add your own grid items
+ */
+.c-grid {
+  width: 100%;
+  display: grid;
+  grid-column-gap: var(--space-default);
+
+  @media(--breakpoint-30) {
+    grid-column-gap: var(--space-40);
+    grid-row-gap: var(--space-default);
+    margin: var(--space-stack-default);
+  }
+}
+
+.c-grid--thirds {
+
+  @media(--breakpoint-20) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.c-grid--halves {
+
+  @media(--breakpoint-20) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.c-grid--sidebar {
+
+  @media(--breakpoint-20) {
+    grid-template-columns: 1fr 15rem;
+  }
+
+  @media(--breakpoint-30) {
+    grid-template-columns: 1fr 20rem;
+  }
+}
+
+.c-grid--single {
+  margin: auto;
+  max-width: 54rem;
+}

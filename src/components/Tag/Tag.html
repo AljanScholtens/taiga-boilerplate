@@ -1,0 +1,5 @@
+{% macro Tag(type='neutral') %}
+  {% set typeClass = type and 'c-tag--' + type %}
+
+  <span class="c-tag {{ typeClass }}">{{ caller() }}</span>
+{% endmacro %}

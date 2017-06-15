@@ -1,0 +1,22 @@
+{% from 'components/Button/Button.html' import Button %}
+
+<p>
+  {% call Button(url='http://github.com') %} Button {% endcall %}
+  {% call Button(type='primary') %} Button Primary {% endcall %}
+  {% call Button(type='error') %} Button error {% endcall %}
+  {% call Button(type='disabled') %} Button Disabled {% endcall %}
+</p>
+
+<p>
+  {% call Button(icon='print') %} Button {% endcall %}
+  {% call Button(type='primary', icon='print', iconPosition='right') %} Button {% endcall %}
+  {% call Button(icon='print') %}{% endcall %}
+</p>
+
+<p>
+  {% call Button(size='large') %} Button Large {% endcall %}
+</p>
+
+<p>
+  {% call Button(size='small') %} Button Small {% endcall %}
+</p>

@@ -1,0 +1,26 @@
+/*------------------------------------*\
+  #COMPONENTS-CARDS
+\*------------------------------------*/
+
+.c-card {
+  border-radius: var(--border-radius-default);
+  overflow: hidden;
+  margin: var(--space-stack-default);
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  align-content: stretch;
+}
+
+.c-card--white {
+  background: var(--color-white);
+  box-shadow: var(--box-shadow-30);
+}
+
+.c-card--neutral {
+  background: var(--color-neutral-10);
+}
+
+  .c-card__content {
+    padding: var(--space-inset-default);
+  }

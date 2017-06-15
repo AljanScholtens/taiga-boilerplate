@@ -1,0 +1,24 @@
+/*------------------------------------*\
+  #COMPONENTS-FORM-FIELD
+\*------------------------------------*/
+
+.c-form-field {
+  margin: var(--space-stack-default);
+}
+
+.c-form-field--error {
+  color: var(--color-error-50);
+}
+
+  .c-form-field__label {
+    display: inline-block;
+    margin: var(--space-stack-10);
+  }
+
+  .c-form-field__input {
+    margin: var(--space-stack-10);
+  }
+
+  .c-form-field__description {
+
+  }

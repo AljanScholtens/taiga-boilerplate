@@ -1,0 +1,7 @@
+/*------------------------------------*\
+  #COMPONENTS-GRID-ITEM
+\*------------------------------------*/
+
+.c-grid-item {
+  background: var(--color-neutral-10);
+}

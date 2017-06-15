@@ -1,0 +1,20 @@
+{% macro Media(type='image', url='', caption='') %}
+  {% set typeClass = type and 'c-media--' + type %}
+
+  <figure class="c-media {{ typeClass }}">
+
+    {% if type == 'image' %}
+      <img class="c-media__image" src="{{ url }}"/>
+    {% endif %}
+
+    {% if type == 'video' %}
+      <iframe class="c-media__video" src="{{ url }}" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    {% endif %}
+
+    {% if caption %}
+      <figcaption class="c-media__caption">A Wolf</figcaption>
+    {% endif %}
+
+  </figure>
+
+{% endmacro %}

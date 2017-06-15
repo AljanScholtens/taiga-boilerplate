@@ -1,0 +1,7 @@
+{% macro Grid(type='') %}
+  {% set typeClass = type and 'c-grid--' + type %}
+
+  <div class="c-grid {{ typeClass }}">
+    {{ caller() }}
+  </div>
+{% endmacro %}
