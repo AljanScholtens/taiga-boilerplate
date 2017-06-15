@@ -1,0 +1,31 @@
+{% from 'components/Layout/Layout.html' import Layout %}
+{% from 'components/Layout/Layout.Row.html' import LayoutRow %}
+{% from 'components/Layout/Layout.Container.html' import LayoutContainer %}
+
+{% call Layout() %}
+
+  {% call LayoutRow() %}
+    {% call LayoutContainer() %}
+      <p>Nice warm brown bread from the big oven.</p>
+    {% endcall %}
+  {% endcall %}
+
+  {% call LayoutRow(type='primary') %}
+    {% call LayoutContainer() %}
+      <p>Nice warm brown bread from the big oven.</p>
+    {% endcall %}
+  {% endcall %}
+
+  {% call LayoutRow(type='neutral') %}
+    {% call LayoutContainer() %}
+      <p>Nice warm brown bread from the big oven.</p>
+    {% endcall %}
+  {% endcall %}
+
+  {% call LayoutRow(type='line') %}
+    {% call LayoutContainer() %}
+      <p>Nice warm brown bread from the big oven.</p>
+    {% endcall %}
+  {% endcall %}
+
+{% endcall %}
