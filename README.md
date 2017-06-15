@@ -3,6 +3,8 @@
 Taiga is a small HTML/PostCSS framework working with Nunjucks for starting a living component library and style guide (foundation for a design system).
 It's mobile-first based on the principles of ITCSS and [BEM](http://bem.info).
 
+A getting started guide can be found in the style guide after installing it locally.
+
 ## Download
 
 Use these options to quickly install Taiga.
