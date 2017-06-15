@@ -1,124 +1,38 @@
-# Taiga Boilerplate
+# Taiga
 
-Taiga Boilerplate is a small HTML/PostCSS framework for starting a new web project.
-It's mobile-first based on the principles of [BEM](http://bem.info) and ITCSS.
+Taiga is a small HTML/PostCSS framework working with Nunjucks for starting a living component library and style guide (foundation for a design system).
+It's mobile-first based on the principles of ITCSS and [BEM](http://bem.info).
 
 ## Download
 
-Use these options to quickly install Taiga Boilerplate.
+Use these options to quickly install Taiga.
 
-- [Download the latest release](https://github.com/studiowolf/taiga-boilerplate/archive/master.zip)
-- Clone the repository `git clone https://github.com/studiowolf/taiga-boilerplate.git`
+- [Download the latest release](https://github.com/aljanscholtens/taiga-boilerplate/archive/master.zip)
+- Clone the repository `git clone https://github.com/aljanscholtens/taiga-boilerplate.git`
 
 ## Dependencies
 
 - [NPM](#)
 - [Gulp](#)
+- [Nunjucks](#)
 
 ## How to start
 
 1. Make sure you've installed the [dependencies](#dependencies).
-2. Get the [latest version](#download) of Taiga Boilerplate.
+2. Get the [latest version](#download) of Taiga.
 3. Go to the folder via terminal or your application of choice.
 4. **Install via `npm install`.**
 5. **Run via `gulp`.**
 6. Start building and use `/styleguide/` as example and inspiration.
 
-## ITCSS
-
-Soon
-
-## BEM and namespaces
-
-Soon
-
-```
-/*
- * Block
- */
-.c-example {
-
-  /* 1: Add the direct properties of the element */
-  property: value;
-
-  /* 2: Add media queries or print styles */
-  @media (--breakpoint-10) { property: value; }
-
-  /* 3: Add selectors of the parent element */
-  &:hover { property: value; }
-
-  /* 4: Add temporary states of the parent element */
-  &.is-open { property: value; }
-
-  /* 5: Add nested elements */
-  & strong { property: value; }
-}
-
-  /*
-   * Element
-   */
-  .c-example__subcomponent {
-    property: value;
-  }
-
-/*
- * Modifier
- */
-.c-example--modifier {
-  property: value;
-}
-
-```
-
-## Grid
-
-Taiga uses CSS Grid Layout.
-
-## Tokens and variables
-
-Variables are defined in `assets/stylesheets/tokens.css` and are treated a bit differently.
-In the example below you'll notice Taiga works with steps of 10, 20, 30 and so on. The trick is simple, 10 is small or light and 100 is large or dark. So we work from nothing to something.
-
-The steps are created this way so you can easily add more in between. This way we will have more consistency in a website, but maintain the creativity and freedom.
-
-```
-// Border-radius
---border-radius-default: 0.125rem; // Small
---border-radius-20: 0.313rem; // Larger
-
-// Color brand
---color-primary-30: #29c882; // Lighter
---color-primary-50: #09a25f; // Default
---color-primary-70: #038049; // Darker
-```
-
-### Examples
-
-Wrong:
-```
-.module {
-    background: #09a25f;
-    font-size: 1.25rem;
-}
-```
-
-Right:
-```
-.module {
-    background: var(--color-primary-50);
-    font-size: var(--font-size-40);
-}
-```
-
 ## Bugs, requests and questions
 
-- Found a bug or need a feature? Post an [issue](https://github.com/studiowolf/taiga-boilerplate/issues/new) or do a [pull request](https://github.com/studiowolf/taiga-boilerplate/pulls).
-- Questions? Mail me at [aljan@studiowolf.com](mailto:aljan@studiowolf.com) or tweet to [twitter.com/aljanscholtens](http://twitter.com/aljanscholtens).
+- Found a bug or need a feature? Post an [issue](https://github.com/aljanscholtens/taiga-boilerplate/issues/new) or do a [pull request](https://github.com/aljanscholtens/taiga-boilerplate/pulls).
+- Questions? Mail me at [aljan@scholtens.me](mailto:aljan@scholtens.me) or tweet to [twitter.com/aljanscholtens](http://twitter.com/aljanscholtens).
 
 ## Background
 
-As an interface designer I had the problem with most other boilerplates that they are created for developers.
-You'll get everything you need to build a prototype rapidly, but adjusting and adding components and design can be difficult. That's why we built our own boilerplate, Taiga Boilerplate.
+As UI designer and front-end developer I wanted to have a simple boilerplate to set up a small foundation of a design system with a simple living component library for a new web product. Use it, rebuild it and work from there, do not try to update Taiga.
 
 Taiga is inspired by these awesome people: Harry Roberts, Nathan Curtis, Brad Frost and Dominic Nguyen.
 
