@@ -1,0 +1,6 @@
+{% macro Quote(author='') %}
+  <blockquote class="c-quote">
+    <p>{{ caller() }}</p>
+    <cite class="c-quote__author">By {{ author }}</cite>
+  </blockquote>
+{% endmacro %}
