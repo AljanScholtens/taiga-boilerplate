@@ -51,6 +51,6 @@
 /*
  * Set up a grid item
  */
-.c-grid-item {
+.c-grid__item {
   background: var(--color-neutral-10);
 }

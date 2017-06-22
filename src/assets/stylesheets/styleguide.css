@@ -109,8 +109,9 @@
     margin-bottom: calc(var(--space-default) * 3);
   }
 
-  & .c-grid-item {
+  & .c-grid__item {
     background: var(--color-neutral-10);
+    padding: var(--space-default);
   }
 }
 
