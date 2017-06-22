@@ -1,0 +1,36 @@
+/*------------------------------------*\
+  #COMPONENTS-FORM-CHECKBOX
+\*------------------------------------*/
+
+.c-form-checkbox {
+
+  & input {
+    display: none;
+  }
+
+  & label {
+    height: 20px;
+    width: 20px;
+    border-radius: var(--border-radius-10);
+    background: var(--color-neutral-10);
+    border: 1px solid var(--color-neutral-30);
+    display: flex;
+    cursor: pointer;
+
+    &:before {
+      content: " ";
+      height: 12px;
+      width: 12px;
+      margin: auto;
+      content: "\2714";
+      color: var(--color-primary-50);
+      line-height: 0.8;
+      border-radius: 50%;
+      display: none;
+    }
+  }
+
+  & input:checked + label:before {
+    display: block;
+  }
+}

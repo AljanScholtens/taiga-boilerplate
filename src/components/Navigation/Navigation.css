@@ -1,0 +1,57 @@
+/*------------------------------------*\
+  #COMPONENTS-NAVIGATION
+\*------------------------------------*/
+
+/*
+ * Navigation wrapper
+ */
+.c-navigation {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+  /*
+   * Room for a logo in the navigation
+   */
+  .c-navigation__logo {
+    font-weight: 500;
+    padding: 0.75rem;
+    padding-left: 0;
+
+    & a {
+      color: var(--color-neutral-90);
+      text-decoration: none;
+    }
+  }
+
+
+  /*
+   * Navigation items
+   */
+  .c-navigation__items {
+    display: flex;
+    list-style: none;
+  }
+
+  .c-navigation__item {
+
+    &:last-child a {
+      padding-right: 0;
+    }
+
+    & a {
+      text-decoration: none;
+      padding: 0.75rem;
+      display: block;
+      font-weight: 500;
+
+      &:hover {
+        color: var(--color-primary-70);
+      }
+    }
+  }
+
+  .c-navigation__item--selected a {
+    color: var(--color-primary-70);
+  }
