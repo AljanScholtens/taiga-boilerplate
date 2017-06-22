@@ -9,8 +9,8 @@
   }
 
   & label {
-    height: 20px;
-    width: 20px;
+    height: var(--space-30);
+    width: var(--space-30);
     border-radius: 50%;
     background: var(--color-neutral-10);
     border: 1px solid var(--color-neutral-30);
@@ -19,8 +19,8 @@
 
     &:before {
       content: " ";
-      height: 12px;
-      width: 12px;
+      height: var(--space-20);
+      width: var(--space-20);
       margin: auto;
       background: var(--color-primary-50);
       border-radius: 50%;
