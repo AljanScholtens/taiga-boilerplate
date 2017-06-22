@@ -1,20 +1,28 @@
-{% macro Media(type='image', url='', caption='') %}
-  {% set typeClass = type and 'c-media--' + type %}
+{% macro Media(type='image', url='', caption='', content='') %}
+  {% set typeClass = type and 'c-media__item--' + type %}
 
-  <figure class="c-media {{ typeClass }}">
+  <div class="c-media {% if content %}c-media--flex{% endif %}">
+    <div class="c-media__item {{ typeClass }}">
 
-    {% if type == 'image' %}
-      <img class="c-media__image" src="{{ url }}"/>
+      {% if type == 'image' %}
+        <img class="c-media__image" src="{{ url }}"/>
+      {% endif %}
+
+      {% if type == 'video' %}
+        <iframe class="c-media__video" src="{{ url }}" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+      {% endif %}
+
+      {% if caption %}
+        <figcaption class="c-media__caption">A Wolf</figcaption>
+      {% endif %}
+
+    </div>
+
+    {% if content %}
+      <div class="c-media__content">
+        {{ caller() }}
+      </div>
     {% endif %}
-
-    {% if type == 'video' %}
-      <iframe class="c-media__video" src="{{ url }}" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-    {% endif %}
-
-    {% if caption %}
-      <figcaption class="c-media__caption">A Wolf</figcaption>
-    {% endif %}
-
-  </figure>
+  </div>
 
 {% endmacro %}

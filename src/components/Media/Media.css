@@ -2,33 +2,69 @@
   #COMPONENTS-MEDIA
 \*------------------------------------*/
 
+/*
+ * Media wrapper
+ */
 .c-media {
   margin: var(--space-stack-default);
   position: relative;
   width: 100%;
 }
 
-  .c-media__image {
+.c-media--flex {
+  display: flex;
+
+  & .c-media__image {
+    height: 8rem;
+    width: 8rem;
+    object-fit: cover;
+    margin-right: var(--space-default);
+    border-radius: var(--border-radius-20);
+  }
+}
+
+
+  /*
+   * Media item (like video or image)
+   */
+  .c-media__item {
+
+  }
+
+  .c-media__item--image {
     display: block;
     max-width: 100%;
   }
 
+  .c-media__item--video {
+    height: 0;
+    padding-bottom: 56.25%;
+    width: 100%;
+  }
+
+
+  /*
+   * Caption
+   */
   .c-media__caption {
     color: var(--color-neutral-50);
+    margin-top: var(--space-10);
+    font-weight: 500;
     font-size: var(--font-size-20);
   }
 
 
-.c-media--video {
-  height: 0;
-  padding-bottom: 56.25%;
-  width: 100%;
-}
-
-.c-media__video {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
+  /*
+   * Objects, the iframe, or the img tag
+   */
+  .c-media__image {
+    border-radius: var(--border-radius-20);
+  }
+  
+  .c-media__video {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
