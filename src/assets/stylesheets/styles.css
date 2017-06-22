@@ -14,7 +14,6 @@
  */
 @import "base.page.css";
 @import "base.form.css";
-@import "base.table.css";
 @import "base.type.css";
 
 
@@ -39,6 +38,7 @@
 @import "../../components/Panel/Panel.css";
 @import "../../components/Paragraph/Paragraph.css";
 @import "../../components/Quote/Quote.css";
+@import "../../components/Table/Table.css";
 @import "../../components/Tag/Tag.css";
 
 
