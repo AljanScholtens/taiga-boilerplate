@@ -4,6 +4,7 @@
 
 .c-list {
   list-style: none;
+  line-height: var(--line-height-30);
   margin: -0.3rem 0 calc(var(--space-default) - 0.3rem) 0;
 }
 
