@@ -11,11 +11,28 @@
   position: relative;
   background: url('image.svg') right 0.5rem center no-repeat;
 
+  &:focus {
+    border: 1px solid var(--color-neutral-50);
+  }
+
   & select {
     border: none;
     box-shadow: none;
     background: transparent;
     background-image: none;
     -webkit-appearance: none;
+
+    color: inherit;
+    display: block;
+    font-family: var(--font-family-body);
+    font-size: var(--font-size-30);
+    margin: 0;
+    padding: var(--space-20);
+    vertical-align: baseline;
+    width: 100%;
+
+    &:focus {
+      outline: 0;
+    }
   }
 }

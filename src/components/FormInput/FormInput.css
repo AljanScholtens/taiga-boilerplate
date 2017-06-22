@@ -1,18 +1,6 @@
 /*------------------------------------*\
-  #BASE-FORMS
+  #COMPONENTS-FORM-INPUT
 \*------------------------------------*/
-
-form {  }
-
-fieldset {
-  padding: 0;
-  margin: 0;
-  border: 0;
-}
-
-legend {
-  padding: 0;
-}
 
 input[type=text],
 input[type=number],
@@ -20,9 +8,7 @@ input[type=password],
 input[type=search],
 input[type=email],
 input[type=tel],
-input[type=url],
-textarea,
-select {
+input[type=url] {
   border: 1px solid var(--color-neutral-30);
   border-radius: var(--border-radius-default);
   color: inherit;
@@ -40,10 +26,7 @@ select {
   }
 }
 
-textarea {
-  display: block;
-  overflow: auto;
-  resize: vertical;
-  vertical-align: top;
-  line-height: var(--line-height-30);
+input:disabled {
+  background: var(--color-neutral-10);
+  color: var(--color-neutral-50);
 }

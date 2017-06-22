@@ -13,7 +13,6 @@
  * #BASE
  */
 @import "base.page.css";
-@import "base.form.css";
 @import "base.type.css";
 
 
@@ -24,8 +23,10 @@
 @import "../../components/Card/Card.css";
 @import "../../components/FormCheckbox/FormCheckbox.css";
 @import "../../components/FormField/FormField.css";
+@import "../../components/FormInput/FormInput.css";
 @import "../../components/FormRadiobutton/FormRadiobutton.css";
 @import "../../components/FormSelect/FormSelect.css";
+@import "../../components/FormTextarea/FormTextarea.css";
 @import "../../components/Grid/Grid.css";
 @import "../../components/Heading/Heading.css";
 @import "../../components/Icon/Icon.css";
