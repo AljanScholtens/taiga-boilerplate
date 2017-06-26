@@ -12,7 +12,7 @@
 /*
  * List item
  */
-.c-list-item {
+.c-list__item {
   padding: .3rem 0 .3rem 2rem;
   position: relative;
 
@@ -31,7 +31,7 @@
   }
 }
 
-ul > .c-list-item:before {
+ul > .c-list__item:before {
   top: 0.95rem;
   height: 2px;
   width: 8px;
@@ -39,7 +39,7 @@ ul > .c-list-item:before {
 }
 
 
-ol > .c-list-item {
+ol > .c-list__item {
   counter-increment: list__counter;
 
   &:before {
