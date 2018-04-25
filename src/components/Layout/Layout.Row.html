@@ -1,7 +1,0 @@
-{% macro LayoutRow(type='') %}
-  {% set typeClass = type and 'c-layout__row--' + type %}
-
-  <div class="c-layout__row {{ typeClass }}">
-    {{ caller() }}
-  </div>
-{% endmacro %}

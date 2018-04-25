@@ -1,9 +1,15 @@
-{% macro FormField(label='', error='', description='') %}
-
-  <div class="c-form-field {% if error == 'true' %} c-form-field--error {% endif %}">
-    <label class="c-form-field__label">{{ label }}</label>
-    <div class="c-form-field__input">{{ caller() }}</div>
-    <small class="c-form-field__description">{{ description }}</small>
+<div class="c-form-field  c-form-field--error">
+  <label class="c-form-field__label">Label</label>
+  <div class="c-form-field__input">
+    <input type="text" placeholder="" value="Tekst">
   </div>
+  <small class="c-form-field__description">Dit is een beschrijving</small>
+</div>
 
-{% endmacro %}
+<div class="c-form-field">
+  <label class="c-form-field__label">Label</label>
+  <div class="c-form-field__input">
+    <input type="text" placeholder="" value="">
+  </div>
+  <small class="c-form-field__description">Dit is een beschrijving</small>
+</div>

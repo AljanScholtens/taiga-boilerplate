@@ -1,7 +1,35 @@
-{% macro Grid(type='') %}
-  {% set typeClass = type and 'c-grid--' + type %}
-
-  <div class="c-grid {{ typeClass }}">
-    {{ caller() }}
+<div class="c-grid c-grid--thirds">
+  <div class="c-grid__item">
+    Dit is mijn grid
   </div>
-{% endmacro %}
+  <div class="c-grid__item">
+    Dit is mijn grid
+  </div>
+  <div class="c-grid__item">
+    Dit is mijn grid
+  </div>
+</div>
+
+<div class="c-grid c-grid--halves">
+  <div class="c-grid__item">
+    Dit is mijn grid
+  </div>
+  <div class="c-grid__item">
+    Dit is mijn grid
+  </div>
+</div>
+
+<div class="c-grid c-grid--sidebar">
+  <div class="c-grid__item">
+    Dit is mijn grid
+  </div>
+  <div class="c-grid__item">
+    Dit is mijn grid
+  </div>
+</div>
+
+<div class="c-grid c-grid--single">
+  <div class="c-grid__item">
+    Dit is mijn grid
+  </div>
+</div>

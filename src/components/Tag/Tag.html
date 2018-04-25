@@ -1,5 +1,7 @@
-{% macro Tag(type='neutral') %}
-  {% set typeClass = type and 'c-tag--' + type %}
+<span class="c-tag c-tag--neutral">Tag</span>
 
-  <span class="c-tag {{ typeClass }}">{{ caller() }}</span>
-{% endmacro %}
+<span class="c-tag c-tag--primary">Primary</span>
+
+<span class="c-tag c-tag--success">Success</span>
+
+<span class="c-tag c-tag--error">Error</span>

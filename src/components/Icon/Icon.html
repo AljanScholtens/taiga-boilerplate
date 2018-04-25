@@ -1,5 +1,15 @@
-{% macro Icon(icon='print', size='') %}
-  {% set sizeClass = size and 'c-icon--' + size %}
+<p>
+  <span class="c-icon c-icon--large"><svg><use xlink:href="#icon-print"></use></svg></span>
+</p>
 
-  <span class="c-icon {{ sizeClass }}"><svg><use xlink:href="#icon-{{ icon }}" /></svg></span>
-{% endmacro %}
+<p>
+  <span class="c-icon"><svg><use xlink:href="#icon-print"></use></svg></span>
+</p>
+
+<p>
+  <a href=""><span class="c-icon"><svg><use xlink:href="#icon-print"></use></svg></span> Print this document</a>
+</p>
+
+<p>
+  <a href="">Go to link <span class="c-icon"><svg><use xlink:href="#icon-arrow-forward"></use></svg></span></a>
+</p>

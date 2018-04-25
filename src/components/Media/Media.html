@@ -1,28 +1,22 @@
-{% macro Media(type='image', url='', caption='', content='') %}
-  {% set typeClass = type and 'c-media__item--' + type %}
+<div class="c-media ">
+  <div class="c-media__item c-media__item--image">
+    <img class="c-media__image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Canis_lupus_laying.jpg/266px-Canis_lupus_laying.jpg">
+    <figcaption class="c-media__caption">A Wolf</figcaption>
+  </div>
+</div>
 
-  <div class="c-media {% if content %}c-media--flex{% endif %}">
-    <div class="c-media__item {{ typeClass }}">
+<div class="c-media ">
+  <div class="c-media__item c-media__item--video">
+    <iframe class="c-media__video" src="https://player.vimeo.com/video/155640569?title=0&amp;byline=0&amp;portrait=0" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+  </div>
+</div>
 
-      {% if type == 'image' %}
-        <img class="c-media__image" src="{{ url }}"/>
-      {% endif %}
-
-      {% if type == 'video' %}
-        <iframe class="c-media__video" src="{{ url }}" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-      {% endif %}
-
-      {% if caption %}
-        <figcaption class="c-media__caption">A Wolf</figcaption>
-      {% endif %}
-
-    </div>
-
-    {% if content %}
-      <div class="c-media__content">
-        <p>{{ caller() }}</p>
-      </div>
-    {% endif %}
+<div class="c-media c-media--flex">
+  <div class="c-media__item c-media__item--image">
+    <img class="c-media__image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Canis_lupus_laying.jpg/266px-Canis_lupus_laying.jpg">
   </div>
 
-{% endmacro %}
+  <div class="c-media__content">
+    <p>This is content next to my image</p>
+  </div>
+</div>

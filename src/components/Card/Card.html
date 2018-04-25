@@ -1,10 +1,11 @@
-{% macro Card(type='white', title='', image='') %}
-  {% set typeClass = type and 'c-card--' + type %}
-
-  <div class="c-card {{ typeClass }}">
-    <div class="c-card__content">
-      {{ caller() }}
-    </div>
+<div class="c-card c-card--white">
+  <div class="c-card__content">
+    <p>The release of atom power has changed everything except our way of thinking...the solution to this problem lies in the heart of mankind.</p>
   </div>
+</div>
 
-{% endmacro %}
+<div class="c-card c-card--neutral">
+  <div class="c-card__content">
+    <p>The release of atom power has changed everything except our way of thinking...the solution to this problem lies in the heart of mankind.</p>
+  </div>
+</div>

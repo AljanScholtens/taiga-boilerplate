@@ -1,7 +1,11 @@
-{% macro Paragraph(type='') %}
-  {% set typeClass = type and 'c-paragraph--' + type %}
+<p class="c-paragraph c-paragraph--large">
+  The release of atom power has changed everything except our way of thinking...the solution to this problem lies in the heart of mankind.
+</p>
 
-  <p class="c-paragraph {{ typeClass }}">
-    {{ caller() }}
-  </p>
-{% endmacro %}
+<p class="c-paragraph">
+  The release of atom power has changed everything except our way of thinking...the solution to this problem lies in the heart of mankind.
+</p>
+
+<p class="c-paragraph c-paragraph--small">
+  The release of atom power has changed everything except our way of thinking...the solution to this problem lies in the heart of mankind.
+</p>

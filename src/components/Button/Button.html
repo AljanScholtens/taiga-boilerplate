@@ -1,18 +1,20 @@
-{% from "components/Icon/Icon.html" import Icon %}
+<p>
+  <a class="c-button" href="http://github.com">Button</a>
+  <a class="c-button c-button--primary" href="">Button Primary</a>
+  <a class="c-button c-button--error" href="">Button error</a>
+  <a class="c-button c-button--disabled" href="">Button Disabled</a>
+</p>
 
-{% macro Button(size='', url='', icon='', iconPosition='left', type='neutral') %}
-  {% set typeClass = type and 'c-button--' + type %}
-  {% set sizeClass = size and 'c-button--' + size %}
+<p>
+  <a class="c-button c-button--neutral" href=""><span class="c-icon"><svg><use xlink:href="#icon-print"></use></svg></span> Button</a>
+  <a class="c-button c-button--primary" href="">Button <span class="c-icon"><svg><use xlink:href="#icon-print"></use></svg></span></a>
+  <a class="c-button c-button--neutral" href=""><span class="c-icon"><svg><use xlink:href="#icon-print"></use></svg></span></a>
+</p>
 
-  <a class="c-button {{ typeClass }} {{ sizeClass }}" href="{{ url }}">
-    {% if icon and iconPosition == 'left' %}
-      {{ Icon(icon=icon) }}
-    {% endif %}
+<p>
+  <a class="c-button c-button--neutral c-button--large" href="">Button Large</a>
+</p>
 
-    {{ caller() }}
-
-    {% if icon and iconPosition == 'right' %}
-      {{ Icon(icon=icon) }}
-    {% endif %}
-  </a>
-{% endmacro %}
+<p>
+  <a class="c-button c-button--neutral c-button--small" href="">Button Small</a>
+</p>

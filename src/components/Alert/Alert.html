@@ -1,5 +1,4 @@
-{% macro Alert(type='neutral') %}
-  {% set typeClass = type and 'c-alert--' + type %}
-
-  <div class="c-alert {{ typeClass }}">{{ caller() }}</div>
-{% endmacro %}
+<div class="c-alert">Don't forget to check your tasks</div>
+<div class="c-alert c-alert--primary">Did you know about our recent changes?</div>
+<div class="c-alert c-alert--success">Wow, that's great, you finished your tasks</div>
+<div class="c-alert c-alert--error">Hmm, it's not possible to delete your task</div>
