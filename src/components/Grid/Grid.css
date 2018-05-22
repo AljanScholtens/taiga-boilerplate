@@ -44,7 +44,8 @@
 
 .c-grid--single {
   margin: auto;
-  max-width: 54rem;
+  width: 100%;
+  max-width: 70ch;
 }
 
 
