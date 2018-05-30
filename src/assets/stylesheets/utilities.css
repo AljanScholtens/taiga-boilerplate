@@ -2,27 +2,25 @@
   #UTILITIES-GLOBAL
 \*------------------------------------*/
 
-.u-display-none { display: none !important; }
+.u-d-n { display: none !important; }
 
-.u-visibility-hidden { visibility: hidden !important; }
+.u-v-h { visibility: hidden !important; }
 
-.u-text-align-left { text-align: left; }
+.u-ta-l { text-align: left; }
 
-.u-text-align-right { text-align: right; }
+.u-ta-r { text-align: right; }
 
-.u-text-align-center { text-align: center; }
+.u-ta-c { text-align: center; }
 
-.u-float-left { float: left; }
+.u-f-l { float: left; }
 
-.u-float-right { float: right; }
+.u-f-r { float: right; }
 
-.u-spacing {
+.u-td-lt { text-decoration: line-through; }
+
+.u-mb-40_b20 {
 
   @media (--breakpoint-20) {
-    margin-bottom: calc(var(--space-default) * 2);
+    margin-bottom: var(--space-40);
   }
-}
-
-.u-line-through {
-  text-decoration: line-through;
 }
