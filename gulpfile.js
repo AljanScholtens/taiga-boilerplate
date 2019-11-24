@@ -189,14 +189,7 @@ var copyFiles = function(done) {
 
 exports.default = series(
   cleanDist,
-  parallel(
-    buildScripts,
-    buildStyles,
-    buildHtml,
-    lintScripts,
-    copyFiles,
-    copyFiles
-  )
+  parallel(buildScripts, buildStyles, buildHtml, lintScripts, copyFiles)
 );
 
 exports.watch = series(exports.default, startServer, watchSource);
