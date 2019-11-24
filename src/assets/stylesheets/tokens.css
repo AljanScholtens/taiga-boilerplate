@@ -96,13 +96,6 @@
   --max-width: 1140px;
 
 
-  /* Breakpoints */
-  @custom-media --breakpoint-10 (min-width: 600px);
-  @custom-media --breakpoint-20 (min-width: 750px);
-  @custom-media --breakpoint-30 (min-width: 1000px);
-  @custom-media --breakpoint-40 (min-width: 1200px);
-
-
 
 
 
@@ -176,3 +169,16 @@
   --layer-20: 20;
   --layer-30: 30;
 }
+
+
+
+
+/*
+ * Other
+ */
+
+/* Breakpoints */
+@custom-media --breakpoint-10 (min-width: 600px);
+@custom-media --breakpoint-20 (min-width: 750px);
+@custom-media --breakpoint-30 (min-width: 1000px);
+@custom-media --breakpoint-40 (min-width: 1200px);

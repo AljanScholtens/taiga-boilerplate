@@ -114,10 +114,10 @@ var buildStyles = function(done) {
     .pipe(
       postcss([
         postcssImport,
-        purgecss({
-          content: [paths.html.input],
-          rejected: true
-        }),
+        // purgecss({
+        //   content: [paths.html.input],
+        //   rejected: true
+        // }),
         postcssPresetEnv({
           stage: 0,
           browsers: "last 2 versions",
