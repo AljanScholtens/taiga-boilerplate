@@ -14,8 +14,12 @@ Use these options to quickly install Taiga.
 
 ## Dependencies
 
-- [NPM](#)
-- [Gulp](#)
+_**Note:** if you've previously installed Gulp globally, run `npm rm --global gulp` to remove it. [Details here.](https://medium.com/gulpjs/gulp-sips-command-line-interface-e53411d4467)_
+
+Make sure these are installed first.
+
+- [Node.js](http://nodejs.org)
+- [Gulp Command Line Utility](http://gulpjs.com) `npm install --global gulp-cli`
 - [Nunjucks](#)
 
 ## How to start
@@ -25,7 +29,8 @@ Use these options to quickly install Taiga.
 3. Go to the folder via terminal or your application of choice.
 4. **Install via `npm install`.**
 5. **Run via `gulp`.**
-6. Start building and use `/styleguide/` as example and inspiration.
+6. **Run watch mode via `gulp watch`.**
+7. Start building and use `/styleguide/` as example and inspiration.
 
 ## Bugs, requests and questions
 
