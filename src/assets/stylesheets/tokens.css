@@ -155,9 +155,9 @@
 
 
   /* Shadows */
-  --box-shadow-default: 0px 2px 4px 1px color(var(--color-black) alpha(10%));
-  --box-shadow-10: 0px 2px 4px 1px color(var(--color-black) alpha(10%));
-  --box-shadow-30: 0px 8px 16px color(var(--color-black) alpha(20%));
+  --box-shadow-default: 0px 2px 4px 1px color-mod(var(--color-black) alpha(10%));
+  --box-shadow-10: 0px 2px 4px 1px color-mod(var(--color-black) alpha(10%));
+  --box-shadow-30: 0px 8px 16px color-mod(var(--color-black) alpha(20%));
 
 
   /* Animation beziers */

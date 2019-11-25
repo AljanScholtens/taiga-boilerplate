@@ -30,7 +30,7 @@
 
   &:active,
   &:focus {
-    box-shadow: inset 0 1px 3px color(var(--color-black) alpha(80%));
+    box-shadow: inset 0 1px 3px color-mod(var(--color-black) alpha(80%));
   }
 }
 
@@ -63,7 +63,7 @@
 
   &:active,
   &:focus {
-    box-shadow: inset 0 1px 3px color(var(--color-black) alpha(80%));
+    box-shadow: inset 0 1px 3px color-mod(var(--color-black) alpha(80%));
   }
 }
 
@@ -82,7 +82,7 @@
 
   &:active,
   &:focus {
-    box-shadow: inset 0 1px 3px color(var(--color-black) alpha(80%));
+    box-shadow: inset 0 1px 3px color-mod(var(--color-black) alpha(80%));
   }
 }
 
