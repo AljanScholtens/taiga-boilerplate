@@ -2,6 +2,10 @@
   #COMPONENTS-TAG
 \*------------------------------------*/
 
+
+/*
+ * Tag
+ */
 .c-tag {
   border-radius: var(--border-radius-default);
   font-size: var(--font-size-10);
@@ -17,16 +21,22 @@
   }
 }
 
+
+/* Neutral */
 .c-tag--neutral {
   background: var(--color-neutral-10);
   color: var(--color-neutral-70);
 }
 
+
+/* Success */
 .c-tag--success {
   background: var(--color-success-50);
   color: var(--color-neutral-0);
 }
 
+
+/* Error */
 .c-tag--error {
   background: var(--color-error-50);
   color: var(--color-neutral-0);

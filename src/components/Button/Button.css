@@ -2,6 +2,10 @@
   #COMPONENTS-BUTTONS
 \*------------------------------------*/
 
+
+/*
+ * Button
+ */
 .c-button {
   border: 0;
   border-radius: var(--border-radius-50);
@@ -37,19 +41,19 @@
 }
 
 
-/* Sizes */
+/* Small */
 .c-button--small {
   font-size: var(--font-size-20);
   border-radius: var(--border-radius-default);
-  padding: var(--space-squish-20);
+  padding: 0 var(--space-30);
+
+  & .c-button__title {
+    padding: var(--space-20) var(--space-30);
+  }
 }
 
-.c-button--large {
-  padding: var(--space-squish-30);
-}
 
-
-/* Types */
+/* Primary */
 .c-button--primary {
   background: var(--color-primary-50);
   color: var(--color-neutral-0);
@@ -69,6 +73,8 @@
   }
 }
 
+
+/* Error */
 .c-button--error {
   background: var(--color-error-50);
   color: var(--color-neutral-0);
@@ -88,6 +94,8 @@
   }
 }
 
+
+/* Disabled */
 .c-button--disabled {
   background: var(--color-neutral-30);
   color: var(--color-neutral-50);
@@ -106,7 +114,7 @@
    * Button title
    */
   .c-button__title {
-    padding: 12px 0;
+    padding: var(--space-30) 0;
     display: block;
   }
 
@@ -120,14 +128,10 @@
   .c-button__icon {
 
     &:first-child {
-      margin-right: 12px;
+      margin-right: var(--space-30);
     }
 
     &:last-child {
-      margin-left: 12px;
-    }
-
-    &:only-child {
-      margin: 10px 0;
+      margin-left: var(--space-30);
     }
   }

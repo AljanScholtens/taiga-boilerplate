@@ -2,22 +2,30 @@
   #COMPONENTS-HEADING
 \*------------------------------------*/
 
+
+/*
+ * Heading
+ */
 .c-heading {
   font-family: var(--font-family-heading);
   font-size: var(--font-size-50);
   line-height: var(--line-height-default);
 }
 
-/* Sizes */
-.c-heading--small {
+
+/* Small */
+.c-heading--10 {
   font-size: var(--font-size-40);
 }
 
+
 /* Default */
-.c-heading--medium {
+.c-heading--20 {
 
 }
 
-.c-heading--large {
+
+/* Large */
+.c-heading--30 {
   font-size: var(--font-size-60);
 }

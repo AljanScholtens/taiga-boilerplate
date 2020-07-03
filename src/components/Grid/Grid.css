@@ -3,7 +3,7 @@
 \*------------------------------------*/
 
 /*
- * The grid is build on CSS Grid Layout
+ * Grid
  */
 .c-grid {
   width: 100%;
@@ -17,6 +17,8 @@
   }
 }
 
+
+/* Thirds */
 .c-grid--thirds {
 
   @media(--breakpoint-20) {
@@ -24,6 +26,8 @@
   }
 }
 
+
+/* Halves */
 .c-grid--halves {
 
   @media(--breakpoint-20) {
@@ -31,6 +35,8 @@
   }
 }
 
+
+/* Sidebar */
 .c-grid--sidebar {
 
   @media(--breakpoint-20) {
@@ -42,6 +48,8 @@
   }
 }
 
+
+/* Single */
 .c-grid--single {
   margin: auto;
   width: 100%;
@@ -49,8 +57,11 @@
 }
 
 
-/*
- * Set up a grid item
- */
-.c-grid__item {
-}
+
+
+
+  /*
+   * Grid Item
+   */
+  .c-grid__item {
+  }

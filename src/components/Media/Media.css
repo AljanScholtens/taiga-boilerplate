@@ -2,6 +2,7 @@
   #COMPONENTS-MEDIA
 \*------------------------------------*/
 
+
 /*
  * Media wrapper
  */
@@ -11,6 +12,8 @@
   width: 100%;
 }
 
+
+/* Media Flex */
 .c-media--flex {
   display: flex;
 
@@ -24,6 +27,9 @@
 }
 
 
+
+
+
   /*
    * Media item (like video or image)
    */
@@ -31,16 +37,23 @@
 
   }
 
+
+  /* Image */
   .c-media__item--image {
     display: block;
     max-width: 100%;
   }
 
+
+  /* Video */
   .c-media__item--video {
     height: 0;
     padding-bottom: 56.25%;
     width: 100%;
   }
+
+
+
 
 
   /*
@@ -54,13 +67,16 @@
   }
 
 
+
+
+
   /*
    * Objects, the iframe, or the img tag
    */
   .c-media__image {
     border-radius: var(--border-radius-20);
   }
-  
+
   .c-media__video {
     position: absolute;
     left: 0;

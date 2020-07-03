@@ -2,6 +2,10 @@
   #COMPONENTS-FORM-INPUT
 \*------------------------------------*/
 
+
+/*
+ * Input
+ */
 input[type=text],
 input[type=number],
 input[type=password],
@@ -26,6 +30,8 @@ input[type=url] {
   }
 }
 
+
+/* Disabled */
 input:disabled {
   background: var(--color-neutral-10);
   color: var(--color-neutral-50);

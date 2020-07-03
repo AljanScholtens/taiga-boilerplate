@@ -2,6 +2,10 @@
   #COMPONENTS-TABLE
 \*------------------------------------*/
 
+
+/*
+ * Table
+ */
 table {
   border-collapse: separate;
   border-spacing: 0;
@@ -9,14 +13,21 @@ table {
   width: 100%;
 }
 
-th {
-  text-align: left;
-}
 
-td, th {
-  padding: 0.35rem 0;
-}
 
-tfoot td {
-  border-top: 2px solid var(--color-neutral-30);
-}
+
+
+  /*
+   * Cell
+   */
+  th {
+    text-align: left;
+  }
+
+  td, th {
+    padding: 0.35rem 0;
+  }
+
+  tfoot td {
+    border-top: 2px solid var(--color-neutral-30);
+  }

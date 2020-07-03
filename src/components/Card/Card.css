@@ -1,7 +1,11 @@
 /*------------------------------------*\
-  #COMPONENTS-CARDS
+  #COMPONENTS-CARD
 \*------------------------------------*/
 
+
+/*
+ * Card
+ */
 .c-card {
   border-radius: var(--border-radius-default);
   overflow: hidden;
@@ -12,15 +16,26 @@
   align-content: stretch;
 }
 
+
+/* White */
 .c-card--white {
   background: var(--color-neutral-0);
   box-shadow: var(--box-shadow-30);
 }
 
+
+/* Neutral */
 .c-card--neutral {
   background: var(--color-neutral-10);
 }
 
+
+
+
+
+  /*
+   * Content
+   */
   .c-card__content {
     padding: var(--space-inset-default);
   }
