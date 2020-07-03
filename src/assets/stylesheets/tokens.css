@@ -64,21 +64,24 @@
   --space-20: 8px;
   --space-30: 12px;
   --space-40: 16px;
-  --space-50: 32px;
+  --space-50: 24px;
+  --space-60: 32px;
 
   --space-stack-default: var(--space-stack-40);
   --space-stack-10: 0 0 4px 0;
   --space-stack-20: 0 0 8px 0;
   --space-stack-30: 0 0 12px 0;
   --space-stack-40: 0 0 16px 0;
-  --space-stack-50: 0 0 32px 0;
+  --space-stack-50: 0 0 24px 0;
+  --space-stack-60: 0 0 32px 0;
 
   --space-inset-default: var(--space-inset-40);
   --space-inset-10: 4px 4px 0.1px 4px;
   --space-inset-20: 8px 8px 0.1px 8px;
   --space-inset-30: 12px 12px 0.1px 12px;
   --space-inset-40: 16px 16px 0.1px 16px;
-  --space-inset-50: 32px 32px 16px 32px;
+  --space-inset-50: 24px 24px 8px 24px;
+  --space-inset-60: 32px 32px 16px 32px;
 
   --space-squish-10: 4px 8px;
   --space-squish-20: 8px 16px;
@@ -157,7 +160,7 @@
   /* Shadows */
   --box-shadow-default: var(--box-shadow-10);
   --box-shadow-10: 0px 2px 4px 1px color-mod(var(--color-neutral-100) alpha(10%));
-  --box-shadow-30: 0px 8px 16px color-mod(var(--color-neutral-100) alpha(20%));
+  --box-shadow-30: 0px 0px 4px color-mod(var(--color-neutral-90) alpha(20%)), 0px 8px 25px color-mod(var(--color-neutral-90) alpha(8%));
 
 
   /* Animation beziers */
