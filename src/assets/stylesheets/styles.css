@@ -4,20 +4,26 @@
 
 
 /*
- * #TOKENS
+ * Fonts
+ */
+@import "fonts.css";
+
+
+/*
+ * Tokens
  */
 @import "tokens.css";
 
 
-/**
- * #BASE
+/*
+ * Base
  */
 @import "base.page.css";
 @import "base.type.css";
 
 
-/**
- * #COMPONENTS
+/*
+ * Components
  */
 @import "../../components/Button/Button.css";
 @import "../../components/Card/Card.css";
@@ -44,6 +50,6 @@
 
 
 /**
- * #UTILITIES
+ * Utilities
  */
 @import "utilities.css";
