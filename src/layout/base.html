@@ -9,15 +9,18 @@
   <meta name="description" content="">
 
   <link crossorigin="anonymous" href="/assets/stylesheets/styles.css" rel="stylesheet">
-  <link href="/assets/images/favicon-32.ico" rel="shortcut icon">
-  <link href="/assets/images/favicon-152.png" rel="apple-touch-icon-precomposed">
+  <link href="/assets/images/favicon.svg" rel="shortcut icon">
 </head>
 
 <body>
 
   {% include 'components/Sprite/Sprite.html' %}
 
-  {% block content %}{% endblock %}
+  <div class="c-layout">
+
+    {% block content %}{% endblock %}
+
+  </div>
 
 </body>
 
