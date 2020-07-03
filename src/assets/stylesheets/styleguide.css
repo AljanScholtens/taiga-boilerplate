@@ -140,7 +140,7 @@
 }
 
 .sg-colors__fill {
-  color: var(--color-white);
+  color: var(--color-neutral-0);
 }
 
 .sg-colors--primary .sg-colors__fill li {

@@ -11,5 +11,5 @@
 
 .c-panel--primary {
   background: var(--color-primary-50);
-  color: var(--color-white);
+  color: var(--color-neutral-0);
 }

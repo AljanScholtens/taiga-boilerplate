@@ -23,19 +23,18 @@
   /* Font size */
   --font-size-base: 16px;
 
-  --font-size-default: 1rem;
-  --font-size-10: 0.75rem;
-  --font-size-20: 0.875rem;
-  --font-size-30: 1rem;
-  --font-size-40: 1.125rem;
-  --font-size-50: 1.35rem;
-  --font-size-60: 1.75rem;
-  --font-size-70: 2.5rem;
+  --font-size-default: var(--font-size-30);
+  --font-size-10: 14px;
+  --font-size-20: 15px;
+  --font-size-30: 16px;
+  --font-size-40: 19px;
+  --font-size-50: 22px;
+  --font-size-60: 28px;
 
 
   /* Line-height */
-  --line-height-default: 1em;
-  --line-height-10: 1em;
+  --line-height-default: var(--line-height-10);
+  --line-height-10: 1;
   --line-height-20: 1.25em;
   --line-height-30: 1.5em;
 
@@ -45,7 +44,7 @@
 
 
   /* Font weight */
-  --font-weight-default: 400;
+  --font-weight-default: var(--font-weight-20);
   --font-weight-10: 300;
   --font-weight-20: 400;
   --font-weight-30: 500;
@@ -60,32 +59,31 @@
 
 
   /* Spacing system */
-  --space-default: 16px;
+  --space-default: var(--space-40);
   --space-10: 4px;
   --space-20: 8px;
-  --space-25: 12px; /* Not default */
-  --space-30: 16px;
-  --space-40: 32px;
-  --space-50: 64px;
+  --space-30: 12px;
+  --space-40: 16px;
+  --space-50: 32px;
 
-  --space-stack-default: 0 0 16px 0;
+  --space-stack-default: var(--space-stack-40);
   --space-stack-10: 0 0 4px 0;
   --space-stack-20: 0 0 8px 0;
-  --space-stack-30: 0 0 16px 0;
-  --space-stack-40: 0 0 32px 0;
-  --space-stack-50: 0 0 64px 0;
+  --space-stack-30: 0 0 12px 0;
+  --space-stack-40: 0 0 16px 0;
+  --space-stack-50: 0 0 32px 0;
 
-  --space-inset-default: 16px 16px 0.1px 16px;
+  --space-inset-default: var(--space-inset-40);
   --space-inset-10: 4px 4px 0.1px 4px;
   --space-inset-20: 8px 8px 0.1px 8px;
-  --space-inset-30: 16px 16px 0.1px 16px;
-  --space-inset-40: 32px 32px 16px 32px;
-  --space-inset-50: 64px 64px 48px 64px;
+  --space-inset-30: 12px 12px 0.1px 12px;
+  --space-inset-40: 16px 16px 0.1px 16px;
+  --space-inset-50: 32px 32px 16px 32px;
 
   --space-squish-10: 4px 8px;
   --space-squish-20: 8px 16px;
-  --space-squish-25: 12px 24px; /* Not default */
-  --space-squish-30: 16px 32px;
+  --space-squish-30: 12px 24px;
+  --space-squish-40: 16px 32px;
 
 
   /* Grid gutter */
@@ -126,17 +124,19 @@
   --color-error-70: #9F1F33;
 
 
-  /* Neutral or gray colors */
+  /* Neutral colors including black and white */
+  --color-neutral-0: #fff;
   --color-neutral-10: #F0F0F3;
   --color-neutral-30: #C7C7CE;
   --color-neutral-50: #808087;
   --color-neutral-70: #3C3C43;
   --color-neutral-90: #202025;
+  --color-neutral-100: #000;
 
 
   /* Black and white */
-  --color-black: #000;
-  --color-white: #fff;
+  --color-neutral-100: #000;
+  --color-neutral-0: #fff;
 
 
 
@@ -148,16 +148,16 @@
 
 
   /* Rounded borders */
-  --border-radius-default: 2px;
+  --border-radius-default: var(--border-radius-10);
   --border-radius-10: 2px;
   --border-radius-20: 4px;
   --border-radius-50: 32px;
 
 
   /* Shadows */
-  --box-shadow-default: 0px 2px 4px 1px color-mod(var(--color-black) alpha(10%));
-  --box-shadow-10: 0px 2px 4px 1px color-mod(var(--color-black) alpha(10%));
-  --box-shadow-30: 0px 8px 16px color-mod(var(--color-black) alpha(20%));
+  --box-shadow-default: var(--box-shadow-10);
+  --box-shadow-10: 0px 2px 4px 1px color-mod(var(--color-neutral-100) alpha(10%));
+  --box-shadow-30: 0px 8px 16px color-mod(var(--color-neutral-100) alpha(20%));
 
 
   /* Animation beziers */
@@ -173,8 +173,8 @@
 
 
 
-  /* Breakpoints */
-  @custom-media --breakpoint-10 (min-width: 600px);
-  @custom-media --breakpoint-20 (min-width: 750px);
-  @custom-media --breakpoint-30 (min-width: 1000px);
-  @custom-media --breakpoint-40 (min-width: 1200px);
+/* Breakpoints */
+@custom-media --breakpoint-10 (min-width: 600px);
+@custom-media --breakpoint-20 (min-width: 750px);
+@custom-media --breakpoint-30 (min-width: 1000px);
+@custom-media --breakpoint-40 (min-width: 1200px);
