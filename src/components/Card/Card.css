@@ -39,3 +39,7 @@
   .c-card__content {
     padding: var(--space-inset-default);
   }
+
+  .cq-10 .c-card__content {
+    padding: var(--space-inset-50);
+  }
