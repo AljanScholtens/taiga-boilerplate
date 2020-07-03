@@ -23,8 +23,8 @@
 
     &:before {
       content: " ";
-      height: var(--space-40);
-      width: var(--space-40);
+      height: var(--space-20);
+      width: var(--space-20);
       margin: auto;
       background: var(--color-primary-50);
       border-radius: 50%;
