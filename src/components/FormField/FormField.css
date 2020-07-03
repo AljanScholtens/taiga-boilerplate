@@ -2,23 +2,50 @@
   #COMPONENTS-FORM-FIELD
 \*------------------------------------*/
 
+
+/*
+ * Form Field
+ */
 .c-form-field {
   margin: var(--space-stack-default);
 }
 
+
+/* Error */
 .c-form-field--error {
   color: var(--color-error-50);
 }
 
+
+
+
+
+  /*
+   * Label
+   */
   .c-form-field__label {
     display: inline-block;
     margin: var(--space-stack-10);
   }
 
+
+
+
+
+  /*
+   * Input
+   */
   .c-form-field__input {
     margin: var(--space-stack-10);
   }
 
+
+
+
+
+  /*
+   * Description
+   */
   .c-form-field__description {
 
   }

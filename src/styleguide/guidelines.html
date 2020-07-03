@@ -4,19 +4,19 @@
 
 {% block content %}
 
-  <h1 class="c-heading c-heading--large">{{page_title}}</h1>
+  <h1 class="c-heading c-heading--30">{{page_title}}</h1>
   <p class="sg-lead">This page provides info about framework and code guide lines.</p>
 
-  <h2 class="sg-h2">Components</h2>
+  <h2 class="c-heading">Components</h2>
   <p>Component thinking is the most crucial part of Taiga. A project consists mainly of components. You can combine every component you want as long you follow the guidelines. If you want to change the code of for example a button, you only have to edit it in the button component and not on actual pages. Quick, consistent and awesome.
 
-  <h2 class="sg-h2">ITCSS</h2>
+  <h2 class="c-heading">ITCSS</h2>
   <p>Taiga is inspired by <a href="https://www.youtube.com/watch?v=1OKZOV-iLj4">ITCSS</a> to get the best performance and the least specitifity in the project.</p>
 
-  <h2 class="sg-h2">CSS Guidelines</h2>
+  <h2 class="c-heading">CSS Guidelines</h2>
   <p>Most of how the CSS is build up is inspired by <a href="https://cssguidelin.es/">CSS Guidelines</a> from Harry Roberts.</p>
 
-  <h2 class="sg-h2">BEM and namespaces</h2>
+  <h2 class="c-heading">BEM and namespaces</h2>
   <p>Taiga uses <a href="https://css-tricks.com/bem-101/">BEM</a> to set up the CSS of a component. Below you can find an example of how to build up a simple component including the order of setting up the CSS, which is important.</p>
 
 <pre class="sg-code"><code>/*
@@ -56,7 +56,7 @@
 
 </code></pre>
 
-  <h2 class="sg-h2">Tokens and variables</h2>
+  <h2 class="c-heading">Tokens and variables</h2>
   <p>Variables are defined in assets/stylesheets/tokens.css and are treated a bit differently. In the example below you'll notice Taiga works with steps of 10, 20, 30 and so on. The trick is simple, 10 is small or light and 100 is large or dark. So we work from nothing to something.</p>
 
   <p>The steps are created this way so you can easily add more in between. This way we will have more consistency in a website, but maintain the creativity and freedom.</p>

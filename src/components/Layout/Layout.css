@@ -3,64 +3,70 @@
 \*------------------------------------*/
 
 /*
- * Get full width backgrounds around your content
+ * Layout
  */
 .c-layout {
   clear: both;
 }
 
 
-/*
- * Set up a row for full width styling
- */
-.c-layout__row {
-
-}
-
-.c-layout__row--full-height {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  min-height: 80vmin;
-}
-
-.c-layout__row--image {
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.c-layout__row--primary {
-  background: var(--color-primary-50);
-  color: var(--color-white);
-}
-
-.c-layout__row--neutral {
-  background: var(--color-neutral-10);
-}
-
-.c-layout__row--line {
-  border-bottom: 1px solid var(--color-neutral-10);
-}
 
 
 
-/*
- * Build up your container to get your website centered
- */
-.c-layout__container {
-  margin: auto;
-  max-width: var(--max-width);
-  padding: var(--space-inset-default);
-  position: relative;
+  /*
+   * Layout Row
+   */
+  .c-layout__row {
 
-  @media (--breakpoint-20) {
-    padding: var(--space-inset-40);
   }
 
-  &:after {
-    content: "";
-    display: block;
-    clear: both;
+
+  /* Full height */
+  .c-layout__row--full-height {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    min-height: 80vmin;
   }
-}
+
+
+  /* Primary background */
+  .c-layout__row--primary {
+    background: var(--color-primary-50);
+  }
+
+
+  /* Neutral background */
+  .c-layout__row--neutral {
+    background: var(--color-neutral-10);
+  }
+
+
+  /* Line */
+  .c-layout__row--line {
+    border-bottom: 1px solid var(--color-neutral-10);
+  }
+
+
+
+
+
+  /*
+   * Layout Container
+   */
+  .c-layout__container {
+    margin: auto;
+    max-width: var(--max-width);
+    padding: var(--space-inset-default);
+    position: relative;
+
+    @media (--breakpoint-20) {
+      padding: var(--space-inset-40);
+    }
+
+    &:after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+  }

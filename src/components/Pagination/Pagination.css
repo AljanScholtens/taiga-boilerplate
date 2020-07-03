@@ -2,6 +2,10 @@
   #COMPONENTS-PAGINATION
 \*------------------------------------*/
 
+
+/*
+ * Pagination
+ */
 .c-pagination {
   font-size: var(--font-size-20);
   list-style: none;
@@ -9,6 +13,13 @@
   margin: var(--space-stack-default);
 }
 
+
+
+
+
+  /*
+   * Item
+   */
   .c-pagination__item {
     margin-right: var(--space-10);
 
@@ -28,26 +39,30 @@
 
       &:active,
       &:focus {
-        box-shadow: inset 0 1px 3px color-mod(var(--color-black) alpha(20%));
+        box-shadow: inset 0 1px 3px color-mod(var(--color-neutral-100) alpha(20%));
       }
     }
   }
 
+
+  /* Item selected */
   .c-pagination__item--selected a {
     background: var(--color-primary-50);
-    color: var(--color-white);
+    color: var(--color-neutral-0);
 
     &:hover {
       background: var(--color-primary-70);
-      color: var(--color-white);
+      color: var(--color-neutral-0);
     }
 
     &:active,
     &:focus {
-      box-shadow: inset 0 1px 3px color-mod(var(--color-black) alpha(20%));
+      box-shadow: inset 0 1px 3px color-mod(var(--color-neutral-100) alpha(20%));
     }
   }
 
+
+  /* Item gap */
   .c-pagination__item--gap {
     background: none;
     padding: var(--space-squish-20);

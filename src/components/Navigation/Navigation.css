@@ -2,8 +2,9 @@
   #COMPONENTS-NAVIGATION
 \*------------------------------------*/
 
+
 /*
- * Navigation wrapper
+ * Navigation
  */
 .c-navigation {
   display: flex;
@@ -11,8 +12,11 @@
 }
 
 
+
+
+
   /*
-   * Room for a logo in the navigation
+   * Logo
    */
   .c-navigation__logo {
     font-weight: 500;
@@ -26,6 +30,9 @@
   }
 
 
+
+
+
   /*
    * Navigation items
    */
@@ -34,6 +41,12 @@
     list-style: none;
   }
 
+
+
+
+  /*
+   * Navigation item
+   */
   .c-navigation__item {
 
     &:last-child a {
@@ -52,6 +65,8 @@
     }
   }
 
+
+  /* Navigation item selected */
   .c-navigation__item--selected a {
     color: var(--color-primary-70);
   }

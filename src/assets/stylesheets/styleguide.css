@@ -5,15 +5,12 @@
 @import "styles.css";
 
 .sg-wrapper {
-  height: 100%;
+  height: 100vh;
 
   @media (--breakpoint-20) {
     display: grid;
-    grid-template-columns: 14rem auto;
-
-    @supports not (display: grid) {
-      display: flex;
-    }
+    grid-template-columns: max-content auto;
+    grid-template-areas: "aside main";
   }
 }
 
@@ -22,11 +19,10 @@
   padding: var(--space-inset-default);
 
   @media (--breakpoint-20) {
-    padding: var(--space-inset-40);
-
-    @supports not (display: grid) {
-      flex: 0 0 16rem;
-    }
+    padding: var(--space-inset-50);
+    padding-right: var(--space-60);
+    grid-area: aside;
+    overflow: auto;
   }
 }
 
@@ -34,7 +30,9 @@
   padding: var(--space-inset-default);
 
   @media (--breakpoint-20) {
-    padding: var(--space-inset-40);
+    padding: var(--space-inset-60);
+    grid-area: main;
+    overflow: auto;
   }
 }
 
@@ -47,8 +45,8 @@
     display: block;
     padding: var(--space-20) 0;
     text-decoration: none;
-    color: var(--color-neutral-50);
-    font-size: var(--font-size-40);
+    color: var(--color-neutral-70);
+    font-size: var(--font-size-30);
 
     &:hover {
       color: var(--color-neutral-90);
@@ -64,35 +62,8 @@
   & a {
     padding: var(--space-10) 0;
     padding-left: var(--space-20);
-    font-size: var(--font-size-20);
+    font-size: var(--font-size-10);
   }
-}
-
-.sg-h2 {
-  clear: both;
-  font-weight: 600;
-  padding-top: var(--space-default);
-  margin-top: var(--space-default) * 2;
-}
-
-.sg-h3 {
-  clear: both;
-  font-size: var(--font-size-10);
-  color: var(--color-neutral-50);
-  font-family: var(--font-family-body);
-  border-bottom: 1px solid var(--color-neutral-10);
-  margin: var(--space-default) 0 var(--space-default) 0;
-  font-weight: var(--font-weight-30);
-  text-transform: uppercase;
-
-  & a { float: right; }
-}
-
-.sg-lead {
-  font-size: var(--font-size-50);
-  line-height: var(--line-height-30);
-  color: var(--color-neutral-50);
-  font-weight: 300;
 }
 
 .sg-code {
@@ -104,6 +75,9 @@
 
 .sg-component {
   margin-bottom: var(--space-default);
+  padding: var(--space-default);
+  box-shadow: var(--box-shadow-30);
+  border-radius: var(--border-radius-default);
 
   @media (--breakpoint-20) {
     margin-bottom: calc(var(--space-default) * 3);
@@ -140,7 +114,7 @@
 }
 
 .sg-colors__fill {
-  color: var(--color-white);
+  color: var(--color-neutral-0);
 }
 
 .sg-colors--primary .sg-colors__fill li {

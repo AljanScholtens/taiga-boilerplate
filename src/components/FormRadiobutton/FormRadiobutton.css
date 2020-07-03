@@ -2,6 +2,10 @@
   #COMPONENTS-FORM-RADIOBUTTON
 \*------------------------------------*/
 
+
+/*
+ * Radiobutton
+ */
 .c-form-radiobutton {
 
   & input {
@@ -9,8 +13,8 @@
   }
 
   & label {
-    height: var(--space-30);
-    width: var(--space-30);
+    height: var(--space-40);
+    width: var(--space-40);
     border-radius: 50%;
     background: var(--color-neutral-10);
     border: 1px solid var(--color-neutral-30);

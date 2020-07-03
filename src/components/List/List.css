@@ -2,6 +2,10 @@
   #COMPONENTS-LIST
 \*------------------------------------*/
 
+
+/*
+ * List
+ */
 .c-list {
   list-style: none;
   line-height: var(--line-height-30);
@@ -9,40 +13,48 @@
 }
 
 
-/*
- * List item
- */
-.c-list__item {
-  padding: .3rem 0 .3rem 2rem;
-  position: relative;
+/* List ordered */
+.c-list--ordered {
 
-  @media (--breakpoint-20) {
-    padding-left: 3rem;
-  }
+  & .c-list__item {
+    counter-increment: list__counter;
 
-  &:before {
-    position: absolute;
-    left: 0.5rem;
-    content: " ";
-
-    @media (--breakpoint-20) {
-      left: 1.5rem;
+    &:before {
+      content: counter(list__counter)".";
+      top: auto;
+      height: none;
+      width: none;
+      background: none;
     }
   }
 }
 
-ul > .c-list__item:before {
-  top: 0.95rem;
-  height: 2px;
-  width: 8px;
-  background: var(--color-primary-50);
-}
 
 
-ol > .c-list__item {
-  counter-increment: list__counter;
 
-  &:before {
-    content: counter(list__counter)".";
+
+  /*
+   * List item
+   */
+  .c-list__item {
+    padding: .3rem 0 .3rem 2rem;
+    position: relative;
+
+    @media (--breakpoint-20) {
+      padding-left: 3rem;
+    }
+
+    &:before {
+      position: absolute;
+      left: 0.5rem;
+      content: " ";
+      top: 0.95rem;
+      height: 2px;
+      width: 8px;
+      background: var(--color-primary-50);
+
+      @media (--breakpoint-20) {
+        left: 1.5rem;
+      }
+    }
   }
-}

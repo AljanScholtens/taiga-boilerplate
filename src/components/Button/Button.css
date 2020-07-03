@@ -2,11 +2,17 @@
   #COMPONENTS-BUTTONS
 \*------------------------------------*/
 
+
+/*
+ * Button
+ */
 .c-button {
   border: 0;
   border-radius: var(--border-radius-50);
   cursor: pointer;
-  display: inline-block;
+  display: inline-flex;
+  vertical-align: top;
+  align-items: center;
   font-family: var(--font-family-body);
   font-size: var(--font-size-default);
   -webkit-font-smoothing: antialiased;
@@ -14,7 +20,7 @@
   font-weight: var(--font-weight-30);
   line-height: var(--line-height-default);
   margin: 0;
-  padding: var(--space-squish-25);
+  padding: 0 24px;
   text-decoration: none;
   background: var(--color-neutral-10);
   color: var(--color-neutral-70);
@@ -30,62 +36,66 @@
 
   &:active,
   &:focus {
-    box-shadow: inset 0 1px 3px color-mod(var(--color-black) alpha(80%));
+    box-shadow: inset 0 1px 3px color-mod(var(--color-neutral-100) alpha(80%));
   }
 }
 
 
-/* Sizes */
+/* Small */
 .c-button--small {
   font-size: var(--font-size-20);
   border-radius: var(--border-radius-default);
-  padding: var(--space-squish-20);
+  padding: 0 var(--space-30);
+
+  & .c-button__title {
+    padding: var(--space-20) var(--space-30);
+  }
 }
 
-.c-button--large {
-  padding: var(--space-squish-30);
-}
 
-
-/* Types */
+/* Primary */
 .c-button--primary {
   background: var(--color-primary-50);
-  color: var(--color-white);
+  color: var(--color-neutral-0);
 
   &:hover {
     background: var(--color-primary-70);
-    color: var(--color-white);
+    color: var(--color-neutral-0);
   }
 
   &:visited {
-    color: var(--color-white);
+    color: var(--color-neutral-0);
   }
 
   &:active,
   &:focus {
-    box-shadow: inset 0 1px 3px color-mod(var(--color-black) alpha(80%));
+    box-shadow: inset 0 1px 3px color-mod(var(--color-neutral-100) alpha(80%));
   }
 }
 
+
+/* Error */
 .c-button--error {
   background: var(--color-error-50);
-  color: var(--color-white);
+  color: var(--color-neutral-0);
 
   &:visited {
-    color: var(--color-white);
+    color: var(--color-neutral-0);
   }
 
   &:hover {
     background: var(--color-error-70);
-    color: var(--color-white);
+    color: var(--color-neutral-0);
   }
 
   &:active,
   &:focus {
-    box-shadow: inset 0 1px 3px color-mod(var(--color-black) alpha(80%));
+    box-shadow: inset 0 1px 3px color-mod(var(--color-neutral-100) alpha(80%));
   }
 }
 
+
+/* Disabled */
 .c-button--disabled {
   background: var(--color-neutral-30);
   color: var(--color-neutral-50);
@@ -95,3 +105,33 @@
     color: var(--color-neutral-50);
   }
 }
+
+
+
+
+
+  /*
+   * Button title
+   */
+  .c-button__title {
+    padding: var(--space-30) 0;
+    display: block;
+  }
+
+
+
+
+
+  /*
+   * Button icon
+   */
+  .c-button__icon {
+
+    &:first-child {
+      margin-right: var(--space-30);
+    }
+
+    &:last-child {
+      margin-left: var(--space-30);
+    }
+  }

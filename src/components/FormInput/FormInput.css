@@ -2,6 +2,10 @@
   #COMPONENTS-FORM-INPUT
 \*------------------------------------*/
 
+
+/*
+ * Input
+ */
 input[type=text],
 input[type=number],
 input[type=password],
@@ -9,6 +13,7 @@ input[type=search],
 input[type=email],
 input[type=tel],
 input[type=url] {
+  background-color: var(--color-neutral-0);
   border: 1px solid var(--color-neutral-30);
   border-radius: var(--border-radius-default);
   color: inherit;
@@ -26,6 +31,8 @@ input[type=url] {
   }
 }
 
+
+/* Disabled */
 input:disabled {
   background: var(--color-neutral-10);
   color: var(--color-neutral-50);

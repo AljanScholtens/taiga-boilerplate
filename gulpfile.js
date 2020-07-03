@@ -16,6 +16,10 @@ var paths = {
     ],
     output: "dist/assets/stylesheets/"
   },
+  fonts: {
+    input: "src/assets/fonts/**/*",
+    output: "dist/assets/fonts/"
+  },
   images: {
     input: "src/assets/images/**/*",
     output: "dist/assets/images/"
@@ -184,8 +188,8 @@ var lintScripts = function(done) {
 // Copy static files into output folder
 var copyFiles = function(done) {
   src(paths.media.input).pipe(dest(paths.media.output));
-  src(paths.images.input).pipe(dest(paths.images.output));
-  return src(paths.fonts.input).pipe(dest(paths.fonts.output));
+  src(paths.fonts.input).pipe(dest(paths.fonts.output));
+  return src(paths.images.input).pipe(dest(paths.images.output));
 };
 
 /**

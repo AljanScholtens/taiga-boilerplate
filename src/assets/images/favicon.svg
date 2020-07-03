@@ -1,0 +1,13 @@
+<svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .rectangle {
+      fill: #5F61C0;
+    }
+    @media (prefers-color-scheme: dark) {
+      .rectangle {
+        fill: #A1A3EC;
+      }
+    }
+  </style>
+  <rect class="rectangle" fill="#5F61C0" x="6" y="6" width="20" height="20" rx="7" fill-rule="evenodd"/>
+</svg>

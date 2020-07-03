@@ -2,7 +2,11 @@
   #COMPONENTS-QUOTE
 \*------------------------------------*/
 
-blockquote {
+
+/*
+ * Quote
+ */
+.c-quote {
   margin: var(--space-stack-default);
   padding: 0 0 0 2.5rem;
   position: relative;
@@ -27,9 +31,14 @@ blockquote {
   }
 }
 
-cite {
-  display: block;
-  font-size: var(--font-size-20);
 
-  &:before { content: "\2014 \0020"; }
-}
+
+
+
+  /* Quote author */
+  .c-quote__author {
+    display: block;
+    font-size: var(--font-size-20);
+
+    &:before { content: "\2014 \0020"; }
+  }

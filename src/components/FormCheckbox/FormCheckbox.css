@@ -2,6 +2,10 @@
   #COMPONENTS-FORM-CHECKBOX
 \*------------------------------------*/
 
+
+/*
+ * Checkbox
+ */
 .c-form-checkbox {
 
   & input {
@@ -9,8 +13,8 @@
   }
 
   & label {
-    height: var(--space-30);
-    width: var(--space-30);
+    height: var(--space-40);
+    width: var(--space-40);
     border-radius: var(--border-radius-10);
     background: var(--color-neutral-10);
     border: 1px solid var(--color-neutral-30);
@@ -19,8 +23,8 @@
 
     &:before {
       content: " ";
-      height: var(--space-30);
-      width: var(--space-30);
+      height: var(--space-40);
+      width: var(--space-40);
       margin: auto;
       content: "\2714";
       color: var(--color-primary-50);
