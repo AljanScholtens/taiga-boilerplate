@@ -7,13 +7,9 @@
  * Icon
  */
 .c-icon {
-  height: 1.25em;
-  width: 1.25em;
+  height: 20px;
+  width: 20px;
   display: inline-flex;
-  position: relative;
-  vertical-align: middle;
-  position: relative;
-  top: -0.05em;
 
   & svg {
     fill: currentColor;
