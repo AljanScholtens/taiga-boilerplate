@@ -6,7 +6,9 @@
   border: 0;
   border-radius: var(--border-radius-50);
   cursor: pointer;
-  display: inline-block;
+  display: inline-flex;
+  vertical-align: top;
+  align-items: center;
   font-family: var(--font-family-body);
   font-size: var(--font-size-default);
   -webkit-font-smoothing: antialiased;
@@ -14,7 +16,7 @@
   font-weight: var(--font-weight-30);
   line-height: var(--line-height-default);
   margin: 0;
-  padding: var(--space-squish-30);
+  padding: 0 24px;
   text-decoration: none;
   background: var(--color-neutral-10);
   color: var(--color-neutral-70);
@@ -95,3 +97,37 @@
     color: var(--color-neutral-50);
   }
 }
+
+
+
+
+
+  /*
+   * Button title
+   */
+  .c-button__title {
+    padding: 12px 0;
+    display: block;
+  }
+
+
+
+
+
+  /*
+   * Button icon
+   */
+  .c-button__icon {
+
+    &:first-child {
+      margin-right: 12px;
+    }
+
+    &:last-child {
+      margin-left: 12px;
+    }
+
+    &:only-child {
+      margin: 10px 0;
+    }
+  }
