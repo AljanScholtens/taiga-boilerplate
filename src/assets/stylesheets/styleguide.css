@@ -46,7 +46,7 @@
     padding: var(--space-20) 0;
     text-decoration: none;
     color: var(--color-neutral-70);
-    font-size: var(--font-size-40);
+    font-size: var(--font-size-30);
 
     &:hover {
       color: var(--color-neutral-90);
@@ -62,7 +62,7 @@
   & a {
     padding: var(--space-10) 0;
     padding-left: var(--space-20);
-    font-size: var(--font-size-20);
+    font-size: var(--font-size-10);
   }
 }
 

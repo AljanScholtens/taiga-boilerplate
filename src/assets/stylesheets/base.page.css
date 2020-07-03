@@ -18,6 +18,7 @@ html {
 }
 
 body {
+  background-color: var(--color-neutral-0);
   height: 100%;
   margin: 0;
   line-height: var(--line-height-default);
