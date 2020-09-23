@@ -1,0 +1,75 @@
+/*------------------------------------*\
+  #COMPONENTS-TYPE
+\*------------------------------------*/
+
+
+.c-type {
+  margin-bottom: 2em;
+}
+
+
+
+
+
+/*
+ * Type Body
+ */
+.c-type--body-30 {
+  font-size: var(--font-size-20);
+}
+
+.c-type--body,
+.c-type--body-50 {
+
+}
+
+.c-type--body-70 {
+  font-size: var(--font-size-40);
+}
+
+
+
+
+
+/*
+ * Type Display
+ */
+.c-type--display--30 {
+  font-size: var(--font-size-50);
+}
+
+.c-type--display,
+.c-type--display-50 {
+  font-family: var(--font-family-heading);
+  font-size: var(--font-size-60);
+  line-height: var(--line-height-default);
+}
+
+
+
+
+
+/*
+ * Type Heading
+ */
+.c-type--heading-50 {
+  font-family: var(--font-family-heading);
+  font-size: var(--font-size-50);
+  line-height: var(--line-height-default);
+}
+
+
+
+
+
+/*
+ * Other
+ */
+.c-type--muted {
+  color: var(--color-neutral-50);
+}
+
+.c-type--caption {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}

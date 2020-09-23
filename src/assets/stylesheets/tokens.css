@@ -24,12 +24,13 @@
   --font-size-base: 16px;
 
   --font-size-default: var(--font-size-30);
-  --font-size-10: 12px;
-  --font-size-20: 15px;
-  --font-size-30: 16px;
-  --font-size-40: 19px;
-  --font-size-50: 22px;
-  --font-size-60: 28px;
+  --font-size-10: 12px; /* Caption */
+  --font-size-20: 14px; /* Body small */
+  --font-size-30: 16px; /* Body */
+  --font-size-40: 19px; /* Body large */
+  --font-size-50: 24px; /* Heading */
+  --font-size-60: 36px; /* Heading large */
+  --font-size-70: 52px; /* Display */
 
 
   /* Line-height */
