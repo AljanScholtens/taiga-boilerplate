@@ -62,7 +62,6 @@ var postcss = require("gulp-postcss");
 var postcssPresetEnv = require("postcss-preset-env");
 var postcssImport = require("postcss-import");
 var cssnano = require("cssnano");
-var purgecss = require("@fullhuman/postcss-purgecss");
 var reporter = require("postcss-reporter");
 
 // BrowserSync
@@ -122,10 +121,6 @@ var buildStyles = function(done) {
     .pipe(
       postcss([
         postcssImport,
-        purgecss({
-          content: [paths.html.input],
-          rejected: true
-        }),
         postcssPresetEnv({
           stage: 0,
           browsers: "last 2 versions",
