@@ -8,7 +8,7 @@
  */
 .c-button {
   border: 0;
-  border-radius: var(--border-radius-50);
+  border-radius: var(--effect-rounded-50);
   cursor: pointer;
   display: inline-flex;
   vertical-align: top;
@@ -44,7 +44,7 @@
 /* Small */
 .c-button--small {
   font-size: var(--font-size-20);
-  border-radius: var(--border-radius-default);
+  border-radius: var(--effect-rounded-default);
   padding: 0 var(--space-30);
 
   & .c-button__title {

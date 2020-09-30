@@ -76,8 +76,8 @@
 .sg-component {
   margin-bottom: var(--space-default);
   padding: var(--space-default);
-  box-shadow: var(--box-shadow-30);
-  border-radius: var(--border-radius-default);
+  box-shadow: var(--effect-shadow-30);
+  border-radius: var(--effect-rounded-default);
 
   @media (--breakpoint-20) {
     margin-bottom: calc(var(--space-default) * 3);

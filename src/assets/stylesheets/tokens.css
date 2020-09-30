@@ -152,16 +152,25 @@
 
 
   /* Rounded borders */
-  --border-radius-default: var(--border-radius-10);
-  --border-radius-10: 2px;
-  --border-radius-20: 4px;
-  --border-radius-50: 32px;
+  --effect-rounded-default: var(--effect-rounded-10);
+  --effect-rounded-10: 2px;
+  --effect-rounded-20: 4px;
+  --effect-rounded-50: 5px;
+
+  /* --effect-rounded-default: var(--effect-rounded-10);
+  --effect-rounded-10: 2px;
+  --effect-rounded-20: 4px;
+  --effect-rounded-50: 32px; */
 
 
   /* Shadows */
-  --box-shadow-default: var(--box-shadow-10);
-  --box-shadow-10: 0px 2px 4px 1px color-mod(var(--color-neutral-100) alpha(10%));
-  --box-shadow-30: 0px 0px 4px color-mod(var(--color-neutral-90) alpha(20%)), 0px 8px 25px color-mod(var(--color-neutral-90) alpha(8%));
+  --effect-shadow-default: var(--effect-shadow-10);
+  --effect-shadow-10: 0px 2px 4px 1px color-mod(var(--color-neutral-100) alpha(10%));
+  --effect-shadow-30: 0px 0px 4px color-mod(var(--color-neutral-90) alpha(20%)), 0px 8px 25px color-mod(var(--color-neutral-90) alpha(8%));
+
+  /* --effect-shadow-default: var(--effect-shadow-10);
+  --effect-shadow-10: 0px 2px 4px 1px color-mod(var(--color-neutral-100) alpha(10%));
+  --effect-shadow-30: 0px 0px 4px color-mod(var(--color-neutral-90) alpha(20%)), 0px 8px 25px color-mod(var(--color-neutral-90) alpha(8%)); */
 
 
   /* Animation beziers */

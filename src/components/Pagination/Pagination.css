@@ -25,7 +25,7 @@
 
     & a {
       background: var(--color-neutral-10);
-      border-radius: var(--border-radius-default);
+      border-radius: var(--effect-rounded-default);
       color: var(--color-neutral-70);
       display: block;
       font-weight: var(--font-weight-30);

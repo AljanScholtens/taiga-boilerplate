@@ -14,7 +14,7 @@ textarea {
   line-height: var(--line-height-30);
   background-color: var(--color-neutral-0);
   border: 1px solid var(--color-neutral-30);
-  border-radius: var(--border-radius-default);
+  border-radius: var(--effect-rounded-default);
   color: inherit;
   font-family: var(--font-family-body);
   font-size: var(--font-size-30);

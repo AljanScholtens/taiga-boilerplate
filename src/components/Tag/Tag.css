@@ -7,7 +7,7 @@
  * Tag
  */
 .c-tag {
-  border-radius: var(--border-radius-default);
+  border-radius: var(--effect-rounded-default);
   font-size: var(--font-size-10);
   font-weight: var(--font-weight-30);
   padding: var(--space-squish-10);

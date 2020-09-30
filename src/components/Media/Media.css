@@ -22,7 +22,7 @@
     width: 8rem;
     object-fit: cover;
     margin-right: var(--space-default);
-    border-radius: var(--border-radius-20);
+    border-radius: var(--effect-rounded-20);
   }
 }
 
@@ -74,7 +74,7 @@
    * Objects, the iframe, or the img tag
    */
   .c-media__image {
-    border-radius: var(--border-radius-20);
+    border-radius: var(--effect-rounded-20);
   }
 
   .c-media__video {

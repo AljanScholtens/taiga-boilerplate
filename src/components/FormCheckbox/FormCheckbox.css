@@ -15,7 +15,7 @@
   & label {
     height: var(--space-40);
     width: var(--space-40);
-    border-radius: var(--border-radius-10);
+    border-radius: var(--effect-rounded-10);
     background: var(--color-neutral-10);
     border: 1px solid var(--color-neutral-30);
     display: flex;

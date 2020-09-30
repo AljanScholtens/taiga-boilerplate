@@ -7,7 +7,7 @@
  * Alert
  */
 .c-alert {
-  border-radius: var(--border-radius-default);
+  border-radius: var(--effect-rounded-default);
   font-weight: var(--font-weight-30);
   margin: var(--space-stack-10);
   padding: var(--space-squish-20);

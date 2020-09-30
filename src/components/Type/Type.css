@@ -14,35 +14,18 @@
 /*
  * Type Body
  */
-.c-type--body-30 {
+.c-type-body--30 {
   font-size: var(--font-size-20);
 }
 
-.c-type--body,
-.c-type--body-50 {
-
+.c-type-body,
+.c-type-body--50 {
+  line-height: var(--line-height-20);
+  margin: var(--space-stack-default);
 }
 
-.c-type--body-70 {
+.c-type-body--70 {
   font-size: var(--font-size-40);
-}
-
-
-
-
-
-/*
- * Type Display
- */
-.c-type--display--30 {
-  font-size: var(--font-size-50);
-}
-
-.c-type--display,
-.c-type--display-50 {
-  font-family: var(--font-family-heading);
-  font-size: var(--font-size-60);
-  line-height: var(--line-height-default);
 }
 
 
@@ -52,9 +35,32 @@
 /*
  * Type Heading
  */
-.c-type--heading-50 {
+.c-type-heading,
+.c-type-heading--50 {
   font-family: var(--font-family-heading);
   font-size: var(--font-size-50);
+  font-weight: 600;
+  margin: var(--space-stack-10);
+  line-height: var(--line-height-20);
+}
+
+
+
+
+
+/*
+ * Type Display
+ */
+.c-type-display--30 {
+  font-size: var(--font-size-50);
+}
+
+.c-type-display,
+.c-type-display--50 {
+  font-family: var(--font-family-heading);
+  font-size: var(--font-size-60);
+  font-weight: 700;
+  margin: var(--space-stack-10);
   line-height: var(--line-height-default);
 }
 
