@@ -3,29 +3,22 @@
 \*------------------------------------*/
 
 
-.c-type {
-  margin-bottom: 2em;
-}
-
-
-
-
 
 /*
- * Type Body
+ * Type Display
  */
-.c-type-body--30 {
-  font-size: var(--font-size-20);
-}
-
-.c-type-body,
-.c-type-body--50 {
+.c-type-display {
+  font-family: var(--font-family-heading);
+  font-size: var(--font-size-70);
+  font-weight: 700;
+  margin-bottom: 0.35em;
   line-height: var(--line-height-20);
-  margin: var(--space-stack-default);
 }
 
-.c-type-body--70 {
-  font-size: var(--font-size-40);
+
+/* Display or title */
+.c-type-display--50 {
+
 }
 
 
@@ -35,13 +28,30 @@
 /*
  * Type Heading
  */
-.c-type-heading,
-.c-type-heading--50 {
+.c-type-heading {
   font-family: var(--font-family-heading);
   font-size: var(--font-size-50);
   font-weight: 600;
-  margin: var(--space-stack-10);
+  margin-bottom: 0.35em;
   line-height: var(--line-height-20);
+}
+
+
+/* Title */
+.c-type-heading--70 {
+  font-size: var(--font-size-60);
+}
+
+
+/* Heading */
+.c-type-heading--50 {
+
+}
+
+
+/* Heading small */
+.c-type-heading--30 {
+  font-size: var(--font-size-40);
 }
 
 
@@ -49,19 +59,46 @@
 
 
 /*
- * Type Display
+ * Type Body
  */
-.c-type-display--30 {
-  font-size: var(--font-size-50);
+.c-type-body {
+  line-height: var(--line-height-30);
+  font-size: var(--font-size-30);
+  margin-bottom: 1em;
 }
 
-.c-type-display,
-.c-type-display--50 {
-  font-family: var(--font-family-heading);
-  font-size: var(--font-size-60);
-  font-weight: 700;
-  margin: var(--space-stack-10);
-  line-height: var(--line-height-default);
+
+/* Lead text */
+.c-type-body--70 {
+  font-size: var(--font-size-40);
+}
+
+
+/* Body text */
+.c-type-body--50 {
+
+}
+
+
+/* Small text */
+.c-type-body--30 {
+  font-size: var(--font-size-20);
+}
+
+
+
+
+
+/*
+ * Type Caption
+ */
+.c-type-caption {
+  line-height: var(--line-height-20);
+  margin-bottom: 1em;
+  font-size: var(--font-size-20);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: var(--letter-spacing-default);
 }
 
 
@@ -73,9 +110,4 @@
  */
 .c-type--muted {
   color: var(--color-neutral-50);
-}
-
-.c-type--caption {
-  text-transform: uppercase;
-  letter-spacing: 3px;
 }
