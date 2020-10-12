@@ -25,6 +25,8 @@
 /*
  * Components
  */
+@import "../../components/Alert/Alert.css";
+@import "../../components/Article/Article.css";
 @import "../../components/Button/Button.css";
 @import "../../components/Card/Card.css";
 @import "../../components/FormCheckbox/FormCheckbox.css";
@@ -40,7 +42,6 @@
 @import "../../components/List/List.css";
 @import "../../components/Media/Media.css";
 @import "../../components/Navigation/Navigation.css";
-@import "../../components/Alert/Alert.css";
 @import "../../components/Pagination/Pagination.css";
 @import "../../components/Panel/Panel.css";
 @import "../../components/Paragraph/Paragraph.css";

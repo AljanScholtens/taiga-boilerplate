@@ -66,7 +66,7 @@
   --space-30: 0.75rem; /* 12px */
   --space-40: 1rem; /* 16px */
   --space-50: 1.5rem; /* 24px */
-  --space-60: 2rem; /* 16px */
+  --space-60: 2rem; /* 32px */
 
   --space-stack-default: var(--space-stack-40);
   --space-stack-10: 0 0 var(--space-10) 0;

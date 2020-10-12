@@ -1,0 +1,28 @@
+/*------------------------------------*\
+  #COMPONENTS-ARTICLE
+\*------------------------------------*/
+
+.c-article {
+
+  & h1 {
+    font-size: 40px;
+  }
+
+  & h2 {
+    font-size: 30px;
+  }
+
+  & p:first-of-type {
+    font-size: 25px;
+    line-height: 35px;
+  }
+
+  & p {
+    font-size: 20px;
+  }
+
+  & small {
+    font-size: 15px;
+    color: var(--color-neutral-50);
+  }
+}
