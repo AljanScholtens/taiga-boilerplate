@@ -13,7 +13,7 @@
   display: inline-flex;
   vertical-align: top;
   align-items: center;
-  font-family: var(--font-family-body);
+  font-family: var(--font-family-a);
   font-size: var(--font-size-default);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

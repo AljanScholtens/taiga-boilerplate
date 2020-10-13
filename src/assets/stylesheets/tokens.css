@@ -16,8 +16,8 @@
 
 
   /* Fonts */
-  --font-family-body: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-  --font-family-heading: Lora, serif;
+  --font-family-a: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  --font-family-b: Lora, serif;
 
 
   /* Font size */
@@ -31,6 +31,8 @@
   --font-size-50: 1.5rem; /* 24px Heading */
   --font-size-60: 2rem; /* 32px Heading large */
   --font-size-70: 3.25rem; /* 52px Display */
+
+  --font-size-type-30: 1px;
 
 
   /* Line-height */

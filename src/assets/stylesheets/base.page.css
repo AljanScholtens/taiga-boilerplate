@@ -10,7 +10,7 @@
 
 html {
   color: var(--color-neutral-90);
-  font-family: var(--font-family-body);
+  font-family: var(--font-family-a);
   font-weight: var(--font-weight-default);
   font-size: var(--font-size-base);
   -webkit-text-size-adjust: 100%;

@@ -1,28 +1,75 @@
 /*------------------------------------*\
   #COMPONENTS-ARTICLE
+
+  The article component is to show content or articles in your product. It does not have to follow the font-size and spacing variables, because this component should be highly flexibel.
 \*------------------------------------*/
 
+
+/*
+ * Article
+ */
 .c-article {
+  margin: var(--space-stack-default);
 
-  & h1 {
-    font-size: 40px;
+
+  /* Title */
+  & > h1 {
+    font-size: 4rem; /* 48px */
+    line-height: var(--line-height-10);
+    margin: 0;
+    font-family: var(--font-family-b);
+    font-weight: 700;
+    word-break: break-word;
   }
 
-  & h2 {
-    font-size: 30px;
+
+  /* Heading */
+  & > h2 {
+    font-size: 28px; /* 36px */
+    line-height: var(--line-height-20);
+    margin: 1.35em 0 0 0;
+    font-family: var(--font-family-a);
+    font-weight: 600;
   }
 
-  & p:first-of-type {
-    font-size: 25px;
-    line-height: 35px;
+
+  /* Subheading */
+  & > h3 {
+    font-size: 1.35rem;
+    line-height: var(--line-height-20);
+    margin: 1.35em 0 0 0;
+    font-family: var(--font-family-a);
+    font-weight: 500;
+    color: var(--color-neutral-70);
   }
 
-  & p {
-    font-size: 20px;
-  }
 
-  & small {
-    font-size: 15px;
+  /* Lead paragraph */
+  & > p:first-of-type {
+    font-size: 1.5rem; /* 24px */
+    line-height: var(--line-height-30);
+    margin: 0.5em 0 0 0;
+    font-family: var(--font-family-a);
+    font-weight: 300;
     color: var(--color-neutral-50);
+  }
+
+
+  /* Paragraph */
+  & > p {
+    font-size: 19px; /* 21px */
+    line-height: 30px;
+    margin: 1em 0 0 0;
+    font-family: var(--font-family-b);
+  }
+
+
+  /* Small text */
+  & small {
+    font-size: 0.938rem;
+    margin: 1rem 0 0 0;
+    font-family: var(--font-family-b);
+    color: var(--color-neutral-50);
+    display: block;
   }
 }

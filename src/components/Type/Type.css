@@ -8,7 +8,7 @@
  * Type Display
  */
 .c-type-display {
-  font-family: var(--font-family-heading);
+  font-family: var(--font-family-b);
   font-size: var(--font-size-70);
   font-weight: 700;
   margin-bottom: 0.35em;
@@ -29,7 +29,7 @@
  * Type Heading
  */
 .c-type-heading {
-  font-family: var(--font-family-heading);
+  font-family: var(--font-family-b);
   font-size: var(--font-size-50);
   font-weight: 600;
   margin-bottom: 0.35em;

@@ -40,7 +40,7 @@
 
     color: inherit;
     display: block;
-    font-family: var(--font-family-body);
+    font-family: var(--font-family-a);
     font-size: var(--font-size-30);
     margin: 0;
     padding: var(--space-20);
