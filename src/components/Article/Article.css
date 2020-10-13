@@ -10,63 +10,86 @@
  */
 .c-article {
   margin: var(--space-stack-default);
+  max-width: 70ch;
 
 
   /* Title */
   & > h1 {
-    font-size: 4rem; /* 48px */
-    line-height: var(--line-height-10);
+    font-size: 3rem; /* 48px */
+    line-height: 1.1em;
     margin: 0;
     font-family: var(--font-family-b);
     font-weight: 700;
     word-break: break-word;
+
+    @media (--breakpoint-20) {
+      font-size: 4rem; /* 64px */
+    }
   }
 
 
   /* Heading */
   & > h2 {
-    font-size: 28px; /* 36px */
-    line-height: var(--line-height-20);
+    font-size: 1.5rem; /* 24px */
+    line-height: 1.25em;
     margin: 1.35em 0 0 0;
     font-family: var(--font-family-a);
     font-weight: 600;
+
+    @media (--breakpoint-20) {
+      font-size: 1.75rem; /* 28px */
+    }
   }
 
 
   /* Subheading */
   & > h3 {
-    font-size: 1.35rem;
-    line-height: var(--line-height-20);
+    font-size: 1.188rem; /* 19px */
+    line-height: 1.25em;
     margin: 1.35em 0 0 0;
     font-family: var(--font-family-a);
     font-weight: 500;
     color: var(--color-neutral-70);
+
+    @media (--breakpoint-20) {
+      font-size: 1.35rem; /* 21px */
+    }
   }
 
 
   /* Lead paragraph */
   & > p:first-of-type {
-    font-size: 1.5rem; /* 24px */
-    line-height: var(--line-height-30);
+    font-size: 1.5rem; /* 21px */
+    line-height: 1.5em;
     margin: 0.5em 0 0 0;
     font-family: var(--font-family-a);
     font-weight: 300;
     color: var(--color-neutral-50);
+
+    @media (--breakpoint-20) {
+      font-size: 1.5rem; /* 24px */
+    }
   }
 
 
   /* Paragraph */
   & > p {
-    font-size: 19px; /* 21px */
-    line-height: 30px;
+    font-size: 1.063rem; /* 17px */
+    line-height: 1.563em;
     margin: 1em 0 0 0;
     font-family: var(--font-family-b);
+
+    @media (--breakpoint-20) {
+      font-size: 1.188rem; /* 19px */
+      line-height: 1.688em;
+    }
   }
 
 
   /* Small text */
   & small {
     font-size: 0.938rem;
+    line-height: 1.45em;
     margin: 1rem 0 0 0;
     font-family: var(--font-family-b);
     color: var(--color-neutral-50);

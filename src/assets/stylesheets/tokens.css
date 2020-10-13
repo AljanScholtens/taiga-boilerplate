@@ -32,8 +32,6 @@
   --font-size-60: 2rem; /* 32px Heading large */
   --font-size-70: 3.25rem; /* 52px Display */
 
-  --font-size-type-30: 1px;
-
 
   /* Line-height */
   --line-height-default: var(--line-height-10);
