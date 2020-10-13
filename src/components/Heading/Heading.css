@@ -7,15 +7,16 @@
  * Heading
  */
 .c-heading {
-  font-family: var(--font-family-b);
-  font-size: var(--font-size-50);
+  font-family: var(--font-family-a);
+  font-size: var(--font-size-40);
+  font-weight: 600;
   line-height: var(--line-height-default);
 }
 
 
 /* Small */
 .c-heading--10 {
-  font-size: var(--font-size-40);
+  font-size: var(--font-size-20);
 }
 
 
@@ -27,5 +28,5 @@
 
 /* Large */
 .c-heading--30 {
-  font-size: var(--font-size-60);
+  font-size: var(--font-size-50);
 }

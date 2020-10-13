@@ -20,17 +20,15 @@
   --font-family-b: Lora, serif;
 
 
-  /* Font size */
+  /* UI Font sizes / Content font sizes are available in the Article component */
   --font-size-base: 16px;
 
   --font-size-default: var(--font-size-30);
   --font-size-10: 0.75rem; /* 12px Caption */
   --font-size-20: 0.875rem; /* 14px Body small */
   --font-size-30: 1rem; /* 16px Body */
-  --font-size-40: 1.188rem; /* 19px Body large */
-  --font-size-50: 1.5rem; /* 24px Heading */
-  --font-size-60: 2rem; /* 32px Heading large */
-  --font-size-70: 3.25rem; /* 52px Display */
+  --font-size-40: 1.188rem; /* 19px Heading */
+  --font-size-50: 1.5rem; /* 24px Title */
 
 
   /* Line-height */

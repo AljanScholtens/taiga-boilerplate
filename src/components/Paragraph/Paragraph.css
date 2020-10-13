@@ -11,16 +11,13 @@
 }
 
 
-/* Paragraph large */
-.c-paragraph--large {
-  font-size: var(--font-size-50);
-  line-height: var(--line-height-30);
-  font-weight: 300;
-}
-
-
 /* Paragraph small */
 .c-paragraph--small {
   font-size: var(--font-size-20);
+}
+
+
+/* Paragraph muted */
+.c-paragraph--muted {
   color: var(--color-neutral-50);
 }

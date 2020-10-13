@@ -19,8 +19,7 @@
   padding: var(--space-inset-default);
 
   @media (--breakpoint-20) {
-    padding: var(--space-inset-50);
-    padding-right: var(--space-60);
+    padding: var(--space-inset-60);
     grid-area: aside;
     overflow: auto;
   }
