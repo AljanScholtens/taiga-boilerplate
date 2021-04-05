@@ -6,7 +6,7 @@
 /*
  * Button
  */
-.c-button {
+.Button {
   border: 0;
   border-radius: var(--border-radius-50);
   cursor: pointer;
@@ -42,19 +42,19 @@
 
 
 /* Small */
-.c-button--small {
+.Button___small {
   font-size: var(--font-size-20);
   border-radius: var(--border-radius-default);
   padding: 0 var(--space-30);
 
-  & .c-button__title {
+  & .Button_title {
     padding: var(--space-20) var(--space-30);
   }
 }
 
 
 /* Primary */
-.c-button--primary {
+.Button___primary {
   background: var(--color-primary-50);
   color: var(--color-neutral-0);
 
@@ -75,7 +75,7 @@
 
 
 /* Error */
-.c-button--error {
+.Button___error {
   background: var(--color-error-50);
   color: var(--color-neutral-0);
 
@@ -96,7 +96,7 @@
 
 
 /* Disabled */
-.c-button--disabled {
+.Button___disabled {
   background: var(--color-neutral-30);
   color: var(--color-neutral-50);
   pointer-events: none;
@@ -113,7 +113,7 @@
   /*
    * Button title
    */
-  .c-button__title {
+  .Button_title {
     padding: var(--space-30) 0;
     display: block;
   }
@@ -125,7 +125,7 @@
   /*
    * Button icon
    */
-  .c-button__icon {
+  .Button_icon {
 
     &:first-child {
       margin-right: var(--space-30);
