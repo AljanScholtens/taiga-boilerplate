@@ -6,7 +6,7 @@
 /*
  * Card
  */
-.c-card {
+.Card {
   border-radius: var(--border-radius-default);
   overflow: hidden;
   margin: var(--space-stack-default);
@@ -18,14 +18,14 @@
 
 
 /* White */
-.c-card--white {
+.Card___white {
   background: var(--color-neutral-0);
   box-shadow: var(--box-shadow-30);
 }
 
 
 /* Neutral */
-.c-card--neutral {
+.Card___neutral {
   background: var(--color-neutral-10);
 }
 
@@ -36,10 +36,10 @@
   /*
    * Content
    */
-  .c-card__content {
+  .Card_content {
     padding: var(--space-inset-default);
   }
 
-  .cq-10 .c-card__content {
+  .cq-10 .Card_content {
     padding: var(--space-inset-50);
   }

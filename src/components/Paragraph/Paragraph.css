@@ -6,13 +6,13 @@
 /*
  * Paragraph
  */
-.c-paragraph {
+.Paragraph {
 
 }
 
 
 /* Paragraph large */
-.c-paragraph--large {
+.Paragraph___large {
   font-size: var(--font-size-50);
   line-height: var(--line-height-30);
   font-weight: 300;
@@ -20,7 +20,7 @@
 
 
 /* Paragraph small */
-.c-paragraph--small {
+.Paragraph___small {
   font-size: var(--font-size-20);
   color: var(--color-neutral-50);
 }

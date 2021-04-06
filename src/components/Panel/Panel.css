@@ -6,7 +6,7 @@
 /*
  * Panel
  */
-.c-panel {
+.Panel {
   border-radius: var(--border-radius-default);
   margin: var(--space-stack-default);
   padding: var(--space-inset-default);
@@ -15,7 +15,7 @@
 
 
 /* Panel primary */
-.c-panel--primary {
+.Panel___primary {
   background: var(--color-primary-50);
   color: var(--color-neutral-0);
 }

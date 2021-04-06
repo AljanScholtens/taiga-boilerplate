@@ -5,7 +5,7 @@
 /*
  * Layout
  */
-.c-layout {
+.Layout {
   clear: both;
 }
 
@@ -16,13 +16,13 @@
   /*
    * Layout Row
    */
-  .c-layout__row {
+  .Layout_row {
 
   }
 
 
   /* Full height */
-  .c-layout__row--full-height {
+  .Layout_row___full-height {
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
@@ -31,19 +31,19 @@
 
 
   /* Primary background */
-  .c-layout__row--primary {
+  .Layout_row___primary {
     background: var(--color-primary-50);
   }
 
 
   /* Neutral background */
-  .c-layout__row--neutral {
+  .Layout_row___neutral {
     background: var(--color-neutral-10);
   }
 
 
   /* Line */
-  .c-layout__row--line {
+  .Layout_row___line {
     border-bottom: 1px solid var(--color-neutral-10);
   }
 
@@ -54,7 +54,7 @@
   /*
    * Layout Container
    */
-  .c-layout__container {
+  .Layout_container {
     margin: auto;
     max-width: var(--max-width);
     padding: var(--space-inset-default);

@@ -6,13 +6,13 @@
 /*
  * Form Field
  */
-.c-form-field {
+.FormField {
   margin: var(--space-stack-default);
 }
 
 
 /* Error */
-.c-form-field--error {
+.FormField___error {
   color: var(--color-error-50);
 }
 
@@ -23,7 +23,7 @@
   /*
    * Label
    */
-  .c-form-field__label {
+  .FormField_label {
     display: inline-block;
     margin: var(--space-stack-10);
   }
@@ -35,7 +35,7 @@
   /*
    * Input
    */
-  .c-form-field__input {
+  .FormField_input {
     margin: var(--space-stack-10);
   }
 
@@ -46,6 +46,6 @@
   /*
    * Description
    */
-  .c-form-field__description {
+  .FormField_description {
 
   }

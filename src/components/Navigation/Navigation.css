@@ -6,7 +6,7 @@
 /*
  * Navigation
  */
-.c-navigation {
+.Navigation {
   display: flex;
   justify-content: space-between;
 }
@@ -18,7 +18,7 @@
   /*
    * Logo
    */
-  .c-navigation__logo {
+  .Navigation_logo {
     font-weight: 500;
     padding: 0.75rem;
     padding-left: 0;
@@ -36,7 +36,7 @@
   /*
    * Navigation items
    */
-  .c-navigation__items {
+  .Navigation_items {
     display: flex;
     list-style: none;
   }
@@ -47,7 +47,7 @@
   /*
    * Navigation item
    */
-  .c-navigation__item {
+  .Navigation_item {
 
     &:last-child a {
       padding-right: 0;
@@ -67,6 +67,6 @@
 
 
   /* Navigation item selected */
-  .c-navigation__item--selected a {
+  .Navigation_item___selected a {
     color: var(--color-primary-70);
   }

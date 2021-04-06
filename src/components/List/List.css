@@ -6,7 +6,7 @@
 /*
  * List
  */
-.c-list {
+.List {
   list-style: none;
   line-height: var(--line-height-30);
   margin: -0.3rem 0 calc(var(--space-default) - 0.3rem) 0;
@@ -14,9 +14,9 @@
 
 
 /* List ordered */
-.c-list--ordered {
+.List___ordered {
 
-  & .c-list__item {
+  & .List_item {
     counter-increment: list__counter;
 
     &:before {
@@ -36,7 +36,7 @@
   /*
    * List item
    */
-  .c-list__item {
+  .List_item {
     padding: .3rem 0 .3rem 2rem;
     position: relative;
 

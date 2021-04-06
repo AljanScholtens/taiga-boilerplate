@@ -6,7 +6,7 @@
 /*
  * Alert
  */
-.c-alert {
+.Alert {
   border-radius: var(--border-radius-default);
   font-weight: var(--font-weight-30);
   margin: var(--space-stack-10);
@@ -18,21 +18,21 @@
 
 
 /* Primary */
-.c-alert--primary {
+.Alert___primary {
   background: var(--color-primary-50);
   color: var(--color-neutral-0);
 }
 
 
 /* Success */
-.c-alert--success {
+.Alert___success {
   background: var(--color-success-50);
   color: var(--color-neutral-0);
 }
 
 
 /* Error */
-.c-alert--error {
+.Alert___error {
   background: var(--color-error-50);
   color: var(--color-neutral-0);
 }

@@ -6,7 +6,7 @@
 /*
  * Pagination
  */
-.c-pagination {
+.Pagination {
   font-size: var(--font-size-20);
   list-style: none;
   display: flex;
@@ -20,7 +20,7 @@
   /*
    * Item
    */
-  .c-pagination__item {
+  .Pagination_item {
     margin-right: var(--space-10);
 
     & a {
@@ -46,7 +46,7 @@
 
 
   /* Item selected */
-  .c-pagination__item--selected a {
+  .Pagination_item__selected a {
     background: var(--color-primary-50);
     color: var(--color-neutral-0);
 
@@ -63,7 +63,7 @@
 
 
   /* Item gap */
-  .c-pagination__item--gap {
+  .Pagination_item___gap {
     background: none;
     padding: var(--space-squish-20);
   }

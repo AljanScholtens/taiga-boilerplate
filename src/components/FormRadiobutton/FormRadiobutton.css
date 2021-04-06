@@ -6,7 +6,7 @@
 /*
  * Radiobutton
  */
-.c-form-radiobutton {
+.FormRadiobutton {
 
   & input {
     display: none;

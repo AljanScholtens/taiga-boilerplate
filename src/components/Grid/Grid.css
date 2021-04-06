@@ -5,7 +5,7 @@
 /*
  * Grid
  */
-.c-grid {
+.Grid {
   width: 100%;
   display: grid;
   grid-column-gap: var(--space-default);
@@ -19,7 +19,7 @@
 
 
 /* Thirds */
-.c-grid--thirds {
+.Grid___thirds {
 
   @media(--breakpoint-20) {
     grid-template-columns: repeat(3, 1fr);
@@ -28,7 +28,7 @@
 
 
 /* Halves */
-.c-grid--halves {
+.Grid___halves {
 
   @media(--breakpoint-20) {
     grid-template-columns: repeat(2, 1fr);
@@ -37,7 +37,7 @@
 
 
 /* Sidebar */
-.c-grid--sidebar {
+.Grid___sidebar {
 
   @media(--breakpoint-20) {
     grid-template-columns: 1fr 15rem;
@@ -50,7 +50,7 @@
 
 
 /* Single */
-.c-grid--single {
+.Grid___single {
   margin: auto;
   width: 100%;
   max-width: 70ch;
@@ -63,5 +63,5 @@
   /*
    * Grid Item
    */
-  .c-grid__item {
+  .Grid_item {
   }

@@ -6,7 +6,7 @@
 /*
  * Checkbox
  */
-.c-form-checkbox {
+.FormCheckbox {
 
   & input {
     display: none;

@@ -6,7 +6,7 @@
 /*
  * Tag
  */
-.c-tag {
+.Tag {
   border-radius: var(--border-radius-default);
   font-size: var(--font-size-10);
   font-weight: var(--font-weight-30);
@@ -23,21 +23,21 @@
 
 
 /* Neutral */
-.c-tag--neutral {
+.Tag___neutral {
   background: var(--color-neutral-10);
   color: var(--color-neutral-70);
 }
 
 
 /* Success */
-.c-tag--success {
+.Tag___success {
   background: var(--color-success-50);
   color: var(--color-neutral-0);
 }
 
 
 /* Error */
-.c-tag--error {
+.Tag___error {
   background: var(--color-error-50);
   color: var(--color-neutral-0);
 }

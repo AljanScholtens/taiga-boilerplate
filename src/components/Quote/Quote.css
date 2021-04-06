@@ -6,7 +6,7 @@
 /*
  * Quote
  */
-.c-quote {
+.Quote {
   margin: var(--space-stack-default);
   padding: 0 0 0 2.5rem;
   position: relative;
@@ -36,7 +36,7 @@
 
 
   /* Quote author */
-  .c-quote__author {
+  .Quote_author {
     display: block;
     font-size: var(--font-size-20);
 

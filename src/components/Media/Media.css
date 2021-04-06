@@ -6,7 +6,7 @@
 /*
  * Media wrapper
  */
-.c-media {
+.Media {
   margin: var(--space-stack-default);
   position: relative;
   width: 100%;
@@ -14,7 +14,7 @@
 
 
 /* Media Flex */
-.c-media--flex {
+.Media___flex {
   display: flex;
 
   & .c-media__image {
@@ -33,20 +33,20 @@
   /*
    * Media item (like video or image)
    */
-  .c-media__item {
+  .Media_item {
 
   }
 
 
   /* Image */
-  .c-media__item--image {
+  .Media_item___image {
     display: block;
     max-width: 100%;
   }
 
 
   /* Video */
-  .c-media__item--video {
+  .Media_item___video {
     height: 0;
     padding-bottom: 56.25%;
     width: 100%;
@@ -59,7 +59,7 @@
   /*
    * Caption
    */
-  .c-media__caption {
+  .Media_caption {
     color: var(--color-neutral-50);
     margin-top: var(--space-10);
     font-weight: 500;
@@ -73,11 +73,11 @@
   /*
    * Objects, the iframe, or the img tag
    */
-  .c-media__image {
+  .Media_image {
     border-radius: var(--border-radius-20);
   }
 
-  .c-media__video {
+  .Media_video {
     position: absolute;
     left: 0;
     top: 0;
